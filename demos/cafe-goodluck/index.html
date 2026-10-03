@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cafe Goodluck — Deccan Gymkhana, Pune</title>
+<meta name="description" content="Cafe Goodluck, a Pune institution on Ferguson College Road since 1935. Bun maska, chai, and breakfast favourites. Order on WhatsApp.">
+<style>
+:root{
+  --bg:#faf7f2;
+  --surface:#ffffff;
+  --ink:#1c1917;
+  --muted:#6b6257;
+  --accent:#9a3b1e;
+  --accent-soft:#f3e3da;
+  --line:#e7e0d6;
+  --radius:6px;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  font-family:Georgia,'Times New Roman',serif;
+  background:var(--bg);
+  color:var(--ink);
+  line-height:1.6;
+  -webkit-font-smoothing:antialiased;
+}
+.wrap{max-width:960px;margin:0 auto;padding:0 24px}
+header{
+  border-bottom:1px solid var(--line);
+  background:var(--bg);
+  position:sticky;top:0;z-index:10;
+}
+.nav{display:flex;align-items:center;justify-content:space-between;padding:18px 0}
+.brand{font-size:1.25rem;letter-spacing:.02em}
+.brand strong{color:var(--accent)}
+.nav a{color:var(--muted);text-decoration:none;font-family:Verdana,Geneva,sans-serif;font-size:.75rem;letter-spacing:.08em;text-transform:uppercase;margin-left:22px}
+.nav a:hover{color:var(--accent)}
+.hero{padding:88px 0 72px;text-align:center}
+.hero .kicker{
+  font-family:Verdana,Geneva,sans-serif;font-size:.72rem;
+  letter-spacing:.18em;text-transform:uppercase;color:var(--accent);
+}
+.hero h1{font-size:clamp(2.4rem,6vw,3.8rem);font-weight:400;margin:18px 0 10px}
+.hero .sub{font-size:1.15rem;color:var(--muted);max-width:520px;margin:0 auto}
+.hero .since{font-size:.95rem;color:var(--muted);font-style:italic;margin-top:14px}
+.cta-row{margin-top:36px;display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+.btn{
+  display:inline-block;padding:14px 28px;border-radius:var(--radius);
+  font-family:Verdana,Geneva,sans-serif;font-size:.8rem;letter-spacing:.06em;
+  text-transform:uppercase;text-decoration:none;transition:background .15s ease;
+}
+.btn-primary{background:var(--accent);color:#fff}
+.btn-primary:hover{background:#7d2f16}
+.btn-ghost{border:1px solid var(--ink);color:var(--ink)}
+.btn-ghost:hover{background:#fff}
+.stats{
+  display:flex;justify-content:center;gap:56px;flex-wrap:wrap;
+  padding:36px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);
+}
+.stat{text-align:center}
+.stat .num{font-size:2rem;color:var(--accent)}
+.stat .lbl{font-family:Verdana,Geneva,sans-serif;font-size:.7rem;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+section{padding:72px 0}
+section.alt{background:var(--surface);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+h2{font-weight:400;font-size:1.9rem;margin-bottom:8px}
+.lead{color:var(--muted);max-width:560px;margin-bottom:36px}
+.menu-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px}
+.menu-card{border:1px solid var(--line);border-radius:var(--radius);padding:24px;background:var(--bg)}
+.menu-card h3{font-weight:400;font-size:1.1rem;margin-bottom:6px}
+.menu-card p{color:var(--muted);font-size:.95rem}
+.tag{
+  display:inline-block;font-family:Verdana,Geneva,sans-serif;font-size:.62rem;
+  letter-spacing:.12em;text-transform:uppercase;color:var(--accent);
+  background:var(--accent-soft);border-radius:3px;padding:4px 8px;margin-bottom:12px;
+}
+.gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px}
+.tile{
+  border-radius:var(--radius);padding:36px 20px;text-align:center;
+  border:1px solid var(--line);
+}
+.tile .t-title{font-family:Verdana,Geneva,sans-serif;font-size:.75rem;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin-top:10px}
+.tile-a{background:#f3e9dc}.tile-b{background:#efe0d3}.tile-c{background:#f6ead9}
+.t-mark{font-size:1.6rem;color:var(--accent)}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px}
+@media(max-width:720px){.contact-grid{grid-template-columns:1fr}}
+.info-line{display:flex;gap:12px;padding:14px 0;border-bottom:1px solid var(--line);align-items:baseline}
+.info-line .k{font-family:Verdana,Geneva,sans-serif;font-size:.68rem;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);min-width:88px}
+form .field{margin-bottom:16px}
+form label{display:block;font-family:Verdana,Geneva,sans-serif;font-size:.7rem;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-bottom:6px}
+form input,form textarea{
+  width:100%;padding:12px 14px;border:1px solid var(--line);border-radius:var(--radius);
+  background:var(--bg);font-family:Georgia,serif;font-size:1rem;color:var(--ink);
+}
+form input:focus,form textarea:focus{outline:2px solid var(--accent);outline-offset:1px}
+.wa-btn{
+  display:flex;align-items:center;justify-content:center;gap:10px;margin-top:8px;
+  background:#0e7a4d;color:#fff;border-radius:var(--radius);padding:14px 24px;
+  text-decoration:none;font-family:Verdana,Geneva,sans-serif;font-size:.8rem;
+  letter-spacing:.05em;transition:background .15s ease;
+}
+.wa-btn:hover{background:#0b6440}
+.wa-dot{width:9px;height:9px;border-radius:50%;background:#7de3ae}
+footer{padding:40px 0;border-top:1px solid var(--line);color:var(--muted);font-size:.85rem}
+footer .fine{margin-top:10px;font-size:.75rem}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <div class="brand">Cafe <strong>Goodluck</strong></div>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#menu">Menu</a>
+      <a href="#visit">Visit</a>
+    </nav>
+  </div>
+</header>
+
+<div class="hero wrap">
+  <p class="kicker">Ferguson College Road · Deccan Gymkhana</p>
+  <h1>The chai stop Pune keeps coming back to.</h1>
+  <p class="sub">Bun maska, slow mornings, and a corner table that has watched the city grow since 1935.</p>
+  <p class="since">Cafe Goodluck · Pune, since 1935</p>
+  <div class="cta-row">
+    <a class="btn btn-primary" href="#visit">Plan a visit</a>
+    <a class="btn btn-ghost" href="https://wa.me/919923364756" target="_blank" rel="noopener">Order on WhatsApp</a>
+  </div>
+</div>
+
+<div class="stats wrap">
+  <div class="stat"><div class="num">4.2</div><div class="lbl">Google rating</div></div>
+  <div class="stat"><div class="num">52,000+</div><div class="lbl">Google reviews</div></div>
+  <div class="stat"><div class="num">8 AM</div><div class="lbl">Doors open daily</div></div>
+</div>
+
+<section id="about">
+  <div class="wrap">
+    <h2>An institution, not a franchise.</h2>
+    <p class="lead">Goodluck has served Deccan Gymkhana for generations — students from Fergusson College, families after a walk on the hill, and everyone in between. No gimmicks, just breakfast done right.</p>
+    <div class="menu-grid">
+      <div class="menu-card"><span class="tag">Famous for</span><h3>Bun Maska</h3><p>The signature. Soft bun, generous butter, best dunked in chai.</p></div>
+      <div class="menu-card"><span class="tag">Famous for</span><h3>Omelette Pav</h3><p>A Goodluck breakfast classic, cooked on the flat iron the way it has always been.</p></div>
+      <div class="menu-card"><span class="tag">Famous for</span><h3>Chai &amp; Filter Coffee</h3><p>The reason the corner stays full from opening time.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="menu" class="alt">
+  <div class="wrap">
+    <h2>Morning highlights</h2>
+    <p class="lead">A short, honest menu. Prices at the counter.</p>
+    <div class="menu-grid">
+      <div class="menu-card"><h3>Breakfast plates</h3><p>Omelettes, egg bhurji, toast and the regulars, served all morning.</p></div>
+      <div class="menu-card"><h3>Bakery corner</h3><p>Fresh buns, maska, jam and brioche through the day.</p></div>
+      <div class="menu-card"><h3>Chai counter</h3><p>Cutting chai, masala chai and South Indian filter coffee.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="visit">
+  <div class="wrap">
+    <h2>Visit or order ahead</h2>
+    <p class="lead">Walk in, or send a WhatsApp order and it will be ready.</p>
+    <div class="contact-grid">
+      <div>
+        <div class="info-line"><span class="k">Address</span><span>Ferguson College Rd, near Goodluck Chowk, Deccan Gymkhana, Pune 411004</span></div>
+        <div class="info-line"><span class="k">Hours</span><span>Opens 8 AM daily</span></div>
+        <div class="info-line"><span class="k">Phone</span><span>+91 99233 64756</span></div>
+        <a class="wa-btn" href="https://wa.me/919923364756" target="_blank" rel="noopener"><span class="wa-dot"></span>Message on WhatsApp</a>
+      </div>
+      <div>
+        <form onsubmit="event.preventDefault(); this.nextElementSibling.hidden=false;">
+          <div class="field">
+            <label for="nm">Name</label>
+            <input id="nm" name="name" type="text" required>
+          </div>
+          <div class="field">
+            <label for="ph">Phone</label>
+            <input id="ph" name="phone" type="tel" required>
+          </div>
+          <div class="field">
+            <label for="msg">Your order or message</label>
+            <textarea id="msg" name="message" rows="4" required></textarea>
+          </div>
+          <button class="btn btn-primary" type="submit">Send request</button>
+        </form>
+        <p hidden style="color:#0e7a4d;margin-top:12px;font-size:.9rem">Thanks — your request is noted. For a faster reply, use the WhatsApp button.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div>Cafe Goodluck · Ferguson College Rd, Deccan Gymkhana, Pune 411004</div>
+    <div class="fine">Demo website created by SiteSeller Agent as a sample. Not the official Cafe Goodluck website.</div>
+  </div>
+</footer>
+
+</body>
+</html>
