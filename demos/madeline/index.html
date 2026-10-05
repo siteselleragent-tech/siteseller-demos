@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Madéline — Cafe & Patisserie, Kothrud, Pune</title>
+<meta name="description" content="Madéline, a French-inspired cafe and patisserie in Mayur Colony, Kothrud, Pune. Pastries, coffee, and all-day plates in a book-lined room.">
+<style>
+:root{--bg:#faf6f1;--surface:#fff;--ink:#1e1916;--muted:#6b625c;--accent:#8b5e3c;--soft:#f0e6dc;--line:#e5ddd3;--radius:6px}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Georgia,serif;background:var(--bg);color:var(--ink);line-height:1.6;-webkit-font-smoothing:antialiased}
+.wrap{max-width:960px;margin:0 auto;padding:0 24px}
+header{border-bottom:1px solid var(--line);position:sticky;top:0;background:var(--bg);z-index:10}
+.nav{display:flex;align-items:center;justify-content:space-between;padding:18px 0}
+.brand{font-size:1.25rem;letter-spacing:.03em}.brand strong{color:var(--accent)}
+.nav a{color:var(--muted);text-decoration:none;font-family:Verdana,sans-serif;font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;margin-left:20px}
+.hero{padding:80px 0 60px;text-align:center}
+.kicker{font-family:Verdana,sans-serif;font-size:.7rem;letter-spacing:.18em;text-transform:uppercase;color:var(--accent)}
+h1{font-size:clamp(2rem,6vw,3.2rem);font-weight:400;margin:16px 0 10px}
+.sub{font-size:1.1rem;color:var(--muted);max-width:520px;margin:0 auto}
+.cta-row{margin-top:32px;display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+.btn{display:inline-block;padding:13px 26px;border-radius:var(--radius);font-family:Verdana,sans-serif;font-size:.78rem;letter-spacing:.06em;text-transform:uppercase;text-decoration:none}
+.btn-primary{background:var(--accent);color:#fff}.btn-ghost{border:1px solid var(--ink);color:var(--ink)}
+.stats{display:flex;justify-content:center;gap:52px;flex-wrap:wrap;padding:32px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.stat{text-align:center}.stat .num{font-size:1.8rem;color:var(--accent)}
+.stat .lbl{font-family:Verdana,sans-serif;font-size:.68rem;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+section{padding:64px 0}section.alt{background:var(--surface);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+h2{font-weight:400;font-size:1.8rem;margin-bottom:8px}
+.lead{color:var(--muted);max-width:560px;margin-bottom:32px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px}
+.card{border:1px solid var(--line);border-radius:var(--radius);padding:22px;background:var(--bg)}
+.card h3{font-weight:400;font-size:1.05rem;margin-bottom:6px}.card p{color:var(--muted);font-size:.95rem}
+.tag{display:inline-block;font-family:Verdana,sans-serif;font-size:.62rem;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);background:var(--soft);border-radius:3px;padding:4px 8px;margin-bottom:10px}
+.wa-btn{display:flex;align-items:center;justify-content:center;gap:10px;background:#0e7a4d;color:#fff;border-radius:var(--radius);padding:13px 22px;text-decoration:none;font-family:Verdana,sans-serif;font-size:.78rem;margin-top:8px}
+.info-line{display:flex;gap:12px;padding:12px 0;border-bottom:1px solid var(--line)}
+.info-line .k{font-family:Verdana,sans-serif;font-size:.66rem;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);min-width:80px}
+.field{margin-bottom:14px}
+.field label{display:block;font-family:Verdana,sans-serif;font-size:.68rem;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-bottom:6px}
+.field input,.field textarea{width:100%;padding:11px 13px;border:1px solid var(--line);border-radius:var(--radius);background:var(--bg);font-family:Georgia,serif;font-size:1rem}
+footer{padding:36px 0;border-top:1px solid var(--line);color:var(--muted);font-size:.85rem}
+</style>
+</head>
+<body>
+<header><div class="wrap nav"><div class="brand"><strong>Madéline</strong></div><nav><a href="#menu">Menu</a><a href="#visit">Visit</a></nav></div></header>
+<div class="hero wrap">
+  <p class="kicker">Mayur Colony Road · Kothrud · Pune</p>
+  <h1>A little piece of Paris in Kothrud.</h1>
+  <p class="sub">French-inspired pastries, excellent coffee, and a book-lined room that makes you want to stay all afternoon.</p>
+  <div class="cta-row">
+    <a class="btn btn-primary" href="#visit">Reserve a table</a>
+    <a class="btn btn-ghost" href="https://wa.me/919607105678" target="_blank" rel="noopener">WhatsApp us</a>
+  </div>
+</div>
+<div class="stats wrap">
+  <div class="stat"><div class="num">4.1</div><div class="lbl">Google rating</div></div>
+  <div class="stat"><div class="num">1,900+</div><div class="lbl">Google reviews</div></div>
+  <div class="stat"><div class="num">11 AM</div><div class="lbl">Opens daily</div></div>
+</div>
+<section id="menu"><div class="wrap">
+  <h2>What's on the table</h2>
+  <p class="lead">Simple dishes and French-inspired pastries, made fresh through the day.</p>
+  <div class="grid">
+    <div class="card"><span class="tag">Famous for</span><h3>Patisserie & pastries</h3><p>French-inspired baked goods, made in-house, the star of the show.</p></div>
+    <div class="card"><span class="tag">Famous for</span><h3>All-day cafe plates</h3><p>Continental quick bites and relaxed all-day dining.</p></div>
+    <div class="card"><span class="tag">Famous for</span><h3>Coffee & tea room</h3><p>The kind of coffee that pairs with a book and a long afternoon.</p></div>
+  </div>
+</div></section>
+<section id="visit" class="alt"><div class="wrap">
+  <h2>Visit us</h2>
+  <p class="lead">On Mayur Colony Road, Ideal Colony — look for the book-lined windows.</p>
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:36px">
+    <div>
+      <div class="info-line"><span class="k">Address</span><span>Tejashree Apartments, Plot No. 15, Mayur Colony Rd, Ideal Colony, Kothrud, Pune 411038</span></div>
+      <div class="info-line"><span class="k">Hours</span><span>11 AM – 11 PM daily</span></div>
+      <div class="info-line"><span class="k">Phone</span><span>+91 96071 05678</span></div>
+      <a class="wa-btn" href="https://wa.me/919607105678" target="_blank" rel="noopener">Reserve on WhatsApp</a>
+    </div>
+    <div>
+      <form onsubmit="event.preventDefault(); this.nextElementSibling.hidden=false;">
+        <div class="field"><label for="nm">Name</label><input id="nm" type="text" required></div>
+        <div class="field"><label for="ph">Phone</label><input id="ph" type="tel" required></div>
+        <div class="field"><label for="msg">Message / reservation request</label><textarea id="msg" rows="3" required></textarea></div>
+        <button class="btn btn-primary" type="submit">Send request</button>
+      </form>
+      <p hidden style="color:#8b5e3c;margin-top:10px;font-size:.9rem">Request noted — for a faster reply, use the WhatsApp button.</p>
+    </div>
+  </div>
+</div></section>
+<footer><div class="wrap">
+  <div>Madéline · Mayur Colony Road, Kothrud, Pune 411038</div>
+  <div style="font-size:.75rem;margin-top:8px">Demo website created by SiteSeller Agent as a sample. Not the official Madéline website.</div>
+</div></footer>
+</body>
+</html>
