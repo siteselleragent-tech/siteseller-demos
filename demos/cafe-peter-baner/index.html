@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cafe Peter — Baner, Pune</title>
+<meta name="description" content="Cafe Peter Baner — cozy multi-cuisine cafe from 7 AM to midnight. Korean, Chinese, steaks, shakes, coffee. Outdoor seating, pet friendly.">
+<style>
+:root{--bg:#fdf8f3;--surface:#fff;--ink:#2a2018;--muted:#7a6a58;--accent:#c0651e;--accent-soft:#f7ebdd;--line:#ece0d2;--radius:6px}
+*{margin:0;padding:0;box-sizing:border-box}html{scroll-behavior:smooth}
+body{font-family:Georgia,'Times New Roman',serif;background:var(--bg);color:var(--ink);line-height:1.6}
+.wrap{max-width:960px;margin:0 auto;padding:0 24px}
+header{border-bottom:1px solid var(--line);background:var(--bg);position:sticky;top:0;z-index:10}
+.nav{display:flex;align-items:center;justify-content:space-between;padding:18px 0}
+.brand{font-size:1.2rem}.brand strong{color:var(--accent)}
+.nav a{color:var(--muted);text-decoration:none;font-family:Verdana,Geneva,sans-serif;font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;margin-left:20px}
+.nav a:hover{color:var(--accent)}
+.hero{padding:80px 0 64px;text-align:center}
+.hero .kicker{font-family:Verdana,Geneva,sans-serif;font-size:.7rem;letter-spacing:.18em;text-transform:uppercase;color:var(--accent)}
+.hero h1{font-size:clamp(2.2rem,5vw,3.4rem);font-weight:400;margin:16px 0 10px}
+.hero .sub{font-size:1.1rem;color:var(--muted);max-width:520px;margin:0 auto}
+.cta-row{margin-top:34px;display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+.btn{display:inline-block;padding:14px 28px;border-radius:var(--radius);font-family:Verdana,Geneva,sans-serif;font-size:.78rem;letter-spacing:.06em;text-transform:uppercase;text-decoration:none;transition:background .15s}
+.btn-primary{background:var(--accent);color:#fff}.btn-primary:hover{background:#a1551a}
+.btn-ghost{border:1px solid var(--ink);color:var(--ink)}.btn-ghost:hover{background:#fff}
+.stats{display:flex;justify-content:center;gap:56px;flex-wrap:wrap;padding:36px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.stat{text-align:center}.stat .num{font-size:2rem;color:var(--accent)}
+.stat .lbl{font-family:Verdana,Geneva,sans-serif;font-size:.68rem;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+section{padding:64px 0}
+section.alt{background:var(--surface);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+h2{font-weight:400;font-size:1.8rem;margin-bottom:8px}.lead{color:var(--muted);max-width:560px;margin-bottom:36px}
+.menu-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px}
+.menu-card{border:1px solid var(--line);border-radius:var(--radius);padding:24px;background:var(--bg)}
+.menu-card h3{font-weight:400;font-size:1.05rem;margin-bottom:6px}.menu-card p{color:var(--muted);font-size:.9rem}
+.tag{display:inline-block;font-family:Verdana,Geneva,sans-serif;font-size:.6rem;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);background:var(--accent-soft);border-radius:3px;padding:4px 8px;margin-bottom:12px}
+.feature-row{display:flex;gap:16px;flex-wrap:wrap;margin-top:24px}
+.feature{display:flex;align-items:center;gap:10px;padding:12px 20px;border:1px solid var(--line);border-radius:var(--radius);background:var(--bg)}
+.feature .ico{font-size:1.2rem}
+.review{border-left:3px solid var(--accent);padding:20px 24px;background:var(--bg);border-radius:0 var(--radius) var(--radius) 0;margin-bottom:20px}
+.review p{font-style:italic;color:var(--muted)}.review .who{font-family:Verdana,Geneva,sans-serif;font-size:.72rem;letter-spacing:.06em;color:var(--accent);margin-top:8px;text-transform:uppercase}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px}
+@media(max-width:720px){.contact-grid{grid-template-columns:1fr}}
+.info-line{display:flex;gap:12px;padding:14px 0;border-bottom:1px solid var(--line);align-items:baseline}
+.info-line .k{font-family:Verdana,Geneva,sans-serif;font-size:.66rem;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);min-width:88px}
+form .field{margin-bottom:16px}
+form label{display:block;font-family:Verdana,Geneva,sans-serif;font-size:.68rem;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-bottom:6px}
+form input,form textarea{width:100%;padding:12px 14px;border:1px solid var(--line);border-radius:var(--radius);background:var(--bg);font-family:Georgia,serif;font-size:1rem;color:var(--ink)}
+form input:focus,form textarea:focus{outline:2px solid var(--accent);outline-offset:1px}
+.wa-btn{display:flex;align-items:center;justify-content:center;gap:10px;margin-top:8px;background:#0e7a4d;color:#fff;border-radius:var(--radius);padding:14px 24px;text-decoration:none;font-family:Verdana,Geneva,sans-serif;font-size:.78rem;letter-spacing:.05em;transition:background .15s}
+.wa-btn:hover{background:#0b6440}.wa-dot{width:9px;height:9px;border-radius:50%;background:#7de3ae}
+footer{padding:40px 0;border-top:1px solid var(--line);color:var(--muted);font-size:.85rem}
+footer .fine{margin-top:10px;font-size:.72rem}
+</style>
+</head>
+<body>
+<header><div class="wrap nav"><div class="brand">Cafe <strong>Peter</strong></div><nav><a href="#about">About</a><a href="#menu">Menu</a><a href="#reviews">Reviews</a><a href="#visit">Visit</a></nav></div></header>
+<div class="hero wrap">
+<p class="kicker">Suyash Commercial Mall · Baner · Pune</p>
+<h1>From morning coffee to midnight cravings.</h1>
+<p class="sub">Cozy, multi-cuisine cafe with Korean, Chinese, steaks, shakes, and the best Hazelnut Frappe in Baner. Open 7 AM to midnight, every day.</p>
+<div class="cta-row"><a class="btn btn-primary" href="#visit">Plan a visit</a><a class="btn btn-ghost" href="https://wa.me/917385014975" target="_blank" rel="noopener">Reserve on WhatsApp</a></div>
+</div>
+<div class="stats wrap">
+<div class="stat"><div class="num">4.2</div><div class="lbl">Google rating</div></div>
+<div class="stat"><div class="num">1,200+</div><div class="lbl">Google reviews</div></div>
+<div class="stat"><div class="num">7 AM</div><div class="lbl">Open daily</div></div>
+</div>
+<section id="about"><div class="wrap">
+<h2>A Baner favourite, reimagined.</h2>
+<p class="lead">Cafe Peter has been a beloved spot in Baner for years — now fully revamped with a warm, modern interior, new menu additions, and the same friendly vibe. Whether it's a breakfast date, a work-from-cafe afternoon, or a late-night craving, there's always a corner table waiting.</p>
+<div class="feature-row">
+<div class="feature"><span class="ico">🐾</span>Pet friendly</div>
+<div class="feature"><span class="ico">🌿</span>Outdoor seating</div>
+<div class="feature"><span class="ico">♟️</span>Chess &amp; books</div>
+<div class="feature"><span class="ico">🌅</span>From 7 AM</div>
+</div>
+</div></section>
+<section id="menu" class="alt"><div class="wrap">
+<h2>Menu highlights</h2>
+<p class="lead">Korean, Chinese, Continental, and all-day breakfast. Prices at the cafe.</p>
+<div class="menu-grid">
+<div class="menu-card"><span class="tag">Breakfast</span><h3>African Omelette</h3><p>Flavorful, filling, served with hash browns, baked beans, grilled tomato and garlic bread.</p></div>
+<div class="menu-card"><span class="tag">Breakfast</span><h3>Paradise Sandwich</h3><p>Fresh, satisfying — a Cafe Peter breakfast staple.</p></div>
+<div class="menu-card"><span class="tag">Korean</span><h3>Gochujang Ramen</h3><p>Spicy, comforting Korean ramen — a guest favourite.</p></div>
+<div class="menu-card"><span class="tag">Korean</span><h3>Tempura Prawns</h3><p>Crispy, golden, perfectly battered.</p></div>
+<div class="menu-card"><span class="tag">Mains</span><h3>Steaks &amp; Chinese</h3><p>From sizzling steaks to wok-tossed noodles and fried rice.</p></div>
+<div class="menu-card"><span class="tag">Coffee</span><h3>Hazelnut Frappe</h3><p>Rich, smooth, and absolutely delicious — the must-try drink.</p></div>
+<div class="menu-card"><span class="tag">Dessert</span><h3>Blueberry Muffin</h3><p>Soft, moist, and one of the highlights of the menu.</p></div>
+<div class="menu-card"><span class="tag">Shakes</span><h3>Fresh Shakes</h3><p>Strawberry, chocolate, and seasonal fruit shakes.</p></div>
+</div>
+</div></section>
+<section id="reviews"><div class="wrap">
+<h2>What guests say</h2>
+<p class="lead">1,200+ Google reviews and counting.</p>
+<div class="review"><p>"Had a lovely experience at Cafe Peter! The ambience is cozy, peaceful, and perfect for catching up with friends. The African Omelette was flavorful and filling, and don't leave without trying their Blueberry Muffin."</p><div class="who">Prashna Lende · Google Review</div></div>
+<div class="review"><p>"A wonderful cafe with a cozy ambience, delicious food, and great service. A nice touch is the chess board to play and books to read. The must-try is their Hazelnut Frappe — rich, smooth, and absolutely delicious."</p><div class="who">Omkar C · Google Review</div></div>
+<div class="review"><p>"A place loved by many and finally it's back with an all-new vibe! The interiors look warm, cozy, and modern. This place can be your perfect spot for breakfast as it's operational from 7 AM."</p><div class="who">Neeldana Bakshi · Google Review</div></div>
+</div></section>
+<section id="visit"><div class="wrap">
+<h2>Visit or reserve a table</h2>
+<p class="lead">Walk in, or send a WhatsApp message to reserve your spot.</p>
+<div class="contact-grid">
+<div>
+<div class="info-line"><span class="k">Address</span><span>Suyash Commercial Mall, Pancard Club Rd, near Union Bank of India, Baner, Pune 411069</span></div>
+<div class="info-line"><span class="k">Hours</span><span>7 AM – 12 AM, every day</span></div>
+<div class="info-line"><span class="k">Phone</span><span>+91 73850 14975</span></div>
+<div class="info-line"><span class="k">Instagram</span><span>@cafepeterpune</span></div>
+<a class="wa-btn" href="https://wa.me/917385014975" target="_blank" rel="noopener"><span class="wa-dot"></span>Message on WhatsApp</a>
+</div>
+<div>
+<form onsubmit="event.preventDefault(); this.nextElementSibling.hidden=false;">
+<div class="field"><label for="nm">Name</label><input id="nm" name="name" type="text" required></div>
+<div class="field"><label for="ph">Phone</label><input id="ph" name="phone" type="tel" required></div>
+<div class="field"><label for="msg">Reservation request</label><textarea id="msg" name="message" rows="4" placeholder="Date, time, number of guests..." required></textarea></div>
+<button class="btn btn-primary" type="submit">Send request</button>
+</form>
+<p hidden style="color:#0e7a4d;margin-top:12px;font-size:.9rem">Thanks — your request is noted. For a faster reply, use the WhatsApp button.</p>
+</div>
+</div>
+</div></section>
+<footer><div class="wrap"><div>Cafe Peter · Suyash Commercial Mall, Baner, Pune 411069</div><div class="fine">Demo website created by SiteSeller Agent as a sample. Not the official Cafe Peter website.</div></div></footer>
+</body>
+</html>
