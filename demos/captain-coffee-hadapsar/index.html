@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Captain Coffee — Hadapsar, Pune</title>
+<meta name="description" content="Captain Coffee in Hadapsar, Pune. Great coffee, quick bites, and a warm atmosphere. Order ahead on WhatsApp.">
+<style>
+:root{--bg:#fbf6ef;--surface:#fff;--ink:#1a1410;--muted:#6b5e4f;--accent:#b5651d;--accent-soft:#f3e0cc;--line:#e6d8c5;--radius:8px}
+*{margin:0;padding:0;box-sizing:border-box}html{scroll-behavior:smooth}
+body{font-family:Georgia,'Times New Roman',serif;background:var(--bg);color:var(--ink);line-height:1.6}
+.wrap{max-width:960px;margin:0 auto;padding:0 24px}
+header{border-bottom:1px solid var(--line);background:var(--bg);position:sticky;top:0;z-index:10}
+.nav{display:flex;align-items:center;justify-content:space-between;padding:18px 0}
+.brand{font-size:1.2rem}.brand strong{color:var(--accent)}
+.nav a{color:var(--muted);text-decoration:none;font-family:Verdana,Geneva,sans-serif;font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;margin-left:22px}
+.nav a:hover{color:var(--accent)}
+.hero{padding:80px 0 64px;text-align:center}
+.hero .kicker{font-family:Verdana,Geneva,sans-serif;font-size:.7rem;letter-spacing:.18em;text-transform:uppercase;color:var(--accent)}
+.hero h1{font-size:clamp(2.2rem,5vw,3.4rem);font-weight:400;margin:16px 0 8px}
+.hero .sub{font-size:1.1rem;color:var(--muted);max-width:520px;margin:0 auto}
+.cta-row{margin-top:32px;display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+.btn{display:inline-block;padding:14px 28px;border-radius:var(--radius);font-family:Verdana,Geneva,sans-serif;font-size:.78rem;letter-spacing:.06em;text-transform:uppercase;text-decoration:none;transition:background .15s}
+.btn-primary{background:var(--accent);color:#fff}.btn-primary:hover{background:#954f18}
+.btn-ghost{border:1px solid var(--ink);color:var(--ink)}.btn-ghost:hover{background:#fff}
+.stats{display:flex;justify-content:center;gap:56px;flex-wrap:wrap;padding:32px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.stat{text-align:center}.stat .num{font-size:1.9rem;color:var(--accent)}
+.stat .lbl{font-family:Verdana,Geneva,sans-serif;font-size:.66rem;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+section{padding:64px 0}section.alt{background:var(--surface);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+h2{font-weight:400;font-size:1.8rem;margin-bottom:8px}.lead{color:var(--muted);max-width:560px;margin-bottom:32px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px}
+.card{border:1px solid var(--line);border-radius:var(--radius);padding:24px;background:var(--bg)}
+.card h3{font-weight:400;font-size:1.1rem;margin-bottom:6px}.card p{color:var(--muted);font-size:.92rem}
+.tag{display:inline-block;font-family:Verdana,Geneva,sans-serif;font-size:.6rem;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);background:var(--accent-soft);border-radius:3px;padding:3px 8px;margin-bottom:10px}
+.gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px}
+.tile{border-radius:var(--radius);padding:36px 20px;text-align:center;border:1px solid var(--line)}
+.tile .t-title{font-family:Verdana,Geneva,sans-serif;font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin-top:10px}
+.tile-a{background:#f3e9dc}.tile-b{background:#efe0d3}.tile-c{background:#f6ead9}.t-mark{font-size:1.6rem;color:var(--accent)}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px}
+@media(max-width:720px){.contact-grid{grid-template-columns:1fr}}
+.info-line{display:flex;gap:12px;padding:14px 0;border-bottom:1px solid var(--line);align-items:baseline}
+.info-line .k{font-family:Verdana,Geneva,sans-serif;font-size:.66rem;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);min-width:80px}
+form .field{margin-bottom:16px}
+form label{display:block;font-family:Verdana,Geneva,sans-serif;font-size:.68rem;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-bottom:6px}
+form input,form textarea{width:100%;padding:12px 14px;border:1px solid var(--line);border-radius:var(--radius);background:var(--bg);font-family:Georgia,serif;font-size:1rem}
+form input:focus,form textarea:focus{outline:2px solid var(--accent);outline-offset:1px}
+.wa-btn{display:flex;align-items:center;justify-content:center;gap:10px;margin-top:8px;background:#0e7a4d;color:#fff;border-radius:var(--radius);padding:14px 24px;text-decoration:none;font-family:Verdana,Geneva,sans-serif;font-size:.78rem;letter-spacing:.05em;transition:background .15s}
+.wa-btn:hover{background:#0b6440}.wa-dot{width:9px;height:9px;border-radius:50%;background:#7de3ae}
+footer{padding:36px 0;border-top:1px solid var(--line);color:var(--muted);font-size:.85rem}
+footer .fine{margin-top:10px;font-size:.72rem}
+</style>
+</head>
+<body>
+<header><div class="wrap nav"><div class="brand">Captain <strong>Coffee</strong></div><nav><a href="#menu">Menu</a><a href="#about">About</a><a href="#visit">Visit</a></nav></div></header>
+<div class="hero wrap">
+<p class="kicker">Hadapsar · Pune</p>
+<h1>Your daily coffee captain.</h1>
+<p class="sub">Fresh brews, quick bites, and a cozy spot in Hadapsar. The neighbourhood coffee stop that keeps Pune going.</p>
+<div class="cta-row"><a class="btn btn-primary" href="#visit">Visit us</a><a class="btn btn-ghost" href="https://wa.me/918055656767" target="_blank" rel="noopener">Order on WhatsApp</a></div>
+</div>
+<div class="stats wrap">
+<div class="stat"><div class="num">4.1</div><div class="lbl">Google rating</div></div>
+<div class="stat"><div class="num">1,000+</div><div class="lbl">Customer reviews</div></div>
+<div class="stat"><div class="num">500</div><div class="lbl">Avg. for two</div></div>
+</div>
+<section id="about"><div class="wrap">
+<h2>The neighbourhood coffee stop</h2>
+<p class="lead">Captain Coffee has been serving Hadapsar great coffee and quick meals. Whether it's a morning pick-me-up or an evening snack, the captain's got you covered.</p>
+<div class="grid">
+<div class="card"><span class="tag">Famous for</span><h3>Fresh Coffee</h3><p>Hot and cold coffee drinks, from classic filter to specialty brews.</p></div>
+<div class="card"><span class="tag">Famous for</span><h3>Quick Bites</h3><p>Sandwiches, wraps, and snacks that pair perfectly with your coffee.</p></div>
+<div class="card"><span class="tag">Famous for</span><h3>Dine-in &amp; Takeaway</h3><p>Relax inside or grab your order to go. Delivery available too.</p></div>
+</div>
+</div></section>
+<section id="menu" class="alt"><div class="wrap">
+<h2>Menu highlights</h2><p class="lead">A short, satisfying menu. Full menu at the counter.</p>
+<div class="grid">
+<div class="card"><h3>Coffee</h3><p>Classic hot coffee, cold coffee, cafe mocha, cappuccino, and more.</p></div>
+<div class="card"><h3>Snacks</h3><p>Sandwiches, burgers, fries, and quick meal combos.</p></div>
+<div class="card"><h3>Beverages</h3><p>Tea, coolers, shakes, and seasonal specials.</p></div>
+<div class="card"><h3>Desserts</h3><p>Brownies, pastries, and sweet treats to round off your visit.</p></div>
+</div>
+</div></section>
+<section id="visit"><div class="wrap">
+<h2>Visit or order ahead</h2><p class="lead">Walk in, or send a WhatsApp order and it'll be ready.</p>
+<div class="contact-grid">
+<div>
+<div class="info-line"><span class="k">Phone</span><span>+91 80556 56767</span></div>
+<div class="info-line"><span class="k">Address</span><span>Hadapsar, Pune, Maharashtra 411028</span></div>
+<div class="info-line"><span class="k">Hours</span><span>Open till 11 PM</span></div>
+<a class="wa-btn" href="https://wa.me/918055656767" target="_blank" rel="noopener"><span class="wa-dot"></span>Order on WhatsApp</a>
+</div>
+<div>
+<form onsubmit="event.preventDefault();this.nextElementSibling.hidden=false;">
+<div class="field"><label for="n">Name</label><input id="n" name="name" type="text" required></div>
+<div class="field"><label for="p">Phone</label><input id="p" name="phone" type="tel" required></div>
+<div class="field"><label for="m">Your order or message</label><textarea id="m" name="message" rows="4" required></textarea></div>
+<button class="btn btn-primary" type="submit">Send request</button>
+</form>
+<p hidden style="color:var(--accent);margin-top:12px;font-size:.9rem">Thanks — your request is noted. For a faster reply, use the WhatsApp button.</p>
+</div>
+</div>
+</div></section>
+<footer><div class="wrap">
+<div>Captain Coffee · Hadapsar, Pune, Maharashtra 411028</div>
+<div class="fine">Demo website created by SiteSeller Agent as a sample. Not the official Captain Coffee website.</div>
+</div></footer>
+</body></html>
