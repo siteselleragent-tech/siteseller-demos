@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Demitasse Coffee — Specialty Coffee in Pune</title>
+<meta name="description" content="Demitasse Coffee — specialty coffee across Pune. Cold brew, iced lattes, single-origin espresso. Order on WhatsApp.">
+<style>
+:root{--bg:#f8f6f3;--surface:#fff;--ink:#1a1714;--muted:#6b6257;--accent:#6b3a1f;--accent-soft:#f0e6dc;--line:#e7e0d6;--radius:6px}
+*{margin:0;padding:0;box-sizing:border-box}html{scroll-behavior:smooth}
+body{font-family:Georgia,serif;background:var(--bg);color:var(--ink);line-height:1.65;-webkit-font-smoothing:antialiased}
+.wrap{max-width:960px;margin:0 auto;padding:0 24px}
+header{border-bottom:1px solid var(--line);background:var(--bg);position:sticky;top:0;z-index:10}
+.nav{display:flex;align-items:center;justify-content:space-between;padding:18px 0}
+.brand{font-size:1.25rem;letter-spacing:.02em}.brand strong{color:var(--accent)}
+.nav a{color:var(--muted);text-decoration:none;font-family:Verdana,sans-serif;font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;margin-left:22px}.nav a:hover{color:var(--accent)}
+.hero{padding:88px 0 72px;text-align:center}
+.hero .kicker{font-family:Verdana,sans-serif;font-size:.7rem;letter-spacing:.18em;text-transform:uppercase;color:var(--accent)}
+.hero h1{font-size:clamp(2.2rem,5.5vw,3.6rem);font-weight:400;margin:18px 0 10px}
+.hero .sub{font-size:1.1rem;color:var(--muted);max-width:520px;margin:0 auto}
+.cta-row{margin-top:36px;display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+.btn{display:inline-block;padding:14px 28px;border-radius:var(--radius);font-family:Verdana,sans-serif;font-size:.78rem;letter-spacing:.06em;text-transform:uppercase;text-decoration:none;transition:background .15s}
+.btn-primary{background:var(--accent);color:#fff}.btn-primary:hover{background:#4d2814}
+.btn-ghost{border:1px solid var(--ink);color:var(--ink)}.btn-ghost:hover{background:#fff}
+.stats{display:flex;justify-content:center;gap:56px;flex-wrap:wrap;padding:36px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.stat{text-align:center}.stat .num{font-size:2rem;color:var(--accent)}.stat .lbl{font-family:Verdana,sans-serif;font-size:.68rem;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+section{padding:72px 0}section.alt{background:var(--surface);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+h2{font-weight:400;font-size:1.9rem;margin-bottom:8px}.lead{color:var(--muted);max-width:560px;margin-bottom:36px}
+.menu-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px}
+.menu-card{border:1px solid var(--line);border-radius:var(--radius);padding:24px;background:var(--bg)}.menu-card h3{font-weight:400;font-size:1.1rem;margin-bottom:6px}.menu-card p{color:var(--muted);font-size:.95rem}
+.tag{display:inline-block;font-family:Verdana,sans-serif;font-size:.6rem;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);background:var(--accent-soft);border-radius:3px;padding:4px 8px;margin-bottom:12px}
+.outlets{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px}
+.outlet{border:1px solid var(--line);border-radius:var(--radius);padding:20px;background:var(--bg)}.outlet h3{font-weight:400;font-size:.95rem;margin-bottom:4px}.outlet p{font-size:.85rem;color:var(--muted)}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px}
+@media(max-width:720px){.contact-grid{grid-template-columns:1fr}}
+.info-line{display:flex;gap:12px;padding:14px 0;border-bottom:1px solid var(--line);align-items:baseline}
+.info-line .k{font-family:Verdana,sans-serif;font-size:.66rem;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);min-width:88px}
+form .field{margin-bottom:16px}form label{display:block;font-family:Verdana,sans-serif;font-size:.68rem;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-bottom:6px}
+form input,form textarea{width:100%;padding:12px 14px;border:1px solid var(--line);border-radius:var(--radius);background:var(--bg);font-family:Georgia,serif;font-size:1rem;color:var(--ink)}
+form input:focus,form textarea:focus{outline:2px solid var(--accent);outline-offset:1px}
+.wa-btn{display:flex;align-items:center;justify-content:center;gap:10px;margin-top:8px;background:#0e7a4d;color:#fff;border-radius:var(--radius);padding:14px 24px;text-decoration:none;font-family:Verdana,sans-serif;font-size:.78rem;letter-spacing:.05em;transition:background .15s}.wa-btn:hover{background:#0b6440}
+.wa-dot{width:9px;height:9px;border-radius:50%;background:#7de3ae}
+footer{padding:40px 0;border-top:1px solid var(--line);color:var(--muted);font-size:.85rem}footer .fine{margin-top:10px;font-size:.75rem}
+</style>
+</head>
+<body>
+<header><div class="wrap nav"><div class="brand">Demitasse <strong>Coffee</strong></div><nav><a href="#about">About</a><a href="#menu">Menu</a><a href="#outlets">Outlets</a><a href="#visit">Visit</a></nav></div></header>
+<div class="hero wrap">
+<p class="kicker">Specialty Coffee · Pune</p>
+<h1>Craft coffee, one small cup at a time.</h1>
+<p class="sub">Single-origin beans, slow-brewed cold brew, and the iced latte Pune keeps coming back for. Eight outlets and counting.</p>
+<div class="cta-row"><a class="btn btn-primary" href="#visit">Find your outlet</a><a class="btn btn-ghost" href="https://wa.me/919112266684" target="_blank" rel="noopener">Order on WhatsApp</a></div>
+</div>
+<div class="stats wrap">
+<div class="stat"><div class="num">4.7</div><div class="lbl">Google rating</div></div>
+<div class="stat"><div class="num">8+</div><div class="lbl">Outlets in Pune</div></div>
+<div class="stat"><div class="num">9 AM</div><div class="lbl">Open daily</div></div>
+</div>
+<section id="about"><div class="wrap">
+<h2>Born in Pune, brewed for Pune.</h2>
+<p class="lead">Demitasse started with a simple idea — a small cup of really good coffee. No gimmicks, just careful sourcing and patient brewing. Today it is one of Pune's fastest-growing specialty coffee names.</p>
+<div class="menu-grid">
+<div class="menu-card"><span class="tag">Signature</span><h3>Iced Americano</h3><p>A freshly brewed espresso shot served over ice. Clean, bold, refreshing.</p></div>
+<div class="menu-card"><span class="tag">Signature</span><h3>Iced Latte</h3><p>Smooth espresso poured over chilled milk with ice. The crowd favourite.</p></div>
+<div class="menu-card"><span class="tag">Signature</span><h3>Iced Mocha</h3><p>Espresso, chocolate, chilled milk and ice. A treat that drinks like dessert.</p></div>
+</div>
+</div></section>
+<section id="menu" class="alt"><div class="wrap">
+<h2>On the menu</h2>
+<p class="lead">A focused menu done well. Prices at the counter.</p>
+<div class="menu-grid">
+<div class="menu-card"><h3>Hot Coffee</h3><p>Americano, cappuccino, flat white, filter coffee — pulled fresh to order.</p></div>
+<div class="menu-card"><h3>Cold Brew</h3><p>Slow-steeped for 18 hours. Smooth, low-acid, and deeply flavoured.</p></div>
+<div class="menu-card"><h3>Iced Range</h3><p>Iced Americano, iced latte, iced mocha — the summer staples.</p></div>
+<div class="menu-card"><h3>Bites</h3><p>Croissants, cookies, and light snacks to go with your cup.</p></div>
+</div>
+</div></section>
+<section id="outlets"><div class="wrap">
+<h2>Find us across Pune</h2>
+<p class="lead">Eight outlets and growing. Walk in or order ahead on WhatsApp.</p>
+<div class="outlets">
+<div class="outlet"><h3>Law College Road</h3><p>Opens 9 AM · Closes 11:45 PM</p></div>
+<div class="outlet"><h3>Kondhwa</h3><p>Opens 9 AM</p></div>
+<div class="outlet"><h3>Hadapsar</h3><p>Opens 9 AM</p></div>
+<div class="outlet"><h3>Senapati Bapat Road</h3><p>Opens 9 AM</p></div>
+<div class="outlet"><h3>Baner / Balewadi</h3><p>Opens 9 AM</p></div>
+<div class="outlet"><h3>Bavdhan</h3><p>Opens 9 AM</p></div>
+<div class="outlet"><h3>Salunkhe Vihar Road</h3><p>Opens 9 AM</p></div>
+<div class="outlet"><h3>Aundh</h3><p>Opens 9 AM</p></div>
+</div>
+</div></section>
+<section id="visit" class="alt"><div class="wrap">
+<h2>Visit or order ahead</h2>
+<p class="lead">Walk in, or send a WhatsApp order and it will be ready at your nearest outlet.</p>
+<div class="contact-grid">
+<div>
+<div class="info-line"><span class="k">Phone</span><span>+91 91122 66684</span></div>
+<div class="info-line"><span class="k">Hours</span><span>9 AM to 11:45 PM daily</span></div>
+<div class="info-line"><span class="k">Outlets</span><span>8 locations across Pune</span></div>
+<a class="wa-btn" href="https://wa.me/919112266684" target="_blank" rel="noopener"><span class="wa-dot"></span>Order on WhatsApp</a>
+</div>
+<div>
+<form onsubmit="event.preventDefault(); this.nextElementSibling.hidden=false;">
+<div class="field"><label for="nm">Name</label><input id="nm" name="name" type="text" required></div>
+<div class="field"><label for="ph">Phone</label><input id="ph" name="phone" type="tel" required></div>
+<div class="field"><label for="out">Preferred outlet</label><input id="out" name="outlet" type="text"></div>
+<div class="field"><label for="msg">Your order</label><textarea id="msg" name="message" rows="3" required></textarea></div>
+<button class="btn btn-primary" type="submit">Send order</button>
+</form>
+<p hidden style="color:#0e7a4d;margin-top:12px;font-size:.9rem">Thanks — your order is noted. For a faster reply, use the WhatsApp button.</p>
+</div>
+</div>
+</div></section>
+<footer><div class="wrap"><div>Demitasse Coffee · Multiple outlets across Pune</div><div class="fine">Demo website created by SiteSeller Agent as a sample. Not the official Demitasse Coffee website.</div></div></footer>
+</body>
+</html>
