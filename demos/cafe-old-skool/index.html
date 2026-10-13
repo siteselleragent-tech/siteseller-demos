@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Café Old Skool — Aundh, Pune</title>
+<meta name="description" content="Café Old Skool, ITI Road Aundh. Cozy pet-friendly cafe with specialty coffee, breakfast and nachos. Open till 11:30 PM. Order on WhatsApp.">
+<style>
+:root{
+  --bg:#f7f2ea;--surface:#ffffff;--ink:#231c14;--muted:#6f6355;
+  --accent:#8a4b21;--accent-soft:#f0e3d2;--line:#e6dccb;--radius:6px;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:Georgia,'Times New Roman',serif;background:var(--bg);color:var(--ink);line-height:1.6;-webkit-font-smoothing:antialiased}
+.wrap{max-width:960px;margin:0 auto;padding:0 24px}
+header{border-bottom:1px solid var(--line);position:sticky;top:0;background:var(--bg);z-index:10}
+.nav{display:flex;align-items:center;justify-content:space-between;padding:18px 0}
+.brand{font-size:1.2rem}.brand strong{color:var(--accent)}
+.nav a{color:var(--muted);text-decoration:none;font-family:Verdana,Geneva,sans-serif;font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;margin-left:20px}
+.nav a:hover{color:var(--accent)}
+.hero{padding:84px 0 64px;text-align:center}
+.kicker{font-family:Verdana,Geneva,sans-serif;font-size:.7rem;letter-spacing:.18em;text-transform:uppercase;color:var(--accent)}
+.hero h1{font-size:clamp(2.2rem,6vw,3.6rem);font-weight:400;margin:18px 0 10px}
+.sub{font-size:1.15rem;color:var(--muted);max-width:540px;margin:0 auto}
+.cta-row{margin-top:34px;display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+.btn{display:inline-block;padding:14px 28px;border-radius:var(--radius);font-family:Verdana,Geneva,sans-serif;font-size:.78rem;letter-spacing:.06em;text-transform:uppercase;text-decoration:none}
+.btn-primary{background:var(--accent);color:#fff}
+.btn-primary:hover{background:#6d3a1a}
+.btn-ghost{border:1px solid var(--ink);color:var(--ink)}
+.btn-ghost:hover{background:#fff}
+.stats{display:flex;justify-content:center;gap:56px;flex-wrap:wrap;padding:34px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.stat{text-align:center}.stat .num{font-size:2rem;color:var(--accent)}
+.stat .lbl{font-family:Verdana,Geneva,sans-serif;font-size:.68rem;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+section{padding:64px 0}
+section.alt{background:var(--surface);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+h2{font-weight:400;font-size:1.8rem;margin-bottom:8px}
+.lead{color:var(--muted);max-width:560px;margin-bottom:32px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px}
+.card{border:1px solid var(--line);border-radius:var(--radius);padding:24px;background:var(--bg)}
+.card h3{font-weight:400;font-size:1.05rem;margin-bottom:6px}
+.card p{color:var(--muted);font-size:.93rem}
+.price{font-family:Verdana,Geneva,sans-serif;font-size:.72rem;color:var(--accent);letter-spacing:.05em}
+.tag{display:inline-block;font-family:Verdana,Geneva,sans-serif;font-size:.6rem;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);background:var(--accent-soft);border-radius:3px;padding:4px 8px;margin-bottom:12px}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px}
+@media(max-width:720px){.contact-grid{grid-template-columns:1fr}}
+.info-line{display:flex;gap:12px;padding:14px 0;border-bottom:1px solid var(--line);align-items:baseline}
+.info-line .k{font-family:Verdana,Geneva,sans-serif;font-size:.66rem;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);min-width:88px}
+form .field{margin-bottom:16px}
+form label{display:block;font-family:Verdana,Geneva,sans-serif;font-size:.68rem;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-bottom:6px}
+form input,form textarea{width:100%;padding:12px 14px;border:1px solid var(--line);border-radius:var(--radius);background:var(--bg);font-family:Georgia,serif;font-size:1rem;color:var(--ink)}
+form input:focus,form textarea:focus{outline:2px solid var(--accent);outline-offset:1px}
+.wa-btn{display:flex;align-items:center;justify-content:center;gap:10px;margin-top:8px;background:#0e7a4d;color:#fff;border-radius:var(--radius);padding:14px 24px;text-decoration:none;font-family:Verdana,Geneva,sans-serif;font-size:.78rem;letter-spacing:.05em}
+.wa-btn:hover{background:#0b6440}
+.wa-dot{width:9px;height:9px;border-radius:50%;background:#7de3ae}
+footer{padding:40px 0;border-top:1px solid var(--line);color:var(--muted);font-size:.85rem}
+footer .fine{margin-top:10px;font-size:.75rem}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <div class="brand">Café <strong>Old Skool</strong></div>
+    <nav><a href="#menu">Menu</a><a href="#visit">Visit</a></nav>
+  </div>
+</header>
+
+<div class="hero wrap">
+  <p class="kicker">ITI Road · Aundh, Pune</p>
+  <h1>Old-school coziness, done right.</h1>
+  <p class="sub">A tucked-away Aundh favourite for slow breakfasts, specialty coffee and long conversations. Pet-friendly, and open till late.</p>
+  <div class="cta-row">
+    <a class="btn btn-primary" href="#visit">Plan a visit</a>
+    <a class="btn btn-ghost" href="https://wa.me/919561859999" target="_blank" rel="noopener">Order on WhatsApp</a>
+  </div>
+</div>
+
+<div class="stats wrap">
+  <div class="stat"><div class="num">4.2</div><div class="lbl">Google rating</div></div>
+  <div class="stat"><div class="num">1,400+</div><div class="lbl">Google reviews</div></div>
+  <div class="stat"><div class="num">11:30 PM</div><div class="lbl">Open till, daily</div></div>
+</div>
+
+<section id="menu" class="alt">
+  <div class="wrap">
+    <h2>Crowd favourites</h2>
+    <p class="lead">Quick bites, big plates and serious coffee — reviewers keep coming back for breakfast and the nachos.</p>
+    <div class="grid">
+      <div class="card"><span class="tag">Bestseller</span><h3>Veg Nachos <span class="price">₹240</span></h3><p>Crispy tortilla chips topped with cheese, salsa and fresh veg toppings.</p></div>
+      <div class="card"><span class="tag">Bestseller</span><h3>Non-Veg Nachos <span class="price">₹270</span></h3><p>The same loaded plate, topped with chicken.</p></div>
+      <div class="card"><span class="tag">All day</span><h3>Breakfast &amp; Brunch</h3><p>Hearty morning plates that guests call some of the best in Aundh.</p></div>
+      <div class="card"><span class="tag">All day</span><h3>Specialty Coffee</h3><p>Dark, aromatic brews for unhurried mornings and late evenings.</p></div>
+      <div class="card"><span class="tag">Vibe</span><h3>Pet-friendly corner</h3><p>A quiet, hidden spot — bring your morning companion along.</p></div>
+      <div class="card"><span class="tag">Vibe</span><h3>Open till late</h3><p>One of the few Aundh cafes still serving past 11 PM.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="visit">
+  <div class="wrap">
+    <h2>Visit or order ahead</h2>
+    <p class="lead">C 1, Chaitraban Residency, right opposite Gold's Gym — easy to find once you know it's there.</p>
+    <div class="contact-grid">
+      <div>
+        <div class="info-line"><span class="k">Address</span><span>C 1, Chaitraban Residency, ITI Rd, opposite Gold's Gym, Sanewadi, Aundh, Pune 411067</span></div>
+        <div class="info-line"><span class="k">Hours</span><span>Opens 9:30 AM · open till 11:30 PM daily</span></div>
+        <div class="info-line"><span class="k">Phone</span><span>+91 95618 59999</span></div>
+        <a class="wa-btn" href="https://wa.me/919561859999" target="_blank" rel="noopener"><span class="wa-dot"></span>Message on WhatsApp</a>
+      </div>
+      <div>
+        <form onsubmit="event.preventDefault(); this.nextElementSibling.hidden=false;">
+          <div class="field"><label for="nm">Name</label><input id="nm" type="text" required></div>
+          <div class="field"><label for="ph">Phone</label><input id="ph" type="tel" required></div>
+          <div class="field"><label for="msg">Your order or message</label><textarea id="msg" rows="4" required></textarea></div>
+          <button class="btn btn-primary" type="submit">Send request</button>
+        </form>
+        <p hidden style="color:#0e7a4d;margin-top:12px;font-size:.9rem">Thanks — your request is noted. For a faster reply, use the WhatsApp button.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div>Café Old Skool · ITI Road, Aundh, Pune 411067</div>
+    <div class="fine">Demo website created by SiteSeller Agent as a sample. Not the official Café Old Skool website.</div>
+  </div>
+</footer>
+
+</body>
+</html>
