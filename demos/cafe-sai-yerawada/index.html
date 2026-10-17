@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cafe Sai — Shastrinagar, Yerawada, Pune</title>
+<meta name="description" content="Cafe Sai on Nagar Road, Yerawada, Pune. Pure-veg Rajasthani and Punjabi kitchen, thalis and chai. Order on WhatsApp.">
+<style>
+:root{
+  --bg:#faf6ef; --surface:#ffffff; --ink:#221c14; --muted:#6d6250;
+  --accent:#a15c1b; --accent-soft:#f4e6d4; --line:#e8e0d0; --radius:6px;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:Georgia,'Times New Roman',serif;background:var(--bg);color:var(--ink);line-height:1.6;-webkit-font-smoothing:antialiased}
+.wrap{max-width:960px;margin:0 auto;padding:0 24px}
+header{border-bottom:1px solid var(--line);position:sticky;top:0;background:var(--bg);z-index:10}
+.nav{display:flex;align-items:center;justify-content:space-between;padding:18px 0}
+.brand{font-size:1.2rem}
+.brand strong{color:var(--accent)}
+.nav a{color:var(--muted);text-decoration:none;font-family:Verdana,Geneva,sans-serif;font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;margin-left:20px}
+.nav a:hover{color:var(--accent)}
+.hero{padding:84px 0 64px;text-align:center}
+.hero .kicker{font-family:Verdana,Geneva,sans-serif;font-size:.7rem;letter-spacing:.18em;text-transform:uppercase;color:var(--accent)}
+.hero h1{font-size:clamp(2.2rem,6vw,3.6rem);font-weight:400;margin:18px 0 10px}
+.hero .sub{font-size:1.1rem;color:var(--muted);max-width:520px;margin:0 auto}
+.cta-row{margin-top:34px;display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+.btn{display:inline-block;padding:14px 28px;border-radius:var(--radius);font-family:Verdana,Geneva,sans-serif;font-size:.78rem;letter-spacing:.06em;text-transform:uppercase;text-decoration:none;transition:background .15s ease}
+.btn-primary{background:var(--accent);color:#fff}
+.btn-primary:hover{background:#82490f}
+.btn-ghost{border:1px solid var(--ink);color:var(--ink)}
+.btn-ghost:hover{background:#fff}
+.stats{display:flex;justify-content:center;gap:56px;flex-wrap:wrap;padding:34px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.stat{text-align:center}
+.stat .num{font-size:2rem;color:var(--accent)}
+.stat .lbl{font-family:Verdana,Geneva,sans-serif;font-size:.68rem;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+section{padding:68px 0}
+section.alt{background:var(--surface);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+h2{font-weight:400;font-size:1.9rem;margin-bottom:8px}
+.lead{color:var(--muted);max-width:560px;margin-bottom:34px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:20px}
+.card{border:1px solid var(--line);border-radius:var(--radius);padding:24px;background:var(--bg)}
+.card h3{font-weight:400;font-size:1.08rem;margin-bottom:6px}
+.card p{color:var(--muted);font-size:.95rem}
+.tag{display:inline-block;font-family:Verdana,Geneva,sans-serif;font-size:.62rem;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);background:var(--accent-soft);border-radius:3px;padding:4px 8px;margin-bottom:12px}
+.gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:16px;margin-top:34px}
+.tile{border:1px solid var(--line);border-radius:var(--radius);padding:34px 18px;text-align:center}
+.tile .t-title{font-family:Verdana,Geneva,sans-serif;font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin-top:10px}
+.t-mark{font-size:1.5rem;color:var(--accent)}
+.tile-a{background:#f5ead7}.tile-b{background:#f2e5cd}.tile-c{background:#f7eed9}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px}
+@media(max-width:720px){.contact-grid{grid-template-columns:1fr}}
+.info-line{display:flex;gap:12px;padding:14px 0;border-bottom:1px solid var(--line);align-items:baseline}
+.info-line .k{font-family:Verdana,Geneva,sans-serif;font-size:.66rem;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);min-width:88px}
+form .field{margin-bottom:16px}
+form label{display:block;font-family:Verdana,Geneva,sans-serif;font-size:.68rem;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-bottom:6px}
+form input,form textarea{width:100%;padding:12px 14px;border:1px solid var(--line);border-radius:var(--radius);background:var(--bg);font-family:Georgia,serif;font-size:1rem;color:var(--ink)}
+form input:focus,form textarea:focus{outline:2px solid var(--accent);outline-offset:1px}
+.wa-btn{display:flex;align-items:center;justify-content:center;gap:10px;margin-top:8px;background:#0e7a4d;color:#fff;border-radius:var(--radius);padding:14px 24px;text-decoration:none;font-family:Verdana,Geneva,sans-serif;font-size:.78rem;letter-spacing:.05em;transition:background .15s ease}
+.wa-btn:hover{background:#0b6440}
+.wa-dot{width:9px;height:9px;border-radius:50%;background:#7de3ae}
+footer{padding:38px 0;border-top:1px solid var(--line);color:var(--muted);font-size:.85rem}
+footer .fine{margin-top:10px;font-size:.75rem}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap nav">
+    <div class="brand">Cafe <strong>Sai</strong></div>
+    <nav><a href="#menu">Menu</a><a href="#visit">Visit</a></nav>
+  </div>
+</header>
+
+<div class="hero wrap">
+  <p class="kicker">Nagar Road · Shastri Nagar Chowk · Yerawada</p>
+  <h1>Pure-veg comfort food on Nagar Road.</h1>
+  <p class="sub">A neighbourhood pure-veg kitchen serving Rajasthani and Punjabi favourites — thalis, curries, chai and all-day snacks.</p>
+  <div class="cta-row">
+    <a class="btn btn-primary" href="#visit">Visit us</a>
+    <a class="btn btn-ghost" href="https://wa.me/919970933664" target="_blank" rel="noopener">Order on WhatsApp</a>
+  </div>
+</div>
+
+<div class="stats wrap">
+  <div class="stat"><div class="num">4.1</div><div class="lbl">Google rating</div></div>
+  <div class="stat"><div class="num">700+</div><div class="lbl">Google reviews</div></div>
+  <div class="stat"><div class="num">11 AM</div><div class="lbl">Doors open daily</div></div>
+</div>
+
+<section id="menu">
+  <div class="wrap">
+    <h2>The kitchen</h2>
+    <p class="lead">Fully vegetarian, cooked fresh through the day.</p>
+    <div class="grid">
+      <div class="card"><span class="tag">Favourite</span><h3>Veg Thalis</h3><p>Filling plates with rotis, rice, curries, dal and accompaniments.</p></div>
+      <div class="card"><span class="tag">Favourite</span><h3>North Indian Curries</h3><p>Paneer, dal and seasonal sabzi, in classic Punjabi style.</p></div>
+      <div class="card"><span class="tag">Signature</span><h3>Rajasthani Specials</h3><p>Regional favourites on rotation, made the home-style way.</p></div>
+      <div class="card"><span class="tag">All day</span><h3>Chai &amp; Snacks</h3><p>Tea, coffee and quick bites from opening till close.</p></div>
+    </div>
+    <div class="gallery">
+      <div class="tile tile-a"><div class="t-mark">Thali</div><div class="t-title">Daily thali</div></div>
+      <div class="tile tile-b"><div class="t-mark">Curry</div><div class="t-title">Paneer &amp; dal</div></div>
+      <div class="tile tile-c"><div class="t-mark">Chai</div><div class="t-title">Cutting chai</div></div>
+    </div>
+  </div>
+</section>
+
+<section id="visit" class="alt">
+  <div class="wrap">
+    <h2>Visit or order ahead</h2>
+    <p class="lead">Call ahead for large orders, or send a WhatsApp message and it will be packed and ready.</p>
+    <div class="contact-grid">
+      <div>
+        <div class="info-line"><span class="k">Address</span><span>191/A, Nagar Road, Shastri Nagar Chowk, Shastrinagar, Yerawada, Pune 411006</span></div>
+        <div class="info-line"><span class="k">Hours</span><span>Opens 11 AM daily</span></div>
+        <div class="info-line"><span class="k">Phone</span><span>+91 99709 33664</span></div>
+        <a class="wa-btn" href="https://wa.me/919970933664" target="_blank" rel="noopener"><span class="wa-dot"></span>Message on WhatsApp</a>
+      </div>
+      <div>
+        <form onsubmit="event.preventDefault(); this.nextElementSibling.hidden=false;">
+          <div class="field"><label for="nm">Name</label><input id="nm" type="text" required></div>
+          <div class="field"><label for="ph">Phone</label><input id="ph" type="tel" required></div>
+          <div class="field"><label for="msg">Your order or table request</label><textarea id="msg" rows="4" required></textarea></div>
+          <button class="btn btn-primary" type="submit">Send request</button>
+        </form>
+        <p hidden style="color:#0e7a4d;margin-top:12px;font-size:.9rem">Thanks — your request is noted. For a faster reply, use the WhatsApp button.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div>Cafe Sai · Nagar Road, Shastrinagar, Yerawada, Pune 411006</div>
+    <div class="fine">Demo website created by SiteSeller Agent as a sample. Not the official Cafe Sai website.</div>
+  </div>
+</footer>
+</body>
+</html>
