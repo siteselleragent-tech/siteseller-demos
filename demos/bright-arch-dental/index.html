@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dr Amir's Bright Arch Dental Clinic — Kondhwa, Pune</title>
+<meta name="description" content="Dr Amir's Bright Arch Dental Clinic, Kondhwa, Pune. Friendly dental clinic rated 4.9 on Google. Book on WhatsApp.">
+<style>
+:root{
+  --bg:#f8f7fb; --surface:#ffffff; --ink:#1c1d24; --muted:#63656f;
+  --accent:#3d4f8c; --accent-soft:#e2e6f4; --line:#e3e2ea; --radius:6px;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:Georgia,'Times New Roman',serif;background:var(--bg);color:var(--ink);line-height:1.6;-webkit-font-smoothing:antialiased}
+.wrap{max-width:960px;margin:0 auto;padding:0 24px}
+header{border-bottom:1px solid var(--line);position:sticky;top:0;background:var(--bg);z-index:10}
+.nav{display:flex;align-items:center;justify-content:space-between;padding:18px 0}
+.brand{font-size:1.2rem}
+.brand strong{color:var(--accent)}
+.nav a{color:var(--muted);text-decoration:none;font-family:Verdana,Geneva,sans-serif;font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;margin-left:20px}
+.nav a:hover{color:var(--accent)}
+.hero{padding:84px 0 64px;text-align:center}
+.hero .kicker{font-family:Verdana,Geneva,sans-serif;font-size:.7rem;letter-spacing:.18em;text-transform:uppercase;color:var(--accent)}
+.hero h1{font-size:clamp(2.2rem,6vw,3.6rem);font-weight:400;margin:18px 0 10px}
+.hero .sub{font-size:1.1rem;color:var(--muted);max-width:520px;margin:0 auto}
+.cta-row{margin-top:34px;display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+.btn{display:inline-block;padding:14px 28px;border-radius:var(--radius);font-family:Verdana,Geneva,sans-serif;font-size:.78rem;letter-spacing:.06em;text-transform:uppercase;text-decoration:none;transition:background .15s ease}
+.btn-primary{background:var(--accent);color:#fff}
+.btn-primary:hover{background:#2e3d72}
+.btn-ghost{border:1px solid var(--ink);color:var(--ink)}
+.btn-ghost:hover{background:#fff}
+.stats{display:flex;justify-content:center;gap:56px;flex-wrap:wrap;padding:34px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.stat{text-align:center}
+.stat .num{font-size:2rem;color:var(--accent)}
+.stat .lbl{font-family:Verdana,Geneva,sans-serif;font-size:.68rem;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+section{padding:68px 0}
+section.alt{background:var(--surface);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+h2{font-weight:400;font-size:1.9rem;margin-bottom:8px}
+.lead{color:var(--muted);max-width:560px;margin-bottom:34px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:20px}
+.card{border:1px solid var(--line);border-radius:var(--radius);padding:24px;background:var(--bg)}
+.card h3{font-weight:400;font-size:1.08rem;margin-bottom:6px}
+.card p{color:var(--muted);font-size:.95rem}
+.tag{display:inline-block;font-family:Verdana,Geneva,sans-serif;font-size:.62rem;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);background:var(--accent-soft);border-radius:3px;padding:4px 8px;margin-bottom:12px}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px}
+@media(max-width:720px){.contact-grid{grid-template-columns:1fr}}
+.info-line{display:flex;gap:12px;padding:14px 0;border-bottom:1px solid var(--line);align-items:baseline}
+.info-line .k{font-family:Verdana,Geneva,sans-serif;font-size:.66rem;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);min-width:88px}
+form .field{margin-bottom:16px}
+form label{display:block;font-family:Verdana,Geneva,sans-serif;font-size:.68rem;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-bottom:6px}
+form input,form textarea{width:100%;padding:12px 14px;border:1px solid var(--line);border-radius:var(--radius);background:var(--bg);font-family:Georgia,serif;font-size:1rem;color:var(--ink)}
+form input:focus,form textarea:focus{outline:2px solid var(--accent);outline-offset:1px}
+.wa-btn{display:flex;align-items:center;justify-content:center;gap:10px;margin-top:8px;background:#0e7a4d;color:#fff;border-radius:var(--radius);padding:14px 24px;text-decoration:none;font-family:Verdana,Geneva,sans-serif;font-size:.78rem;letter-spacing:.05em;transition:background .15s ease}
+.wa-btn:hover{background:#0b6440}
+.wa-dot{width:9px;height:9px;border-radius:50%;background:#7de3ae}
+footer{padding:38px 0;border-top:1px solid var(--line);color:var(--muted);font-size:.85rem}
+footer .fine{margin-top:10px;font-size:.75rem}
+a.ig{color:var(--accent);text-decoration:none}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap nav">
+    <div class="brand">Dr Amir's <strong>Bright Arch</strong> Dental</div>
+    <nav><a href="#services">Services</a><a href="#visit">Visit</a></nav>
+  </div>
+</header>
+
+<div class="hero wrap">
+  <p class="kicker">Mitha Nagar · Kondhwa · Pune</p>
+  <h1>Friendly, careful dentistry in Kondhwa.</h1>
+  <p class="sub">A neighbourhood dental clinic that takes time with every patient — from routine checkups to full treatment plans.</p>
+  <div class="cta-row">
+    <a class="btn btn-primary" href="#visit">Book a visit</a>
+    <a class="btn btn-ghost" href="https://wa.me/919082951414" target="_blank" rel="noopener">Book on WhatsApp</a>
+  </div>
+</div>
+
+<div class="stats wrap">
+  <div class="stat"><div class="num">4.9</div><div class="lbl">Google rating</div></div>
+  <div class="stat"><div class="num">130+</div><div class="lbl">Google reviews</div></div>
+  <div class="stat"><div class="num">11 AM</div><div class="lbl">Opens daily</div></div>
+</div>
+
+<section id="services">
+  <div class="wrap">
+    <h2>What the clinic handles</h2>
+    <p class="lead">Every visit starts with a proper checkup and a clear explanation — no rushed treatment, no surprises.</p>
+    <div class="grid">
+      <div class="card"><span class="tag">Routine</span><h3>Checkups &amp; Cleanings</h3><p>Regular exams, scaling and polishing to keep small problems small.</p></div>
+      <div class="card"><span class="tag">Restorative</span><h3>Fillings &amp; Repairs</h3><p>Tooth-coloured fillings and restorations for cavities and chips.</p></div>
+      <div class="card"><span class="tag">Restorative</span><h3>Root Canal Therapy</h3><p>Careful, comfortable endodontic treatment to save natural teeth.</p></div>
+      <div class="card"><span class="tag">Family</span><h3>Kids &amp; Family Dentistry</h3><p>Gentle care for all ages, with appointments that fit around school and work.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="visit" class="alt">
+  <div class="wrap">
+    <h2>Book an appointment</h2>
+    <p class="lead">Walk in, call, or send a WhatsApp message with your preferred time.</p>
+    <div class="contact-grid">
+      <div>
+        <div class="info-line"><span class="k">Address</span><span>Shop no 2, Al Safa Manzil, Mitha Nagar Lane 4, near Umar Masjid, Meeta Nagar, Kondhwa, Pune 411048</span></div>
+        <div class="info-line"><span class="k">Hours</span><span>Opens 11 AM daily</span></div>
+        <div class="info-line"><span class="k">Phone</span><span>+91 90829 51414</span></div>
+        <div class="info-line"><span class="k">Instagram</span><span><a class="ig" href="https://www.instagram.com/dr.amir_bright_arch" target="_blank" rel="noopener">@dr.amir_bright_arch</a></span></div>
+        <a class="wa-btn" href="https://wa.me/919082951414" target="_blank" rel="noopener"><span class="wa-dot"></span>Message on WhatsApp</a>
+      </div>
+      <div>
+        <form onsubmit="event.preventDefault(); this.nextElementSibling.hidden=false;">
+          <div class="field"><label for="nm">Name</label><input id="nm" type="text" required></div>
+          <div class="field"><label for="ph">Phone</label><input id="ph" type="tel" required></div>
+          <div class="field"><label for="msg">What do you need help with?</label><textarea id="msg" rows="4" required></textarea></div>
+          <button class="btn btn-primary" type="submit">Request appointment</button>
+        </form>
+        <p hidden style="color:#0e7a4d;margin-top:12px;font-size:.9rem">Thanks — your request is noted. For a faster reply, use the WhatsApp button.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div>Dr Amir's Bright Arch Dental Clinic · Kondhwa, Pune 411048</div>
+    <div class="fine">Demo website created by SiteSeller Agent as a sample. Not the official clinic website.</div>
+  </div>
+</footer>
+</body>
+</html>
