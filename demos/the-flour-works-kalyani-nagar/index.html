@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Flour Works — Kalyani Nagar | European Café & Pizzeria</title>
+<style>
+  :root{--bg:#faf6f0;--ink:#2b2320;--accent:#c05621;--soft:#f0e6d8;--card:#ffffff;}
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{font-family:Georgia,'Times New Roman',serif;background:var(--bg);color:var(--ink);line-height:1.6}
+  .wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+  header{position:relative;min-height:78vh;display:flex;align-items:center;justify-content:center;text-align:center;color:#fff;overflow:hidden}
+  header img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:brightness(.62)}
+  .hero{position:relative;z-index:2;padding:60px 20px;max-width:820px}
+  .hero h1{font-size:clamp(2.4rem,6vw,4rem);letter-spacing:1px}
+  .hero p.sub{font-size:1.25rem;margin-top:10px;font-style:italic;color:#f5e8d8}
+  .stars{color:#f4b942;font-size:1.1rem;margin-top:14px;font-family:system-ui,sans-serif}
+  .stars span{color:#f5e8d8;font-size:.95rem}
+  .btns{margin-top:26px;display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+  .btn{display:inline-block;padding:14px 26px;border-radius:999px;text-decoration:none;font-family:system-ui,sans-serif;font-weight:600;font-size:1rem;transition:transform .15s}
+  .btn:hover{transform:translateY(-2px)}
+  .btn.wa{background:#25D366;color:#fff}
+  .btn.call{background:#fff;color:var(--ink)}
+  h2{font-size:2rem;margin-bottom:8px;color:var(--accent)}
+  section{padding:56px 0}
+  .about{background:var(--soft)}
+  .about p{max-width:760px;font-size:1.05rem}
+  .tags{margin-top:18px;display:flex;gap:10px;flex-wrap:wrap;font-family:system-ui,sans-serif}
+  .tag{background:#fff;border:1px solid #e2d5c3;border-radius:999px;padding:6px 14px;font-size:.85rem}
+  .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px;margin-top:26px}
+  .card{background:var(--card);border-radius:14px;padding:22px;box-shadow:0 4px 14px rgba(43,35,32,.08)}
+  .card h3{font-size:1.1rem;color:var(--accent);margin-bottom:8px}
+  .card p{font-size:.95rem;font-family:system-ui,sans-serif}
+  .gallery-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:26px}
+  .gallery-grid img{width:100%;height:240px;object-fit:cover;border-radius:12px}
+  .quote{background:var(--card);border-left:4px solid var(--accent);border-radius:0 12px 12px 0;padding:20px 24px;margin-top:18px;box-shadow:0 3px 10px rgba(43,35,32,.06)}
+  .quote p{font-style:italic}
+  .quote cite{display:block;margin-top:8px;font-size:.85rem;font-style:normal;color:#7a6a5f;font-family:system-ui,sans-serif}
+  .visit{background:#2b2320;color:#f5e8d8}
+  .visit h2{color:#f4b942}
+  .visit-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:24px;margin-top:22px}
+  .visit h3{font-size:1.1rem;color:#f4b942;margin-bottom:8px}
+  .visit p,.visit a,.visit li{font-family:system-ui,sans-serif;font-size:.95rem;color:#f5e8d8}
+  .visit ul{list-style:none;margin-top:6px}
+  .visit ul li{padding:4px 0;border-bottom:1px dashed #4a4038}
+  .visit a{text-decoration:none;color:#fff;box-shadow:none}
+  form{margin-top:22px;background:#3a322c;padding:24px;border-radius:14px}
+  form h3{color:#f4b942;font-family:system-ui,sans-serif;font-size:1.05rem;margin-bottom:12px}
+  input,textarea{width:100%;padding:12px;margin:8px 0;border-radius:8px;border:1px solid #55543f;background:#463e34;color:#fff;font-family:system-ui,sans-serif;font-size:.95rem}
+  textarea{min-height:70px}
+  button{background:#c05621;color:#fff;border:none;padding:13px 26px;border-radius:8px;font-weight:600;font-family:system-ui,sans-serif;font-size:1rem;cursor:pointer;margin-top:6px}
+  footer{padding:26px 0;text-align:center;font-size:.8rem;color:#7a6a5f;font-family:system-ui,sans-serif}
+  @media(max-width:720px){.gallery-grid{grid-template-columns:1fr 1fr}.gallery-grid img{height:150px}}
+</style>
+</head>
+<body>
+
+<header>
+  <img src="https://media.base44.com/images/public/6ac0473b6b936a67fa6c3022/b02c41ba0_generated_image.png" alt="Café interior">
+  <div class="hero">
+    <h1>The Flour Works</h1>
+    <p class="sub">Modern European Café &amp; Pizzeria — Kalyani Nagar, Pune</p>
+    <div class="stars">★★★★ <span>4.2 on Google · 6,300+ reviews</span></div>
+    <div class="btns">
+      <a class="btn wa" href="https://wa.me/91888019696" target="_blank">💬 WhatsApp Us</a>
+      <a class="btn call" href="tel:+91888019696">📞 Call +91 88880 19696</a>
+    </div>
+  </div>
+</header>
+
+<section class="about">
+  <div class="wrap">
+    <h2>A Kalyani Nagar Favourite</h2>
+    <p>Tucked into a quiet corner of Kalyani Nagar, The Flour Works is a brightly lit, casual all-day café known for its generous breakfast spreads, European and Italian plates, fresh juices and tempting pastries. Come for morning coffee, stay for dinner — the kitchen is open from dawn well past midnight.</p>
+    <div class="tags">
+      <span class="tag">🍳 All-day breakfast</span>
+      <span class="tag">🍕 Signature pizzas</span>
+      <span class="tag">🍝 Pink sauce pasta</span>
+      <span class="tag">☕ Famous hot chocolate</span>
+      <span class="tag">🌿 Outdoor seating</span>
+      <span class="tag">🐾 Pet friendly</span>
+      <span class="tag">🎶 Live music evenings</span>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>What's on the table</h2>
+    <div class="cards">
+      <div class="card"><h3>Breakfast &amp; Brunch</h3><p>Fluffy omelettes, blueberry pancakes, veg club sandwiches and avo toasts — served from 7 AM.</p></div>
+      <div class="card"><h3>Pizza &amp; Pasta</h3><p>Italian-style pizzas, pink sauce pasta, cheese risotto and mini burgers for lighter bites.</p></div>
+      <div class="card"><h3>Desserts &amp; Coffee</h3><p>Blueberry pancakes, carrot cake, pastries, thick hot chocolate and fresh juices.</p></div>
+      <div class="card"><h3>Book a Table</h3><p>Evenings fill up fast — reserve ahead in seconds from this page, or ping us on WhatsApp.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="about">
+  <div class="wrap">
+    <h2>A little flavour of us</h2>
+    <div class="gallery-grid">
+      <img src="https://media.base44.com/images/public/6ac0473b6b936a67fa6c3022/a2cfd2d14_generated_image.png" alt="Signature pizza">
+      <img src="https://media.base44.com/images/public/6ac0473b6b936a67fa6c3022/d178bf8d5_generated_image.png" alt="Blueberry pancakes and hot chocolate">
+      <img src="https://media.base44.com/images/public/6ac0473b6b936a67fa6c3022/6e262b731_generated_image.png" alt="Outdoor terrace in the evening">
+    </div>
+  </div>
+</section>
+
+<section id="reviews">
+  <div class="wrap">
+    <h2>What guests say</h2>
+    <div class="quote"><p>“This place truly stands out for its prime location, featuring a beautiful outdoor setup right in the heart of Kalyani Nagar — perfect for relaxed evenings and casual catch-ups.”</p><cite>— Rishabh Gupta, Google review</cite></div>
+    <div class="quote"><p>“We stumbled upon this place and it instantly gave us a cozy, welcoming vibe… Every dish was absolutely incredible and full of flavor.”</p><cite>— Shubham Shinde, Google review</cite></div>
+    <div class="quote"><p>“The brunch is solid. The coffee knows what it’s doing. But the atmosphere is what earns its place in your memory.”</p><cite>— Dr. Aman Bhonsle, Google review</cite></div>
+  </div>
+</section>
+
+<section class="visit">
+  <div class="wrap">
+    <h2>Visit us</h2>
+    <div class="visit-grid">
+      <div>
+        <h3>Location</h3>
+        <p>No 18, Nirvana Commercial, 3, North Ave,<br>near ICICI Bank, Kalyani Nagar,<br>Pune, Maharashtra 411006</p>
+        <p style="margin-top:10px"><a href="https://maps.google.com/?q=The+Flour+Works+Kalyani+Nagar+Pune" target="_blank">🗺️ Get directions</a></p>
+      </div>
+      <div>
+        <h3>Hours</h3>
+        <ul>
+          <li>Open every day · 7:00 AM – 12:30 AM</li>
+          <li>Breakfast from 7 AM daily</li>
+          <li>Live music on select evenings</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Contact</h3>
+        <ul>
+          <li>📞 <a href="tel:+91888019696">+91 88880 19696</a></li>
+          <li>💬 <a href="https://wa.me/91888019696" target="_blank">WhatsApp reservations</a></li>
+        </ul>
+      </div>
+    </div>
+    <form onsubmit="alert('Thanks! Your reservation request is ready — press send on WhatsApp and we\\'ll confirm shortly.');return false;">
+      <h3>Reserve a table</h3>
+      <input type="text" placeholder="Your name" required>
+      <input type="text" placeholder="Date & time (e.g. Sat 7:30 PM)" required>
+      <input type="number" placeholder="Number of guests" min="1" required>
+      <button type="submit">Request reservation</button>
+    </form>
+  </div>
+</section>
+
+<footer>© 2026 The Flour Works, Kalyani Nagar · Demo website created as a free sample for The Flour Works — for inquiries about this site, contact SiteSeller Agent, Solitaire Business Hub, Viman Nagar, Pune.</footer>
+
+</body>
+</html>
