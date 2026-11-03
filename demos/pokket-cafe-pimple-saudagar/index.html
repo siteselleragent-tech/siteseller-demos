@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pokket Cafe, Pimple Saudagar — Pure Veg Cafe, Pizza, Coffee &amp; Party Bookings</title>
+<meta name="description" content="Pokket Cafe, Bhumi Allium, Pimple Saudagar, Pune. Pure veg cafe for pizza, pasta, burgers and cold coffee. 4.2 on Google with 937 reviews. Kids birthday parties hosted.">
+<style>
+  :root{--ink:#1e2320;--teal:#0f6b57;--teal-dark:#0a4d3e;--mint:#eafaf4;--lime:#c8f06a;--muted:#6b7b74;}
+  *{margin:0;padding:0;box-sizing:border-box;font-family:'Segoe UI',system-ui,-apple-system,sans-serif;}
+  body{background:#fbfffd;color:var(--ink);line-height:1.65;}
+  .wrap{max-width:1080px;margin:0 auto;padding:0 20px;}
+  header{background:linear-gradient(150deg,#0a4d3e,#0f6b57 55%,#1c9273);color:#fff;padding:70px 0 76px;text-align:center;}
+  .badge{display:inline-block;background:rgba(200,240,106,.22);border:1px solid rgba(200,240,106,.55);color:#eafdc0;padding:5px 15px;border-radius:999px;font-size:.82rem;letter-spacing:.6px;font-weight:600;}
+  header h1{font-size:clamp(2.2rem,6vw,3.4rem);margin:18px 0 10px;letter-spacing:-.5px;}
+  header .sub{color:#d5f2e8;font-size:1.12rem;max-width:630px;margin:0 auto;}
+  .rating{display:inline-flex;align-items:center;gap:10px;margin-top:22px;background:rgba(255,255,255,.14);padding:10px 18px;border-radius:12px;font-size:.95rem;}
+  .stars{color:#ffd75e;letter-spacing:2px;}
+  .cta-row{margin-top:28px;display:flex;gap:14px;justify-content:center;flex-wrap:wrap;}
+  .btn{display:inline-block;text-decoration:none;padding:14px 26px;border-radius:12px;font-weight:700;transition:transform .15s;}
+  .btn:hover{transform:translateY(-2px);}
+  .btn-light{background:var(--lime);color:#14310f;}
+  .btn-line{border:2px solid rgba(255,255,255,.7);color:#fff;}
+  .btn-solid{background:var(--teal);color:#fff;border:none;cursor:pointer;padding:15px 28px;border-radius:12px;font-weight:700;font-size:1rem;}
+  section{padding:66px 0;}
+  .kicker{text-align:center;color:var(--teal);text-transform:uppercase;letter-spacing:2.5px;font-size:.78rem;font-weight:800;}
+  h2{font-size:clamp(1.7rem,4vw,2.3rem);text-align:center;margin:10px 0 30px;letter-spacing:-.4px;}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:22px;}
+  .card{background:#fff;border-radius:18px;padding:28px;box-shadow:0 8px 22px rgba(15,107,87,.09);border-top:4px solid var(--lime);}
+  .card .em{font-size:2rem;display:block;margin-bottom:10px;}
+  .card h3{font-size:1.1rem;margin-bottom:8px;color:var(--teal-dark);}
+  .card p{color:var(--muted);font-size:.95rem;}
+  .menu{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px;}
+  .dish{display:flex;justify-content:space-between;gap:14px;background:#fff;border-radius:14px;padding:18px 22px;box-shadow:0 6px 16px rgba(15,107,87,.07);border-left:4px solid var(--teal);}
+  .dish h3{font-size:1rem;margin-bottom:3px;}
+  .dish p{font-size:.85rem;color:var(--muted);}
+  .tag{background:var(--mint);color:var(--teal-dark);font-size:.72rem;font-weight:800;padding:3px 9px;border-radius:999px;white-space:nowrap;align-self:flex-start;}
+  .dark{background:var(--teal-dark);color:#fff;}
+  .dark h2{color:#fff;}
+  .dark .kicker{color:var(--lime);}
+  .info-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:26px;}
+  .info h3{color:var(--lime);text-transform:uppercase;font-size:.92rem;letter-spacing:.6px;margin-bottom:6px;}
+  .info p,.info a{color:#cdeee2;font-size:.96rem;text-decoration:none;}
+  .info a:hover{color:#fff;text-decoration:underline;}
+  .party{background:linear-gradient(140deg,#f0fbf6,#e0f6ec);border-radius:22px;padding:38px 30px;text-align:center;}
+  .party h2{margin-bottom:12px;}
+  .party p{color:#3f5d53;max-width:680px;margin:0 auto 22px;}
+  form{display:grid;gap:14px;max-width:580px;margin:0 auto;background:#fff;padding:32px;border-radius:18px;box-shadow:0 8px 22px rgba(15,107,87,.09);}
+  label{font-weight:700;font-size:.88rem;color:var(--teal-dark);}
+  input,textarea,select{width:100%;padding:13px 14px;border:1.5px solid #cfe6dd;border-radius:10px;font-size:1rem;background:#f7fdfa;font-family:inherit;}
+  input:focus,textarea:focus,select:focus{outline:2px solid var(--teal);}
+  .wa-float{position:fixed;right:22px;bottom:22px;width:58px;height:58px;border-radius:50%;background:#25d366;color:#fff;display:flex;align-items:center;justify-content:center;font-size:1.6rem;text-decoration:none;box-shadow:0 8px 22px rgba(0,0,0,.26);z-index:60;}
+  footer{text-align:center;padding:32px 0;font-size:.82rem;color:var(--muted);border-top:1px solid #e4f1eb;}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <span class="badge">🌿 100% PURE VEG · PIMPLE SAUDAGAR</span>
+    <h1>Pokket Cafe</h1>
+    <p class="sub">Pizza, pasta, burgers and the cold coffee people come back for — served in a bright, easy-going cafe in Bhumi Allium.</p>
+    <div class="rating"><span class="stars">★★★★☆</span> <strong>4.2</strong> on Google · 937 reviews</div>
+    <div class="cta-row">
+      <a class="btn btn-light" href="#menu">See the Favourites</a>
+      <a class="btn btn-line" href="#book">Book a Birthday Party</a>
+    </div>
+  </div>
+</header>
+
+<section id="why">
+  <div class="wrap">
+    <p class="kicker">Why Pokket</p>
+    <h2>A pure-veg cafe built for groups and celebrations</h2>
+    <div class="grid">
+      <div class="card"><span class="em">🍕</span><h3>Pizza &amp; Pasta Done Right</h3><p>Farm Fresh Pizza, white sauce pasta and Thai curry all show up again and again in our reviews.</p></div>
+      <div class="card"><span class="em">🥤</span><h3>The Cold Coffee</h3><p>Guests call our cold coffee and spicy burgers a must-try. Come find out why.</p></div>
+      <div class="card"><span class="em">🎂</span><h3>Kids' Birthday Parties</h3><p>We host celebrations with party management, warm food and a team that keeps things running.</p></div>
+      <div class="card"><span class="em">🌿</span><h3>Entirely Vegetarian</h3><p>A fully pure-veg kitchen, so the whole family can order freely.</p></div>
+      <div class="card"><span class="em">🍟</span><h3>Snacks &amp; Small Plates</h3><p>Momos, peri peri fries and quick bites for the evening crowd.</p></div>
+      <div class="card"><span class="em">🍫</span><h3>Sizzling Brownie</h3><p>The dessert that ends most of our tables. Best shared, honestly.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="menu" style="background:var(--mint)">
+  <div class="wrap">
+    <p class="kicker">Most ordered</p>
+    <h2>What Pimple Saudagar orders</h2>
+    <div class="menu">
+      <div class="dish"><div><h3>Farm Fresh Pizza</h3><p>Loaded veg pizza, straight from the oven</p></div><span class="tag">Popular</span></div>
+      <div class="dish"><div><h3>White Sauce Pasta</h3><p>Creamy, cheesy, comfort in a bowl</p></div><span class="tag">Popular</span></div>
+      <div class="dish"><div><h3>Thick Cold Coffee</h3><p>The one our regulars name first</p></div><span class="tag">Must try</span></div>
+      <div class="dish"><div><h3>Spicy Veg Burger</h3><p>Crunchy patty, punchy sauce</p></div><span class="tag">Must try</span></div>
+      <div class="dish"><div><h3>Momos</h3><p>Steamed and tossed, with a hot chutney</p></div><span class="tag">Evening</span></div>
+      <div class="dish"><div><h3>Peri Peri Fries</h3><p>Golden fries, peri peri dust</p></div><span class="tag">Sharing</span></div>
+      <div class="dish"><div><h3>Hawaiian Pizza</h3><p>Sweet-savoury, a table favourite</p></div><span class="tag">Popular</span></div>
+      <div class="dish"><div><h3>Sizzling Brownie</h3><p>Hot plate, cold scoop</p></div><span class="tag">Dessert</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="reviews">
+  <div class="wrap">
+    <p class="kicker">Guest reviews</p>
+    <h2>4.2 stars from 937 Google reviews</h2>
+    <div class="grid">
+      <div class="card"><p>"Food, arrangement, service, staff — everything was just perfect."</p><p style="margin-top:12px;font-size:.84rem;font-weight:700;color:var(--teal)">Google review</p></div>
+      <div class="card"><p>"It's a veg-only place. Cold coffee and spicy burgers are a must try."</p><p style="margin-top:12px;font-size:.84rem;font-weight:700;color:var(--teal)">Google review</p></div>
+      <div class="card"><p>"We celebrated a kids' birthday party here — the staff guided us through the planning and made it stress-free."</p><p style="margin-top:12px;font-size:.84rem;font-weight:700;color:var(--teal)">Google review</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="book">
+  <div class="wrap">
+    <div class="party">
+      <p class="kicker">Celebrations</p>
+      <h2>Birthdays, get-togethers, team lunches</h2>
+      <p>We plan kids' birthday parties and group bookings with food, seating and on-the-day coordination handled by our team. Tell us the date and headcount and we'll come back with options.</p>
+      <a class="btn btn-solid" href="#enquire">Plan My Celebration</a>
+    </div>
+  </div>
+</section>
+
+<section class="dark" id="visit">
+  <div class="wrap">
+    <p class="kicker">Find us</p>
+    <h2>Ground floor, Bhumi Allium</h2>
+    <div class="info-grid">
+      <div class="info"><h3>Address</h3><p>Shop No. B-12, Ground Floor, Bhumi Allium Society, Prassana Colony, Pimple Saudagar, Pimpri-Chinchwad, Maharashtra 411017</p></div>
+      <div class="info"><h3>Hours</h3><p>Open every day<br>10:00 AM – 11:00 PM</p></div>
+      <div class="info"><h3>Call or WhatsApp</h3><p><a href="tel:+917249313379">+91 72493 13379</a><br><a href="https://wa.me/917249313379">Message us on WhatsApp</a></p></div>
+      <div class="info"><h3>Good to know</h3><p>Pure veg kitchen · Dine-in and takeaway · Party bookings on request</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="enquire">
+  <div class="wrap">
+    <p class="kicker">Get in touch</p>
+    <h2>Book a table or ask about a party</h2>
+    <form onsubmit="event.preventDefault();this.querySelector('.formmsg').style.display='block';">
+      <div><label for="name">Your name</label><input id="name" required placeholder="Name"></div>
+      <div><label for="phone">Phone / WhatsApp</label><input id="phone" required placeholder="+91"></div>
+      <div><label for="type">What do you need?</label>
+        <select id="type">
+          <option>Table booking</option>
+          <option>Kids' birthday party</option>
+          <option>Group / office booking</option>
+          <option>Bulk takeaway order</option>
+        </select>
+      </div>
+      <div><label for="msg">Details</label><textarea id="msg" rows="3" placeholder="Date, time, number of guests…"></textarea></div>
+      <button class="btn-solid" type="submit">Send Request</button>
+      <p class="formmsg" style="display:none;color:#0a7a58;font-size:.9rem;font-weight:700">Thanks! This is a demo form. On the live site it reaches the cafe's inbox and WhatsApp directly.</p>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">Pokket Cafe · Bhumi Allium, Pimple Saudagar, Pune 411017 · <a href="https://wa.me/917249313379" style="color:#6b7b74">WhatsApp</a></div>
+</footer>
+<a class="wa-float" href="https://wa.me/917249313379" aria-label="Chat on WhatsApp">💬</a>
+</body>
+</html>

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Le Flamington — French Patisserie &amp; Coffee, Kalyani Nagar, Pune</title>
+<meta name="description" content="Le Flamington, East Avenue, Kalyani Nagar, Pune. French patisserie, chocolates, artisan breads and coffee. Rated 4.5 on Google with 982 reviews.">
+<style>
+  :root{--ink:#241a17;--cocoa:#3d2721;--rose:#a8552f;--blush:#fbf3ec;--gold:#c99a52;--muted:#7d6a60;}
+  *{margin:0;padding:0;box-sizing:border-box;font-family:'Segoe UI',system-ui,-apple-system,sans-serif;}
+  body{background:var(--blush);color:var(--ink);line-height:1.65;}
+  .wrap{max-width:1080px;margin:0 auto;padding:0 20px;}
+  header{background:linear-gradient(150deg,#2b1c18,#4a2f26 55%,#8a5334);color:#fff;padding:70px 0 78px;position:relative;overflow:hidden;}
+  header:after{content:"";position:absolute;inset:auto -10% -60% -10%;height:180px;background:radial-gradient(ellipse at center,rgba(201,154,82,.35),transparent 70%);}
+  .badge{display:inline-block;border:1px solid rgba(255,255,255,.45);background:rgba(255,255,255,.12);padding:5px 15px;border-radius:999px;font-size:.82rem;letter-spacing:.6px;}
+  header h1{font-family:Georgia,'Times New Roman',serif;font-size:clamp(2.3rem,6vw,3.6rem);margin:18px 0 10px;font-weight:400;letter-spacing:.5px;}
+  header .sub{color:#f2e2d4;font-size:1.12rem;max-width:640px;margin:0 auto;}
+  .rating{display:inline-flex;align-items:center;gap:10px;margin-top:22px;background:rgba(255,255,255,.14);padding:10px 18px;border-radius:12px;font-size:.95rem;}
+  .stars{color:#ffd772;letter-spacing:2px;}
+  .cta-row{margin-top:28px;display:flex;gap:14px;justify-content:center;flex-wrap:wrap;}
+  .btn{display:inline-block;text-decoration:none;padding:14px 26px;border-radius:10px;font-weight:600;transition:transform .15s;}
+  .btn:hover{transform:translateY(-2px);}
+  .btn-light{background:#fff;color:var(--cocoa);}
+  .btn-line{border:2px solid rgba(255,255,255,.7);color:#fff;}
+  .btn-solid{background:var(--rose);color:#fff;border:none;cursor:pointer;padding:15px 28px;border-radius:10px;font-weight:600;font-size:1rem;}
+  section{padding:66px 0;}
+  .kicker{text-align:center;color:var(--rose);text-transform:uppercase;letter-spacing:2.5px;font-size:.78rem;font-weight:700;}
+  h2{font-family:Georgia,serif;font-weight:400;font-size:clamp(1.7rem,4vw,2.3rem);text-align:center;margin:10px 0 30px;}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:22px;}
+  .card{background:#fff;border-radius:16px;padding:30px 26px;box-shadow:0 8px 22px rgba(61,39,33,.08);border-bottom:3px solid var(--gold);}
+  .card .em{font-size:2rem;display:block;margin-bottom:10px;}
+  .card h3{font-family:Georgia,serif;font-weight:400;font-size:1.2rem;margin-bottom:8px;color:var(--cocoa);}
+  .card p{color:var(--muted);font-size:.95rem;}
+  .gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px;}
+  .tile{border-radius:16px;padding:32px 22px;color:#fff;min-height:170px;display:flex;flex-direction:column;justify-content:flex-end;}
+  .tile h3{font-family:Georgia,serif;font-weight:400;font-size:1.15rem;margin-bottom:4px;}
+  .tile p{font-size:.86rem;opacity:.9;}
+  .t1{background:linear-gradient(140deg,#6d3f2a,#a8623c);}
+  .t2{background:linear-gradient(140deg,#3d2721,#7a4a30);}
+  .t3{background:linear-gradient(140deg,#8a5334,#c99a52);}
+  .t4{background:linear-gradient(140deg,#2b1c18,#5c3a2c);}
+  .quotes{display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:22px;}
+  .quote{background:#fff;border-radius:16px;padding:26px;box-shadow:0 8px 22px rgba(61,39,33,.08);}
+  .quote p{font-style:italic;color:#4b3a33;font-size:.96rem;}
+  .quote .who{margin-top:14px;font-size:.84rem;color:var(--muted);font-weight:600;}
+  .dark{background:var(--cocoa);color:#fff;}
+  .dark h2{color:#fff;}
+  .dark .kicker{color:var(--gold);}
+  .info-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:26px;}
+  .info h3{color:var(--gold);font-size:1rem;letter-spacing:.5px;text-transform:uppercase;margin-bottom:6px;}
+  .info p,.info a{color:#e8d8ca;font-size:.96rem;text-decoration:none;}
+  .info a:hover{color:#fff;text-decoration:underline;}
+  form{display:grid;gap:14px;max-width:580px;margin:0 auto;background:#fff;padding:32px;border-radius:18px;box-shadow:0 8px 22px rgba(61,39,33,.08);}
+  label{font-weight:600;font-size:.88rem;color:var(--cocoa);}
+  input,textarea,select{width:100%;padding:13px 14px;border:1.5px solid #e2d2c6;border-radius:9px;font-size:1rem;background:#fdf8f4;font-family:inherit;}
+  input:focus,textarea:focus,select:focus{outline:2px solid var(--gold);}
+  .wa-float{position:fixed;right:22px;bottom:22px;width:58px;height:58px;border-radius:50%;background:#25d366;color:#fff;display:flex;align-items:center;justify-content:center;font-size:1.6rem;text-decoration:none;box-shadow:0 8px 22px rgba(0,0,0,.28);z-index:60;}
+  footer{text-align:center;padding:32px 0;font-size:.82rem;color:var(--muted);border-top:1px solid #eadfd5;}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap" style="text-align:center">
+    <span class="badge">FRENCH PATISSERIE · KALYANI NAGAR, PUNE</span>
+    <h1>Le Flamington</h1>
+    <p class="sub">A whimsical little corner of France on East Avenue — pastries baked fresh, chocolates made in-house, and coffee worth slowing down for.</p>
+    <div class="rating"><span class="stars">★★★★½</span> <strong>4.5</strong> on Google · 982 reviews</div>
+    <div class="cta-row">
+      <a class="btn btn-light" href="#visit">Visit the Patisserie</a>
+      <a class="btn btn-line" href="#enquire">Pre-order a Cake</a>
+    </div>
+  </div>
+</header>
+
+<section id="craft">
+  <div class="wrap">
+    <p class="kicker">What we do</p>
+    <h2>Baked, whisked and tempered in-house</h2>
+    <div class="grid">
+      <div class="card"><span class="em">🥐</span><h3>French Patisserie</h3><p>Classic French pastry and simple dishes, sitting alongside our pastries baked through the day.</p></div>
+      <div class="card"><span class="em">🍫</span><h3>Handmade Chocolates</h3><p>Chocolate bars, chocolate rocks and gift-ready boxes made in our own kitchen.</p></div>
+      <div class="card"><span class="em">🥖</span><h3>Artisan Breads</h3><p>Loaves, baguettes and bakes that regulars have been coming back for since we opened.</p></div>
+      <div class="card"><span class="em">☕</span><h3>Coffee &amp; Chai-Time Classics</h3><p>The Orange Mocha Coffee and our hot chocolate are the two cups guests talk about most.</p></div>
+      <div class="card"><span class="em">🌱</span><h3>Vegan &amp; Gluten-Free</h3><p>Options for vegan and gluten-free diets are available, so nobody at the table misses out.</p></div>
+      <div class="card"><span class="em">🎁</span><h3>Dessert &amp; Gift Orders</h3><p>Pick up desserts to carry to a friend, or plan a celebration box ahead of time.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="gallery" style="background:#f6ece3">
+  <div class="wrap">
+    <p class="kicker">The Le Flamington mood</p>
+    <h2>Outdoor seating, notes on the walls, dessert on the table</h2>
+    <div class="gallery">
+      <div class="tile t1"><h3>Patisserie Counter</h3><p>Fresh pastry, laid out through the day</p></div>
+      <div class="tile t2"><h3>Chocolates &amp; Bakes</h3><p>Bars, rocks and boxes to take home</p></div>
+      <div class="tile t3"><h3>Orange Mocha Coffee</h3><p>The cup our regulars keep ordering</p></div>
+      <div class="tile t4"><h3>Little Notes Everywhere</h3><p>Read them, sit a while longer</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="reviews">
+  <div class="wrap">
+    <p class="kicker">In guests' words</p>
+    <h2>4.5 stars across 982 Google reviews</h2>
+    <div class="quotes">
+      <div class="quote"><p>"I've tried hot chocolate at many places, but most of the time it felt too sugary… however, the hot chocolate at Le Flamington is on another level. The ambience is great, and the staff are very supportive."</p><div class="who">Venkatesh B. · Google review</div></div>
+      <div class="quote"><p>"The Orange Mocha Coffee at Le Flamington is something else! I've made my chai-lover friends try this one and somehow they've all ended up absolutely loving it."</p><div class="who">Manasi M. · Google review</div></div>
+      <div class="quote"><p>"Always amazing bread, food, desserts. Hats off to Chef Taha."</p><div class="who">Anil D. · Google review</div></div>
+      <div class="quote"><p>"Awesome ambience, service, desserts, coffee and the vibe. They have options for vegan and gluten free diet food for people."</p><div class="who">Google review summary</div></div>
+    </div>
+  </div>
+</section>
+
+<section class="dark" id="visit">
+  <div class="wrap">
+    <p class="kicker">Come by</p>
+    <h2>Find us on East Avenue</h2>
+    <div class="info-grid">
+      <div class="info"><h3>Address</h3><p>Plot no. 88, East Avenue, Palace View Society, Ramwadi, Kalyani Nagar, Pune, Maharashtra 411006</p></div>
+      <div class="info"><h3>Hours</h3><p>Tue–Thu 11:30 AM – 9:30 PM<br>Fri–Sun 11:30 AM – 11:30 PM<br>Monday closed</p></div>
+      <div class="info"><h3>Call or WhatsApp</h3><p><a href="tel:+918007503355">+91 80075 03355</a><br><a href="https://wa.me/918007503355">Message us on WhatsApp</a></p></div>
+      <div class="info"><h3>Instagram</h3><p><a href="https://instagram.com/leflamington">@leflamington</a></p></div>
+    </div>
+  </div>
+</section>
+
+<section id="enquire">
+  <div class="wrap">
+    <p class="kicker">Orders &amp; enquiries</p>
+    <h2>Planning a cake, a dessert box or a table?</h2>
+    <form onsubmit="event.preventDefault();this.querySelector('.formmsg').style.display='block';">
+      <div><label for="name">Your name</label><input id="name" name="name" required placeholder="Name"></div>
+      <div><label for="phone">Phone / WhatsApp</label><input id="phone" name="phone" required placeholder="+91"></div>
+      <div><label for="type">What is this about?</label>
+        <select id="type" name="type">
+          <option>Cake or dessert pre-order</option>
+          <option>Chocolate gift box</option>
+          <option>Table for a group</option>
+          <option>Something else</option>
+        </select>
+      </div>
+      <div><label for="msg">Details</label><textarea id="msg" name="msg" rows="3" placeholder="Date needed, quantity, flavours…"></textarea></div>
+      <button class="btn-solid" type="submit">Send Enquiry</button>
+      <p class="formmsg" style="display:none;color:#2f7d4f;font-size:.9rem;font-weight:600">Thanks! This is a demo form. On the live site it goes straight to the patisserie's inbox and WhatsApp.</p>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">Le Flamington · East Avenue, Kalyani Nagar, Pune · <a href="https://wa.me/918007503355" style="color:#7d6a60">WhatsApp</a></div>
+</footer>
+<a class="wa-float" href="https://wa.me/918007503355" aria-label="Chat on WhatsApp">💬</a>
+</body>
+</html>
