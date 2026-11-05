@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SD Cafe Pashan — Sandwiches, Thick Cold Coffee &amp; Shakes on Pashan-Sus Road</title>
+<meta name="description" content="SD Cafe, opposite Axis Bank, Pashan-Sus Road, Pashan, Pune. Cheese toasties, club sandwiches, thick cold coffee and shakes. Rated 4.3 on Google from 1,438 reviews. Open 11:30 AM to 11 PM daily.">
+<style>
+  :root{--ink:#1e1c22;--plum:#2b2233;--rose:#b8477a;--cream:#fdf8f6;--sage:#6d8a76;--muted:#776a72;}
+  *{margin:0;padding:0;box-sizing:border-box;font-family:'Segoe UI',system-ui,-apple-system,sans-serif;}
+  body{background:var(--cream);color:var(--ink);line-height:1.65;}
+  .wrap{max-width:1080px;margin:0 auto;padding:0 20px;}
+  header{background:linear-gradient(150deg,#241b2c,#4b2c45 55%,#a03f6d);color:#fff;padding:70px 0 76px;text-align:center;}
+  .badge{display:inline-block;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.42);padding:5px 15px;border-radius:999px;font-size:.8rem;letter-spacing:1px;}
+  header h1{font-family:Georgia,'Times New Roman',serif;font-size:clamp(2.2rem,6vw,3.4rem);margin:18px 0 10px;font-weight:400;}
+  header .sub{color:#f2dfe8;font-size:1.1rem;max-width:630px;margin:0 auto;}
+  .rating{display:inline-flex;align-items:center;gap:10px;margin-top:22px;background:rgba(255,255,255,.14);padding:10px 18px;border-radius:12px;font-size:.95rem;}
+  .stars{color:#ffd75e;letter-spacing:2px;}
+  .cta-row{margin-top:26px;display:flex;gap:14px;justify-content:center;flex-wrap:wrap;}
+  .btn{display:inline-block;text-decoration:none;padding:14px 26px;border-radius:11px;font-weight:600;transition:transform .15s;}
+  .btn:hover{transform:translateY(-2px);}
+  .btn-light{background:#fff;color:var(--plum);}
+  .btn-line{border:2px solid rgba(255,255,255,.72);color:#fff;}
+  .btn-solid{background:var(--rose);color:#fff;border:none;cursor:pointer;padding:15px 28px;border-radius:11px;font-weight:600;font-size:1rem;}
+  section{padding:64px 0;}
+  .kicker{text-align:center;color:var(--rose);text-transform:uppercase;letter-spacing:2.5px;font-size:.76rem;font-weight:700;}
+  h2{font-family:Georgia,serif;font-weight:400;font-size:clamp(1.7rem,4vw,2.3rem);text-align:center;margin:10px 0 14px;}
+  .lead{text-align:center;color:var(--muted);max-width:620px;margin:0 auto 34px;}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:22px;}
+  .card{background:#fff;border-radius:16px;padding:28px 26px;box-shadow:0 8px 22px rgba(43,34,51,.08);border-bottom:3px solid var(--sage);}
+  .card .em{font-size:2rem;display:block;margin-bottom:10px;}
+  .card h3{font-family:Georgia,serif;font-weight:400;font-size:1.16rem;margin-bottom:8px;color:var(--plum);}
+  .card p{color:var(--muted);font-size:.94rem;}
+  .favs{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px;}
+  .dish{display:flex;gap:14px;align-items:flex-start;background:#fff;border-radius:14px;padding:20px 22px;box-shadow:0 6px 16px rgba(43,34,51,.07);}
+  .dish .em{font-size:1.5rem;line-height:1;}
+  .dish h3{font-size:1rem;margin-bottom:3px;}
+  .dish p{font-size:.86rem;color:var(--muted);}
+  .quotes{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:22px;}
+  .quote{background:#fff;border-radius:16px;padding:26px;box-shadow:0 8px 22px rgba(43,34,51,.08);}
+  .quote p{font-style:italic;color:#453a42;font-size:.95rem;}
+  .quote .who{margin-top:14px;font-size:.83rem;color:var(--muted);font-weight:600;}
+  .dark{background:var(--plum);color:#fff;}
+  .dark h2{color:#fff;}
+  .dark .kicker{color:#e3a1c0;}
+  .info-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:26px;}
+  .info h3{color:#e3a1c0;text-transform:uppercase;font-size:.9rem;letter-spacing:.6px;margin-bottom:6px;}
+  .info p,.info a{color:#e5d9df;font-size:.95rem;text-decoration:none;}
+  .info a:hover{color:#fff;text-decoration:underline;}
+  form{display:grid;gap:14px;max-width:580px;margin:0 auto;background:#fff;padding:32px;border-radius:18px;box-shadow:0 8px 22px rgba(43,34,51,.08);}
+  label{font-weight:600;font-size:.87rem;color:var(--plum);}
+  input,textarea,select{width:100%;padding:13px 14px;border:1.5px solid #ecd9e1;border-radius:10px;font-size:1rem;background:#fdf9fa;font-family:inherit;}
+  input:focus,textarea:focus,select:focus{outline:2px solid var(--rose);}
+  .wa-float{position:fixed;right:22px;bottom:22px;width:58px;height:58px;border-radius:50%;background:#25d366;color:#fff;display:flex;align-items:center;justify-content:center;font-size:1.6rem;text-decoration:none;box-shadow:0 8px 22px rgba(0,0,0,.26);z-index:60;}
+  footer{text-align:center;padding:32px 0;font-size:.8rem;color:var(--muted);border-top:1px solid #eee0e5;}
+  footer a{color:var(--muted);}
+  .strip{background:#fff4f8;}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <span class="badge">🥪 CAFE · PASHAN, PUNE</span>
+    <h1>SD Cafe</h1>
+    <p class="sub">The college-vibe sandwich cafe on Pashan-Sus Road. Thick cold coffee, cheese toasties and shakes, a short walk from Axis Bank.</p>
+    <div class="rating"><span class="stars">★★★★☆</span> <strong>4.3</strong> on Google · 1,438 reviews</div>
+    <div class="cta-row">
+      <a class="btn btn-light" href="#favourites">See the Favourites</a>
+      <a class="btn btn-line" href="tel:+919922262261">Call the Cafe</a>
+    </div>
+  </div>
+</header>
+
+<section id="why">
+  <div class="wrap">
+    <p class="kicker">The place</p>
+    <h2>Small, cosy, and built around coffee</h2>
+    <p class="lead">No fuss about the setting. Guests come for the drinks, the sandwiches, and a menu priced for everyday visits.</p>
+    <div class="grid">
+      <div class="card"><span class="em">🎨</span><h3>Decor With a Bit of Character</h3><p>Hand-painted walls and a funky fit-out. Reviewers mention the look before they mention the food.</p></div>
+      <div class="card"><span class="em">💰</span><h3>Reasonably Priced</h3><p>Good choice of menu, reasonable rates, decent seating. That combination is why it stays busy.</p></div>
+      <div class="card"><span class="em">🥤</span><h3>The Drinks Steal It</h3><p>Cold coffee and thick shakes are the reason most people walk in and order twice.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="strip" id="favourites">
+  <div class="wrap">
+    <p class="kicker">Guest favourites</p>
+    <h2>What people keep ordering</h2>
+    <p class="lead">Based on what guests write about most in their Google reviews.</p>
+    <div class="favs">
+      <div class="dish"><span class="em">🥪</span><div><h3>Cheese Corn Sandwich</h3><p>A steady favourite, made the way a good grilled sandwich should be.</p></div></div>
+      <div class="dish"><span class="em">🥙</span><div><h3>Bombay Masala Sandwich</h3><p>Spiced, generous, and one of the most mentioned plates on the menu.</p></div></div>
+      <div class="dish"><span class="em">🧀</span><div><h3>Cheese Chilli Toastie</h3><p>Toasted, loaded, with green chutney on the side.</p></div></div>
+      <div class="dish"><span class="em">🥤</span><div><h3>Thick Cold Coffee</h3><p>The signature. Ask for it strong, or without sugar if that is your thing.</p></div></div>
+      <div class="dish"><span class="em">🍫</span><div><h3>KitKat Shake</h3><p>A dessert and a drink in one glass, and the one guests photograph most.</p></div></div>
+      <div class="dish"><span class="em">🍕</span><div><h3>Pizza &amp; Burgers</h3><p>For when the table wants more than sandwiches.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="reviews">
+  <div class="wrap">
+    <p class="kicker">In their words</p>
+    <h2>What guests say</h2>
+    <div class="quotes">
+      <div class="quote">
+        <p>“A very rustic old school college vibe. Loved the place for its simplicity and rawness. No fancy ambience but perfect spot on food and drinks. Great sandwiches and thick cold coffee shakes.”</p>
+        <div class="who">Mohit Kumar Gawri · ★★★★☆ · Google review</div>
+      </div>
+      <div class="quote">
+        <p>“Sandwiches are tasty and coffee is nice! They've done some out of the box decor and paintings which makes it more funky. Staff is friendly and it's easy on the pocket too!”</p>
+        <div class="who">Abhishek · ★★★★☆ · Google review</div>
+      </div>
+      <div class="quote">
+        <p>“Had absolutely beautiful KitKat chocolate. I personally don't like chocolate but after trying KitKat chocolate I had fun.”</p>
+        <div class="who">Krishna Ravariya · ★★★★☆ · Google review</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="dark" id="visit">
+  <div class="wrap">
+    <p class="kicker">Find us</p>
+    <h2>Getting to SD Cafe</h2>
+    <div class="info-grid">
+      <div class="info"><h3>Address</h3><p>127/1, Pashan–Sus Road,<br>opposite Axis Bank,<br>Pandav Nagar, Pashan,<br>Pune 411021</p></div>
+      <div class="info"><h3>Phone</h3><p><a href="tel:+919922262261">+91 99222 62261</a></p></div>
+      <div class="info"><h3>Hours</h3><p>Monday to Sunday<br>11:30 AM – 11:00 PM</p></div>
+      <div class="info"><h3>Directions</h3><p><a href="https://www.google.com/maps/search/?api=1&query=SD+Cafe+Pashan+Pune" target="_blank" rel="noopener">Open in Google Maps →</a></p></div>
+    </div>
+  </div>
+</section>
+
+<section id="enquire">
+  <div class="wrap">
+    <p class="kicker">Party orders</p>
+    <h2>Ordering for a group?</h2>
+    <p class="lead">Sandwich platters, shakes by the jug, or a birthday table. Tell us what you need and we will call you back.</p>
+    <form onsubmit="event.preventDefault();alert('Thank you. This form is a preview of how enquiries would reach the cafe once the site is live.');">
+      <label for="n">Your name</label>
+      <input id="n" type="text" placeholder="Name" required>
+      <label for="p">Phone number</label>
+      <input id="p" type="tel" placeholder="+91" required>
+      <label for="w">What are you planning</label>
+      <select id="w">
+        <option>Sandwich or snack platter</option>
+        <option>Shakes and cold coffee for a group</option>
+        <option>Birthday or small party</option>
+        <option>Something else</option>
+      </select>
+      <label for="m">Details</label>
+      <textarea id="m" rows="4" placeholder="Date, headcount, any preferences"></textarea>
+      <button class="btn-solid" type="submit">Request a Callback</button>
+    </form>
+  </div>
+</section>
+
+<a class="wa-float" href="https://wa.me/919922262261?text=Hi%20SD%20Cafe%2C%20I%20found%20you%20online.%20I%20wanted%20to%20ask%20about%20" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">💬</a>
+
+<footer>
+  <div class="wrap">
+    SD Cafe, 127/1 Pashan–Sus Road, opp. Axis Bank, Pashan, Pune 411021 · <a href="tel:+919922262261">+91 99222 62261</a><br>
+    Rating and review count as shown on Google at the time this page was built.
+  </div>
+</footer>
+</body>
+</html>
