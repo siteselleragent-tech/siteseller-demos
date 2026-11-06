@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Easels Cafe — Art Cafe, Hinjawadi, Pune</title>
+<meta name="description" content="Easels Cafe, Grand High Street Mall, Hinjawadi Phase 1, Pune. An art cafe with canvas painting, tufting and creative workshops, plus a full cafe menu.">
+<style>
+:root{--bg:#fdfaf6;--surface:#fff;--ink:#221d26;--muted:#6f6472;--accent:#7b3f8f;--accent2:#e8794a;--soft:#f3e9f7;--line:#ece2f0;--r:10px}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;background:var(--bg);color:var(--ink);line-height:1.65;-webkit-font-smoothing:antialiased}
+.wrap{max-width:1020px;margin:0 auto;padding:0 24px}
+header.hero{padding:100px 0 80px;position:relative;overflow:hidden;background:linear-gradient(135deg,#fdfaf6 0%,#f7edf7 55%,#fdeee5 100%)}
+header.hero::before{content:"";position:absolute;width:300px;height:300px;border-radius:50%;background:var(--soft);top:-80px;right:8%;opacity:.9}
+header.hero::after{content:"";position:absolute;width:180px;height:180px;border-radius:50%;background:#fbe3d6;bottom:-60px;left:6%;opacity:.9}
+header.hero .wrap{position:relative;z-index:2}
+.badge{display:inline-block;font-size:.7rem;letter-spacing:.2em;text-transform:uppercase;font-weight:700;color:var(--accent);background:#fff;border:1px solid var(--line);padding:8px 16px;border-radius:100px;margin-bottom:24px}
+header.hero h1{font-size:clamp(2.2rem,6vw,3.7rem);font-weight:800;letter-spacing:-.03em;line-height:1.06;max-width:700px}
+header.hero h1 em{font-style:normal;color:var(--accent2)}
+header.hero .sub{margin-top:22px;font-size:1.12rem;color:#4f4652;max-width:540px}
+.rating{margin-top:26px;display:inline-flex;align-items:center;gap:10px;background:#fff;border:1px solid var(--line);border-radius:100px;padding:9px 18px;font-size:.86rem;font-weight:600}
+.stars{color:#f0a500;letter-spacing:2px}
+.cta-row{margin-top:32px;display:flex;gap:14px;flex-wrap:wrap}
+.btn{display:inline-block;padding:15px 30px;border-radius:100px;font-size:.82rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;text-decoration:none;transition:transform .15s}
+.btn:hover{transform:translateY(-2px)}
+.btn-primary{background:var(--accent);color:#fff}
+.btn-ghost{border:1.5px solid var(--ink);color:var(--ink)}
+.strip{background:var(--ink);color:#fff;text-align:center;padding:13px 20px;font-size:.8rem;letter-spacing:.09em;text-transform:uppercase;font-weight:600}
+section{padding:78px 0}
+.alt{background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.kicker{font-size:.7rem;letter-spacing:.2em;text-transform:uppercase;color:var(--accent2);font-weight:800;margin-bottom:12px}
+h2{font-size:clamp(1.7rem,3.8vw,2.4rem);font-weight:800;letter-spacing:-.02em;line-height:1.15;margin-bottom:14px}
+.lead{color:var(--muted);max-width:600px;margin-bottom:40px;font-size:1.02rem}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px}
+.card{background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:28px;transition:.18s}
+.card:hover{transform:translateY(-3px);box-shadow:0 12px 30px rgba(123,63,143,.09)}
+.card .em{font-size:1.6rem;display:block;margin-bottom:14px}
+.card h3{font-size:1.04rem;font-weight:700;margin-bottom:7px}
+.card p{color:var(--muted);font-size:.93rem}
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:24px}
+.step .num{font-size:2rem;font-weight:800;color:var(--soft);line-height:1;margin-bottom:8px}
+.step h3{font-size:1rem;font-weight:700;margin-bottom:6px}
+.step p{color:var(--muted);font-size:.92rem}
+.quotes{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px}
+.quote{background:var(--bg);border:1px solid var(--line);border-radius:var(--r);padding:26px}
+.quote p{font-size:.96rem;color:#3a3340}
+.quote .who{margin-top:15px;font-size:.74rem;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);font-weight:700}
+.gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:14px}
+.tile{aspect-ratio:1/1;border-radius:var(--r);display:flex;align-items:flex-end;padding:18px;color:#fff;font-size:.72rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase}
+.t1{background:linear-gradient(145deg,#7b3f8f,#b06bc4)}
+.t2{background:linear-gradient(145deg,#e8794a,#f2a97e)}
+.t3{background:linear-gradient(145deg,#2f6b8a,#5fa3c2)}
+.t4{background:linear-gradient(145deg,#8a6a2f,#c7a35c)}
+.t5{background:linear-gradient(145deg,#3f7a5c,#6fb08d)}
+.t6{background:linear-gradient(145deg,#8a3f5c,#c26f8c)}
+.dark{background:#221d26;color:#fff}
+.dark .kicker{color:var(--accent2)}
+.dark h2{color:#fff}
+.info-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(215px,1fr));gap:34px;margin-top:38px}
+.info h3{font-size:.7rem;letter-spacing:.18em;text-transform:uppercase;color:var(--accent2);margin-bottom:10px;font-weight:800}
+.info p,.info a{color:rgba(255,255,255,.84);font-size:.95rem;text-decoration:none}
+.info a:hover{color:#fff;text-decoration:underline}
+form{max-width:560px}
+.f{margin-bottom:16px}
+form label{display:block;font-size:.7rem;letter-spacing:.13em;text-transform:uppercase;color:var(--muted);font-weight:700;margin-bottom:7px}
+form input,form select,form textarea{width:100%;padding:13px 16px;border:1px solid var(--line);border-radius:8px;background:#fff;font-family:inherit;font-size:.97rem;color:var(--ink)}
+form input:focus,form select:focus,form textarea:focus{outline:2px solid var(--accent2);outline-offset:1px}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+@media(max-width:560px){.two{grid-template-columns:1fr}}
+.btn-solid{width:100%;background:var(--accent);color:#fff;border:none;padding:17px;border-radius:100px;font-size:.84rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase;cursor:pointer;font-family:inherit}
+.formmsg{display:none;margin-top:16px;color:#0b7a58;font-size:.9rem;font-weight:600}
+.wa-float{position:fixed;right:20px;bottom:20px;width:56px;height:56px;border-radius:50%;background:#25d366;display:flex;align-items:center;justify-content:center;font-size:1.5rem;text-decoration:none;box-shadow:0 8px 24px rgba(0,0,0,.2);z-index:50}
+footer{background:#fff;border-top:1px solid var(--line);padding:36px 0;color:var(--muted);font-size:.86rem}
+footer .fine{margin-top:10px;font-size:.76rem;color:#9a90a0}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <span class="badge">Art cafe · Grand High Street, Hinjawadi</span>
+    <h1>Order a coffee. <em>Paint a canvas.</em></h1>
+    <p class="sub">An art studio and a cafe in one room — 4.8 stars from nearly 300 guests, on the first floor of Grand High Street Mall.</p>
+    <div class="rating"><span class="stars">★★★★★</span> 4.8 on Google · 296 reviews</div>
+    <div class="cta-row">
+      <a class="btn btn-primary" href="#book">Book a paint session</a>
+      <a class="btn btn-ghost" href="tel:+918983376599">Call +91 89833 76599</a>
+    </div>
+  </div>
+</header>
+<div class="strip">Open daily 11 AM – 11:30 PM · First floor, Grand High Street Mall, Hinjawadi Phase 1</div>
+
+<section id="experience">
+  <div class="wrap">
+    <p class="kicker">The idea</p>
+    <h2>20+ creative things to do, one menu to eat from</h2>
+    <p class="lead">Canvas painting is what Easels is known for — it comes up in 35 separate Google reviews. But the room also runs tufting, ceramic painting, moon lamps, watercolour, texture art and punch needle.</p>
+    <div class="grid">
+      <div class="card"><span class="em">🎨</span><h3>Canvas Painting</h3><p>The signature experience. Walk in, take a canvas, and paint at your own pace with the food coming to your table.</p></div>
+      <div class="card"><span class="em">🧶</span><h3>Tufting</h3><p>Make your own rug on a tufting frame — one of the studio's most requested craft sessions.</p></div>
+      <div class="card"><span class="em">🏺</span><h3>Ceramic Painting</h3><p>Paint ready-made ceramics into something you actually want to keep on a shelf.</p></div>
+      <div class="card"><span class="em">🌙</span><h3>Moon Lamps</h3><p>Build a textured moon lamp — a popular pick for couples and small groups.</p></div>
+      <div class="card"><span class="em">🖌️</span><h3>Watercolour &amp; Texture Art</h3><p>Guided sessions in watercolour and textured abstract work, all materials provided.</p></div>
+      <div class="card"><span class="em">🎉</span><h3>Birthday &amp; Paint Parties</h3><p>Private paint parties for birthdays and groups, planned with the team in advance.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="food" class="alt">
+  <div class="wrap">
+    <p class="kicker">From the kitchen</p>
+    <h2>The food is not an afterthought</h2>
+    <p class="lead">Guests keep naming specific dishes, which is unusual for a cafe with a craft studio attached.</p>
+    <div class="grid">
+      <div class="card"><span class="em">🍔</span><h3>Burgers &amp; Fries</h3><p>The most-mentioned order in reviews — described as great, not just fine.</p></div>
+      <div class="card"><span class="em">🍝</span><h3>Arrabbiata Pasta</h3><p>Called out by name alongside the burgers as a reason to come back.</p></div>
+      <div class="card"><span class="em">🍰</span><h3>Brownie &amp; Doughnuts</h3><p>Dessert gets its own reviews: "great place for brownie, doughnuts and cold coffee."</p></div>
+      <div class="card"><span class="em">☕</span><h3>Cold Coffee</h3><p>The default companion to a painting session, and a frequent mention on its own.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="reviews">
+  <div class="wrap">
+    <p class="kicker">Guest reviews</p>
+    <h2>4.8 stars · 296 Google reviews</h2>
+    <div class="quotes">
+      <div class="quote"><p>"Big shout out to Sanjay &amp; Rupali for hosting our daughter's birthday and paint party. The experience was unique and hospitality was incredible."</p><div class="who">Gaurav P. · Google review</div></div>
+      <div class="quote"><p>"The staff is super friendly and the calm music adds to the vibe."</p><div class="who">Google review</div></div>
+      <div class="quote"><p>"The food was great too, especially the burger, fries, and arrabbiata pasta."</p><div class="who">Google review</div></div>
+    </div>
+  </div>
+</section>
+
+<section id="gallery" class="alt">
+  <div class="wrap">
+    <p class="kicker">Inside Easels</p>
+    <h2>Art on the walls, paint on the tables</h2>
+    <p class="lead">An in-house gallery, work from guests, and the studio floor where the sessions happen.</p>
+    <div class="gallery">
+      <div class="tile t1">Painting studio</div>
+      <div class="tile t2">Cafe seating</div>
+      <div class="tile t3">Art gallery</div>
+      <div class="tile t4">Canvas sessions</div>
+      <div class="tile t5">Party corner</div>
+      <div class="tile t6">Tufting frames</div>
+    </div>
+  </div>
+</section>
+
+<section class="dark" id="visit">
+  <div class="wrap">
+    <p class="kicker">Visit us</p>
+    <h2>First floor, Grand High Street Mall</h2>
+    <div class="info-grid">
+      <div class="info"><h3>Address</h3><p>First floor, Grand High Street Mall, Phase 1, Rajiv Gandhi Infotech Park, Hinjawadi, Maharashtra 411057</p></div>
+      <div class="info"><h3>Hours</h3><p>Open daily<br>11 AM – 11:30 PM</p></div>
+      <div class="info"><h3>Call or WhatsApp</h3><p><a href="tel:+918983376599">+91 89833 76599</a><br><a href="https://wa.me/918983376599">Message us on WhatsApp</a></p></div>
+      <div class="info"><h3>Good to know</h3><p>Walk-ins welcome · Party bookings by prior arrangement · All art materials provided</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="book">
+  <div class="wrap">
+    <p class="kicker">Bookings</p>
+    <h2>Reserve a table or a paint session</h2>
+    <p class="lead">Tell us what you're planning and the team will come back with timings and pricing.</p>
+    <form onsubmit="event.preventDefault();document.querySelector('.formmsg').style.display='block';">
+      <div class="two">
+        <div class="f"><label for="nm">Your name</label><input id="nm" required placeholder="Full name"></div>
+        <div class="f"><label for="ph">Phone / WhatsApp</label><input id="ph" type="tel" required placeholder="+91"></div>
+      </div>
+      <div class="f"><label for="tp">What are you booking?</label>
+        <select id="tp">
+          <option>Table for food and coffee</option>
+          <option>Canvas painting session</option>
+          <option>Tufting session</option>
+          <option>Ceramic painting session</option>
+          <option>Moon lamp workshop</option>
+          <option>Birthday / paint party</option>
+          <option>Group or corporate outing</option>
+        </select>
+      </div>
+      <div class="two">
+        <div class="f"><label for="dt">Date</label><input id="dt" type="date"></div>
+        <div class="f"><label for="pp">How many people?</label><input id="pp" type="number" min="1" placeholder="e.g. 4"></div>
+      </div>
+      <div class="f"><label for="ms">Anything else?</label><textarea id="ms" rows="3" placeholder="Occasion, dietary needs, ages of children…"></textarea></div>
+      <button class="btn-solid" type="submit">Send Booking Request</button>
+      <p class="formmsg">Thanks! This is a demo form. On the live site, the request reaches the Easels team directly.</p>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div>Easels Cafe · First floor, Grand High Street Mall, Hinjawadi Phase 1, Pune 411057 · <a href="https://wa.me/918983376599" style="color:#7b3f8f">WhatsApp</a></div>
+    <div class="fine">Demo website created by SiteSeller Agent as a sample. Not the official Easels Cafe website.</div>
+  </div>
+</footer>
+<a class="wa-float" href="https://wa.me/918983376599" aria-label="Chat on WhatsApp">💬</a>
+</body>
+</html>
