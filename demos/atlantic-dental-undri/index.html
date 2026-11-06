@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Atlantic Dental and Wellness Studio — Undri, Pune</title>
+<meta name="description" content="Atlantic Dental and Wellness Studio, Undri, Pune. A 5.0-rated dental clinic in Nyati County, Undri. Root canals, cleaning, fillings and orthodontics.">
+<style>
+:root{--bg:#f4f8f7;--surface:#fff;--ink:#0f2320;--muted:#5d726d;--accent:#0e6e5c;--accent2:#12a58a;--soft:#e2f2ee;--line:#d8e6e2;--r:8px}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;background:var(--bg);color:var(--ink);line-height:1.65;-webkit-font-smoothing:antialiased}
+.wrap{max-width:1040px;margin:0 auto;padding:0 24px}
+header.hero{background:linear-gradient(160deg,#0e6e5c 0%,#0a4d41 60%,#08312a 100%);color:#fff;padding:96px 0 76px;position:relative;overflow:hidden}
+header.hero::after{content:"";position:absolute;right:-120px;top:-120px;width:420px;height:420px;border-radius:50%;background:radial-gradient(circle,rgba(18,165,138,.35),transparent 70%)}
+.badge{display:inline-block;font-size:.7rem;letter-spacing:.2em;text-transform:uppercase;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.28);padding:7px 14px;border-radius:100px;margin-bottom:22px}
+header.hero h1{font-size:clamp(2.1rem,5.5vw,3.4rem);font-weight:700;letter-spacing:-.02em;line-height:1.1;max-width:720px}
+header.hero .sub{margin-top:18px;font-size:1.1rem;color:rgba(255,255,255,.82);max-width:560px}
+.rating{margin-top:26px;font-size:.95rem;color:rgba(255,255,255,.9)}
+.stars{color:#ffd35c;letter-spacing:2px}
+.cta-row{margin-top:34px;display:flex;gap:14px;flex-wrap:wrap}
+.btn{display:inline-block;padding:15px 30px;border-radius:var(--r);font-size:.82rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;text-decoration:none;transition:transform .15s}
+.btn:hover{transform:translateY(-2px)}
+.btn-light{background:#fff;color:#0a4d41}
+.btn-line{border:1px solid rgba(255,255,255,.5);color:#fff}
+.strip{background:var(--accent2);color:#04241d;font-size:.85rem;font-weight:600;text-align:center;padding:14px 20px;letter-spacing:.01em}
+section{padding:76px 0}
+.kicker{font-size:.7rem;letter-spacing:.2em;text-transform:uppercase;color:var(--accent);font-weight:700;margin-bottom:10px}
+h2{font-size:clamp(1.6rem,3.4vw,2.2rem);font-weight:700;letter-spacing:-.015em;margin-bottom:12px}
+.lead{color:var(--muted);max-width:600px;margin-bottom:38px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:26px}
+.card .em{font-size:1.5rem;display:block;margin-bottom:12px}
+.card h3{font-size:1.02rem;font-weight:700;margin-bottom:7px}
+.card p{color:var(--muted);font-size:.93rem}
+.alt{background:var(--surface);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.steps{display:grid;gap:0}
+.step{display:grid;grid-template-columns:44px 1fr;gap:18px;padding:22px 0;border-bottom:1px solid var(--line)}
+.step:last-child{border-bottom:none}
+.step .num{width:44px;height:44px;border-radius:50%;background:var(--soft);color:var(--accent);display:flex;align-items:center;justify-content:center;font-weight:700}
+.step h3{font-size:1.02rem;margin-bottom:4px}
+.step p{color:var(--muted);font-size:.93rem}
+.quotes{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:18px}
+.quote{background:var(--surface);border:1px solid var(--line);border-left:3px solid var(--accent2);border-radius:var(--r);padding:24px}
+.quote p{font-size:.95rem;color:#2a3f3b;font-style:italic}
+.quote .who{margin-top:14px;font-size:.78rem;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+.gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px}
+.tile{aspect-ratio:4/3;border-radius:var(--r);display:flex;align-items:flex-end;padding:18px;color:#fff;font-size:.8rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;border:1px solid var(--line)}
+.t1{background:linear-gradient(150deg,#0e6e5c,#12a58a)}
+.t2{background:linear-gradient(150deg,#1c4f6b,#2f8fa8)}
+.t3{background:linear-gradient(150deg,#5a4b7c,#8b76b5)}
+.t4{background:linear-gradient(150deg,#7a5c2e,#c19a53)}
+.t5{background:linear-gradient(150deg,#0f4a3f,#2b7a66)}
+.t6{background:linear-gradient(150deg,#4a3a52,#7c6288)}
+.dark{background:#0f2320;color:#fff}
+.dark .kicker{color:var(--accent2)}
+.dark h2{color:#fff}
+.info-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:32px;margin-top:34px}
+.info h3{font-size:.72rem;letter-spacing:.18em;text-transform:uppercase;color:var(--accent2);margin-bottom:9px}
+.info p,.info a{color:rgba(255,255,255,.85);font-size:.95rem;text-decoration:none}
+.info a:hover{color:#fff;text-decoration:underline}
+form{max-width:560px}
+.f{margin-bottom:16px}
+form label{display:block;font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);font-weight:700;margin-bottom:7px}
+form input,form select,form textarea{width:100%;padding:13px 15px;border:1px solid var(--line);border-radius:var(--r);background:var(--bg);font-family:inherit;font-size:.97rem;color:var(--ink)}
+form input:focus,form select:focus,form textarea:focus{outline:2px solid var(--accent2);outline-offset:1px}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+@media(max-width:560px){.two{grid-template-columns:1fr}}
+.btn-solid{width:100%;background:var(--accent);color:#fff;border:none;padding:16px;border-radius:var(--r);font-size:.84rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;cursor:pointer;font-family:inherit}
+.formmsg{display:none;margin-top:16px;color:#0b7a58;font-size:.9rem;font-weight:600}
+.wa-float{position:fixed;right:20px;bottom:20px;width:56px;height:56px;border-radius:50%;background:#25d366;display:flex;align-items:center;justify-content:center;font-size:1.5rem;text-decoration:none;box-shadow:0 8px 24px rgba(0,0,0,.22);z-index:50}
+footer{background:var(--surface);border-top:1px solid var(--line);padding:36px 0;color:var(--muted);font-size:.86rem}
+footer .fine{margin-top:10px;font-size:.76rem;color:#8d9f9a}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <span class="badge">Dental clinic &amp; orthodontics · Undri, Pune</span>
+    <h1>A 5.0-star clinic in Nyati County, Undri.</h1>
+    <p class="sub">Gentle, unhurried dentistry — from routine cleaning to root canals — with every step explained before it begins.</p>
+    <div class="rating"><span class="stars">★★★★★</span> <strong>5.0</strong> on Google · 57 reviews</div>
+    <div class="cta-row">
+      <a class="btn btn-light" href="#book">Request an appointment</a>
+      <a class="btn btn-line" href="tel:+919975327278">Call +91 99753 27278</a>
+    </div>
+  </div>
+</header>
+<div class="strip">Open Mon–Sat 10 AM – 8 PM · Sunday 11 AM – 8 PM · Nyati County, Undri</div>
+
+<section id="services">
+  <div class="wrap">
+    <p class="kicker">Treatments</p>
+    <h2>Everything a family needs, in one clinic</h2>
+    <p class="lead">Patients at Atlantic most often mention two things: how clean the clinic is, and how carefully each procedure is explained.</p>
+    <div class="grid">
+      <div class="card"><span class="em">🦷</span><h3>Cleaning &amp; Scaling</h3><p>Stain removal and scaling are the most praised treatment here, with patients describing the work as flawless and painless.</p></div>
+      <div class="card"><span class="em">🔧</span><h3>Root Canal Treatment</h3><p>Root canal procedures are handled with comfort as the priority, and followed up personally after treatment.</p></div>
+      <div class="card"><span class="em">🩹</span><h3>Fillings &amp; Cavities</h3><p>Tooth-coloured fillings for cavities, with a clear explanation of what is happening and why before work starts.</p></div>
+      <div class="card"><span class="em">😁</span><h3>Orthodontics</h3><p>Braces and alignment care for children, teenagers and adults, planned step by step.</p></div>
+      <div class="card"><span class="em">🪥</span><h3>Dentures</h3><p>Denture fitting and adjustment, with attention to comfort while eating and speaking.</p></div>
+      <div class="card"><span class="em">👨‍👩‍👧</span><h3>Kids &amp; Seniors</h3><p>Care that is gentle enough that patients recommend it for both children and elderly family members.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="how" class="alt">
+  <div class="wrap">
+    <p class="kicker">What your visit looks like</p>
+    <h2>Nothing rushed, nothing unexplained</h2>
+    <p class="lead">A simple four-step visit, built around the thing patients say matters most here: being told what is going on.</p>
+    <div class="steps">
+      <div class="step"><div class="num">1</div><div><h3>A full check-up first</h3><p>Your teeth and gums are examined properly before any treatment is proposed.</p></div></div>
+      <div class="step"><div class="num">2</div><div><h3>The plan, in plain language</h3><p>You hear what needs doing, why it needs doing, and what the options are.</p></div></div>
+      <div class="step"><div class="num">3</div><div><h3>Comfortable treatment</h3><p>Patients describe procedures here as virtually painless, with remarkable patience along the way.</p></div></div>
+      <div class="step"><div class="num">4</div><div><h3>Personal aftercare follow-up</h3><p>After the visit, the clinic follows up itself to make sure recovery is going well.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="reviews">
+  <div class="wrap">
+    <p class="kicker">Patient reviews</p>
+    <h2>5.0 stars across 57 Google reviews</h2>
+    <div class="quotes">
+      <div class="quote"><p>"The clinic is very hygienic and very well maintained. Dr. Saba is very kind and the way she explained about my teeth and the treatment was very helpful."</p><div class="who">Shreyash B. · Google review</div></div>
+      <div class="quote"><p>"She handles every case with remarkable patience and calmness. Her treatments are virtually painless, making her an excellent choice for both children and senior citizens."</p><div class="who">Priyanka G. · Google review</div></div>
+      <div class="quote"><p>"The stain cleaning and scaling were done exceptionally well; flawless work. I'm super happy with the care I received."</p><div class="who">Rashmi K. · Google review</div></div>
+    </div>
+  </div>
+</section>
+
+<section id="gallery">
+  <div class="wrap">
+    <p class="kicker">Inside the clinic</p>
+    <h2>Clean, calm, modern</h2>
+    <p class="lead">The words patients use most: hygienic setup, clean, modern, no waiting time.</p>
+    <div class="gallery">
+      <div class="tile t1">Consultation room</div>
+      <div class="tile t2">Sterilisation area</div>
+      <div class="tile t3">Treatment bay</div>
+      <div class="tile t4">Reception</div>
+      <div class="tile t5">Waiting area</div>
+      <div class="tile t6">Equipment</div>
+    </div>
+  </div>
+</section>
+
+<section class="dark" id="visit">
+  <div class="wrap">
+    <p class="kicker">Visit us</p>
+    <h2>Ganga Fernhill, near Dhruv School</h2>
+    <div class="info-grid">
+      <div class="info"><h3>Address</h3><p>Shop 3, Ganga Fernhill, near Dhruv School, Nyati County, Undri, Pune, Maharashtra 411060</p></div>
+      <div class="info"><h3>Hours</h3><p>Mon – Sat: 10 AM – 8 PM<br>Sunday: 11 AM – 8 PM</p></div>
+      <div class="info"><h3>Call or WhatsApp</h3><p><a href="tel:+919975327278">+91 99753 27278</a><br><a href="https://wa.me/919975327278">Message us on WhatsApp</a></p></div>
+      <div class="info"><h3>Treatments</h3><p>Cleaning · Root canal · Fillings · Orthodontics · Dentures · Family dentistry</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="book">
+  <div class="wrap">
+    <p class="kicker">Appointments</p>
+    <h2>Request a slot</h2>
+    <p class="lead">Send a request and the clinic will confirm a time with you.</p>
+    <form onsubmit="event.preventDefault();document.querySelector('.formmsg').style.display='block';">
+      <div class="two">
+        <div class="f"><label for="nm">Patient name</label><input id="nm" required placeholder="Full name"></div>
+        <div class="f"><label for="ph">Phone / WhatsApp</label><input id="ph" type="tel" required placeholder="+91"></div>
+      </div>
+      <div class="f"><label for="tp">What do you need?</label>
+        <select id="tp">
+          <option>General check-up</option>
+          <option>Cleaning &amp; scaling</option>
+          <option>Root canal treatment</option>
+          <option>Filling / cavity</option>
+          <option>Braces &amp; alignment consult</option>
+          <option>Dentures</option>
+          <option>Child's dental visit</option>
+        </select>
+      </div>
+      <div class="f"><label for="wh">Preferred day and time</label><input id="wh" placeholder="e.g. Saturday morning"></div>
+      <div class="f"><label for="ms">Anything we should know?</label><textarea id="ms" rows="3" placeholder="Pain, past treatments, anxiety about dental visits…"></textarea></div>
+      <button class="btn-solid" type="submit">Request Appointment</button>
+      <p class="formmsg">Thanks! This is a demo form. On the live site, the request lands directly in the clinic's inbox and WhatsApp.</p>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div>Atlantic Dental and Wellness Studio · Shop 3, Ganga Fernhill, Nyati County, Undri, Pune 411060 · <a href="https://wa.me/919975327278" style="color:#0e6e5c">WhatsApp</a></div>
+    <div class="fine">Demo website created by SiteSeller Agent as a sample. Not the official Atlantic Dental and Wellness Studio website.</div>
+  </div>
+</footer>
+<a class="wa-float" href="https://wa.me/919975327278" aria-label="Chat on WhatsApp">💬</a>
+</body>
+</html>
