@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aadhish Dental Clinic — Undri, Pune | Dr. Vrushali & Dr. Avinash Kashid</title>
+<meta name="description" content="Aadhish Dental Clinic, Undri City Center Mall, Undri, Pune. A 5.0-rated dental clinic. Check-ups, cleaning, root canals, fillings and kids' dentistry.">
+<style>
+:root{--bg:#f6f9fb;--surface:#fff;--ink:#10222e;--muted:#5b7180;--accent:#1668a8;--accent2:#37a6d8;--soft:#e3f1f9;--line:#d6e4ec;--r:10px}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;background:var(--bg);color:var(--ink);line-height:1.65;-webkit-font-smoothing:antialiased}
+.wrap{max-width:1040px;margin:0 auto;padding:0 24px}
+header.hero{background:linear-gradient(155deg,#1668a8 0%,#10517f 55%,#0a3554 100%);color:#fff;padding:94px 0 74px;position:relative;overflow:hidden}
+header.hero::after{content:"";position:absolute;right:-140px;top:-100px;width:440px;height:440px;border-radius:50%;background:radial-gradient(circle,rgba(55,166,216,.38),transparent 70%)}
+.badge{display:inline-block;font-size:.7rem;letter-spacing:.2em;text-transform:uppercase;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.3);padding:7px 14px;border-radius:100px;margin-bottom:22px}
+header.hero h1{font-size:clamp(2.1rem,5.5vw,3.3rem);font-weight:700;letter-spacing:-.02em;line-height:1.12;max-width:720px}
+header.hero .sub{margin-top:18px;font-size:1.1rem;color:rgba(255,255,255,.85);max-width:580px}
+.rating{margin-top:26px;font-size:.95rem;color:rgba(255,255,255,.92)}
+.stars{color:#ffd35c;letter-spacing:2px}
+.cta-row{margin-top:34px;display:flex;gap:14px;flex-wrap:wrap}
+.btn{display:inline-block;padding:15px 30px;border-radius:var(--r);font-size:.82rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;text-decoration:none;transition:transform .15s}
+.btn:hover{transform:translateY(-2px)}
+.btn-light{background:#fff;color:#10517f}
+.btn-line{border:1px solid rgba(255,255,255,.55);color:#fff}
+.strip{background:var(--accent2);color:#052538;font-size:.86rem;font-weight:600;text-align:center;padding:14px 20px}
+section{padding:74px 0}
+.kicker{font-size:.7rem;letter-spacing:.2em;text-transform:uppercase;color:var(--accent);font-weight:700;margin-bottom:10px}
+h2{font-size:clamp(1.6rem,3.4vw,2.15rem);font-weight:700;letter-spacing:-.015em;margin-bottom:12px}
+.lead{color:var(--muted);max-width:620px;margin-bottom:38px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:26px}
+.card .em{font-size:1.5rem;display:block;margin-bottom:12px}
+.card h3{font-size:1.02rem;font-weight:700;margin-bottom:7px}
+.card p{color:var(--muted);font-size:.93rem}
+.alt{background:var(--surface);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.step{display:grid;grid-template-columns:44px 1fr;gap:18px;padding:22px 0;border-bottom:1px solid var(--line)}
+.step:last-child{border-bottom:none}
+.step .num{width:44px;height:44px;border-radius:50%;background:var(--soft);color:var(--accent);display:flex;align-items:center;justify-content:center;font-weight:700}
+.step h3{font-size:1.02rem;margin-bottom:4px}
+.step p{color:var(--muted);font-size:.93rem}
+.quotes{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:18px}
+.quote{background:var(--surface);border:1px solid var(--line);border-left:3px solid var(--accent2);border-radius:var(--r);padding:24px}
+.quote p{font-size:.95rem;color:#243c4a;font-style:italic}
+.quote .who{margin-top:14px;font-size:.78rem;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+.gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px}
+.tile{aspect-ratio:4/3;border-radius:var(--r);display:flex;align-items:flex-end;padding:18px;color:#fff;font-size:.78rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase}
+.t1{background:linear-gradient(150deg,#1668a8,#37a6d8)}
+.t2{background:linear-gradient(150deg,#1d4f6b,#2f8fa8)}
+.t3{background:linear-gradient(150deg,#2f5d7c,#5f9fbf)}
+.t4{background:linear-gradient(150deg,#3a4b7c,#7a8bc4)}
+.t5{background:linear-gradient(150deg,#0f4a6b,#3d8fae)}
+.t6{background:linear-gradient(150deg,#33556e,#6d94ab)}
+.dark{background:#10222e;color:#fff}
+.dark .kicker{color:var(--accent2)}
+.dark h2{color:#fff}
+.info-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:32px;margin-top:34px}
+.info h3{font-size:.72rem;letter-spacing:.18em;text-transform:uppercase;color:var(--accent2);margin-bottom:9px}
+.info p,.info a{color:rgba(255,255,255,.87);font-size:.95rem;text-decoration:none}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+@media(max-width:640px){.two{grid-template-columns:1fr}}
+.f{margin-bottom:16px}
+label{display:block;font-size:.72rem;letter-spacing:.13em;text-transform:uppercase;color:var(--muted);margin-bottom:6px;font-weight:700}
+input,select,textarea{width:100%;padding:13px 15px;border:1px solid var(--line);border-radius:8px;background:var(--surface);font-family:inherit;font-size:1rem;color:var(--ink)}
+button.btn-solid{margin-top:8px;background:var(--accent);color:#fff;border:none;padding:16px 34px;border-radius:var(--r);font-size:.82rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;cursor:pointer}
+.formmsg{display:none;margin-top:16px;padding:14px 16px;background:var(--soft);border-radius:8px;font-size:.9rem;color:var(--accent)}
+.hours-row{display:flex;justify-content:space-between;padding:10px 0;border-bottom:1px solid var(--line);font-size:.95rem}
+.hours-row span:last-child{color:var(--muted)}
+footer{background:#0a1a24;color:rgba(255,255,255,.7);padding:44px 0;font-size:.88rem}
+footer a{color:var(--accent2);text-decoration:none}
+.fine{margin-top:14px;font-size:.78rem;color:rgba(255,255,255,.45);max-width:640px}
+.wa-float{position:fixed;right:20px;bottom:20px;width:56px;height:56px;border-radius:50%;background:#25d366;display:flex;align-items:center;justify-content:center;font-size:1.5rem;text-decoration:none;box-shadow:0 6px 20px rgba(0,0,0,.25);z-index:50}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <span class="badge">Undri City Center Mall · Undri, Pune</span>
+    <h1>Aadhish Dental Clinic</h1>
+    <p class="sub">Gentle, unhurried dentistry in Undri. Dr. Vrushali and Dr. Avinash Kashid see patients by appointment, with clear pricing explained before treatment starts.</p>
+    <p class="rating"><span class="stars">★★★★★</span> 5.0 on Google · 27 reviews</p>
+    <div class="cta-row">
+      <a class="btn btn-light" href="#book">Request an appointment</a>
+      <a class="btn btn-line" href="tel:+917066903677">Call +91 70669 03677</a>
+    </div>
+  </div>
+</header>
+
+<div class="strip">Morning clinic: 10 AM – 2 PM, seven days a week. Call ahead to confirm a slot.</div>
+
+<section>
+  <div class="wrap">
+    <p class="kicker">What we treat</p>
+    <h2>Dental care for the whole family</h2>
+    <p class="lead">A neighbourhood clinic inside Undri City Center Mall, a short walk from Bellagio and Nyati County. Treatment plans and costs are discussed before anything begins.</p>
+    <div class="grid">
+      <div class="card"><span class="em">🦷</span><h3>Check-up &amp; consultation</h3><p>A full examination, X-ray where needed, and a written plan if more than one visit is required.</p></div>
+      <div class="card"><span class="em">✨</span><h3>Cleaning &amp; scaling</h3><p>Removal of tartar and stains, plus gum assessment for bleeding or tenderness.</p></div>
+      <div class="card"><span class="em">🔧</span><h3>Fillings</h3><p>Tooth-coloured composite restorations for cavities and chipped front teeth.</p></div>
+      <div class="card"><span class="em">🩺</span><h3>Root canal treatment</h3><p>Single and multi-visit RCT for infected or badly decayed teeth, followed by a cap.</p></div>
+      <div class="card"><span class="em">👶</span><h3>Children's dentistry</h3><p>Fillings, fluoride and first visits paced for children who are nervous about dentists.</p></div>
+      <div class="card"><span class="em">💎</span><h3>Crowns &amp; dentures</h3><p>Tooth-coloured caps and removable dentures made to match your natural shade.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="alt">
+  <div class="wrap">
+    <p class="kicker">How a visit works</p>
+    <h2>Simple, and no surprises</h2>
+    <div class="steps">
+      <div class="step"><div class="num">1</div><div><h3>Call or send a request</h3><p>Pick a morning slot. The clinic confirms by phone or WhatsApp, usually the same day.</p></div></div>
+      <div class="step"><div class="num">2</div><div><h3>Examination and a clear plan</h3><p>The doctor explains what she sees, what the options are, and what each one costs.</p></div></div>
+      <div class="step"><div class="num">3</div><div><h3>Treatment at your pace</h3><p>Single-visit work where possible. Longer plans are split into sittings that suit you.</p></div></div>
+      <div class="step"><div class="num">4</div><div><h3>Aftercare</h3><p>Written instructions, plus a number to call if something feels off afterwards.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <p class="kicker">Inside the clinic</p>
+    <h2>A calm, clean space</h2>
+    <p class="lead">Sterilised instruments, modern chairs, and a waiting area that does not feel like a hospital corridor.</p>
+    <div class="gallery">
+      <div class="tile t1">Reception</div>
+      <div class="tile t2">Treatment room</div>
+      <div class="tile t3">Sterilisation</div>
+      <div class="tile t4">Consultation</div>
+      <div class="tile t5">Kids' corner</div>
+      <div class="tile t6">Waiting area</div>
+    </div>
+  </div>
+</section>
+
+<section class="alt">
+  <div class="wrap">
+    <p class="kicker">What patients say</p>
+    <h2>Reviews from Google</h2>
+    <div class="quotes">
+      <div class="quote"><p>“Great experience with Dr. Vrushali at Aadhish Dental Clinic. She is professional, gentle, and made me feel comfortable throughout the treatment. Highly recommended!”</p><div class="who">Zubaida Shaistha Ebrahim · Google review</div></div>
+      <div class="quote"><p>“It is very good service and best experienced doctor, safe and best treatment, fees are also less. I got very good result.”</p><div class="who">Atul Dodke · Google review</div></div>
+      <div class="quote"><p>“My daughter's teeth restoration was done there, very nice doctor and clinic.”</p><div class="who">Swati Mundhe · Google review</div></div>
+    </div>
+  </div>
+</section>
+
+<section class="dark">
+  <div class="wrap">
+    <p class="kicker">Find us</p>
+    <h2>Undri City Center Mall</h2>
+    <div class="info-grid">
+      <div class="info"><h3>Address</h3><p>Undri City Center Mall, Bellagio,<br>Undri, Pune, Maharashtra 411060</p></div>
+      <div class="info"><h3>Phone &amp; WhatsApp</h3><p><a href="tel:+917066903677">+91 70669 03677</a></p></div>
+      <div class="info"><h3>Consulting hours</h3>
+        <div class="hours-row"><span>Every day</span><span>10 AM – 2 PM</span></div>
+        <div class="hours-row"><span>Evening</span><span>By appointment</span></div>
+      </div>
+      <div class="info"><h3>Doctors</h3><p>Dr. Vrushali Kashid<br>Dr. Avinash Kashid</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="book">
+  <div class="wrap">
+    <p class="kicker">Appointments</p>
+    <h2>Request a slot</h2>
+    <p class="lead">Send a request and the clinic will confirm a time with you.</p>
+    <form onsubmit="event.preventDefault();document.querySelector('.formmsg').style.display='block';">
+      <div class="two">
+        <div class="f"><label for="nm">Patient name</label><input id="nm" required placeholder="Full name"></div>
+        <div class="f"><label for="ph">Phone / WhatsApp</label><input id="ph" type="tel" required placeholder="+91"></div>
+      </div>
+      <div class="f"><label for="tp">What do you need?</label>
+        <select id="tp">
+          <option>General check-up</option>
+          <option>Cleaning &amp; scaling</option>
+          <option>Filling / cavity</option>
+          <option>Root canal treatment</option>
+          <option>Crown or cap</option>
+          <option>Dentures</option>
+          <option>Child's dental visit</option>
+        </select>
+      </div>
+      <div class="f"><label for="wh">Preferred day and time</label><input id="wh" placeholder="e.g. Saturday morning"></div>
+      <div class="f"><label for="ms">Anything we should know?</label><textarea id="ms" rows="3" placeholder="Pain, past treatments, sensitivity…"></textarea></div>
+      <button class="btn-solid" type="submit">Request Appointment</button>
+      <p class="formmsg">Thanks! This is a demo form. On the live site, the request lands directly in the clinic's inbox and WhatsApp.</p>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div>Aadhish Dental Clinic · Undri City Center Mall, Bellagio, Undri, Pune 411060 · <a href="https://wa.me/917066903677">WhatsApp</a></div>
+    <div class="fine">Demo website created by SiteSeller Agent as a sample. Not the official Aadhish Dental Clinic website.</div>
+  </div>
+</footer>
+<a class="wa-float" href="https://wa.me/917066903677" aria-label="Chat on WhatsApp">💬</a>
+</body>
+</html>

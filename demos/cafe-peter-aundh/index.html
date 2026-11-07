@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cafe Peter Aundh — All-Day Cafe on Seasons Road, Pune</title>
+<meta name="description" content="Cafe Peter, Seasons Road, Aundh, Pune. A 4.1-rated all-day cafe open 7 AM to midnight. Donuts, waffles, ramen, momos and breakfast.">
+<style>
+:root{--bg:#fdf8f2;--surface:#fff;--ink:#22180f;--muted:#7b6a58;--accent:#c05a1e;--accent2:#e58b3f;--soft:#fdebdb;--line:#eee0d1;--r:10px}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;background:var(--bg);color:var(--ink);line-height:1.65;-webkit-font-smoothing:antialiased}
+.wrap{max-width:1040px;margin:0 auto;padding:0 24px}
+header.hero{padding:96px 0 74px;background:linear-gradient(160deg,#c05a1e 0%,#a44a15 58%,#7c350d 100%);color:#fff;position:relative;overflow:hidden}
+header.hero::after{content:"";position:absolute;right:-120px;bottom:-160px;width:460px;height:460px;border-radius:50%;background:radial-gradient(circle,rgba(229,139,63,.42),transparent 70%)}
+.badge{display:inline-block;font-size:.7rem;letter-spacing:.2em;text-transform:uppercase;background:rgba(255,255,255,.15);border:1px solid rgba(255,255,255,.3);padding:7px 14px;border-radius:100px;margin-bottom:22px}
+header.hero h1{font-size:clamp(2.3rem,6vw,3.6rem);font-weight:800;letter-spacing:-.025em;line-height:1.05}
+header.hero .sub{margin-top:18px;font-size:1.1rem;color:rgba(255,255,255,.88);max-width:580px}
+.rating{margin-top:24px;font-size:.94rem;color:rgba(255,255,255,.92)}
+.stars{color:#ffd98a;letter-spacing:2px}
+.cta-row{margin-top:32px;display:flex;gap:14px;flex-wrap:wrap}
+.btn{display:inline-block;padding:15px 30px;border-radius:var(--r);font-size:.8rem;font-weight:700;letter-spacing:.09em;text-transform:uppercase;text-decoration:none;transition:transform .15s}
+.btn:hover{transform:translateY(-2px)}
+.btn-light{background:#fff;color:#a44a15}
+.btn-line{border:1px solid rgba(255,255,255,.55);color:#fff}
+.strip{background:var(--accent2);color:#2a1505;font-size:.85rem;font-weight:600;text-align:center;padding:14px 20px}
+section{padding:74px 0}
+.kicker{font-size:.7rem;letter-spacing:.2em;text-transform:uppercase;color:var(--accent);font-weight:700;margin-bottom:10px}
+h2{font-size:clamp(1.6rem,3.6vw,2.2rem);font-weight:800;letter-spacing:-.02em;margin-bottom:12px}
+.lead{color:var(--muted);max-width:620px;margin-bottom:38px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:26px}
+.card .em{font-size:1.5rem;display:block;margin-bottom:12px}
+.card h3{font-size:1.02rem;font-weight:700;margin-bottom:7px}
+.card p{color:var(--muted);font-size:.93rem}
+.alt{background:var(--surface);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.quotes{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:18px}
+.quote{background:var(--soft);border:1px solid var(--line);border-radius:var(--r);padding:24px}
+.quote p{font-size:.95rem;color:#3c2c1c}
+.quote .who{margin-top:14px;font-size:.76rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px}
+.tile{aspect-ratio:4/3;border-radius:var(--r);display:flex;align-items:flex-end;padding:18px;color:#fff;font-size:.76rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase}
+.t1{background:linear-gradient(150deg,#c05a1e,#e58b3f)}
+.t2{background:linear-gradient(150deg,#7a4a2e,#b8825a)}
+.t3{background:linear-gradient(150deg,#4f3a2e,#8a6f5a)}
+.t4{background:linear-gradient(150deg,#2e4a3a,#5a8a6f)}
+.t5{background:linear-gradient(150deg,#5c3a4a,#9c6f85)}
+.t6{background:linear-gradient(150deg,#3a3f4a,#6f7686)}
+.info-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:30px;margin-top:34px}
+.info h3{font-size:.7rem;letter-spacing:.18em;text-transform:uppercase;color:var(--accent2);margin-bottom:9px}
+.info p,.info a{color:rgba(255,255,255,.88);font-size:.95rem;text-decoration:none}
+.dark{background:#241a12;color:#fff}
+.dark h2{color:#fff}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+@media(max-width:640px){.two{grid-template-columns:1fr}}
+.f{margin-bottom:16px}
+label{display:block;font-size:.7rem;letter-spacing:.13em;text-transform:uppercase;color:var(--muted);margin-bottom:6px;font-weight:700}
+input,select,textarea{width:100%;padding:13px 15px;border:1px solid var(--line);border-radius:8px;background:var(--surface);font-family:inherit;font-size:1rem;color:var(--ink)}
+button.btn-solid{margin-top:6px;background:var(--accent);color:#fff;border:none;padding:16px 34px;border-radius:var(--r);font-size:.8rem;font-weight:700;letter-spacing:.09em;text-transform:uppercase;cursor:pointer}
+.formmsg{display:none;margin-top:16px;padding:14px 16px;background:var(--soft);border-radius:8px;font-size:.9rem;color:var(--accent)}
+footer{background:#1b1310;color:rgba(255,255,255,.7);padding:44px 0;font-size:.88rem}
+footer a{color:var(--accent2);text-decoration:none}
+.fine{margin-top:14px;font-size:.78rem;color:rgba(255,255,255,.4);max-width:640px}
+.wa-float{position:fixed;right:20px;bottom:20px;width:56px;height:56px;border-radius:50%;background:#25d366;display:flex;align-items:center;justify-content:center;font-size:1.5rem;text-decoration:none;box-shadow:0 6px 20px rgba(0,0,0,.3);z-index:50}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <span class="badge">Seasons Road, Aundh · Open 7 AM to midnight</span>
+    <h1>Cafe Peter Aundh</h1>
+    <p class="sub">Breakfast at seven, donuts at noon, ramen at nine. The Aundh outpost of Cafe Peter runs a full day without ever changing its menu.</p>
+    <p class="rating"><span class="stars">★★★★☆</span> 4.1 on Google · 3,600 reviews</p>
+    <div class="cta-row">
+      <a class="btn btn-light" href="tel:+917888272992">Call +91 788 827 2992</a>
+      <a class="btn btn-line" href="#visit">Find us</a>
+    </div>
+  </div>
+</header>
+
+<div class="strip">Serving breakfast, brunch and late dinner, seven days a week.</div>
+
+<section>
+  <div class="wrap">
+    <p class="kicker">The menu</p>
+    <h2>What Aundh orders most</h2>
+    <p class="lead">A long menu that covers Indian breakfast, Asian plates and a bakery counter. The donuts and waffles alone have their own following.</p>
+    <div class="grid">
+      <div class="card"><span class="em">🍩</span><h3>Donuts</h3><p>The single most-mentioned item in reviews. Glazed, filled and chocolate.</p></div>
+      <div class="card"><span class="em">🧇</span><h3>Waffles</h3><p>Belgian-style, served with fruit, chocolate or ice cream.</p></div>
+      <div class="card"><span class="em">🍜</span><h3>Ramen</h3><p>Japanese ramen bowls, a favourite with the late crowd.</p></div>
+      <div class="card"><span class="em">🥟</span><h3>Momos</h3><p>Steamed and fried, veg and chicken, with a sharp chutney.</p></div>
+      <div class="card"><span class="em">🍳</span><h3>Breakfast</h3><p>From 7 AM: eggs, pancakes, sandwiches and proper filter coffee.</p></div>
+      <div class="card"><span class="em">🍝</span><h3>Pasta &amp; mains</h3><p>Including a gochujang pasta and Japanese omu rice.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="alt">
+  <div class="wrap">
+    <p class="kicker">The room</p>
+    <h2>Made for long sittings</h2>
+    <p class="lead">Indoor and outdoor seating right by Seasons Road, comfortable for family breakfasts and laptop afternoons alike.</p>
+    <div class="gallery">
+      <div class="tile t1">Entry</div>
+      <div class="tile t2">Outdoor seating</div>
+      <div class="tile t3">Bakery counter</div>
+      <div class="tile t4">Breakfast</div>
+      <div class="tile t5">Desserts</div>
+      <div class="tile t6">Laptop corner</div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <p class="kicker">What guests say</p>
+    <h2>From Google reviews</h2>
+    <div class="quotes">
+      <div class="quote"><p>“Tasty food, good quantity and pricing. Chicken was yummy.”</p><div class="who">Google review</div></div>
+      <div class="quote"><p>“Attendant Vaibhavi gave us excellent service, served quickly and was very polite.”</p><div class="who">Google review</div></div>
+      <div class="quote"><p>“Good eating joint for breakfast, brunch or small meals.”</p><div class="who">Google review</div></div>
+    </div>
+  </div>
+</section>
+
+<section class="dark" id="visit">
+  <div class="wrap">
+    <p class="kicker">Visit</p>
+    <h2>On Seasons Road</h2>
+    <div class="info-grid">
+      <div class="info"><h3>Address</h3><p>1st HPCL Petrol Pump, Seasons Rd, Marutirao Gaikwad Nagar, Aundh, Pune 411067</p></div>
+      <div class="info"><h3>Phone &amp; WhatsApp</h3><p><a href="tel:+917888272992">+91 788 827 2992</a></p></div>
+      <div class="info"><h3>Hours</h3><p>7 AM – 12 AM, all seven days</p></div>
+      <div class="info"><h3>Good for</h3><p>Breakfast, brunch, family meals, WFH</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="book">
+  <div class="wrap">
+    <p class="kicker">Table requests</p>
+    <h2>Book a table</h2>
+    <p class="lead">Weekends fill up early. Send a request and we will confirm.</p>
+    <form onsubmit="event.preventDefault();document.querySelector('.formmsg').style.display='block';">
+      <div class="two">
+        <div class="f"><label for="nm">Your name</label><input id="nm" required placeholder="Full name"></div>
+        <div class="f"><label for="ph">Phone / WhatsApp</label><input id="ph" type="tel" required placeholder="+91"></div>
+      </div>
+      <div class="two">
+        <div class="f"><label for="pp">How many people?</label><input id="pp" type="number" min="1" placeholder="4"></div>
+        <div class="f"><label for="wh">When?</label><input id="wh" placeholder="e.g. Sunday 9 AM"></div>
+      </div>
+      <div class="f"><label for="ms">Anything else?</label><textarea id="ms" rows="3" placeholder="Birthday, outdoor seating, high chair…"></textarea></div>
+      <button class="btn-solid" type="submit">Request Table</button>
+      <p class="formmsg">Thanks! This is a demo form. On the live site, the request lands directly in the cafe's inbox and WhatsApp.</p>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div>Cafe Peter Aundh · Seasons Rd, Marutirao Gaikwad Nagar, Aundh, Pune 411067 · <a href="https://wa.me/917888272992">WhatsApp</a></div>
+    <div class="fine">Demo website created by SiteSeller Agent as a sample. Not the official Cafe Peter website.</div>
+  </div>
+</footer>
+<a class="wa-float" href="https://wa.me/917888272992" aria-label="Chat on WhatsApp">💬</a>
+</body>
+</html>

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Optimus — 24-Hour Cafe in Viman Nagar, Pune</title>
+<meta name="description" content="Optimus cafe, Konark Nagar, Viman Nagar, Pune. A 4.7-rated cafe open 24 hours. Sandwiches, burgers, cold coffee and a quiet place to work.">
+<style>
+:root{--bg:#0e1116;--surface:#161c24;--ink:#f2f5f8;--muted:#9aa8b6;--accent:#f5b544;--accent2:#e88b3c;--soft:#22303c;--line:#26313c;--r:10px}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;background:var(--bg);color:var(--ink);line-height:1.65;-webkit-font-smoothing:antialiased}
+.wrap{max-width:1040px;margin:0 auto;padding:0 24px}
+header.hero{padding:100px 0 76px;position:relative;overflow:hidden;background:radial-gradient(900px 420px at 78% -10%,rgba(245,181,68,.16),transparent 70%),linear-gradient(180deg,#111823,#0e1116)}
+.badge{display:inline-block;font-size:.7rem;letter-spacing:.2em;text-transform:uppercase;background:rgba(245,181,68,.12);color:var(--accent);border:1px solid rgba(245,181,68,.3);padding:7px 14px;border-radius:100px;margin-bottom:22px}
+header.hero h1{font-size:clamp(2.4rem,6.5vw,4rem);font-weight:800;letter-spacing:-.03em;line-height:1.02}
+header.hero .sub{margin-top:20px;font-size:1.12rem;color:var(--muted);max-width:560px}
+.rating{margin-top:24px;font-size:.94rem;color:var(--muted)}
+.stars{color:var(--accent);letter-spacing:2px}
+.cta-row{margin-top:34px;display:flex;gap:14px;flex-wrap:wrap}
+.btn{display:inline-block;padding:15px 30px;border-radius:var(--r);font-size:.8rem;font-weight:700;letter-spacing:.09em;text-transform:uppercase;text-decoration:none;transition:transform .15s}
+.btn:hover{transform:translateY(-2px)}
+.btn-primary{background:var(--accent);color:#191307}
+.btn-line{border:1px solid var(--line);color:var(--ink)}
+.strip{background:var(--accent);color:#191307;font-size:.85rem;font-weight:700;text-align:center;padding:14px 20px;letter-spacing:.02em}
+section{padding:76px 0}
+.kicker{font-size:.7rem;letter-spacing:.2em;text-transform:uppercase;color:var(--accent);font-weight:700;margin-bottom:10px}
+h2{font-size:clamp(1.6rem,3.6vw,2.2rem);font-weight:800;letter-spacing:-.02em;margin-bottom:12px}
+.lead{color:var(--muted);max-width:600px;margin-bottom:38px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:26px}
+.card .em{font-size:1.5rem;display:block;margin-bottom:12px}
+.card h3{font-size:1.02rem;font-weight:700;margin-bottom:7px}
+.card p{color:var(--muted);font-size:.93rem}
+.alt{background:#121820;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.quotes{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:18px}
+.quote{background:var(--surface);border:1px solid var(--line);border-left:3px solid var(--accent);border-radius:var(--r);padding:24px}
+.quote p{font-size:.95rem;color:#cfd9e2}
+.quote .who{margin-top:14px;font-size:.76rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px}
+.tile{aspect-ratio:4/3;border-radius:var(--r);display:flex;align-items:flex-end;padding:18px;color:#fff;font-size:.76rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;border:1px solid var(--line)}
+.t1{background:linear-gradient(150deg,#3a2a10,#8a6220)}
+.t2{background:linear-gradient(150deg,#1b2a35,#3d6178)}
+.t3{background:linear-gradient(150deg,#2c1f35,#5f4478)}
+.t4{background:linear-gradient(150deg,#123028,#2c6b56)}
+.t5{background:linear-gradient(150deg,#33202a,#6e4557)}
+.t6{background:linear-gradient(150deg,#232a33,#4d5b6b)}
+.info-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:30px;margin-top:34px}
+.info h3{font-size:.7rem;letter-spacing:.18em;text-transform:uppercase;color:var(--accent);margin-bottom:9px}
+.info p,.info a{color:rgba(255,255,255,.85);font-size:.95rem;text-decoration:none}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+@media(max-width:640px){.two{grid-template-columns:1fr}}
+.f{margin-bottom:16px}
+label{display:block;font-size:.7rem;letter-spacing:.13em;text-transform:uppercase;color:var(--muted);margin-bottom:6px;font-weight:700}
+input,select,textarea{width:100%;padding:13px 15px;border:1px solid var(--line);border-radius:8px;background:var(--surface);font-family:inherit;font-size:1rem;color:var(--ink)}
+button.btn-solid{margin-top:6px;background:var(--accent);color:#191307;border:none;padding:16px 34px;border-radius:var(--r);font-size:.8rem;font-weight:700;letter-spacing:.09em;text-transform:uppercase;cursor:pointer}
+.formmsg{display:none;margin-top:16px;padding:14px 16px;background:var(--soft);border-radius:8px;font-size:.9rem;color:var(--accent)}
+footer{background:#0a0d11;color:rgba(255,255,255,.68);padding:44px 0;font-size:.88rem;border-top:1px solid var(--line)}
+footer a{color:var(--accent);text-decoration:none}
+.fine{margin-top:14px;font-size:.78rem;color:rgba(255,255,255,.4);max-width:640px}
+.wa-float{position:fixed;right:20px;bottom:20px;width:56px;height:56px;border-radius:50%;background:#25d366;display:flex;align-items:center;justify-content:center;font-size:1.5rem;text-decoration:none;box-shadow:0 6px 20px rgba(0,0,0,.4);z-index:50}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <span class="badge">Open 24 hours · Konark Nagar, Viman Nagar</span>
+    <h1>Optimus</h1>
+    <p class="sub">The all-night cafe in Viman Nagar. Cheesy corn nuggets, chicken sandwiches, cold coffee, and a seat you can keep at 2 AM.</p>
+    <p class="rating"><span class="stars">★★★★½</span> 4.7 on Google · 202 reviews</p>
+    <div class="cta-row">
+      <a class="btn btn-primary" href="tel:+919834439257">Call +91 98344 39257</a>
+      <a class="btn btn-line" href="#visit">Find us</a>
+    </div>
+  </div>
+</header>
+
+<div class="strip">We never close. Walk in any hour, any day of the week.</div>
+
+<section>
+  <div class="wrap">
+    <p class="kicker">The menu</p>
+    <h2>What people come back for</h2>
+    <p class="lead">Cafe staples done properly, at prices that do not punish a long study session. Vegetarian and non-vegetarian, all day and all night.</p>
+    <div class="grid">
+      <div class="card"><span class="em">🧀</span><h3>Cheesy corn nuggets</h3><p>The most-ordered snack on the menu. Crisp outside, molten inside.</p></div>
+      <div class="card"><span class="em">🥪</span><h3>Sandwiches</h3><p>Chicken, cheese and veg options, grilled to order. A house speciality.</p></div>
+      <div class="card"><span class="em">🍔</span><h3>Burgers</h3><p>Loaded patties with fries. A solid meal at any hour.</p></div>
+      <div class="card"><span class="em">☕</span><h3>Coffee &amp; tea</h3><p>Cold coffee, shakes and hot brews, including proper black tea.</p></div>
+      <div class="card"><span class="em">💻</span><h3>Work-friendly</h3><p>Stable Wi-Fi and power points. Set up and stay as long as you need.</p></div>
+      <div class="card"><span class="em">🎉</span><h3>Groups welcome</h3><p>Space for birthdays, catch-ups and post-shift dinners.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="alt">
+  <div class="wrap">
+    <p class="kicker">The space</p>
+    <h2>Late-night, low-key</h2>
+    <p class="lead">Warm lighting, comfortable seating and music at a volume that lets you talk.</p>
+    <div class="gallery">
+      <div class="tile t1">Late night</div>
+      <div class="tile t2">Coffee bar</div>
+      <div class="tile t3">Corner booth</div>
+      <div class="tile t4">Outdoor seats</div>
+      <div class="tile t5">Desserts</div>
+      <div class="tile t6">Study sessions</div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <p class="kicker">What guests say</p>
+    <h2>From Google reviews</h2>
+    <div class="quotes">
+      <div class="quote"><p>“Yummmyyyyy Cheesy corn nuggets and chicken sandwich….lovely place..”</p><div class="who">Google review</div></div>
+      <div class="quote"><p>“Nice arrangements, good service also. Environment is very pleasant.”</p><div class="who">Google review</div></div>
+      <div class="quote"><p>“Good cafe, very good service, good quality food available with affordable prices.”</p><div class="who">Google review</div></div>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="visit">
+  <div class="wrap">
+    <p class="kicker">Visit</p>
+    <h2>Konark Nagar, Viman Nagar</h2>
+    <div class="info-grid">
+      <div class="info"><h3>Address</h3><p>Shop no 10, Optimus Society, 14, Konark Nagar, Mhada Colony, Viman Nagar, Pune 411014</p></div>
+      <div class="info"><h3>Phone &amp; WhatsApp</h3><p><a href="tel:+919834439257">+91 98344 39257</a></p></div>
+      <div class="info"><h3>Hours</h3><p>Open 24 hours, every day</p></div>
+      <div class="info"><h3>Good for</h3><p>Late nights, study sessions, small groups</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="book">
+  <div class="wrap">
+    <p class="kicker">Table requests</p>
+    <h2>Reserve a table</h2>
+    <p class="lead">Tell us when you are coming and how many. We will keep a table ready.</p>
+    <form onsubmit="event.preventDefault();document.querySelector('.formmsg').style.display='block';">
+      <div class="two">
+        <div class="f"><label for="nm">Your name</label><input id="nm" required placeholder="Full name"></div>
+        <div class="f"><label for="ph">Phone / WhatsApp</label><input id="ph" type="tel" required placeholder="+91"></div>
+      </div>
+      <div class="two">
+        <div class="f"><label for="pp">How many people?</label><input id="pp" type="number" min="1" placeholder="2"></div>
+        <div class="f"><label for="wh">When?</label><input id="wh" placeholder="e.g. tonight 11 PM"></div>
+      </div>
+      <div class="f"><label for="ms">Anything else?</label><textarea id="ms" rows="3" placeholder="Birthday, quiet corner, plug points…"></textarea></div>
+      <button class="btn-solid" type="submit">Request Table</button>
+      <p class="formmsg">Thanks! This is a demo form. On the live site, the request lands directly in the cafe's inbox and WhatsApp.</p>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div>Optimus · Shop no 10, Optimus Society, Konark Nagar, Viman Nagar, Pune 411014 · <a href="https://wa.me/919834439257">WhatsApp</a></div>
+    <div class="fine">Demo website created by SiteSeller Agent as a sample. Not the official Optimus website.</div>
+  </div>
+</footer>
+<a class="wa-float" href="https://wa.me/919834439257" aria-label="Chat on WhatsApp">💬</a>
+</body>
+</html>
