@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Qehhwa Cafe | NIBM Road, Kondhwa, Pune</title>
+<meta name="description" content="Qehhwa Cafe, NIBM Road, Kondhwa, Pune. Boho cafe serving espresso, pasta, wings and all-day breakfast. 4.5 from 493 Google reviews. Open daily 10:30 AM to 11 PM.">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,700;1,500&family=Karla:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{--ink:#221a16;--clay:#b4633c;--clay-dk:#8f4826;--cream:#faf3e9;--sage:#7e8b6f;--line:#e8dccd;--muted:#7d6a5c;--gold:#c9a227}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:Karla,system-ui,sans-serif;color:var(--ink);background:#fff;line-height:1.65;-webkit-font-smoothing:antialiased}
+  h1,h2,h3,.display{font-family:"Playfair Display",Georgia,serif;font-weight:500;line-height:1.14}
+  a{text-decoration:none;color:inherit}
+  .wrap{max-width:1130px;margin:0 auto;padding:0 22px}
+  header{position:sticky;top:0;z-index:50;background:rgba(250,243,233,.95);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+  .nav{display:flex;align-items:center;justify-content:space-between;height:74px;gap:16px}
+  .brand{display:flex;align-items:center;gap:11px;font-family:"Playfair Display",serif;font-size:1.25rem;letter-spacing:.01em}
+  .mark{width:38px;height:38px;border-radius:50%;background:var(--clay);color:#fff;display:grid;place-items:center;font-family:Karla,sans-serif;font-size:.9rem;font-weight:700}
+  .nav nav{display:none;gap:27px;font-size:.9rem;font-weight:500;color:var(--muted)}
+  .nav nav a:hover{color:var(--clay)}
+  @media(min-width:940px){.nav nav{display:flex}}
+  .btn{background:var(--ink);color:#fff;padding:12px 22px;border-radius:999px;font-size:.86rem;font-weight:600}
+  .hero{position:relative;background:var(--cream);padding:62px 0 70px;overflow:hidden}
+  .hero:before{content:"";position:absolute;width:460px;height:460px;border-radius:50%;background:radial-gradient(circle,rgba(180,99,60,.16),transparent 68%);top:-120px;right:-90px}
+  .hero-grid{position:relative;display:grid;gap:42px;align-items:center}
+  @media(min-width:940px){.hero-grid{grid-template-columns:1.02fr .98fr}}
+  .pill{display:inline-flex;align-items:center;gap:9px;background:#fff;border:1px solid var(--line);padding:7px 15px;border-radius:999px;font-size:.78rem;font-weight:600;color:var(--clay-dk);margin-bottom:22px}
+  .stars{color:var(--gold)}
+  h1{font-size:clamp(2.5rem,6vw,4rem);margin-bottom:18px}
+  h1 em{font-style:italic;color:var(--clay)}
+  .lead{font-size:1.04rem;color:#5c4a3f;max-width:50ch;margin-bottom:28px}
+  .cta{display:flex;flex-wrap:wrap;gap:12px;align-items:center}
+  .btn-p{background:var(--clay);color:#fff;padding:15px 27px;border-radius:999px;font-weight:700;font-size:.93rem;box-shadow:0 16px 34px -20px rgba(180,99,60,.9)}
+  .btn-s{background:transparent;color:var(--ink);padding:15px 26px;border-radius:999px;font-weight:600;font-size:.93rem;border:1.5px solid var(--ink)}
+  .heroimg{position:relative;border-radius:180px 180px 22px 22px;overflow:hidden;aspect-ratio:4/5;max-height:520px;box-shadow:0 40px 80px -52px rgba(34,26,22,.6)}
+  .heroimg img{width:100%;height:100%;object-fit:cover;display:block}
+  section{padding:78px 0}
+  .eyebrow{font-size:.73rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--clay);margin-bottom:12px}
+  h2{font-size:clamp(1.95rem,4.2vw,2.9rem);margin-bottom:14px}
+  .sub{color:var(--muted);max-width:62ch;margin-bottom:40px;font-size:1rem}
+  .band{background:var(--cream);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+  .grid3{display:grid;gap:18px}
+  @media(min-width:780px){.grid3{grid-template-columns:repeat(3,1fr)}}
+  .card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:26px;transition:.22s}
+  .card:hover{transform:translateY(-4px);box-shadow:0 26px 50px -34px rgba(34,26,22,.42)}
+  .card .ico{font-size:1.3rem;margin-bottom:12px;color:var(--clay)}
+  .card h3{font-size:1.2rem;margin-bottom:6px}
+  .card p{font-size:.91rem;color:var(--muted)}
+  .menu{display:grid;gap:12px}
+  @media(min-width:760px){.menu{grid-template-columns:repeat(2,1fr);gap:12px 34px}}
+  .mi{display:flex;justify-content:space-between;gap:14px;padding:13px 0;border-bottom:1px dashed var(--line);align-items:baseline}
+  .mi strong{font-size:.97rem;font-weight:600;display:block}
+  .mi span{font-size:.82rem;color:var(--muted)}
+  .mi em{font-family:"Playfair Display",serif;font-style:normal;font-size:1rem;color:var(--clay-dk);white-space:nowrap}
+  .gal{display:grid;gap:14px;grid-template-columns:repeat(2,1fr)}
+  @media(min-width:840px){.gal{grid-template-columns:repeat(4,1fr)}}
+  .gal figure{position:relative;border-radius:14px;overflow:hidden;aspect-ratio:3/4}
+  .gal img{width:100%;height:100%;object-fit:cover;display:block;transition:.5s}
+  .gal figure:hover img{transform:scale(1.05)}
+  .gal figcaption{position:absolute;inset:auto 0 0 0;background:linear-gradient(transparent,rgba(34,26,22,.86));color:#fff;font-size:.74rem;font-weight:600;padding:26px 12px 10px}
+  .quotes{display:grid;gap:18px}
+  @media(min-width:840px){.quotes{grid-template-columns:repeat(3,1fr)}}
+  .quote{background:#fff;border:1px solid var(--line);border-radius:16px;padding:25px;display:flex;flex-direction:column;gap:13px}
+  .quote p{font-size:.93rem;color:#4a3b32}
+  .who{padding-top:12px;border-top:1px solid var(--line);margin-top:auto}
+  .who strong{font-size:.86rem;display:block}
+  .who span{font-size:.74rem;color:var(--muted)}
+  .split{display:grid;gap:46px}
+  @media(min-width:940px){.split{grid-template-columns:1fr 1fr;align-items:start}}
+  .info li{list-style:none;display:flex;gap:15px;padding:17px 0;border-bottom:1px solid var(--line)}
+  .info li .k{color:var(--clay);font-size:1.05rem;width:20px;flex:none}
+  .info li strong{display:block;font-size:.77rem;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);font-weight:700;margin-bottom:2px}
+  .info li span{font-size:.94rem}
+  .form{background:#fff;border:1px solid var(--line);border-radius:20px;padding:29px;box-shadow:0 34px 70px -52px rgba(34,26,22,.55)}
+  .form h3{font-size:1.4rem;margin-bottom:5px}
+  .form .hint{font-size:.85rem;color:var(--muted);margin-bottom:19px}
+  .form label{display:block;font-size:.81rem;font-weight:600;margin-bottom:6px}
+  .form input,.form select,.form textarea{width:100%;padding:12px 14px;border:1px solid var(--line);border-radius:11px;font-family:inherit;font-size:.92rem;margin-bottom:14px;background:#fff;color:var(--ink)}
+  .form input:focus,.form textarea:focus,.form select:focus{outline:2px solid #e2b79f;border-color:transparent}
+  .form button{width:100%;background:var(--clay);color:#fff;border:0;padding:15px;border-radius:999px;font-weight:700;font-size:.94rem;font-family:inherit;cursor:pointer}
+  .note{font-size:.75rem;color:var(--muted);margin-top:11px;text-align:center}
+  .btn-wa{background:#25D366;color:#fff;padding:14px 24px;border-radius:999px;font-weight:600;font-size:.91rem;display:inline-flex;align-items:center;gap:9px}
+  footer{background:var(--ink);color:#d3c4b8;padding:54px 0 30px;font-size:.9rem}
+  .fgrid{display:grid;gap:30px;margin-bottom:32px}
+  @media(min-width:780px){.fgrid{grid-template-columns:1.5fr 1fr 1fr}}
+  footer h4{font-family:"Playfair Display",serif;color:#fff;font-size:1.05rem;margin-bottom:12px}
+  footer li{list-style:none;margin-bottom:7px;font-size:.88rem}
+  footer a:hover{color:#fff}
+  .fbot{border-top:1px solid rgba(255,255,255,.14);padding-top:19px;font-size:.78rem;color:#a08d7f;display:flex;flex-wrap:wrap;gap:10px;justify-content:space-between}
+  .wafloat{position:fixed;right:18px;bottom:18px;z-index:60;width:56px;height:56px;border-radius:50%;background:#25D366;display:grid;place-items:center;box-shadow:0 14px 30px -10px rgba(37,211,102,.85)}
+  .wafloat svg{width:29px;height:29px;fill:#fff}
+  .fade{opacity:0;transform:translateY(16px);transition:.7s cubic-bezier(.2,.7,.2,1)}
+  .fade.in{opacity:1;transform:none}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap nav">
+    <div class="brand"><span class="mark">Q</span> Qehhwa Cafe</div>
+    <nav>
+      <a href="#menu">Menu</a>
+      <a href="#space">The Space</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#visit">Find Us</a>
+    </nav>
+    <a class="btn" href="tel:+917020193085">Call us</a>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <div class="pill"><span class="stars">★★★★★</span> 4.5 from 493 Google reviews</div>
+      <h1>Slow coffee, big plates, <em>boho corners</em>.</h1>
+      <p class="lead">Qehhwa is a garden-toned cafe on NIBM Road in Kondhwa. Espresso made properly, pasta and wings that people come back for, and enough chargers and daylight to camp at a table all afternoon.</p>
+      <div class="cta">
+        <a class="btn-p" href="#visit">Find us on NIBM Road</a>
+        <a class="btn-s" href="tel:+917020193085">+91 70201 93085</a>
+      </div>
+    </div>
+    <div class="heroimg fade">
+      <img src="https://images.pexels.com/photos/2347311/pexels-photo-2347311.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Coffee on a cafe table">
+    </div>
+  </div>
+</section>
+
+<section id="menu">
+  <div class="wrap">
+    <div class="eyebrow">Coffee &amp; Food</div>
+    <h2>What to order</h2>
+    <p class="sub">Coffee runs from a ₹69 espresso to a full cappuccino. The kitchen does all-day breakfast, pasta, wings and a proper chicken steak, with a menu that regulars describe as interesting rather than predictable.</p>
+    <div class="menu">
+      <div class="mi fade"><div><strong>Espresso</strong><span>The baseline. Ristretto-leaning, served short.</span></div><em>₹69</em></div>
+      <div class="mi fade"><div><strong>Macchiato</strong><span>Espresso marked with a spoon of milk foam.</span></div><em>₹79</em></div>
+      <div class="mi fade"><div><strong>Americano</strong><span>Long black, hot or over ice.</span></div><em>₹99</em></div>
+      <div class="mi fade"><div><strong>Mexican Magic</strong><span>A house coffee, spiced and sweet.</span></div><em>₹119</em></div>
+      <div class="mi fade"><div><strong>Cappuccino</strong><span>Proper foam, proper cup.</span></div><em>₹149</em></div>
+      <div class="mi fade"><div><strong>Alfredo pasta</strong><span>Mentioned again and again in reviews.</span></div><em>On menu</em></div>
+      <div class="mi fade"><div><strong>Honey chilli wings</strong><span>Sticky, sweet-hot, good for sharing.</span></div><em>On menu</em></div>
+      <div class="mi fade"><div><strong>Classic pancakes</strong><span>All-day breakfast territory.</span></div><em>On menu</em></div>
+      <div class="mi fade"><div><strong>Chicken steak</strong><span>Plated main, ordered with pancakes in the same sitting.</span></div><em>On menu</em></div>
+      <div class="mi fade"><div><strong>Mojito &amp; cold coffee</strong><span>The two cold drinks that show up most in reviews.</span></div><em>On menu</em></div>
+    </div>
+    <p style="margin-top:26px;font-size:.84rem;color:var(--muted)">Prices shown are the coffee prices listed on the cafe's public ordering page and may change. Message the cafe for the current full menu.</p>
+  </div>
+</section>
+
+<section class="band" id="space">
+  <div class="wrap">
+    <div class="eyebrow">The Space</div>
+    <h2>Built for long conversations and longer laptops</h2>
+    <p class="sub">Boho styling, indoor and outdoor seating, and plug points dotted through the room. It is a cafe people work from in the day and meet friends at in the evening.</p>
+    <div class="gal">
+      <figure><img src="https://images.pexels.com/photos/2347311/pexels-photo-2347311.jpeg?auto=compress&cs=tinysrgb&w=700" alt="Coffee cup on a wooden table"><figcaption>Coffee counter</figcaption></figure>
+      <figure><img src="https://images.pexels.com/photos/3845810/pexels-photo-3845810.jpeg?auto=compress&cs=tinysrgb&w=700" alt="Cafe seating"><figcaption>Indoor seating</figcaption></figure>
+      <figure><img src="https://images.pexels.com/photos/305568/pexels-photo-305568.jpeg?auto=compress&cs=tinysrgb&w=700" alt="Table setting"><figcaption>Table set-up</figcaption></figure>
+      <figure><img src="https://images.pexels.com/photos/3881449/pexels-photo-3881449.jpeg?auto=compress&cs=tinysrgb&w=700" alt="People at a cafe"><figcaption>Weekend crowd</figcaption></figure>
+    </div>
+    <div class="grid3" style="margin-top:22px">
+      <div class="card fade"><div class="ico">☕</div><h3>Charging points</h3><p>Plugs at multiple seats, which reviewers call out for laptop days.</p></div>
+      <div class="card fade"><div class="ico">✿</div><h3>Boho interiors</h3><p>Warm neutrals, plants and daylight for the photos you came for.</p></div>
+      <div class="card fade"><div class="ico">◷</div><h3>Late kitchen</h3><p>Open until 11 PM on weekdays, 11:30 PM on weekends.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="reviews">
+  <div class="wrap">
+    <div class="eyebrow">Reviews</div>
+    <h2>4.5 from 493 Google reviews</h2>
+    <p class="sub">What guests actually wrote on the cafe's Google listing.</p>
+    <div class="quotes">
+      <div class="quote fade">
+        <p>"Visited Qehwa Cafe on a Sunday evening with family. Indoor seating is limited and it can get a bit warm during summer, but the service and food are good. We especially liked the pasta, mojito and cold coffee."</p>
+        <div class="who"><strong>Shayan</strong><span>Google review</span></div>
+      </div>
+      <div class="quote fade">
+        <p>"One of the best work-friendly spots I've been to. The ambience is calm and cozy, seating is comfortable, and they've thoughtfully provided charging points at multiple spots."</p>
+        <div class="who"><strong>Shubham Jamdade</strong><span>Google review</span></div>
+      </div>
+      <div class="quote fade">
+        <p>"Such a welcoming place with the prettiest aesthetics. The pasta and chicken wings were really good and everything else was great too."</p>
+        <div class="who"><strong>Zobiya Ansari</strong><span>Google review</span></div>
+      </div>
+    </div>
+    <p style="margin-top:26px;font-size:.9rem;color:var(--muted)">All reviews are public on the cafe's <a href="https://www.google.com/maps/search/Qehhwa+Cafe+NIBM+Road+Kondhwa+Pune" style="color:var(--clay);font-weight:600">Google listing</a>.</p>
+  </div>
+</section>
+
+<section class="band" id="visit">
+  <div class="wrap split">
+    <div>
+      <div class="eyebrow">Find Us</div>
+      <h2>Yeshraj building, NIBM Road</h2>
+      <p class="sub">On NIBM Road in Kondhwa, easy from Salunke Vihar, Clover Hills and Mohammed Wadi. Walk in or message ahead for a table on weekends.</p>
+      <ul class="info">
+        <li><span class="k">◉</span><div><strong>Address</strong><span>Yeshraj Shop No. 1, Sr No. 18/5/2, NIBM Road, Kondhwa, Pune 411048</span></div></li>
+        <li><span class="k">☎</span><div><strong>Phone</strong><span><a href="tel:+917020193085">+91 70201 93085</a></span></div></li>
+        <li><span class="k">◷</span><div><strong>Hours</strong><span>Monday to Friday 10:30 AM – 11:00 PM, Saturday &amp; Sunday 10:30 AM – 11:30 PM</span></div></li>
+        <li><span class="k">✿</span><div><strong>Instagram</strong><span><a href="https://www.instagram.com/qehhwa.cafe/">@qehhwa.cafe</a></span></div></li>
+      </ul>
+      <div class="cta" style="margin-top:24px">
+        <a class="btn-wa" href="https://wa.me/917020193085?text=Hi%2C%20I%20found%20your%20cafe%20page%20and%20would%20like%20to%20reserve%20a%20table.">
+          <svg viewBox="0 0 32 32" style="width:20px;height:20px;fill:#fff"><path d="M16 3C9.4 3 4 8.4 4 15c0 2.1.6 4.2 1.7 6L4 29l8.2-1.7c1.7.9 3.7 1.4 5.8 1.4 6.6 0 12-5.4 12-12S22.6 3 16 3zm0 21.8c-1.9 0-3.7-.5-5.2-1.4l-.4-.2-4.9 1 1-4.7-.3-.4A9.7 9.7 0 016.2 15c0-5.4 4.4-9.8 9.8-9.8S25.8 9.6 25.8 15 21.4 24.8 16 24.8z"/><path d="M21.6 17.8c-.3-.2-1.9-.9-2.2-1s-.5-.2-.7.2-.8 1-.9 1.2-.3.2-.6.1a8 8 0 01-2.4-1.5 9 9 0 01-1.6-2c-.2-.3 0-.5.1-.6l.5-.6c.1-.2.2-.3.3-.5s0-.4 0-.5-.7-1.7-.9-2.3-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 1.9 3 4.7 4.1 2.3.9 2.8.8 3.3.7.5 0 1.6-.7 1.8-1.3.2-.6.2-1.2.2-1.3s-.2-.2-.5-.3z"/></svg>
+          WhatsApp us
+        </a>
+      </div>
+    </div>
+    <form class="form fade" onsubmit="event.preventDefault();this.querySelector('.sent').style.display='block';">
+      <h3>Reserve a table</h3>
+      <p class="hint">Tell us when you are coming and how many of you. We will confirm on call.</p>
+      <label for="n">Your name</label>
+      <input id="n" type="text" placeholder="Full name" required>
+      <label for="p">Phone number</label>
+      <input id="p" type="tel" placeholder="+91" required>
+      <label for="g">Guests</label>
+      <select id="g"><option>2</option><option>3</option><option>4</option><option>5</option><option>6</option><option>7 or more</option></select>
+      <label for="d">Date and time</label>
+      <input id="d" type="text" placeholder="e.g. Saturday, 7 PM">
+      <label for="r">Anything else</label>
+      <textarea id="r" rows="2" placeholder="Birthday, work table with plugs, outdoor seating..."></textarea>
+      <button type="submit">Request a table</button>
+      <p class="note sent" style="display:none;color:var(--clay-dk);font-weight:700">Thanks. Please call +91 70201 93085 to confirm.</p>
+      <p class="note">Demo form. Requests are not stored yet.</p>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="fgrid">
+      <div>
+        <h4>Qehhwa Cafe</h4>
+        <p style="font-size:.88rem;max-width:34ch">Boho cafe on NIBM Road, Kondhwa, Pune. Coffee, pasta, wings and all-day breakfast, open into the evening.</p>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="#menu">Coffee menu</a></li>
+          <li><a href="#space">The space</a></li>
+          <li><a href="#reviews">Reviews</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Visit</h4>
+        <ul>
+          <li>Yeshraj Shop No. 1, NIBM Road</li>
+          <li>Kondhwa, Pune 411048</li>
+          <li><a href="tel:+917020193085">+91 70201 93085</a></li>
+          <li>Daily, 10:30 AM onwards</li>
+        </ul>
+      </div>
+    </div>
+    <div class="fbot">
+      <span>© 2026 Qehhwa Cafe</span>
+      <span>Demo website preview built for this cafe.</span>
+    </div>
+  </div>
+</footer>
+
+<a class="wafloat" href="https://wa.me/917020193085?text=Hi%2C%20I%20found%20your%20cafe%20page%20and%20would%20like%20to%20reserve%20a%20table." aria-label="WhatsApp Qehhwa Cafe">
+  <svg viewBox="0 0 32 32"><path d="M16 3C9.4 3 4 8.4 4 15c0 2.1.6 4.2 1.7 6L4 29l8.2-1.7c1.7.9 3.7 1.4 5.8 1.4 6.6 0 12-5.4 12-12S22.6 3 16 3zm0 21.8c-1.9 0-3.7-.5-5.2-1.4l-.4-.2-4.9 1 1-4.7-.3-.4A9.7 9.7 0 016.2 15c0-5.4 4.4-9.8 9.8-9.8S25.8 9.6 25.8 15 21.4 24.8 16 24.8z"/><path d="M21.6 17.8c-.3-.2-1.9-.9-2.2-1s-.5-.2-.7.2-.8 1-.9 1.2-.3.2-.6.1a8 8 0 01-2.4-1.5 9 9 0 01-1.6-2c-.2-.3 0-.5.1-.6l.5-.6c.1-.2.2-.3.3-.5s0-.4 0-.5-.7-1.7-.9-2.3-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 1.9 3 4.7 4.1 2.3.9 2.8.8 3.3.7.5 0 1.6-.7 1.8-1.3.2-.6.2-1.2.2-1.3s-.2-.2-.5-.3z"/></svg>
+</a>
+
+<script>
+  const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12});
+  document.querySelectorAll('.fade').forEach(el=>io.observe(el));
+</script>
+</body>
+</html>

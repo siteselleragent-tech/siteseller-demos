@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Quma Cafe | NIBM Road, Mohammed Wadi, Pune</title>
+<meta name="description" content="Quma Cafe on NIBM Road, Mohammed Wadi, Pune. Cozy late-night cafe open 3 PM to 4 AM, serving coffee, kheema pav, grilled chicken and small plates. 4.9 from 141 Google reviews.">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Jost:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{--night:#12141c;--deep:#1b1e2a;--plum:#6d4c74;--amber:#d9a25f;--cream:#f6f1e8;--bg:#fbf9f5;--line:#e5ded2;--muted:#6f6a63}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:Jost,system-ui,sans-serif;color:var(--night);background:var(--bg);line-height:1.66;-webkit-font-smoothing:antialiased}
+  h1,h2,h3{font-family:"Cormorant Garamond",Georgia,serif;font-weight:600;line-height:1.1}
+  a{text-decoration:none;color:inherit}
+  .wrap{max-width:1120px;margin:0 auto;padding:0 22px}
+  header{position:sticky;top:0;z-index:50;background:rgba(18,20,28,.94);backdrop-filter:blur(12px)}
+  .nav{display:flex;align-items:center;justify-content:space-between;height:74px;gap:16px}
+  .brand{display:flex;align-items:center;gap:11px;font-family:"Cormorant Garamond",serif;font-size:1.4rem;color:#fff;letter-spacing:.03em}
+  .mark{width:36px;height:36px;border-radius:50%;border:1px solid var(--amber);color:var(--amber);display:grid;place-items:center;font-family:Jost,sans-serif;font-size:.85rem;font-weight:600}
+  .nav nav{display:none;gap:28px;font-size:.83rem;font-weight:500;color:#b8b3a9;letter-spacing:.05em;text-transform:uppercase}
+  .nav nav a:hover{color:var(--amber)}
+  @media(min-width:940px){.nav nav{display:flex}}
+  .btn{background:var(--amber);color:var(--night);padding:11px 22px;border-radius:3px;font-size:.79rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase}
+  .hero{background:var(--night);color:#fff;padding:74px 0 0;position:relative;overflow:hidden}
+  .hero:before{content:"";position:absolute;width:620px;height:620px;border-radius:50%;background:radial-gradient(circle,rgba(109,76,116,.55),transparent 66%);top:-200px;right:-140px}
+  .hero-grid{position:relative;display:grid;gap:46px;align-items:end}
+  @media(min-width:940px){.hero-grid{grid-template-columns:1.05fr .95fr}}
+  .pill{display:inline-flex;align-items:center;gap:9px;border:1px solid rgba(217,162,95,.5);color:var(--amber);padding:6px 14px;border-radius:3px;font-size:.73rem;font-weight:500;letter-spacing:.1em;text-transform:uppercase;margin-bottom:24px}
+  .stars{color:var(--amber);letter-spacing:1px}
+  h1{font-size:clamp(2.7rem,6.6vw,4.6rem);margin-bottom:18px}
+  h1 em{font-style:italic;color:var(--amber)}
+  .lead{font-size:1.03rem;color:#c3bcb1;max-width:50ch;margin-bottom:28px}
+  .cta{display:flex;flex-wrap:wrap;gap:12px;align-items:center}
+  .btn-p{background:var(--amber);color:var(--night);padding:15px 28px;border-radius:3px;font-weight:600;font-size:.82rem;letter-spacing:.09em;text-transform:uppercase}
+  .btn-s{border:1px solid rgba(255,255,255,.28);color:#fff;padding:15px 26px;border-radius:3px;font-weight:500;font-size:.82rem;letter-spacing:.09em;text-transform:uppercase}
+  .btn-wa{background:#25D366;color:#fff;padding:14px 24px;border-radius:3px;font-weight:600;font-size:.82rem;letter-spacing:.06em;text-transform:uppercase;display:inline-flex;align-items:center;gap:9px}
+  .heroimg{border-radius:6px 6px 0 0;overflow:hidden;aspect-ratio:16/11;position:relative}
+  .heroimg img{width:100%;height:100%;object-fit:cover;display:block;filter:saturate(.92)}
+  .heroimg:after{content:"";position:absolute;inset:0;background:linear-gradient(transparent 45%,rgba(18,20,28,.75))}
+  .heroimg .tag{position:absolute;left:0;right:0;bottom:0;padding:20px;z-index:2;display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;font-size:.78rem;letter-spacing:.08em;text-transform:uppercase;color:#e8dfd2}
+  .herostrip{background:var(--deep);padding:20px 0;border-top:1px solid rgba(255,255,255,.08)}
+  .strip{display:flex;flex-wrap:wrap;gap:12px 34px;justify-content:center;font-size:.78rem;letter-spacing:.1em;text-transform:uppercase;color:#9a948a}
+  .strip b{color:var(--amber);font-weight:600}
+  section{padding:80px 0}
+  .eyebrow{font-size:.72rem;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:var(--plum);margin-bottom:13px}
+  h2{font-size:clamp(2rem,4.4vw,3rem);margin-bottom:14px}
+  .sub{color:var(--muted);max-width:62ch;margin-bottom:40px;font-size:1rem}
+  .band{background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+  .grid3{display:grid;gap:18px}
+  @media(min-width:780px){.grid3{grid-template-columns:repeat(3,1fr)}}
+  .card{background:#fff;border:1px solid var(--line);border-radius:6px;padding:28px;transition:.22s}
+  .card:hover{transform:translateY(-3px);box-shadow:0 26px 50px -36px rgba(18,20,28,.5)}
+  .card .ico{color:var(--plum);font-size:1.2rem;margin-bottom:13px}
+  .card h3{font-size:1.35rem;margin-bottom:6px}
+  .card p{font-size:.91rem;color:var(--muted)}
+  .band .card{background:var(--bg)}
+  .menu{display:grid;gap:0}
+  @media(min-width:760px){.menu{grid-template-columns:repeat(2,1fr);gap:0 40px}}
+  .mi{padding:16px 0;border-bottom:1px solid var(--line)}
+  .mi strong{font-family:"Cormorant Garamond",serif;font-size:1.22rem;font-weight:600;display:block}
+  .mi span{font-size:.85rem;color:var(--muted)}
+  .gal{display:grid;gap:12px;grid-template-columns:repeat(2,1fr)}
+  @media(min-width:840px){.gal{grid-template-columns:repeat(4,1fr)}}
+  .gal figure{position:relative;border-radius:5px;overflow:hidden;aspect-ratio:3/4}
+  .gal img{width:100%;height:100%;object-fit:cover;display:block;transition:.5s}
+  .gal figure:hover img{transform:scale(1.05)}
+  .gal figcaption{position:absolute;inset:auto 0 0 0;background:linear-gradient(transparent,rgba(18,20,28,.85));color:#fff;font-size:.71rem;letter-spacing:.09em;text-transform:uppercase;padding:26px 11px 10px}
+  .quotes{display:grid;gap:16px}
+  @media(min-width:840px){.quotes{grid-template-columns:repeat(3,1fr)}}
+  .quote{background:#fff;border:1px solid var(--line);border-left:2px solid var(--amber);border-radius:5px;padding:26px;display:flex;flex-direction:column;gap:13px}
+  .quote p{font-family:"Cormorant Garamond",serif;font-size:1.12rem;color:#3a3b42;line-height:1.5}
+  .who{padding-top:12px;border-top:1px solid var(--line);margin-top:auto}
+  .who strong{font-size:.85rem;display:block;letter-spacing:.03em}
+  .who span{font-size:.73rem;color:var(--muted);letter-spacing:.08em;text-transform:uppercase}
+  .split{display:grid;gap:46px}
+  @media(min-width:940px){.split{grid-template-columns:1fr 1fr;align-items:start}}
+  .info li{list-style:none;display:flex;gap:15px;padding:17px 0;border-bottom:1px solid var(--line)}
+  .info li .k{color:var(--plum);font-size:1rem;width:20px;flex:none}
+  .info li strong{display:block;font-size:.73rem;text-transform:uppercase;letter-spacing:.12em;color:var(--muted);font-weight:600;margin-bottom:3px}
+  .info li span{font-size:.94rem}
+  .form{background:#fff;border:1px solid var(--line);border-radius:6px;padding:30px;box-shadow:0 34px 70px -54px rgba(18,20,28,.6)}
+  .form h3{font-size:1.55rem;margin-bottom:4px}
+  .form .hint{font-size:.86rem;color:var(--muted);margin-bottom:20px}
+  .form label{display:block;font-size:.76rem;font-weight:600;letter-spacing:.09em;text-transform:uppercase;color:var(--muted);margin-bottom:6px}
+  .form input,.form select,.form textarea{width:100%;padding:12px 14px;border:1px solid var(--line);border-radius:4px;font-family:inherit;font-size:.93rem;margin-bottom:15px;background:#fff;color:var(--night)}
+  .form input:focus,.form textarea:focus,.form select:focus{outline:2px solid #cdb9d2;border-color:transparent}
+  .form button{width:100%;background:var(--night);color:#fff;border:0;padding:15px;border-radius:4px;font-weight:600;font-size:.82rem;letter-spacing:.1em;text-transform:uppercase;font-family:inherit;cursor:pointer}
+  .note{font-size:.74rem;color:var(--muted);margin-top:11px;text-align:center}
+  footer{background:var(--night);color:#a8a399;padding:56px 0 30px;font-size:.89rem}
+  .fgrid{display:grid;gap:30px;margin-bottom:32px}
+  @media(min-width:780px){.fgrid{grid-template-columns:1.5fr 1fr 1fr}}
+  footer h4{font-family:"Cormorant Garamond",serif;color:#fff;font-size:1.22rem;margin-bottom:12px}
+  footer li{list-style:none;margin-bottom:7px;font-size:.87rem}
+  footer a:hover{color:var(--amber)}
+  .fbot{border-top:1px solid rgba(255,255,255,.12);padding-top:19px;font-size:.76rem;color:#7f7a72;display:flex;flex-wrap:wrap;gap:10px;justify-content:space-between}
+  .wafloat{position:fixed;right:18px;bottom:18px;z-index:60;width:56px;height:56px;border-radius:50%;background:#25D366;display:grid;place-items:center;box-shadow:0 14px 30px -10px rgba(37,211,102,.85)}
+  .wafloat svg{width:29px;height:29px;fill:#fff}
+  .fade{opacity:0;transform:translateY(16px);transition:.7s cubic-bezier(.2,.7,.2,1)}
+  .fade.in{opacity:1;transform:none}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap nav">
+    <div class="brand"><span class="mark">Q</span> Quma Cafe</div>
+    <nav>
+      <a href="#menu">Menu</a>
+      <a href="#space">The Space</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#visit">Find Us</a>
+    </nav>
+    <a class="btn" href="tel:+918484023963">Call us</a>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <div class="pill"><span class="stars">★★★★★</span> 4.9 · 141 Google reviews</div>
+      <h1>Pune's <em>late table</em>, open till 4 AM.</h1>
+      <p class="lead">Quma sits in Archana Kohinoor Glory on NIBM Road. Low light, good music, cold coffee at midnight and a kitchen that stays open when the rest of the road has gone quiet.</p>
+      <div class="cta">
+        <a class="btn-p" href="#visit">Find us on NIBM Road</a>
+        <a class="btn-s" href="tel:+918484023963">+91 84840 23963</a>
+      </div>
+    </div>
+    <div class="heroimg fade">
+      <img src="https://images.pexels.com/photos/2347311/pexels-photo-2347311.jpeg?auto=compress&cs=tinysrgb&w=1100" alt="Coffee and food on a cafe table">
+      <div class="tag"><span>NIBM Road · Mohammed Wadi</span><span>3 PM – 4 AM daily</span></div>
+    </div>
+  </div>
+</section>
+<div class="herostrip">
+  <div class="wrap strip">
+    <span><b>4.9</b> Google rating</span>
+    <span><b>Open</b> till 4 AM</span>
+    <span><b>141</b> reviews</span>
+    <span><b>NIBM</b> Road, Pune</span>
+  </div>
+</div>
+
+<section id="menu">
+  <div class="wrap">
+    <div class="eyebrow">Menu</div>
+    <h2>Small plates, big coffee</h2>
+    <p class="sub">The dishes guests name most often in reviews: kheema pav, grilled chicken, and cold coffee. The drinks list runs from espresso to a cranberry coffee and a matcha latte, with a Quma Pass for regulars.</p>
+    <div class="menu">
+      <div class="mi fade"><strong>Kheema pav</strong><span>The plate that comes up again and again in reviews.</span></div>
+      <div class="mi fade"><strong>Grilled chicken</strong><span>Ordered as a main, plated properly.</span></div>
+      <div class="mi fade"><strong>Cold coffee</strong><span>Singled out by guests as the must-try drink.</span></div>
+      <div class="mi fade"><strong>Cranberry coffee</strong><span>Espresso with a tart cranberry edge.</span></div>
+      <div class="mi fade"><strong>Matcha latte</strong><span>For the table that is not doing caffeine after midnight.</span></div>
+      <div class="mi fade"><strong>Blueberry granola bowl</strong><span>Lighter side of the menu.</span></div>
+      <div class="mi fade"><strong>Beetroot sliders</strong><span>Colourful, shareable, good with coffee.</span></div>
+      <div class="mi fade"><strong>The Quma Pass</strong><span>A regulars' pass for repeat visits.</span></div>
+    </div>
+    <p style="margin-top:24px;font-size:.84rem;color:var(--muted)">Menu items are those the cafe has shared publicly on its own channels. Ask the team for current prices and the full list.</p>
+  </div>
+</section>
+
+<section class="band" id="space">
+  <div class="wrap">
+    <div class="eyebrow">The Space</div>
+    <h2>Low light, big fans, no rush</h2>
+    <p class="sub">Cozy seating indoors with a garden feel, large fans that keep the room cool, and music at a volume you can still talk over. A cafe for the 11 PM plan and the 2 AM one after it.</p>
+    <div class="gal">
+      <figure><img src="https://images.pexels.com/photos/2347311/pexels-photo-2347311.jpeg?auto=compress&cs=tinysrgb&w=700" alt="Coffee on a table"><figcaption>Coffee bar</figcaption></figure>
+      <figure><img src="https://images.pexels.com/photos/3881449/pexels-photo-3881449.jpeg?auto=compress&cs=tinysrgb&w=700" alt="Cafe seating"><figcaption>Indoor seating</figcaption></figure>
+      <figure><img src="https://images.pexels.com/photos/305568/pexels-photo-305568.jpeg?auto=compress&cs=tinysrgb&w=700" alt="Table setting"><figcaption>Table setting</figcaption></figure>
+      <figure><img src="https://images.pexels.com/photos/3845810/pexels-photo-3845810.jpeg?auto=compress&cs=tinysrgb&w=700" alt="Cafe corner"><figcaption>Late night corner</figcaption></figure>
+    </div>
+    <div class="grid3" style="margin-top:22px">
+      <div class="card fade"><div class="ico">☾</div><h3>Open till 4 AM</h3><p>Every day. The late slot is the whole point of the place.</p></div>
+      <div class="card fade"><div class="ico">♪</div><h3>Music, not noise</h3><p>Guests mention the music as part of the vibe, at talking volume.</p></div>
+      <div class="card fade"><div class="ico">✿</div><h3>Cozy corners</h3><p>Garden-toned seating and fans that keep it comfortable.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="reviews">
+  <div class="wrap">
+    <div class="eyebrow">Reviews</div>
+    <h2>4.9 from 141 guests</h2>
+    <p class="sub">Public reviews from the cafe's Google listing.</p>
+    <div class="quotes">
+      <div class="quote fade">
+        <p>"This cozy place is open until 4 am. It has great music and a great vibe, pleasant ambience and an interesting menu. The food is well presented on nice cutlery."</p>
+        <div class="who"><strong>Miss L</strong><span>Google review</span></div>
+      </div>
+      <div class="quote fade">
+        <p>"Food was amazing and the service was great. Had a wonderful time, definitely a must-visit place."</p>
+        <div class="who"><strong>Kajal Rani</strong><span>Google review</span></div>
+      </div>
+      <div class="quote fade">
+        <p>"Very pleasant vibe and yummy bites. Their cold coffee is a must try."</p>
+        <div class="who"><strong>Shamaila Hye</strong><span>Google review</span></div>
+      </div>
+    </div>
+    <p style="margin-top:26px;font-size:.9rem;color:var(--muted)">Read every review on the cafe's <a href="https://www.google.com/maps/search/Quma+cafe+NIBM+Road+Mohammed+Wadi+Pune" style="color:var(--plum);font-weight:600">Google listing</a>.</p>
+  </div>
+</section>
+
+<section class="band" id="visit">
+  <div class="wrap split">
+    <div>
+      <div class="eyebrow">Find Us</div>
+      <h2>Archana Kohinoor Glory, NIBM Road</h2>
+      <p class="sub">Shop 27 at Raheja Vista Chowk in Mohammed Wadi, on the NIBM Road stretch. Simple to reach from Kondhwa, Undri and Wanowrie, and open when nothing else is.</p>
+      <ul class="info">
+        <li><span class="k">◉</span><div><strong>Address</strong><span>Shop No. 27, Archana Kohinoor Glory, NIBM Road, Autadwadi Handewadi, Mohammed Wadi, Pune 411060</span></div></li>
+        <li><span class="k">☎</span><div><strong>Phone</strong><span><a href="tel:+918484023963">+91 84840 23963</a></span></div></li>
+        <li><span class="k">◷</span><div><strong>Hours</strong><span>Every day, 3:00 PM – 4:00 AM</span></div></li>
+        <li><span class="k">✿</span><div><strong>Instagram</strong><span><a href="https://www.instagram.com/qumacafepune/">@qumacafepune</a></span></div></li>
+      </ul>
+      <div class="cta" style="margin-top:24px">
+        <a class="btn-wa" href="https://wa.me/918484023963?text=Hi%2C%20I%20found%20your%20cafe%20page%20and%20would%20like%20to%20reserve%20a%20table.">
+          <svg viewBox="0 0 32 32" style="width:20px;height:20px;fill:#fff"><path d="M16 3C9.4 3 4 8.4 4 15c0 2.1.6 4.2 1.7 6L4 29l8.2-1.7c1.7.9 3.7 1.4 5.8 1.4 6.6 0 12-5.4 12-12S22.6 3 16 3zm0 21.8c-1.9 0-3.7-.5-5.2-1.4l-.4-.2-4.9 1 1-4.7-.3-.4A9.7 9.7 0 016.2 15c0-5.4 4.4-9.8 9.8-9.8S25.8 9.6 25.8 15 21.4 24.8 16 24.8z"/><path d="M21.6 17.8c-.3-.2-1.9-.9-2.2-1s-.5-.2-.7.2-.8 1-.9 1.2-.3.2-.6.1a8 8 0 01-2.4-1.5 9 9 0 01-1.6-2c-.2-.3 0-.5.1-.6l.5-.6c.1-.2.2-.3.3-.5s0-.4 0-.5-.7-1.7-.9-2.3-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 1.9 3 4.7 4.1 2.3.9 2.8.8 3.3.7.5 0 1.6-.7 1.8-1.3.2-.6.2-1.2.2-1.3s-.2-.2-.5-.3z"/></svg>
+          WhatsApp us
+        </a>
+      </div>
+    </div>
+    <form class="form fade" onsubmit="event.preventDefault();this.querySelector('.sent').style.display='block';">
+      <h3>Reserve a table</h3>
+      <p class="hint">Tell us the night and the headcount. We will confirm on call.</p>
+      <label for="n">Your name</label>
+      <input id="n" type="text" placeholder="Full name" required>
+      <label for="p">Phone number</label>
+      <input id="p" type="tel" placeholder="+91" required>
+      <label for="g">Guests</label>
+      <select id="g"><option>2</option><option>3</option><option>4</option><option>5</option><option>6</option><option>7 or more</option></select>
+      <label for="d">Date and time</label>
+      <input id="d" type="text" placeholder="e.g. Friday, 11:30 PM">
+      <label for="r">Anything else</label>
+      <textarea id="r" rows="2" placeholder="Late-night table, birthday, quiet corner..."></textarea>
+      <button type="submit">Request a table</button>
+      <p class="note sent" style="display:none;color:var(--plum);font-weight:600">Thanks. Please call +91 84840 23963 to confirm.</p>
+      <p class="note">Demo form. Requests are not stored yet.</p>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="fgrid">
+      <div>
+        <h4>Quma Cafe</h4>
+        <p style="font-size:.87rem;max-width:34ch">Late-night cafe on NIBM Road, Mohammed Wadi, Pune. Coffee, kheema pav and grilled plates, open 3 PM to 4 AM.</p>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#space">The space</a></li>
+          <li><a href="#reviews">Reviews</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Visit</h4>
+        <ul>
+          <li>Shop 27, Archana Kohinoor Glory</li>
+          <li>NIBM Road, Mohammed Wadi, Pune 411060</li>
+          <li><a href="tel:+918484023963">+91 84840 23963</a></li>
+          <li>Daily, 3 PM – 4 AM</li>
+        </ul>
+      </div>
+    </div>
+    <div class="fbot">
+      <span>© 2026 Quma Cafe</span>
+      <span>Demo website preview built for this cafe.</span>
+    </div>
+  </div>
+</footer>
+
+<a class="wafloat" href="https://wa.me/918484023963?text=Hi%2C%20I%20found%20your%20cafe%20page%20and%20would%20like%20to%20reserve%20a%20table." aria-label="WhatsApp Quma Cafe">
+  <svg viewBox="0 0 32 32"><path d="M16 3C9.4 3 4 8.4 4 15c0 2.1.6 4.2 1.7 6L4 29l8.2-1.7c1.7.9 3.7 1.4 5.8 1.4 6.6 0 12-5.4 12-12S22.6 3 16 3zm0 21.8c-1.9 0-3.7-.5-5.2-1.4l-.4-.2-4.9 1 1-4.7-.3-.4A9.7 9.7 0 016.2 15c0-5.4 4.4-9.8 9.8-9.8S25.8 9.6 25.8 15 21.4 24.8 16 24.8z"/><path d="M21.6 17.8c-.3-.2-1.9-.9-2.2-1s-.5-.2-.7.2-.8 1-.9 1.2-.3.2-.6.1a8 8 0 01-2.4-1.5 9 9 0 01-1.6-2c-.2-.3 0-.5.1-.6l.5-.6c.1-.2.2-.3.3-.5s0-.4 0-.5-.7-1.7-.9-2.3-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 1.9 3 4.7 4.1 2.3.9 2.8.8 3.3.7.5 0 1.6-.7 1.8-1.3.2-.6.2-1.2.2-1.3s-.2-.2-.5-.3z"/></svg>
+</a>
+
+<script>
+  const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12});
+  document.querySelectorAll('.fade').forEach(el=>io.observe(el));
+</script>
+</body>
+</html>
