@@ -2,274 +2,174 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Dr. Sushmita's Dental Clinic | Pimple Nilakh, Pune</title>
-<meta name="description" content="Multispeciality dental clinic on Aundh-Wakad Road, Vishal Nagar, Pimple Nilakh, Pune. Root canals, implants, fillings and family dentistry. 4.9 from 225 Google reviews.">
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dr. Sushmita's Dental Clinic — Pimple Nilakh, Pune | Root Canals & Implants</title>
+<meta name="description" content="Dr. Sushmita's Dental Clinic, Aundh-Wakad Road, Vishal Nagar, Pimple Nilakh, Pune. A 4.9-rated dental clinic for root canals, implants, crowns and family dentistry.">
 <style>
-  :root{--ink:#0d2b32;--teal:#0f7a72;--teal-dk:#0a5a55;--mint:#e4f2ef;--sand:#fbf8f4;--line:#dfe8e6;--muted:#5d7579;--gold:#c99a3f}
-  *{box-sizing:border-box;margin:0;padding:0}
-  body{font-family:Inter,system-ui,sans-serif;color:var(--ink);background:#fff;line-height:1.65;-webkit-font-smoothing:antialiased}
-  h1,h2,h3{font-family:Fraunces,Georgia,serif;font-weight:600;line-height:1.12;letter-spacing:-.01em}
-  a{text-decoration:none;color:inherit}
-  .wrap{max-width:1130px;margin:0 auto;padding:0 22px}
-  header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.95);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
-  .nav{display:flex;align-items:center;justify-content:space-between;height:74px;gap:16px}
-  .brand{display:flex;align-items:center;gap:11px;font-family:Fraunces,serif;font-size:1.12rem;font-weight:600}
-  .mark{width:38px;height:38px;border-radius:12px;background:var(--teal);color:#fff;display:grid;place-items:center;font-family:Inter,sans-serif;font-size:.82rem;font-weight:700;letter-spacing:.04em}
-  .nav nav{display:none;gap:28px;font-size:.9rem;font-weight:500;color:var(--muted)}
-  .nav nav a:hover{color:var(--teal)}
-  @media(min-width:940px){.nav nav{display:flex}}
-  .btn{background:var(--teal);color:#fff;padding:12px 22px;border-radius:999px;font-size:.87rem;font-weight:600}
-  .hero{background:linear-gradient(165deg,var(--mint) 0%,#f7fcfb 58%,#fff 100%);padding:66px 0 74px;overflow:hidden}
-  .hero-grid{display:grid;gap:44px;align-items:center}
-  @media(min-width:940px){.hero-grid{grid-template-columns:1.06fr .94fr}}
-  .pill{display:inline-flex;align-items:center;gap:9px;background:#fff;border:1px solid var(--line);padding:7px 15px;border-radius:999px;font-size:.79rem;font-weight:600;color:var(--teal-dk);margin-bottom:22px}
-  .stars{color:var(--gold);letter-spacing:1px}
-  h1{font-size:clamp(2.3rem,5.3vw,3.7rem);margin-bottom:18px}
-  h1 em{font-style:italic;color:var(--teal)}
-  .lead{font-size:1.04rem;color:#3d5c60;max-width:52ch;margin-bottom:28px}
-  .cta{display:flex;flex-wrap:wrap;gap:12px}
-  .btn-p{background:var(--teal);color:#fff;padding:15px 27px;border-radius:999px;font-weight:600;font-size:.94rem;box-shadow:0 16px 34px -20px rgba(15,122,114,.9)}
-  .btn-s{background:#fff;color:var(--ink);padding:15px 27px;border-radius:999px;font-weight:600;font-size:.94rem;border:1px solid var(--line)}
-  .heroimg{position:relative;border-radius:26px;overflow:hidden;box-shadow:0 40px 80px -50px rgba(13,43,50,.55);aspect-ratio:5/6;max-height:520px}
-  .heroimg img{width:100%;height:100%;object-fit:cover;display:block}
-  .badge{position:absolute;left:16px;bottom:16px;right:16px;background:rgba(255,255,255,.96);backdrop-filter:blur(8px);border-radius:16px;padding:14px 17px;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
-  .badge div span{display:block;font-size:.7rem;text-transform:uppercase;letter-spacing:.09em;color:var(--muted);font-weight:600}
-  .badge div strong{font-size:.93rem}
-  section{padding:78px 0}
-  .eyebrow{font-size:.74rem;font-weight:700;letter-spacing:.17em;text-transform:uppercase;color:var(--teal);margin-bottom:12px}
-  h2{font-size:clamp(1.85rem,3.7vw,2.7rem);margin-bottom:14px}
-  .sub{color:var(--muted);max-width:63ch;margin-bottom:40px;font-size:1rem}
-  .grid3{display:grid;gap:18px}
-  @media(min-width:780px){.grid3{grid-template-columns:repeat(3,1fr)}}
-  .card{background:#fff;border:1px solid var(--line);border-radius:18px;padding:27px;transition:.22s}
-  .card:hover{transform:translateY(-4px);box-shadow:0 26px 50px -34px rgba(13,43,50,.4);border-color:#bfdeda}
-  .card .ico{width:40px;height:40px;border-radius:12px;background:var(--mint);color:var(--teal-dk);display:grid;place-items:center;font-size:1.1rem;margin-bottom:14px}
-  .card h3{font-size:1.18rem;margin-bottom:7px}
-  .card p{font-size:.91rem;color:var(--muted)}
-  .band{background:var(--sand);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
-  .gal{display:grid;gap:14px;grid-template-columns:repeat(2,1fr)}
-  @media(min-width:840px){.gal{grid-template-columns:repeat(4,1fr)}}
-  .gal figure{position:relative;border-radius:16px;overflow:hidden;aspect-ratio:3/4}
-  .gal img{width:100%;height:100%;object-fit:cover;display:block;transition:.5s}
-  .gal figure:hover img{transform:scale(1.05)}
-  .gal figcaption{position:absolute;inset:auto 0 0 0;background:linear-gradient(transparent,rgba(9,45,50,.84));color:#fff;font-size:.75rem;font-weight:600;padding:26px 13px 11px}
-  .quotes{display:grid;gap:18px}
-  @media(min-width:840px){.quotes{grid-template-columns:repeat(3,1fr)}}
-  .quote{background:#fff;border:1px solid var(--line);border-radius:18px;padding:26px;display:flex;flex-direction:column;gap:14px}
-  .quote p{font-size:.94rem;color:#2b474d}
-  .who{padding-top:13px;border-top:1px solid var(--line);margin-top:auto;display:flex;align-items:center;gap:11px}
-  .av{width:36px;height:36px;border-radius:50%;background:var(--mint);color:var(--teal-dk);display:grid;place-items:center;font-weight:700;font-size:.82rem;flex:none}
-  .who strong{font-size:.86rem;display:block}
-  .who span{font-size:.74rem;color:var(--muted)}
-  .split{display:grid;gap:46px}
-  @media(min-width:940px){.split{grid-template-columns:1fr 1fr;align-items:start}}
-  .form{background:#fff;border:1px solid var(--line);border-radius:22px;padding:30px;box-shadow:0 34px 70px -50px rgba(13,43,50,.5)}
-  .form h3{font-size:1.35rem;margin-bottom:5px}
-  .form .hint{font-size:.84rem;color:var(--muted);margin-bottom:20px}
-  .form label{display:block;font-size:.81rem;font-weight:600;margin-bottom:6px}
-  .form input,.form select,.form textarea{width:100%;padding:12px 14px;border:1px solid var(--line);border-radius:11px;font-family:inherit;font-size:.92rem;margin-bottom:15px;background:#fff;color:var(--ink)}
-  .form input:focus,.form textarea:focus,.form select:focus{outline:2px solid #9fd3d3;border-color:transparent}
-  .form button{width:100%;background:var(--teal);color:#fff;border:0;padding:15px;border-radius:999px;font-weight:600;font-size:.95rem;font-family:inherit;cursor:pointer}
-  .note{font-size:.76rem;color:var(--muted);margin-top:12px;text-align:center}
-  .info li{list-style:none;display:flex;gap:15px;padding:18px 0;border-bottom:1px solid var(--line)}
-  .info li .k{color:var(--teal);font-size:1.05rem;width:22px;flex:none}
-  .info li strong{display:block;font-size:.78rem;text-transform:uppercase;letter-spacing:.07em;color:var(--muted);font-weight:600;margin-bottom:2px}
-  .info li span{font-size:.95rem}
-  footer{background:var(--ink);color:#c2d8d9;padding:54px 0 30px;font-size:.9rem}
-  .fgrid{display:grid;gap:32px;margin-bottom:34px}
-  @media(min-width:780px){.fgrid{grid-template-columns:1.5fr 1fr 1fr}}
-  footer h4{font-family:Fraunces,serif;color:#fff;font-size:1.03rem;margin-bottom:13px}
-  footer a:hover{color:#fff}
-  footer li{list-style:none;margin-bottom:7px;font-size:.88rem}
-  .fbot{border-top:1px solid rgba(255,255,255,.14);padding-top:20px;font-size:.78rem;color:#8fa9ac;display:flex;flex-wrap:wrap;gap:10px;justify-content:space-between}
-  .wafloat{position:fixed;right:18px;bottom:18px;z-index:60;width:56px;height:56px;border-radius:50%;background:#25D366;display:grid;place-items:center;box-shadow:0 14px 30px -10px rgba(37,211,102,.85)}
-  .wafloat svg{width:29px;height:29px;fill:#fff}
-  .btn-wa{background:#25D366;color:#fff;padding:14px 24px;border-radius:999px;font-weight:600;font-size:.92rem;display:inline-flex;align-items:center;gap:9px}
-  .fade{opacity:0;transform:translateY(16px);transition:.7s cubic-bezier(.2,.7,.2,1)}
-  .fade.in{opacity:1;transform:none}
+:root{--bg:#f6f9fb;--surface:#ffffff;--ink:#14232e;--muted:#5f7684;--accent:#116b8c;--accent2:#2f9cbd;--soft:#e4f0f6;--line:#d9e6ee;--r:12px}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;background:var(--bg);color:var(--ink);line-height:1.68;-webkit-font-smoothing:antialiased}
+.wrap{max-width:1040px;margin:0 auto;padding:0 24px}
+header.hero{padding:92px 0 70px;text-align:center;border-bottom:1px solid var(--line);background:linear-gradient(180deg,#fbfdfe,#f2f7fa)}
+.badge{display:inline-block;font-size:.66rem;letter-spacing:.2em;text-transform:uppercase;color:var(--accent);border:1px solid var(--line);background:var(--surface);padding:8px 16px;border-radius:100px}
+header.hero h1{font-size:clamp(2.1rem,6vw,3.3rem);font-weight:400;letter-spacing:-.015em;margin:22px 0 10px;line-height:1.15}
+header.hero .sub{font-size:1.06rem;color:var(--muted);max-width:580px;margin:0 auto}
+.rating{margin-top:20px;font-size:.9rem;color:var(--muted);letter-spacing:.03em}
+.stars{color:var(--accent2)}
+.cta-row{margin-top:30px;display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+.btn{display:inline-block;padding:14px 26px;border-radius:var(--r);font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:.74rem;letter-spacing:.11em;text-transform:uppercase;text-decoration:none;transition:.2s}
+.btn-primary{background:var(--accent);color:#fff}
+.btn-primary:hover{background:var(--accent2)}
+.btn-ghost{border:1px solid var(--ink);color:var(--ink)}
+.btn-ghost:hover{background:var(--ink);color:#fff}
+.btn-wa{background:#25D366;color:#08340f}
+section{padding:64px 0}
+.kicker{font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:.66rem;letter-spacing:.19em;text-transform:uppercase;color:var(--accent2);margin-bottom:10px}
+h2{font-weight:400;font-size:clamp(1.55rem,3.5vw,2.05rem);margin-bottom:10px;letter-spacing:-.01em}
+.lead{color:var(--muted);max-width:620px;margin-bottom:34px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(238px,1fr));gap:18px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:24px}
+.card h3{font-weight:400;font-size:1.04rem;margin-bottom:6px}
+.card p{color:var(--muted);font-size:.93rem}
+.alt{background:var(--surface);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.two-col{display:grid;grid-template-columns:1fr 1fr;gap:44px;align-items:start}
+@media(max-width:780px){.two-col{grid-template-columns:1fr;gap:28px}}
+.quotes{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:18px}
+.quote{background:var(--bg);border:1px solid var(--line);border-radius:var(--r);padding:24px}
+.quote p{font-size:.95rem;color:#20323d;font-style:italic}
+.quote .who{margin-top:14px;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:.63rem;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);font-style:normal}
+.gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px}
+.tile{aspect-ratio:4/3;border-radius:var(--r);display:flex;align-items:flex-end;padding:14px;color:#fff;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:.64rem;letter-spacing:.13em;text-transform:uppercase}
+.t1{background:linear-gradient(150deg,#116b8c,#2f9cbd)}.t2{background:linear-gradient(150deg,#2b6f7f,#63aab8)}.t3{background:linear-gradient(150deg,#1c4a5e,#4d8ba4)}.t4{background:linear-gradient(150deg,#3a6b7a,#7fa8b5)}.t5{background:linear-gradient(150deg,#0f5468,#3f92aa)}.t6{background:linear-gradient(150deg,#2d5566,#6d93a1)}
+.info-line{display:flex;gap:14px;padding:13px 0;border-bottom:1px solid var(--line)}
+.info-line .k{font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:.62rem;letter-spacing:.13em;text-transform:uppercase;color:var(--muted);min-width:96px;padding-top:3px}
+.info-line .v{font-size:.96rem}
+.info-line .v a{color:var(--accent);text-decoration:none}
+form .field{margin-bottom:14px}
+form label{display:block;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:.63rem;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin-bottom:6px}
+form input,form select,form textarea{width:100%;padding:12px 14px;border:1px solid var(--line);border-radius:8px;background:var(--surface);font-family:inherit;font-size:.95rem;color:var(--ink)}
+form textarea{min-height:96px;resize:vertical}
+form button{width:100%;padding:14px;border:0;border-radius:8px;background:var(--accent);color:#fff;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:.74rem;letter-spacing:.11em;text-transform:uppercase;cursor:pointer}
+form button:hover{background:var(--accent2)}
+.note{font-size:.8rem;color:var(--muted);margin-top:10px}
+footer{padding:44px 0 34px;border-top:1px solid var(--line);background:var(--surface);font-size:.86rem;color:var(--muted)}
+footer .foot-grid{display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap;align-items:flex-start}
+footer strong{color:var(--ink);font-weight:400}
+footer a{color:var(--accent);text-decoration:none}
+.demo-tag{margin-top:22px;padding-top:18px;border-top:1px solid var(--line);font-size:.76rem;letter-spacing:.02em}
+.wa-float{position:fixed;right:18px;bottom:18px;background:#25D366;color:#08340f;padding:13px 20px;border-radius:100px;text-decoration:none;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:.72rem;letter-spacing:.06em;box-shadow:0 6px 20px rgba(0,0,0,.18);z-index:50}
+@media(max-width:520px){.wa-float{right:12px;bottom:12px;padding:12px 16px;font-size:.68rem}}
 </style>
 </head>
 <body>
-<header>
-  <div class="wrap nav">
-    <div class="brand"><span class="mark">SDC</span> Dr. Sushmita's Dental Clinic</div>
-    <nav>
-      <a href="#services">Treatments</a>
-      <a href="#clinic">The Clinic</a>
-      <a href="#reviews">Reviews</a>
-      <a href="#contact">Visit Us</a>
-    </nav>
-    <a class="btn" href="tel:+919168881793">Book a Visit</a>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="badge">Pimple Nilakh, Pune</div>
+    <h1>Dr. Sushmita's Dental Clinic</h1>
+    <p class="sub">Gentle, transparent dental care on Aundh-Wakad Road. Root canals, implants and family dentistry, seven days a week except Sunday.</p>
+    <div class="rating"><span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span> 4.9 on Google · 225 reviews</div>
+    <div class="cta-row">
+      <a class="btn btn-primary" href="#contact">Book an appointment</a>
+      <a class="btn btn-wa" href="https://wa.me/919168881793?text=Hi%20Dr.%20Sushmita's%20Dental%20Clinic,%20I%20would%20like%20to%20book%20an%20appointment." target="_blank" rel="noopener">WhatsApp us</a>
+    </div>
   </div>
 </header>
 
-<section class="hero">
-  <div class="wrap hero-grid">
-    <div>
-      <div class="pill"><span class="stars">★★★★★</span> 4.9 from 225 Google reviews</div>
-      <h1>Dental care on Aundh-Wakad Road that <em>families come back to</em>.</h1>
-      <p class="lead">A multispeciality dental clinic in Vishal Nagar, Pimple Nilakh. Root canals, implants, fillings and children's dentistry, with the doctor and staff taking the time to explain each step before it happens.</p>
-      <div class="cta">
-        <a class="btn-p" href="#contact">Request an appointment</a>
-        <a class="btn-s" href="tel:+919168881793">+91 91688 81793</a>
-      </div>
-    </div>
-    <div class="heroimg fade">
-      <img src="https://images.pexels.com/photos/3845810/pexels-photo-3845810.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Dental treatment room">
-      <div class="badge">
-        <div><span>Opens</span><strong>10:30 AM</strong></div>
-        <div><span>Evening clinic</span><strong>4:30 – 8:30 PM</strong></div>
-        <div><span>Sunday</span><strong>Closed</strong></div>
-      </div>
+<section>
+  <div class="wrap">
+    <div class="kicker">Why patients stay</div>
+    <h2>A clinic families have been coming back to for years</h2>
+    <p class="lead">Dr. Sushmita's Dental Clinic sits next to Cafe Ruchira on Aundh-Wakad Road. Patients most often mention painless root canals, clear explanations of the treatment plan and pricing that is discussed up front. The clinic handles everything from routine check-ups to implants.</p>
+    <div class="grid">
+      <div class="card"><h3>Root canal treatment (RCT)</h3><p>The most reviewed treatment at the clinic, with patients noting single-visit, low-pain procedures.</p></div>
+      <div class="card"><h3>Dental implants</h3><p>Implant planning and surgery, with follow-up calls after the procedure.</p></div>
+      <div class="card"><h3>Crowns & smile work</h3><p>Zirconia crowns and front-tooth restoration for chips, gaps and discolouration.</p></div>
+      <div class="card"><h3>Family & kids' dentistry</h3><p>Check-ups, fillings, extractions and preventive care for children and adults.</p></div>
     </div>
   </div>
 </section>
 
-<section id="services">
+<section class="alt">
   <div class="wrap">
-    <div class="eyebrow">Treatments</div>
-    <h2>What the clinic is known for</h2>
-    <p class="sub">Patients most often mention root canal treatment, fillings, implants and wisdom tooth removal in their reviews. The clinic is also listed for cosmetic dentistry, paediatric care and emergency dental appointments.</p>
-    <div class="grid3">
-      <div class="card fade"><div class="ico">◍</div><h3>Root canal treatment</h3><p>The most-reviewed treatment at the clinic, with patients repeatedly describing it as pain-free.</p></div>
-      <div class="card fade"><div class="ico">⚙</div><h3>Dental implants</h3><p>Implant surgery with the treatment plan discussed and follow-up calls after the procedure.</p></div>
-      <div class="card fade"><div class="ico">✦</div><h3>Fillings &amp; cavities</h3><p>Tooth-coloured fillings that stop small cavities before they need bigger work.</p></div>
-      <div class="card fade"><div class="ico">◈</div><h3>Wisdom tooth removal</h3><p>Extractions assessed on site, with aftercare explained clearly before you leave.</p></div>
-      <div class="card fade"><div class="ico">☺</div><h3>Children's dentistry</h3><p>Unhurried appointments for young patients, with a parent in the room.</p></div>
-      <div class="card fade"><div class="ico">✚</div><h3>Crowns &amp; smile work</h3><p>Zirconia crowns and front-tooth repairs, planned around how your smile actually looks.</p></div>
+    <div class="kicker">Inside the clinic</div>
+    <h2>Inside the clinic</h2>
+    <p class="lead">Treatment areas and care, described in the clinic's public reviews.</p>
+    <div class="gallery">
+      <div class="tile t1">Treatment room</div>
+      <div class="tile t2">Sterilisation</div>
+      <div class="tile t3">Consultation</div>
+      <div class="tile t4">Digital imaging</div>
+      <div class="tile t5">Kids' dentistry</div>
+      <div class="tile t6">Reception</div>
     </div>
   </div>
 </section>
 
-<section class="band" id="clinic">
+<section>
   <div class="wrap">
-    <div class="eyebrow">The Clinic</div>
-    <h2>Easy to reach from Wakad, Pimple Nilakh and Aundh</h2>
-    <p class="sub">On Aundh-Wakad Road next to Cafe Ruchira in Vishal Nagar, near Apple Hospital. Close enough for a check-up on the way home, with morning and evening clinic hours six days a week.</p>
-    <div class="gal">
-      <figure><img src="https://images.pexels.com/photos/3881449/pexels-photo-3881449.jpeg?auto=compress&cs=tinysrgb&w=700" alt="Dentist consulting a patient"><figcaption>Consultation</figcaption></figure>
-      <figure><img src="https://images.pexels.com/photos/305568/pexels-photo-305568.jpeg?auto=compress&cs=tinysrgb&w=700" alt="Sterile dental instruments"><figcaption>Sterile instruments</figcaption></figure>
-      <figure><img src="https://images.pexels.com/photos/6812540/pexels-photo-6812540.jpeg?auto=compress&cs=tinysrgb&w=700" alt="Dental chair"><figcaption>Treatment chair</figcaption></figure>
-      <figure><img src="https://images.pexels.com/photos/3845810/pexels-photo-3845810.jpeg?auto=compress&cs=tinysrgb&w=700" alt="Dental treatment room"><figcaption>Treatment room</figcaption></figure>
-    </div>
-  </div>
-</section>
-
-<section id="reviews">
-  <div class="wrap">
-    <div class="eyebrow">Reviews</div>
-    <h2>4.9 across 225 Google reviews</h2>
-    <p class="sub">A few lines patients have left publicly on the clinic's Google listing. Full reviews are visible on Google.</p>
+    <div class="kicker">What guests say</div>
+    <h2>Rated 4.9 on Google</h2>
+    <p class="lead">Real reviews from public Google listings.</p>
     <div class="quotes">
-      <div class="quote fade">
-        <p>"Best dental clinic for affordable root canal and implant treatment. The charges are reasonable and transparent. Doctor is skilled kind and patient, my root canal was done without pain."</p>
-        <div class="who"><span class="av">GC</span><div><strong>Gaurav Chavan</strong><span>Google review</span></div></div>
-      </div>
-      <div class="quote fade">
-        <p>"I've been visiting SDC now around 3 years. It's already our family doctor. My daughter already has a good rapo with Dr Sushmita and her assistant."</p>
-        <div class="who"><span class="av">SI</span><div><strong>Sneha Ingale</strong><span>Google review</span></div></div>
-      </div>
-      <div class="quote fade">
-        <p>"I did my implant surgery at SDC and overall it was good experience be it overall discussion, treatment followup calls and post surgery things."</p>
-        <div class="who"><span class="av">RK</span><div><strong>Rajendra Kulkarni</strong><span>Google review</span></div></div>
-      </div>
+      <div class="quote"><p>&ldquo;Best dental clinic for affordable root canal and implant treatment. The charges are reasonable and transparent. My root canal was done without pain.&rdquo;</p><div class="who">Google reviewer &middot; Google review</div></div>
+      <div class="quote"><p>&ldquo;I've been visiting for around 3 years. The doctor is highly skilled and patient with my daughter. 5 stars.&rdquo;</p><div class="who">Google reviewer &middot; Google review</div></div>
+      <div class="quote"><p>&ldquo;My front tooth was in really bad shape and the doctor fixed it with ease. It was a smooth process and I feel more confident now.&rdquo;</p><div class="who">Google reviewer &middot; Google review</div></div>
     </div>
-    <div class="grid3" style="margin-top:22px">
-      <div class="card fade"><div class="ico">★</div><h3>4.9 average</h3><p>Across 225 patient reviews on Google.</p></div>
-      <div class="card fade"><div class="ico">◉</div><h3>Root canals &amp; implants</h3><p>The treatments patients mention most often in reviews.</p></div>
-      <div class="card fade"><div class="ico">✚</div><h3>Open 6 days</h3><p>Morning and evening hours Monday to Saturday.</p></div>
-    </div>
-    <p style="margin-top:26px;font-size:.9rem;color:var(--muted)">Read every review on the clinic's <a href="https://www.google.com/maps/search/Dr+Sushmita+dental+clinic+Vishal+Nagar+Pimple+Nilakh+Pune" style="color:var(--teal);font-weight:600">Google listing</a>.</p>
   </div>
 </section>
 
-<section class="band" id="contact">
-  <div class="wrap split">
-    <div>
-      <div class="eyebrow">Visit Us</div>
-      <h2>Book your appointment</h2>
-      <p class="sub">Send a request with the treatment you need and a time that works, or call the clinic directly for anything urgent.</p>
-      <ul class="info">
-        <li><span class="k">◉</span><div><strong>Address</strong><span>Aundh-Wakad Road, next to Cafe Ruchira, Vishal Nagar, Pimple Nilakh, Pune 411027</span></div></li>
-        <li><span class="k">☎</span><div><strong>Phone</strong><span><a href="tel:+919168881793">+91 91688 81793</a></span></div></li>
-        <li><span class="k">◷</span><div><strong>Hours</strong><span>Monday to Saturday, 10:30 AM – 1:00 PM and 4:30 – 8:30 PM. Closed Sunday.</span></div></li>
-        <li><span class="k">➤</span><div><strong>Landmark</strong><span>Next to Cafe Ruchira, near Apple Hospital, Vishal Nagar.</span></div></li>
-      </ul>
-      <div class="cta" style="margin-top:24px">
-        <a class="btn-wa" href="https://wa.me/919168881793?text=Hi%2C%20I%20found%20your%20clinic%20page%20and%20would%20like%20to%20book%20an%20appointment.">
-          <svg viewBox="0 0 32 32" style="width:20px;height:20px;fill:#fff"><path d="M16 3C9.4 3 4 8.4 4 15c0 2.1.6 4.2 1.7 6L4 29l8.2-1.7c1.7.9 3.7 1.4 5.8 1.4 6.6 0 12-5.4 12-12S22.6 3 16 3zm0 21.8c-1.9 0-3.7-.5-5.2-1.4l-.4-.2-4.9 1 1-4.7-.3-.4A9.7 9.7 0 016.2 15c0-5.4 4.4-9.8 9.8-9.8S25.8 9.6 25.8 15 21.4 24.8 16 24.8z"/><path d="M21.6 17.8c-.3-.2-1.9-.9-2.2-1s-.5-.2-.7.2-.8 1-.9 1.2-.3.2-.6.1a8 8 0 01-2.4-1.5 9 9 0 01-1.6-2c-.2-.3 0-.5.1-.6l.5-.6c.1-.2.2-.3.3-.5s0-.4 0-.5-.7-1.7-.9-2.3-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 1.9 3 4.7 4.1 2.3.9 2.8.8 3.3.7.5 0 1.6-.7 1.8-1.3.2-.6.2-1.2.2-1.3s-.2-.2-.5-.3z"/></svg>
-          WhatsApp the clinic
-        </a>
+<section class="alt">
+  <div class="wrap">
+    <div class="two-col">
+      <div>
+        <div class="kicker">Visit</div>
+        <h2>Aundh-Wakad Road, next to Cafe Ruchira</h2>
+        <p class="lead">Appointments run mornings and evenings. Call or send a request and the clinic will confirm a slot.</p>
+        <div class="info-line"><div class="k">Address</div><div class="v">Aundh-Wakad Road, next to Cafe Ruchira, Vishal Nagar, Pimple Nilakh, Pune, Maharashtra 411027</div></div>
+        <div class="info-line"><div class="k">Phone</div><div class="v"><a href="tel:919168881793">+91 91688 81793</a></div></div>
+        <div class="info-line"><div class="k">Hours</div><div class="v">Mon – Sat 10:30 AM – 1 PM & 4:30 – 8:30 PM · Sunday closed</div></div>
+        <div class="info-line"><div class="k">Monday – Saturday</div><div class="v">10:30 AM – 1:00 PM, 4:30 PM – 8:30 PM</div></div><div class="info-line"><div class="k">Sunday</div><div class="v">Closed</div></div><div class="info-line"><div class="k">Emergency</div><div class="v">Call the clinic number directly</div></div>
+      </div>
+      <div>
+        <div class="kicker">Appointments</div>
+        <h2>Book an appointment</h2>
+        <p class="lead">Send a request with your preferred slot and the clinic will call you back to confirm.</p>
+        <form id="contact" onsubmit="event.preventDefault();this.querySelector('.sent').style.display='block';">
+          <div class="field"><label for="n">Your name</label><input id="n" name="name" required></div>
+          <div class="field"><label for="p">Phone</label><input id="p" name="phone" type="tel" required></div>
+          <div class="field"><label for="s">Preferred treatment</label><select id="s" name="service"><option>General check-up</option><option>Root canal</option><option>Implant consultation</option><option>Crown / smile work</option><option>Kids' dentistry</option><option>Something else</option></select></div><div class="field"><label for="d">Preferred day &amp; slot</label><input id="d" name="datetime" placeholder="e.g. Thu morning"></div>
+          <div class="field"><label for="m">Message</label><textarea id="m" name="message" placeholder="What is the problem, and how long has it been bothering you?"></textarea></div>
+          <button type="submit">Request appointment</button>
+          <p class="note sent" style="display:none">Thanks! This is a demo form. On the live site this request reaches the clinic directly.</p>
+          <p class="note">Demo form. No details are stored or sent.</p>
+        </form>
       </div>
     </div>
-    <form class="form fade" onsubmit="event.preventDefault();this.querySelector('.sent').style.display='block';">
-      <h3>Appointment request</h3>
-      <p class="hint">Share a few details and the clinic will call you back to confirm.</p>
-      <label for="n">Your name</label>
-      <input id="n" type="text" placeholder="Full name" required>
-      <label for="p">Phone number</label>
-      <input id="p" type="tel" placeholder="+91" required>
-      <label for="t">What do you need?</label>
-      <select id="t">
-        <option>Check-up and cleaning</option>
-        <option>Root canal treatment</option>
-        <option>Dental implant</option>
-        <option>Filling or cavity</option>
-        <option>Wisdom tooth</option>
-        <option>Child's appointment</option>
-        <option>Something else</option>
-      </select>
-      <label for="m">Preferred time</label>
-      <input id="m" type="text" placeholder="e.g. Thursday evening">
-      <button type="submit">Request appointment</button>
-      <p class="note sent" style="display:none;color:var(--teal);font-weight:600">Thanks, please call +91 91688 81793 to confirm the slot.</p>
-      <p class="note">Demo form. Requests are not stored yet.</p>
-    </form>
   </div>
 </section>
 
 <footer>
   <div class="wrap">
-    <div class="fgrid">
+    <div class="foot-grid">
       <div>
-        <h4>Dr. Sushmita's Dental Clinic</h4>
-        <p style="font-size:.88rem;max-width:34ch">Multispeciality dental clinic in Vishal Nagar, Pimple Nilakh, Pune. Root canals, implants, fillings and family dentistry.</p>
+        <strong>Dr. Sushmita's Dental Clinic</strong><br>
+        Aundh-Wakad Road, next to Cafe Ruchira, Vishal Nagar, Pimple Nilakh, Pune, Maharashtra 411027<br>
+        <a href="tel:919168881793">+91 91688 81793</a>
       </div>
       <div>
-        <h4>Treatments</h4>
-        <ul>
-          <li><a href="#services">Root canal treatment</a></li>
-          <li><a href="#services">Dental implants</a></li>
-          <li><a href="#services">Fillings</a></li>
-          <li><a href="#services">Children's dentistry</a></li>
-        </ul>
-      </div>
-      <div>
-        <h4>Visit</h4>
-        <ul>
-          <li>Aundh-Wakad Rd, Vishal Nagar</li>
-          <li>Pimple Nilakh, Pune 411027</li>
-          <li><a href="tel:+919168881793">+91 91688 81793</a></li>
-          <li>Mon–Sat, 10:30 AM–1 PM, 4:30–8:30 PM</li>
-        </ul>
+        <strong>Hours</strong><br>
+        Mon – Sat 10:30 AM – 1 PM & 4:30 – 8:30 PM · Sunday closed
       </div>
     </div>
-    <div class="fbot">
-      <span>© 2026 Dr. Sushmita's Dental Clinic</span>
-      <span>Demo website preview built for this clinic.</span>
+    <div class="demo-tag">
+      Free demo website built for Dr. Sushmita's Dental Clinic by SiteSeller. Demo only: details taken from the public Google listing and are not yet confirmed by the business. Reply to the message that brought you here to claim or remove this page.
     </div>
   </div>
 </footer>
 
-<a class="wafloat" href="https://wa.me/919168881793?text=Hi%2C%20I%20found%20your%20clinic%20page%20and%20would%20like%20to%20book%20an%20appointment." aria-label="WhatsApp the clinic">
-  <svg viewBox="0 0 32 32"><path d="M16 3C9.4 3 4 8.4 4 15c0 2.1.6 4.2 1.7 6L4 29l8.2-1.7c1.7.9 3.7 1.4 5.8 1.4 6.6 0 12-5.4 12-12S22.6 3 16 3zm0 21.8c-1.9 0-3.7-.5-5.2-1.4l-.4-.2-4.9 1 1-4.7-.3-.4A9.7 9.7 0 016.2 15c0-5.4 4.4-9.8 9.8-9.8S25.8 9.6 25.8 15 21.4 24.8 16 24.8z"/><path d="M21.6 17.8c-.3-.2-1.9-.9-2.2-1s-.5-.2-.7.2-.8 1-.9 1.2-.3.2-.6.1a8 8 0 01-2.4-1.5 9 9 0 01-1.6-2c-.2-.3 0-.5.1-.6l.5-.6c.1-.2.2-.3.3-.5s0-.4 0-.5-.7-1.7-.9-2.3-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 1.9 3 4.7 4.1 2.3.9 2.8.8 3.3.7.5 0 1.6-.7 1.8-1.3.2-.6.2-1.2.2-1.3s-.2-.2-.5-.3z"/></svg>
-</a>
+<a class="wa-float" href="https://wa.me/919168881793?text=Hi%20Dr.%20Sushmita's%20Dental%20Clinic,%20I%20would%20like%20to%20book%20an%20appointment." target="_blank" rel="noopener">Chat on WhatsApp</a>
 
-<script>
-  const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12});
-  document.querySelectorAll('.fade').forEach(el=>io.observe(el));
-</script>
 </body>
 </html>
