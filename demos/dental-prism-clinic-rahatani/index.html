@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dental Prism Clinic — Rahatani, Pune | Dr. Krutika</title>
+<meta name="description" content="Dental Prism Clinic, Vandana Plaza, Rahatani, Pune. Rated 5.0 from 240 Google reviews for painless root canals, extractions, dentures and digital crowns.">
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{--ink:#10231f;--deep:#0c2b25;--jade:#12655a;--mint:#dfeee9;--gold:#b98a3f;--bg:#fbfaf7;--line:#e3e0d6;--muted:#5f6b66}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:Inter,system-ui,sans-serif;color:var(--ink);background:var(--bg);line-height:1.7;-webkit-font-smoothing:antialiased}
+  h1,h2,h3{font-family:"Instrument Serif",Georgia,serif;font-weight:400;line-height:1.12;letter-spacing:-.01em}
+  a{text-decoration:none;color:inherit}
+  .wrap{max-width:1080px;margin:0 auto;padding:0 22px}
+  header.site{position:sticky;top:0;z-index:50;background:rgba(251,250,247,.92);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+  .nav{display:flex;align-items:center;justify-content:space-between;height:72px;gap:16px}
+  .brand{display:flex;align-items:center;gap:10px;font-family:"Instrument Serif",serif;font-size:1.25rem;letter-spacing:.01em}
+  .mark{width:34px;height:34px;border-radius:9px;background:var(--deep);color:#f4e6c8;display:grid;place-items:center;font-size:.9rem;font-weight:600;font-family:Inter,sans-serif}
+  .nav nav{display:none;gap:26px;font-size:.79rem;font-weight:500;letter-spacing:.07em;text-transform:uppercase;color:var(--muted)}
+  .nav nav a:hover{color:var(--jade)}
+  @media(min-width:800px){.nav nav{display:flex}}
+  .navcta{background:var(--jade);color:#fff;padding:11px 20px;border-radius:6px;font-size:.78rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase}
+  .hero{padding:64px 0 56px;background:radial-gradient(1100px 380px at 82% -8%,#e8f3ef,#fbfaf7 62%)}
+  .hero-grid{display:grid;gap:40px;align-items:center}
+  @media(min-width:900px){.hero-grid{grid-template-columns:1.15fr .85fr;gap:54px}}
+  .eyebrow{display:inline-flex;align-items:center;gap:9px;font-size:.7rem;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--jade);background:#eaf4f1;border:1px solid #cfe5df;padding:7px 14px;border-radius:100px}
+  .hero h1{font-size:clamp(2.3rem,5.4vw,3.5rem);margin:20px 0 16px}
+  .hero h1 em{font-style:italic;color:var(--jade)}
+  .hero p.sub{font-size:1.06rem;color:var(--muted);max-width:44ch}
+  .stars{color:var(--gold);letter-spacing:.1em}
+  .ratingline{margin-top:20px;font-size:.9rem;color:var(--muted);display:flex;align-items:center;gap:9px;flex-wrap:wrap}
+  .ctas{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
+  .btn{display:inline-flex;align-items:center;gap:8px;padding:14px 24px;border-radius:6px;font-size:.79rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase}
+  .btn-primary{background:var(--deep);color:#fff}
+  .btn-wa{background:#25d366;color:#062e17}
+  .btn-ghost{border:1px solid var(--line);color:var(--ink);background:#fff}
+  .hero-card{background:#fff;border:1px solid var(--line);border-radius:14px;padding:26px;box-shadow:0 18px 50px rgba(16,35,31,.07)}
+  .hero-card h3{font-size:1.28rem;margin-bottom:4px}
+  .hero-card .tiny{font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--jade);font-weight:600}
+  .hero-card ul{list-style:none;margin-top:16px;display:grid;gap:11px;font-size:.92rem}
+  .hero-card li{display:flex;gap:10px;color:#3d4a46}
+  .hero-card li span{color:var(--jade);font-weight:600}
+  section{padding:60px 0}
+  .kicker{font-size:.7rem;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);margin-bottom:10px}
+  h2{font-size:clamp(1.75rem,3.6vw,2.4rem);margin-bottom:12px}
+  .lead{color:var(--muted);max-width:60ch;margin-bottom:34px}
+  .alt{background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+  .grid{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(238px,1fr))}
+  .card{background:#fff;border:1px solid var(--line);border-radius:12px;padding:24px}
+  .alt .card{background:var(--bg)}
+  .card .n{font-family:"Instrument Serif",serif;font-size:1.5rem;color:#cbd5ce;line-height:1}
+  .card h3{font-size:1.16rem;margin:8px 0 7px}
+  .card p{font-size:.93rem;color:var(--muted)}
+  .gallery{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(180px,1fr))}
+  .tile{aspect-ratio:4/3;border-radius:12px;display:flex;align-items:flex-end;padding:15px;color:#fff;font-size:.68rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase}
+  .t1{background:linear-gradient(150deg,#0c2b25,#1d6b5f)}
+  .t2{background:linear-gradient(150deg,#264a44,#4f8d80)}
+  .t3{background:linear-gradient(150deg,#3c4a2e,#7d8f5c)}
+  .t4{background:linear-gradient(150deg,#5a4326,#a98444)}
+  .t5{background:linear-gradient(150deg,#243b4a,#57798f)}
+  .t6{background:linear-gradient(150deg,#402f3c,#7c5f74)}
+  .quotes{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(285px,1fr))}
+  .quote{background:#fff;border:1px solid var(--line);border-radius:12px;padding:24px}
+  .alt .quote{background:var(--bg)}
+  .quote p{font-size:.95rem;color:#33403c}
+  .quote .who{margin-top:14px;font-size:.7rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+  .two{display:grid;gap:38px}
+  @media(min-width:860px){.two{grid-template-columns:1fr 1fr;gap:52px}}
+  .info{display:flex;gap:14px;padding:13px 0;border-bottom:1px solid var(--line)}
+  .info .k{font-size:.68rem;font-weight:600;letter-spacing:.13em;text-transform:uppercase;color:var(--muted);min-width:88px;padding-top:4px}
+  .info .v{font-size:.95rem}
+  .info .v a{color:var(--jade);font-weight:500}
+  form .f{margin-bottom:14px}
+  form label{display:block;font-size:.68rem;font-weight:600;letter-spacing:.13em;text-transform:uppercase;color:var(--muted);margin-bottom:6px}
+  form input,form textarea,form select{width:100%;padding:12px 14px;border:1px solid var(--line);border-radius:7px;background:#fff;font:inherit;font-size:.95rem;color:var(--ink)}
+  form button{margin-top:6px;background:var(--jade);color:#fff;border:0;padding:15px 28px;border-radius:7px;font:inherit;font-size:.79rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase;cursor:pointer}
+  .note{font-size:.76rem;color:var(--muted);margin-top:10px}
+  .sent{display:none;margin-top:12px;padding:12px 14px;background:var(--mint);border-radius:7px;font-size:.87rem;color:#0c4a41}
+  footer{background:var(--deep);color:rgba(255,255,255,.74);padding:44px 0 30px;font-size:.9rem}
+  footer h4{font-family:"Instrument Serif",serif;color:#fff;font-size:1.1rem;margin-bottom:9px;font-weight:400}
+  .fgrid{display:grid;gap:28px;grid-template-columns:repeat(auto-fit,minmax(200px,1fr))}
+  footer a{color:#a8d5c8}
+  .fine{margin-top:26px;padding-top:20px;border-top:1px solid rgba(255,255,255,.13);font-size:.76rem;color:rgba(255,255,255,.46);max-width:68ch}
+  .wafloat{position:fixed;right:18px;bottom:18px;background:#25d366;color:#062e17;padding:13px 19px;border-radius:100px;font-size:.73rem;font-weight:600;letter-spacing:.05em;box-shadow:0 8px 24px rgba(0,0,0,.22);z-index:60}
+</style>
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap nav">
+    <div class="brand"><span class="mark">DP</span> Dental Prism Clinic</div>
+    <nav>
+      <a href="#care">Treatments</a>
+      <a href="#clinic">The clinic</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#book">Book</a>
+    </nav>
+    <a class="navcta" href="tel:+918851131933">Call clinic</a>
+  </div>
+</header>
+
+<header class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <span class="eyebrow">Rahatani, Pune</span>
+      <h1>Dentistry that stays <em>gentle</em>, and explains itself.</h1>
+      <p class="sub">Dental Prism Clinic on Akashganga Road, Rahatani. Root canals, extractions, dentures and digital crowns, with the treatment plan and cost discussed before anything begins.</p>
+      <div class="ratingline"><span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span> <strong>5.0</strong> on Google &middot; 240 reviews</div>
+      <div class="ctas">
+        <a class="btn btn-primary" href="#book">Book an appointment</a>
+        <a class="btn btn-wa" href="https://wa.me/918851131933?text=Hi%20Dental%20Prism%20Clinic%2C%20I%20would%20like%20to%20book%20an%20appointment." target="_blank" rel="noopener">WhatsApp</a>
+      </div>
+    </div>
+    <div class="hero-card">
+      <div class="tiny">At a glance</div>
+      <h3>What patients mention most</h3>
+      <ul>
+        <li><span>&#10003;</span> Root canal treatment &mdash; the most reviewed treatment here</li>
+        <li><span>&#10003;</span> Extractions described as painless and smooth</li>
+        <li><span>&#10003;</span> Dentures and digital crowns</li>
+        <li><span>&#10003;</span> Minimal wait times and a hygienic clinic</li>
+        <li><span>&#10003;</span> Only the treatment that is actually needed</li>
+      </ul>
+    </div>
+  </div>
+</header>
+
+<section id="care">
+  <div class="wrap">
+    <div class="kicker">Treatments</div>
+    <h2>Everyday dentistry, done carefully</h2>
+    <p class="lead">The clinic's public reviews point to a general and family dental practice, with root canals and extractions named most often.</p>
+    <div class="grid">
+      <div class="card"><div class="n">01</div><h3>Root canal treatment</h3><p>Named 30 times in patient reviews, usually described as painless and completed in a smooth single visit.</p></div>
+      <div class="card"><div class="n">02</div><h3>Tooth extraction</h3><p>Including wisdom tooth removal, with follow-up checks on pain levels after the procedure.</p></div>
+      <div class="card"><div class="n">03</div><h3>Crowns &amp; dentures</h3><p>Digital crowns and full or partial dentures, fitted at the clinic.</p></div>
+      <div class="card"><div class="n">04</div><h3>Fillings &amp; check-ups</h3><p>Routine fillings, scaling and family check-ups, with children and older patients both seen.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="clinic">
+  <div class="wrap">
+    <div class="kicker">The clinic</div>
+    <h2>Ground floor, Vandana Plaza</h2>
+    <p class="lead">A compact neighbourhood clinic just off Akashganga Road, with a short walk from the Pimple Saudagar side. Patients describe it as well-maintained and hygienic.</p>
+    <div class="gallery">
+      <div class="tile t1">Treatment room</div>
+      <div class="tile t2">Sterilisation</div>
+      <div class="tile t3">Consultation</div>
+      <div class="tile t4">Reception</div>
+      <div class="tile t5">Imaging</div>
+      <div class="tile t6">Waiting area</div>
+    </div>
+  </div>
+</section>
+
+<section id="reviews">
+  <div class="wrap">
+    <div class="kicker">Patient reviews</div>
+    <h2>Rated 5.0 from 240 Google reviews</h2>
+    <p class="lead">Quoted from public Google reviews of the clinic.</p>
+    <div class="quotes">
+      <div class="quote"><p>&ldquo;She was incredibly approachable and friendly, making me feel comfortable right away. After the treatment, she consistently checked in on my pain levels after tooth removal. I recently also had a filling done and I am impressed with the precision and care.&rdquo;</p><div class="who">Google review &middot; Oct 2026</div></div>
+      <div class="quote"><p>&ldquo;She treats her patients very gently and makes them feel comfortable and relaxed throughout the treatment. What I appreciate most is her honest approach: she recommends only the treatment that is genuinely required and does not charge unnecessary fees.&rdquo;</p><div class="who">Google review &middot; Oct 2026</div></div>
+      <div class="quote"><p>&ldquo;Minimal wait times, hygienic environment, best service and great care.&rdquo;</p><div class="who">Google review summary</div></div>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="book">
+  <div class="wrap two">
+    <div>
+      <div class="kicker">Visit</div>
+      <h2>Akashganga Road, Rahatani</h2>
+      <p class="lead">Call the clinic or send a request with your preferred slot and the clinic will confirm.</p>
+      <div class="info"><div class="k">Address</div><div class="v">Ground Floor, Vandana Plaza, CID Colony, Akashganga Road, Rahatani, Pune, Maharashtra 411017</div></div>
+      <div class="info"><div class="k">Phone</div><div class="v"><a href="tel:+918851131933">+91 88511 31933</a></div></div>
+      <div class="info"><div class="k">Hours</div><div class="v">Mon &ndash; Sat 10 AM &ndash; 9 PM &middot; Sunday closed</div></div>
+      <div class="info"><div class="k">Emergency</div><div class="v">Call the clinic number directly</div></div>
+      <div class="info"><div class="k">Getting there</div><div class="v">Off Akashganga Road, on the Pimple Saudagar side of Rahatani</div></div>
+    </div>
+    <div>
+      <div class="kicker">Appointments</div>
+      <h2>Book an appointment</h2>
+      <p class="lead">Send a request and the clinic calls you back to confirm a slot.</p>
+      <form id="form" onsubmit="event.preventDefault();document.getElementById('sent').style.display='block';this.reset();">
+        <div class="f"><label for="n">Your name</label><input id="n" name="name" required></div>
+        <div class="f"><label for="p">Phone</label><input id="p" name="phone" type="tel" required></div>
+        <div class="f"><label for="s">What do you need</label>
+          <select id="s" name="service">
+            <option>General check-up</option>
+            <option>Root canal</option>
+            <option>Tooth extraction</option>
+            <option>Crown or denture</option>
+            <option>Filling or cleaning</option>
+            <option>Something else</option>
+          </select>
+        </div>
+        <div class="f"><label for="d">Preferred day and time</label><input id="d" name="when" placeholder="e.g. Saturday morning"></div>
+        <div class="f"><label for="m">Anything else</label><textarea id="m" name="message" rows="3" placeholder="What is bothering you, and for how long?"></textarea></div>
+        <button type="submit">Request appointment</button>
+        <div class="sent" id="sent">Thanks. This is a demo form, so nothing was sent. On the live site this request reaches the clinic directly.</div>
+        <p class="note">Demo form. No details are stored or sent anywhere.</p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="fgrid">
+      <div>
+        <h4>Dental Prism Clinic</h4>
+        <p style="font-size:.87rem;max-width:34ch">Ground Floor, Vandana Plaza, CID Colony, Akashganga Road, Rahatani, Pune 411017</p>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <p><a href="tel:+918851131933">+91 88511 31933</a></p>
+        <p style="font-size:.87rem;margin-top:6px">Mon &ndash; Sat 10 AM &ndash; 9 PM<br>Sunday closed</p>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <p><a href="#care">Treatments</a><br><a href="#reviews">Reviews</a><br><a href="#book">Book online</a></p>
+      </div>
+    </div>
+    <div class="fine">
+      Free demo website built for Dental Prism Clinic by SiteSeller. This is a demo only. Details are taken from the clinic's public Google listing and reviews, and have not been confirmed by the business. Reply to the message that brought you here to claim or remove this page.
+    </div>
+  </div>
+</footer>
+
+<a class="wafloat" href="https://wa.me/918851131933?text=Hi%20Dental%20Prism%20Clinic%2C%20I%20would%20like%20to%20book%20an%20appointment." target="_blank" rel="noopener">Chat on WhatsApp</a>
+
+</body>
+</html>
