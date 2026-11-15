@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cafe Hashtag — Dhayari Phata, Pune | Burgers, Pizza &amp; Birthday Celebrations</title>
+<meta name="description" content="Cafe Hashtag, Narhe Industrial Estate Road, Dhayari Phata, Pune. A 4.7-rated hangout with 1362 Google reviews, known for burgers, pizza and birthday celebrations.">
+<style>
+:root{--bg:#fcfaf7;--surface:#ffffff;--ink:#1f1a17;--muted:#6f6259;--accent:#b8451f;--accent2:#e0703f;--soft:#fbece4;--line:#ece0d6;--r:12px}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;background:var(--bg);color:var(--ink);line-height:1.68;-webkit-font-smoothing:antialiased}
+.wrap{max-width:1040px;margin:0 auto;padding:0 24px}
+header.hero{padding:96px 0 74px;text-align:center;border-bottom:1px solid var(--line);background:linear-gradient(180deg,#fefbf8,#faf1ea)}
+.badge{display:inline-block;font-size:.66rem;letter-spacing:.2em;text-transform:uppercase;color:var(--accent);border:1px solid var(--line);background:var(--surface);padding:8px 16px;border-radius:100px}
+header.hero h1{font-size:clamp(2.2rem,6.5vw,3.6rem);font-weight:400;letter-spacing:-.02em;margin:22px 0 10px;line-height:1.1}
+header.hero .sub{font-size:1.06rem;color:var(--muted);max-width:600px;margin:0 auto}
+.rating{margin-top:20px;font-size:.9rem;color:var(--muted);letter-spacing:.03em}
+.stars{color:var(--accent2)}
+.cta-row{margin-top:30px;display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+.btn{display:inline-block;padding:14px 26px;border-radius:var(--r);font-size:.74rem;letter-spacing:.11em;text-transform:uppercase;text-decoration:none;transition:.2s}
+.btn-primary{background:var(--accent);color:#fff}
+.btn-primary:hover{background:var(--accent2)}
+.btn-ghost{border:1px solid var(--ink);color:var(--ink)}
+.btn-ghost:hover{background:var(--ink);color:#fff}
+.btn-wa{background:#25D366;color:#08340f}
+section{padding:66px 0}
+.kicker{font-size:.66rem;letter-spacing:.19em;text-transform:uppercase;color:var(--accent2);margin-bottom:10px}
+h2{font-weight:400;font-size:clamp(1.6rem,3.6vw,2.1rem);margin-bottom:10px;letter-spacing:-.012em}
+.lead{color:var(--muted);max-width:640px;margin-bottom:34px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(238px,1fr));gap:18px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:24px}
+.card h3{font-weight:400;font-size:1.06rem;margin-bottom:6px}
+.card p{color:var(--muted);font-size:.93rem}
+.alt{background:var(--surface);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.menu{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:30px}
+.menu h3{font-size:.7rem;letter-spacing:.16em;text-transform:uppercase;color:var(--accent2);margin-bottom:14px;font-weight:400}
+.menu ul{list-style:none}
+.menu li{display:flex;justify-content:space-between;gap:16px;padding:10px 0;border-bottom:1px dashed var(--line);font-size:.95rem;color:#3a312c}
+.menu li span:last-child{color:var(--muted);font-size:.85rem;white-space:nowrap}
+.two-col{display:grid;grid-template-columns:1fr 1fr;gap:44px;align-items:start}
+@media(max-width:780px){.two-col{grid-template-columns:1fr;gap:28px}}
+.quotes{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:18px}
+.quote{background:var(--bg);border:1px solid var(--line);border-radius:var(--r);padding:24px}
+.quote p{font-size:.95rem;color:#3a312c;font-style:italic}
+.quote .who{margin-top:14px;font-size:.63rem;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);font-style:normal}
+.gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px}
+.tile{aspect-ratio:4/3;border-radius:var(--r);display:flex;align-items:flex-end;padding:14px;color:#fff;font-size:.64rem;letter-spacing:.13em;text-transform:uppercase}
+.t1{background:linear-gradient(150deg,#b8451f,#e0703f)}.t2{background:linear-gradient(150deg,#8f3a20,#d8865c)}.t3{background:linear-gradient(150deg,#5e3a2a,#a97d63)}.t4{background:linear-gradient(150deg,#a8442a,#eaa06f)}.t5{background:linear-gradient(150deg,#47403a,#8f8177)}.t6{background:linear-gradient(150deg,#7a3a22,#c98a63)}
+table.hours{width:100%;border-collapse:collapse;font-size:.94rem}
+table.hours td{padding:11px 0;border-bottom:1px solid var(--line);color:var(--muted)}
+table.hours td:last-child{text-align:right;color:var(--ink)}
+form{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:26px;display:grid;gap:14px}
+label{font-size:.7rem;letter-spacing:.11em;text-transform:uppercase;color:var(--muted);display:block;margin-bottom:6px}
+input,select,textarea{width:100%;padding:12px 14px;border:1px solid var(--line);border-radius:8px;font-family:inherit;font-size:.95rem;background:var(--bg);color:var(--ink)}
+input:focus,select:focus,textarea:focus{outline:none;border-color:var(--accent2)}
+button{background:var(--accent);color:#fff;border:none;padding:14px;border-radius:8px;font-size:.74rem;letter-spacing:.11em;text-transform:uppercase;cursor:pointer;font-family:inherit}
+button:hover{background:var(--accent2)}
+.info dt{font-size:.66rem;letter-spacing:.13em;text-transform:uppercase;color:var(--accent2);margin-top:18px}
+.info dd{color:var(--muted);font-size:.96rem}
+footer{padding:48px 0 60px;border-top:1px solid var(--line);font-size:.84rem;color:var(--muted);text-align:center}
+.demo-note{max-width:640px;margin:18px auto 0;font-size:.78rem;color:#9a8b80;line-height:1.6}
+a{color:var(--accent)}
+.wa-float{position:fixed;right:18px;bottom:18px;background:#25D366;color:#08340f;text-decoration:none;padding:14px 20px;border-radius:100px;font-size:.72rem;letter-spacing:.09em;text-transform:uppercase;box-shadow:0 6px 20px rgba(0,0,0,.18);z-index:99}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <span class="badge">Dhayari Phata, Pune</span>
+    <h1>Cafe Hashtag</h1>
+    <p class="sub">The birthday-and-hangout cafe on Narhe Industrial Estate Road. Burgers, wood-fired pizza, thick shakes and a room built for celebrating with people you like.</p>
+    <p class="rating"><span class="stars">★★★★★</span> &nbsp;4.7 on Google &middot; 1,362 reviews</p>
+    <div class="cta-row">
+      <a class="btn btn-primary" href="tel:+919049050747">Call the cafe</a>
+      <a class="btn btn-wa" href="https://wa.me/919049050747?text=Hi%20Cafe%20Hashtag%2C%20I%20found%20your%20page%20and%20would%20like%20to%20book%20a%20table.">WhatsApp</a>
+      <a class="btn btn-ghost" href="#book">Book a table</a>
+    </div>
+  </div>
+</header>
+
+<section>
+  <div class="wrap">
+    <p class="kicker">Why people book it</p>
+    <h2>Built for a celebration</h2>
+    <p class="lead">Walk in for a weeknight pizza or call ahead to plan a birthday. Among 1,300+ reviews, the words that keep repeating are the ambience, the burgers, and how the team handles a party. It is a cafe that takes the occasion seriously without making it fussy.</p>
+    <div class="grid">
+      <div class="card"><h3>Birthday celebrations</h3><p>Birthdays and anniversaries are the cafe's most-mentioned use case, referenced across 90+ reviews alongside small parties for friends.</p></div>
+      <div class="card"><h3>Burgers that travel well</h3><p>Burgers come up in 37+ reviews. The cold coffee is thick and foamy, and the sandwiches get their own fan club.</p></div>
+      <div class="card"><h3>A real ambience</h3><p>Reviews describe a cosy, welcoming room with lighting and seating that suit both a family meal and a group night out.</p></div>
+      <div class="card"><h3>Pocket-friendly</h3><p>Described as easy on the wallet for the portion sizes, which is why student groups keep coming back.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="alt">
+  <div class="wrap">
+    <p class="kicker">What to order</p>
+    <h2>From the kitchen</h2>
+    <p class="lead">Built from the items guests write about most. Ask the counter for the day's specials and current prices.</p>
+    <div class="menu">
+      <div>
+        <h3>Burgers &amp; sandwiches</h3>
+        <ul>
+          <li><span>House burger</span><span>guest favourite</span></li>
+          <li><span>Chicken nuggets</span><span>most ordered snack</span></li>
+          <li><span>Magic masala sandwich</span><span>veg</span></li>
+          <li><span>Club sandwich</span><span>veg / non-veg</span></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Pizza &amp; pasta</h3>
+        <ul>
+          <li><span>Veg pizza</span><span>thin crust</span></li>
+          <li><span>Chicken pizza</span><span>loaded</span></li>
+          <li><span>White sauce pasta</span><span>veg</span></li>
+          <li><span>Red sauce pasta</span><span>veg</span></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Shakes &amp; drinks</h3>
+        <ul>
+          <li><span>Cold coffee</span><span>thick, foamy</span></li>
+          <li><span>Chocolate milkshake</span><span>bestseller</span></li>
+          <li><span>Green apple mocktail</span><span>refreshing</span></li>
+          <li><span>Masala lemonade</span><span>classic</span></li>
+        </ul>
+      </div>
+    </div>
+    <p class="demo-note">Menu items reflect what guests review publicly. Exact pricing and the full menu are available at the cafe.</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <p class="kicker">The room</p>
+    <h2>Somewhere to sit a while</h2>
+    <p class="lead">Warm lighting, generous seating and space for a group of ten without feeling cramped.</p>
+    <div class="gallery">
+      <div class="tile t1">The main room</div>
+      <div class="tile t2">Pizza counter</div>
+      <div class="tile t3">Burgers</div>
+      <div class="tile t4">Shakes</div>
+      <div class="tile t5">Celebrations</div>
+      <div class="tile t6">Evening seating</div>
+    </div>
+    <p class="demo-note">Photo panels are placeholders. Real cafe photographs can be added before this page goes live.</p>
+  </div>
+</section>
+
+<section class="alt">
+  <div class="wrap">
+    <p class="kicker">Reviews</p>
+    <h2>What guests wrote</h2>
+    <p class="lead">Real reviews from the cafe's Google profile, quoted as written.</p>
+    <div class="quotes">
+      <div class="quote"><p>“Most beautiful place to celebrate and chill with friends. If u r looking for a best place to celebrate birthday, anniversary or want to throw a small party for your friends then it's #HASTAG cafe for u guys.”</p><div class="who">Gorakhnath Jadhav · Google review</div></div>
+      <div class="quote"><p>“The ambiance was cozy and welcoming, the food was delicious, and the service was excellent. It truly made our celebration special and memorable.”</p><div class="who">Sonali Kirve · Google review</div></div>
+      <div class="quote"><p>“The food was amazing. The burger was savoury and delicious. The cold coffee was perfectly thick and foamy. Overall the whole experience was wholesome.”</p><div class="who">Shreya Phadatare · Google review</div></div>
+      <div class="quote"><p>“Loved the chicken nuggets! The overall experience was really good. Great food, nice ambience and good service.”</p><div class="who">Kannika Shetty · Google review</div></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap two-col">
+    <div>
+      <p class="kicker">Visit</p>
+      <h2>Timings &amp; location</h2>
+      <table class="hours">
+        <tr><td>Monday – Sunday</td><td>11 AM – 10 PM</td></tr>
+      </table>
+      <dl class="info">
+        <dt>Address</dt>
+        <dd>Narhe Industrial Estate Road, Dhayari Phata, Pune 411041</dd>
+        <dt>Phone</dt>
+        <dd><a href="tel:+919049050747">+91 90490 50747</a></dd>
+        <dt>Google rating</dt>
+        <dd>4.7 from 1,362 reviews</dd>
+        <dt>Good for</dt>
+        <dd>Birthdays, group dinners, family meals, takeaway</dd>
+      </dl>
+    </div>
+    <form id="book" onsubmit="event.preventDefault(); alert('Demo form. Connect this to email, WhatsApp or Google Calendar before publishing.');">
+      <div>
+        <label for="name">Your name</label>
+        <input id="name" placeholder="Full name" required>
+      </div>
+      <div>
+        <label for="phone">Phone</label>
+        <input id="phone" placeholder="+91" required>
+      </div>
+      <div>
+        <label for="occasion">What is the occasion?</label>
+        <select id="occasion">
+          <option>Table for a meal</option>
+          <option>Birthday</option>
+          <option>Anniversary</option>
+          <option>Group party</option>
+          <option>Takeaway</option>
+        </select>
+      </div>
+      <div>
+        <label for="msg">How many people and when?</label>
+        <textarea id="msg" rows="3" placeholder="8 people, Saturday around 7 PM"></textarea>
+      </div>
+      <button type="submit">Request a booking</button>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <p>Cafe Hashtag &middot; Dhayari Phata, Pune &middot; <a href="tel:+919049050747">+91 90490 50747</a></p>
+    <p class="demo-note">This is a free demo page built for Cafe Hashtag. Details are taken from the cafe's public Google listing and reviews, dated November 2026. No booking, payment or WhatsApp integration is connected yet.</p>
+  </div>
+</footer>
+
+<a class="wa-float" href="https://wa.me/919049050747?text=Hi%20Cafe%20Hashtag%2C%20I%20would%20like%20to%20book%20a%20table.">Chat on WhatsApp</a>
+</body>
+</html>
