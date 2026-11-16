@@ -2,190 +2,199 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>GlossDent Dental Care | Ambegaon Budruk, Pune</title>
-<meta name="description" content="GlossDent Dental Care, Ambegaon Budruk, Pune. Implant and multispecialty dental clinic rated 5.0 from 291 Google reviews. Root canals, extractions, braces and implants. Book on WhatsApp.">
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Jost:wght@400;500;600&display=swap" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GlossDent Dental Care — Ambegaon Budruk, Pune | Implant &amp; Multispecialty Dental Clinic</title>
+<meta name="description" content="GlossDent Dental Care, Shop No. 2, Alliance Aishwary, Dalvi Nagar, Ambegaon Budruk, Pune. A 5.0-rated implant and multispecialty dental clinic with 295 Google reviews.">
 <style>
-  *{box-sizing:border-box;margin:0;padding:0}
-  html{scroll-behavior:smooth}
-  body{background:var(--bg);color:var(--ink);font-family:Jost,system-ui,sans-serif;line-height:1.65;-webkit-font-smoothing:antialiased}
-  h1,h2,h3{font-family:var(--display);font-weight:600;line-height:1.08}
-  a{color:inherit;text-decoration:none}
-  img{max-width:100%}
-  .wrap{max-width:1120px;margin:0 auto;padding:0 22px}
-  .eyebrow{font-size:.7rem;letter-spacing:.22em;text-transform:uppercase;color:var(--accent);font-weight:600;margin-bottom:14px}
-  .sub{color:var(--muted);max-width:56ch}
-  .fade{opacity:0;transform:translateY(16px);transition:opacity .7s ease,transform .7s ease}
-  .fade.in{opacity:1;transform:none}
-
-  :root{--display:"Cormorant Garamond",Georgia,serif}
-  header{position:fixed;top:0;left:0;right:0;z-index:60;transition:background .3s}
-  header.solid{background:rgba(15,28,26,.95);backdrop-filter:blur(10px)}
-  .nav{display:flex;align-items:center;justify-content:space-between;height:78px;gap:14px}
-  .brand{font-family:var(--display);font-size:1.32rem;color:#fff;letter-spacing:.02em;display:flex;align-items:center;gap:10px}
-  .mark{width:34px;height:34px;border:1px solid #c8a05a;border-radius:50%;display:grid;place-items:center;color:#c8a05a;font-family:Jost,sans-serif;font-size:.72rem;font-weight:600;letter-spacing:.05em}
-  .navlinks{display:none;gap:26px;font-size:.78rem;letter-spacing:.11em;text-transform:uppercase;color:#b9c6c2}
-  .navlinks a:hover{color:#c8a05a}
-  @media(min-width:900px){.navlinks{display:flex}}
-  .btn{display:inline-block;background:#2f7d6e;color:#fff;padding:13px 24px;border-radius:2px;font-size:.76rem;font-weight:600;letter-spacing:.11em;text-transform:uppercase;border:1px solid #2f7d6e}
-  .btn.ghost{background:transparent;border-color:#c8a05a;color:#c8a05a}
-  .btn.wa{background:#25d366;border-color:#25d366;color:#07321a}
-  .hero{background:#0f1c1a;color:#fff;padding:132px 0 76px;position:relative;overflow:hidden}
-  .hero:after{content:"";position:absolute;inset:0;background:radial-gradient(circle at 78% 18%,rgba(47,125,110,.5),transparent 58%)}
-  .hero .wrap{position:relative;z-index:2}
-  .hg{display:grid;gap:44px;align-items:center}
-  @media(min-width:920px){.hg{grid-template-columns:1.06fr .94fr}}
-  .stars{color:#c8a05a;letter-spacing:2px;font-size:.95rem}
-  h1{font-size:clamp(2.5rem,6vw,4.15rem);margin:16px 0 20px}
-  h1 em{font-style:italic;color:#c8a05a}
-  .lead{color:#c2cdc9;font-size:1.02rem;max-width:46ch;margin-bottom:30px}
-  .badge{display:inline-flex;align-items:center;gap:9px;border:1px solid rgba(200,160,90,.45);color:#c8a05a;padding:6px 14px;border-radius:2px;font-size:.7rem;letter-spacing:.13em;text-transform:uppercase}
-  .card-hero{background:linear-gradient(160deg,#17332e,#0f1c1a);border:1px solid rgba(200,160,90,.28);border-radius:4px;padding:30px}
-  .card-hero h3{font-size:1.4rem;color:#fff;margin-bottom:6px}
-  .card-hero p{color:#a9b8b3;font-size:.9rem}
-  .slot{display:flex;justify-content:space-between;padding:11px 0;border-bottom:1px dashed rgba(255,255,255,.12);font-size:.88rem;color:#d3ded9}
-  .slot:last-child{border:0}
-  section{padding:76px 0}
-  h2{font-size:clamp(1.85rem,3.9vw,2.65rem);margin-bottom:14px}
-  .grid3{display:grid;gap:18px;margin-top:34px}
-  @media(min-width:760px){.grid3{grid-template-columns:repeat(3,1fr)}}
-  .svc{background:#fff;border:1px solid #e3e0d8;border-radius:3px;padding:26px}
-  .svc h3{font-size:1.18rem;margin-bottom:8px}
-  .svc p{font-size:.9rem;color:#6b7370}
-  .tile{border-radius:3px;padding:22px;min-height:158px;display:flex;flex-direction:column;justify-content:flex-end;color:#fff;border:1px solid rgba(0,0,0,.06)}
-  .tile b{font-family:var(--display);font-size:1.16rem}
-  .tile span{font-size:.76rem;opacity:.85;letter-spacing:.05em}
-  .band{background:#f4f1ea;border-top:1px solid #e3e0d8;border-bottom:1px solid #e3e0d8}
-  .quotes{display:grid;gap:18px;margin-top:32px}
-  @media(min-width:860px){.quotes{grid-template-columns:repeat(3,1fr)}}
-  .quote{background:#fff;border:1px solid #e3e0d8;border-left:3px solid #2f7d6e;padding:24px;border-radius:2px}
-  .quote p{font-size:.93rem;color:#33413d;font-style:italic}
-  .who{margin-top:16px;font-size:.8rem;color:#6b7370}
-  .who strong{display:block;color:#12211f;font-family:Jost,sans-serif;font-weight:600;font-size:.86rem;font-style:normal}
-  .split{display:grid;gap:40px}
-  @media(min-width:920px){.split{grid-template-columns:1fr 1fr}}
-  form{background:#fff;border:1px solid #e3e0d8;border-radius:4px;padding:28px}
-  label{display:block;font-size:.74rem;letter-spacing:.1em;text-transform:uppercase;color:#6b7370;margin:0 0 6px}
-  input,select,textarea{width:100%;padding:12px 13px;border:1px solid #e3e0d8;border-radius:2px;font-family:inherit;font-size:.94rem;background:#fbfaf7;color:#12211f;margin-bottom:16px}
-  input:focus,select:focus,textarea:focus{outline:2px solid rgba(47,125,110,.35);border-color:#2f7d6e}
-  .info li{list-style:none;padding:14px 0;border-bottom:1px solid #e3e0d8;display:flex;gap:14px;font-size:.94rem}
-  .info b{min-width:76px;font-size:.72rem;letter-spacing:.11em;text-transform:uppercase;color:#2f7d6e;padding-top:3px}
-  footer{background:#0f1c1a;color:#93a5a0;padding:44px 0 30px;font-size:.84rem}
-  footer a{color:#c8a05a}
-  .fb{display:flex;flex-wrap:wrap;gap:18px;justify-content:space-between;border-top:1px solid rgba(255,255,255,.1);margin-top:26px;padding-top:22px}
-  .wafloat{position:fixed;right:18px;bottom:18px;z-index:80;background:#25d366;color:#06301a;width:56px;height:56px;border-radius:50%;display:grid;place-items:center;box-shadow:0 8px 24px rgba(0,0,0,.25);font-size:1.5rem}
-
+:root{--bg:#faf9f6;--surface:#ffffff;--ink:#1d2430;--muted:#6a7382;--accent:#1b5e8c;--accent2:#4a90b8;--soft:#e8f1f7;--line:#e2e6ec;--r:12px}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;background:var(--bg);color:var(--ink);line-height:1.68;-webkit-font-smoothing:antialiased}
+.wrap{max-width:1040px;margin:0 auto;padding:0 24px}
+header.hero{padding:92px 0 70px;text-align:center;border-bottom:1px solid var(--line);background:linear-gradient(180deg,#fdfdfc,#f2f4f8)}
+.badge{display:inline-block;font-size:.66rem;letter-spacing:.2em;text-transform:uppercase;color:var(--accent);border:1px solid var(--line);background:var(--surface);padding:8px 16px;border-radius:100px}
+header.hero h1{font-size:clamp(2.1rem,6vw,3.3rem);font-weight:400;letter-spacing:-.015em;margin:22px 0 10px;line-height:1.15}
+header.hero .sub{font-size:1.06rem;color:var(--muted);max-width:620px;margin:0 auto}
+.rating{margin-top:20px;font-size:.9rem;color:var(--muted);letter-spacing:.03em}
+.stars{color:var(--accent2)}
+.cta-row{margin-top:30px;display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+.btn{display:inline-block;padding:14px 26px;border-radius:var(--r);font-size:.74rem;letter-spacing:.11em;text-transform:uppercase;text-decoration:none;transition:.2s}
+.btn-primary{background:var(--accent);color:#fff}
+.btn-primary:hover{background:var(--accent2)}
+.btn-ghost{border:1px solid var(--ink);color:var(--ink)}
+.btn-ghost:hover{background:var(--ink);color:#fff}
+.btn-wa{background:#25D366;color:#08340f}
+section{padding:64px 0}
+.kicker{font-size:.66rem;letter-spacing:.19em;text-transform:uppercase;color:var(--accent2);margin-bottom:10px}
+h2{font-weight:400;font-size:clamp(1.55rem,3.5vw,2.05rem);margin-bottom:10px;letter-spacing:-.01em}
+.lead{color:var(--muted);max-width:660px;margin-bottom:34px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(238px,1fr));gap:18px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:24px}
+.card h3{font-weight:400;font-size:1.04rem;margin-bottom:6px}
+.card p{color:var(--muted);font-size:.93rem}
+.alt{background:var(--surface);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.two-col{display:grid;grid-template-columns:1fr 1fr;gap:44px;align-items:start}
+@media(max-width:780px){.two-col{grid-template-columns:1fr;gap:28px}}
+.quotes{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:18px}
+.quote{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:24px}
+.quote p{font-size:.95rem;color:#2d3542;font-style:italic}
+.quote .who{margin-top:14px;font-size:.63rem;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);font-style:normal}
+.gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px}
+.tile{aspect-ratio:4/3;border-radius:var(--r);display:flex;align-items:flex-end;padding:14px;color:#fff;font-size:.64rem;letter-spacing:.13em;text-transform:uppercase}
+.t1{background:linear-gradient(150deg,#1b5e8c,#4a90b8)}.t2{background:linear-gradient(150deg,#1d4a63,#5f9fc0)}.t3{background:linear-gradient(150deg,#2a4250,#7fa5b8)}.t4{background:linear-gradient(150deg,#164d74,#6bb3d4)}.t5{background:linear-gradient(150deg,#345668,#93b8c6)}.t6{background:linear-gradient(150deg,#123a52,#4f8aa9)}
+table.hours{width:100%;border-collapse:collapse;font-size:.94rem}
+table.hours td{padding:11px 0;border-bottom:1px solid var(--line);color:var(--muted)}
+table.hours td:last-child{text-align:right;color:var(--ink)}
+form{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:26px;display:grid;gap:14px}
+label{font-size:.7rem;letter-spacing:.11em;text-transform:uppercase;color:var(--muted);display:block;margin-bottom:6px}
+input,select,textarea{width:100%;padding:12px 14px;border:1px solid var(--line);border-radius:8px;font-family:inherit;font-size:.95rem;background:var(--bg);color:var(--ink)}
+input:focus,select:focus,textarea:focus{outline:none;border-color:var(--accent2)}
+button{background:var(--accent);color:#fff;border:none;padding:14px;border-radius:8px;font-size:.74rem;letter-spacing:.11em;text-transform:uppercase;cursor:pointer;font-family:inherit}
+button:hover{background:var(--accent2)}
+.info dt{font-size:.66rem;letter-spacing:.13em;text-transform:uppercase;color:var(--accent2);margin-top:18px}
+.info dd{color:var(--muted);font-size:.96rem}
+footer{padding:48px 0 60px;border-top:1px solid var(--line);font-size:.84rem;color:var(--muted);text-align:center}
+.demo-note{max-width:660px;margin:18px auto 0;font-size:.78rem;color:#8298a2;line-height:1.6}
+a{color:var(--accent)}
+.wa-float{position:fixed;right:18px;bottom:18px;background:#25D366;color:#08340f;text-decoration:none;padding:14px 20px;border-radius:100px;font-size:.72rem;letter-spacing:.09em;text-transform:uppercase;box-shadow:0 6px 20px rgba(0,0,0,.18);z-index:99}
 </style>
 </head>
 <body>
 
-<header id="nav"><div class="wrap nav">
-  <div class="brand"><span class="mark">SS</span>GlossDent Dental Care</div>
-  <div class="navlinks">
-    <a href="#services">Treatments</a><a href="#gallery">Gallery</a><a href="#reviews">Reviews</a><a href="#visit">Visit</a>
+<header class="hero">
+  <div class="wrap">
+    <span class="badge">Ambegaon Budruk, Pune</span>
+    <h1>GlossDent Dental Care</h1>
+    <p class="sub">An implant and multispecialty dental clinic in Ambegaon Budruk. Patients most often describe treatment as stress-free, with the team explaining what is happening and pricing that stays affordable.</p>
+    <p class="rating"><span class="stars">★★★★★</span> &nbsp;5.0 on Google &middot; 295 reviews</p>
+    <div class="cta-row">
+      <a class="btn btn-primary" href="tel:+919112696696">Call the clinic</a>
+      <a class="btn btn-wa" href="https://wa.me/919112696696?text=Hi%20GlossDent%20Dental%20Care%2C%20I%20found%20your%20page%20and%20would%20like%20to%20book%20an%20appointment.">WhatsApp</a>
+      <a class="btn btn-ghost" href="#book">Book a visit</a>
+    </div>
   </div>
-  <a class="btn" href="https://wa.me/919112696696?text=Hello%20GlossDent Dental Care%2C%20I%27d%20like%20to%20book%20an%20appointment.">Book on WhatsApp</a>
-</div></header>
+</header>
 
-<section class="hero">
-  <div class="wrap hg">
+<section>
+  <div class="wrap">
+    <p class="kicker">Why patients come back</p>
+    <h2>Dentistry without the dread</h2>
+    <p class="lead">Based at Alliance Aishwary in Dalvi Nagar, GlossDent serves families across Ambegaon Budruk and the Katraj belt. Reviews cluster around a few consistent points: treatment that does not hurt, a calm and caring team, and prices that stay reasonable for the work done.</p>
+    <div class="grid">
+      <div class="card"><h3>Root canal treatment</h3><p>The clinic's most-reviewed treatment, mentioned in 43+ reviews, including painless single-sitting work.</p></div>
+      <div class="card"><h3>Stress-free visits</h3><p>Described in 13+ reviews as a calm experience, with patients saying nerves are settled before treatment starts.</p></div>
+      <div class="card"><h3>Affordable pricing</h3><p>Noted in 7+ reviews as good value, with treatment costs explained before work begins.</p></div>
+      <div class="card"><h3>Caring staff</h3><p>Patients repeatedly describe the team as warm, attentive and genuinely concerned about comfort.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="alt">
+  <div class="wrap">
+    <p class="kicker">Treatments</p>
+    <h2>What the clinic handles</h2>
+    <p class="lead">Services below reflect what patients most frequently review and what the clinic advertises publicly. Call to confirm suitability for your case.</p>
+    <div class="grid">
+      <div class="card"><h3>Root canal treatment</h3><p>Single and multi-visit endodontic care, including painless root canal work.</p></div>
+      <div class="card"><h3>Dental implants</h3><p>Implant treatment and replacement of missing teeth, a stated specialty of the clinic.</p></div>
+      <div class="card"><h3>Dental caps &amp; crowns</h3><p>Cap placement and crown work following root canal treatment.</p></div>
+      <div class="card"><h3>Tooth extraction</h3><p>Simple extractions, covered in 10+ reviews, including wisdom tooth pain cases.</p></div>
+      <div class="card"><h3>Tooth pain relief</h3><p>Urgent care for toothache, discussed in 12+ reviews.</p></div>
+      <div class="card"><h3>Teeth whitening</h3><p>Cosmetic whitening and routine cleaning for preventive care.</p></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <p class="kicker">In the clinic</p>
+    <h2>A look inside</h2>
+    <p class="lead">A focused, modern setup built around a multispecialty practice, so most treatment can be completed in one place.</p>
+    <div class="gallery">
+      <div class="tile t1">Reception</div>
+      <div class="tile t2">Treatment room</div>
+      <div class="tile t3">Sterilisation</div>
+      <div class="tile t4">Consultation</div>
+      <div class="tile t5">Waiting area</div>
+      <div class="tile t6">Ambegaon locality</div>
+    </div>
+    <p class="demo-note">Photo panels are placeholders. Real clinic photographs can be added before this page goes live.</p>
+  </div>
+</section>
+
+<section class="alt">
+  <div class="wrap">
+    <p class="kicker">Reviews</p>
+    <h2>What patients wrote</h2>
+    <p class="lead">Real reviews from the clinic's Google profile, quoted as written.</p>
+    <div class="quotes">
+      <div class="quote"><p>“I had my tooth extracted by this wonderful doctor, and I must say that my overall experience was excellent. The doctor treated me with so much care, patience, and kindness.”</p><div class="who">Prajakta Deshmukh &middot; Google review</div></div>
+      <div class="quote"><p>“I'm absolutely thrilled with the service I received at this clinic.”</p><div class="who">Google review &middot; verified patient</div></div>
+      <div class="quote"><p>“The staff's behavior is very caring and feels just like being at home.”</p><div class="who">Google review &middot; verified patient</div></div>
+      <div class="quote"><p>“Good experience. Affordable price. Must visit place for all dental issues.”</p><div class="who">Google review &middot; verified patient</div></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap two-col">
     <div>
-      <span class="badge">Implant &amp;amp; Multispecialty Dental Clinic</span>
-      <h1>Precise dentistry, <em>gently delivered.</em></h1>
-      <p class="lead">A 5.0-rated dental practice in Ambegaon Budruk. Root canals, implants, braces and everyday care, explained clearly before anything begins.</p>
-      <div class="stars">★★★★★ <span style="color:#c2cdc9;font-size:.85rem;letter-spacing:0;margin-left:6px">5.0 &middot; 291 Google reviews</span></div>
-      <div style="display:flex;flex-wrap:wrap;gap:12px;margin-top:26px">
-        <a class="btn wa" href="https://wa.me/919112696696?text=Hello%20GlossDent Dental Care%2C%20I%27d%20like%20to%20book%20an%20appointment.">Book an appointment</a>
-        <a class="btn ghost" href="tel:+919112696696">Call +91 91126 96696</a>
+      <p class="kicker">Visit</p>
+      <h2>Timings &amp; location</h2>
+      <table class="hours">
+        <tr><td>Monday</td><td>9 AM – 9 PM</td></tr>
+        <tr><td>Saturday</td><td>9 AM – 9 PM</td></tr>
+        <tr><td>Sunday</td><td>9 AM – 4 PM</td></tr>
+        <tr><td>Tuesday – Friday</td><td>Closed (as listed)</td></tr>
+      </table>
+      <dl class="info">
+        <dt>Address</dt>
+        <dd>Shop No. 2, Alliance Aishwary, Dalvi Nagar, Ambegaon Budruk, Pune 411046</dd>
+        <dt>Phone</dt>
+        <dd><a href="tel:+919112696696">+91 91126 96696</a></dd>
+        <dt>Google rating</dt>
+        <dd>5.0 from 295 reviews</dd>
+      </dl>
+      <p class="demo-note">Hours shown are as currently listed on Google. Please call to confirm before travelling.</p>
+    </div>
+    <form id="book" onsubmit="event.preventDefault(); alert('Demo form. Connect this to email, WhatsApp or Google Calendar before publishing.');">
+      <div>
+        <label for="name">Your name</label>
+        <input id="name" placeholder="Full name" required>
       </div>
-    </div>
-    <div class="card-hero">
-      <h3>Clinic hours</h3>
-      <p style="margin-bottom:18px">As listed on Google. Please call before travelling.</p>
-      <div class="slot"><span>Saturday</span><b style="font-weight:500">9 AM – 9 PM</b></div><div class="slot"><span>Sunday</span><b style="font-weight:500">9 AM – 4 PM</b></div><div class="slot"><span>Monday</span><b style="font-weight:500">9 AM – 9 PM</b></div><div class="slot"><span>Tue – Fri</span><b style="font-weight:500">Closed</b></div>
-      <p style="margin-top:16px;font-size:.82rem;color:#c8a05a">Ambegaon Budruk</p>
-    </div>
+      <div>
+        <label for="phone">Phone</label>
+        <input id="phone" placeholder="+91" required>
+      </div>
+      <div>
+        <label for="service">What do you need?</label>
+        <select id="service">
+          <option>Consultation</option>
+          <option>Root canal</option>
+          <option>Dental implant</option>
+          <option>Cap or crown</option>
+          <option>Tooth extraction</option>
+          <option>Cleaning or whitening</option>
+          <option>Something else</option>
+        </select>
+      </div>
+      <div>
+        <label for="msg">Preferred day or time</label>
+        <textarea id="msg" rows="3" placeholder="Mondays or weekends work best for us"></textarea>
+      </div>
+      <button type="submit">Request appointment</button>
+    </form>
   </div>
 </section>
 
-<section id="services">
+<footer>
   <div class="wrap">
-    <div class="eyebrow">Treatments</div>
-    <h2>Care for every stage of your smile</h2>
-    <p class="sub">Most patients come in for a root canal, an extraction or a cleaning. Everything is explained in plain language first, so you know what is happening and why.</p>
-    <div class="grid3"><div class="svc fade"><h3>Root canal treatment</h3><p>The most mentioned treatment in reviews. Handled with care and clear step-by-step explanation.</p></div><div class="svc fade"><h3>Dental implants</h3><p>Implant and multispecialty care for replacing missing teeth.</p></div><div class="svc fade"><h3>Tooth extraction</h3><p>Including wisdom teeth. Patients repeatedly mention how smooth the procedure felt.</p></div><div class="svc fade"><h3>Braces &amp;amp; alignment</h3><p>Orthodontic treatment for crowded or uneven teeth.</p></div><div class="svc fade"><h3>Caps &amp;amp; crowns</h3><p>Cap placement and restoration work.</p></div><div class="svc fade"><h3>Cleaning &amp;amp; whitening</h3><p>Scaling, polishing and whitening for routine upkeep.</p></div></div>
+    <p>GlossDent Dental Care &middot; Shop No. 2, Alliance Aishwary, Dalvi Nagar, Ambegaon Budruk, Pune 411046</p>
+    <p class="demo-note">This is a free preview page created for GlossDent Dental Care from publicly listed information. Nothing here is live or affiliated until the clinic chooses to claim it.</p>
   </div>
-</section>
+</footer>
 
-<section class="band" id="gallery">
-  <div class="wrap">
-    <div class="eyebrow">Gallery</div>
-    <h2>Inside the clinic</h2>
-    <p class="sub">A welcoming, clean and tidy space, as described by patients in their Google reviews.</p>
-    <div class="grid3" style="grid-template-columns:repeat(2,1fr)" id="tiles"><div class="tile fade" style="background:linear-gradient(150deg,#1f4a42,#0f2b26)"><b>Reception</b><span>Calm, clean waiting area</span></div><div class="tile fade" style="background:linear-gradient(150deg,#25574d,#123029)"><b>Treatment room</b><span>Modern equipment</span></div><div class="tile fade" style="background:linear-gradient(150deg,#2f7d6e,#173d36)"><b>Consultation</b><span>Explained before treatment</span></div><div class="tile fade" style="background:linear-gradient(150deg,#3a544e,#1a2c28)"><b>Sterilisation</b><span>Hygiene patients notice</span></div></div>
-  </div>
-</section>
+<a class="wa-float" href="https://wa.me/919112696696?text=Hi%20GlossDent%20Dental%20Care%2C%20I%20would%20like%20to%20book%20an%20appointment.">WhatsApp us</a>
 
-<section id="reviews">
-  <div class="wrap">
-    <div class="eyebrow">Reviews</div>
-    <h2>5.0 from 291 patients</h2>
-    <p class="sub">Public reviews from the clinic&rsquo;s Google listing.</p>
-    <div class="quotes"><div class="quote fade"><p>&ldquo;I had my tooth extracted by this wonderful doctor, and I must say that my overall experience was excellent. The doctor treated me with so much care, patience, and kindness. She explained the procedure clearly and made sure I felt comfortable throughout the treatment.&rdquo;</p><div class="who"><strong>PRAJAKTA DESHMUKH</strong>Google review</div></div><div class="quote fade"><p>&ldquo;I had my root canal treatment done by Dr. Aarti, and I had a really excellent experience. From the first consultation she explained the problem and the entire process very clearly and patiently. The clinic is also clean, well-maintained, and the staff is very cooperative and friendly.&rdquo;</p><div class="who"><strong>vishal zine</strong>Google review</div></div><div class="quote fade"><p>&ldquo;Got my teeth cleaning done here today. The experience was very smooth, completely painless, and quick. The doctor explained everything nicely. Highly recommended.&rdquo;</p><div class="who"><strong>Salman Raza</strong>Google review</div></div></div>
-  </div>
-</section>
-
-<section class="band" id="visit">
-  <div class="wrap split">
-    <div>
-      <div class="eyebrow">Book a visit</div>
-      <h2>Request an appointment</h2>
-      <p class="sub" style="margin-bottom:26px">Send your details and the clinic will confirm a slot on WhatsApp. No forms to print, no waiting on hold.</p>
-      <form data-wa="GlossDent Dental Care">
-        <label for="n">Your name</label><input id="n" name="name" required placeholder="Full name">
-        <label for="p">Phone number</label><input id="p" name="phone" required inputmode="tel" placeholder="10-digit mobile number">
-        <label for="s">What do you need?</label>
-        <select id="s" name="service"><option>Root canal treatment</option><option>Dental implants</option><option>Tooth extraction</option><option>Braces &amp;amp; alignment</option><option>Caps &amp;amp; crowns</option><option>Cleaning &amp;amp; whitening</option><option>Something else</option></select>
-        <label for="m">Message (optional)</label><textarea id="m" name="msg" rows="3" placeholder="Preferred day or time"></textarea>
-        <button class="btn" type="submit" style="width:100%;cursor:pointer">Send on WhatsApp</button>
-      </form>
-    </div>
-    <div>
-      <div class="eyebrow">Find us</div>
-      <h2>Ambegaon Budruk</h2>
-      <ul class="info">
-        <li><b>Address</b><span>Shop No. 2, Alliance Aishwary, Dalvi Nagar, Ambegaon Budruk, Pune 411046</span></li>
-        <li><b>Phone</b><span><a href="tel:+919112696696" style="color:#2f7d6e;font-weight:600">+91 91126 96696</a></span></li>
-        <li><b>Hours</b><span>Sat, Sun &amp;amp; Mon. Call to confirm.</span></li>
-        <li><b>Doctor</b><span>Dr. Aarti</span></li>
-      </ul>
-      <a class="btn wa" style="margin-top:22px" href="https://wa.me/919112696696?text=Hello%20GlossDent Dental Care%2C%20could%20you%20share%20the%20clinic%20location%3F">Message on WhatsApp</a>
-    </div>
-  </div>
-</section>
-
-<footer><div class="wrap">
-  <div style="font-family:var(--display);font-size:1.25rem;color:#fff">GlossDent Dental Care</div>
-  <p style="margin-top:8px">Shop No. 2, Alliance Aishwary, Dalvi Nagar, Ambegaon Budruk, Pune 411046</p>
-  <div class="fb"><span>&copy; 2026 GlossDent Dental Care</span><span>Demo website prepared by SiteSeller Agent</span></div>
-</div></footer>
-<a class="wafloat" href="https://wa.me/919112696696?text=Hello%20GlossDent Dental Care%2C%20I%27d%20like%20to%20book%20an%20appointment." aria-label="WhatsApp">&#128172;</a>
-
-
-<script>
-const io=new IntersectionObserver((es)=>{es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.12});
-document.querySelectorAll('.fade').forEach(el=>io.observe(el));
-const nav=document.getElementById('nav');
-if(nav){window.addEventListener('scroll',()=>{nav.classList.toggle('solid',window.scrollY>60)},{passive:true});}
-document.querySelectorAll('form[data-wa]').forEach(f=>{
-  f.addEventListener('submit',e=>{
-    e.preventDefault();
-    const d=new FormData(f);
-    const msg='Hello '+f.dataset.wa+', I would like to enquire.%0AName: '+d.get('name')+'%0APhone: '+d.get('phone')+'%0AInterest: '+(d.get('service')||'-');
-    window.open('https://wa.me/919112696696?text='+msg,'_blank');
-  });
-});
-</script>
 </body>
 </html>
