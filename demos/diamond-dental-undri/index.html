@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Diamond Dental Care — Undri, Pune | Dental Clinic</title>
+<meta name="description" content="Diamond Dental Care, Undri, Pune. A 5.0-rated neighbourhood dental clinic in Dynamic Grandeur, Undri. Open Monday to Saturday. Call +91 96236 31772." />
+<style>
+  :root{
+    --ink:#12221f; --muted:#5b6b68; --teal:#0f6b5c; --teal-dk:#0a4f44;
+    --sand:#f6f3ec; --line:#e3ded3; --gold:#b98a2f;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;font-family:"Inter",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:var(--ink);background:#fff;line-height:1.65;-webkit-font-smoothing:antialiased}
+  h1,h2,h3{font-family:Georgia,"Times New Roman",serif;font-weight:600;line-height:1.18;letter-spacing:-.01em;margin:0}
+  a{color:inherit}
+  .wrap{max-width:1080px;margin:0 auto;padding:0 24px}
+  .topbar{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+  .topbar .wrap{display:flex;align-items:center;justify-content:space-between;height:68px;gap:16px}
+  .brand{display:flex;align-items:center;gap:10px;font-weight:700;letter-spacing:.01em}
+  .brand .dot{width:26px;height:26px;border-radius:50%;background:var(--teal);color:#fff;display:grid;place-items:center;font-family:Georgia,serif;font-size:14px}
+  .nav{display:flex;gap:22px;font-size:14.5px;color:var(--muted)}
+  .nav a{text-decoration:none}
+  .nav a:hover{color:var(--teal)}
+  .btn{display:inline-flex;align-items:center;gap:9px;padding:12px 20px;border-radius:999px;text-decoration:none;font-weight:600;font-size:14.5px;border:1.5px solid transparent;transition:.18s}
+  .btn-primary{background:var(--teal);color:#fff}
+  .btn-primary:hover{background:var(--teal-dk)}
+  .btn-ghost{border-color:var(--line);color:var(--ink);background:#fff}
+  .btn-ghost:hover{border-color:var(--teal);color:var(--teal)}
+  .btn-wa{background:#25D366;color:#062b17}
+  .btn-wa:hover{filter:brightness(.95)}
+  header.hero{background:linear-gradient(170deg,#f8f6f0 0%,#eef5f2 60%,#fff 100%);padding:64px 0 56px;border-bottom:1px solid var(--line)}
+  .hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:56px;align-items:center}
+  .eyebrow{display:inline-flex;align-items:center;gap:8px;font-size:12.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--teal);font-weight:700;margin-bottom:18px}
+  .hero h1{font-size:clamp(34px,4.4vw,54px)}
+  .hero p.lead{font-size:17.5px;color:var(--muted);margin:20px 0 0;max-width:52ch}
+  .rating{display:flex;align-items:center;gap:10px;margin-top:22px;font-size:14.5px;color:var(--muted)}
+  .stars{color:var(--gold);letter-spacing:2px;font-size:15px}
+  .cta-row{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}
+  .card-visit{background:#fff;border:1px solid var(--line);border-radius:20px;padding:26px;box-shadow:0 18px 44px -32px rgba(15,60,50,.55)}
+  .card-visit h3{font-size:19px;margin-bottom:14px}
+  .kv{display:flex;gap:12px;padding:11px 0;border-bottom:1px dashed var(--line);font-size:14.5px}
+  .kv:last-of-type{border-bottom:0}
+  .kv span:first-child{color:var(--muted);min-width:82px;flex:0 0 82px}
+  section{padding:76px 0}
+  .sec-head{max-width:62ch;margin-bottom:38px}
+  .sec-head .kicker{font-size:12.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--teal);font-weight:700}
+  .sec-head h2{font-size:clamp(27px,3vw,38px);margin:12px 0 12px}
+  .sec-head p{color:var(--muted);margin:0;font-size:16px}
+  .grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+  .tile{border:1px solid var(--line);border-radius:16px;padding:24px;background:#fff;transition:.18s}
+  .tile:hover{border-color:#c9d8d3;transform:translateY(-2px)}
+  .tile h3{font-size:18px;margin-bottom:8px}
+  .tile p{color:var(--muted);font-size:14.5px;margin:0}
+  .num{font-family:Georgia,serif;color:var(--teal);font-size:13px;font-weight:700;letter-spacing:.1em;display:block;margin-bottom:14px}
+  .alt{background:var(--sand);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+  .quotes{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+  .quote{background:#fff;border:1px solid var(--line);border-radius:16px;padding:24px;display:flex;flex-direction:column;gap:14px}
+  .quote p{margin:0;font-size:15px;color:#2c3a37}
+  .quote footer{font-size:13px;color:var(--muted);margin-top:auto}
+  .quote .stars{font-size:13px}
+  .visit-grid{display:grid;grid-template-columns:1fr 1fr;gap:44px;align-items:start}
+  .hours{list-style:none;padding:0;margin:0;font-size:15px}
+  .hours li{display:flex;justify-content:space-between;padding:11px 0;border-bottom:1px solid var(--line)}
+  .hours li:last-child{border-bottom:0}
+  .hours b{font-weight:600}
+  form{background:#fff;border:1px solid var(--line);border-radius:18px;padding:26px}
+  label{display:block;font-size:13px;font-weight:600;letter-spacing:.03em;margin:0 0 6px;color:#2c3a37}
+  input,select,textarea{width:100%;padding:12px 14px;border:1px solid var(--line);border-radius:10px;font:inherit;font-size:14.5px;background:#fdfcfa;margin-bottom:16px;color:var(--ink)}
+  input:focus,select:focus,textarea:focus{outline:2px solid #bfe0d8;border-color:var(--teal)}
+  textarea{min-height:88px;resize:vertical}
+  button[type=submit]{width:100%;background:var(--teal);color:#fff;border:0;padding:14px;border-radius:999px;font:inherit;font-weight:600;cursor:pointer}
+  button[type=submit]:hover{background:var(--teal-dk)}
+  .note{font-size:12.5px;color:var(--muted);margin:10px 0 0}
+  .booking-strip{background:var(--teal);color:#fff;padding:52px 0}
+  .booking-strip .wrap{display:flex;align-items:center;justify-content:space-between;gap:28px;flex-wrap:wrap}
+  .booking-strip h2{font-size:clamp(24px,2.6vw,32px);color:#fff}
+  .booking-strip p{margin:8px 0 0;opacity:.86;font-size:15px}
+  .wa-float{position:fixed;right:20px;bottom:20px;z-index:30;display:inline-flex;align-items:center;gap:10px;background:#25D366;color:#062b17;padding:13px 19px;border-radius:999px;text-decoration:none;font-weight:700;font-size:14.5px;box-shadow:0 14px 34px -12px rgba(0,0,0,.42)}
+  footer.site{background:#0d1b18;color:#c8d3cf;padding:46px 0 34px;font-size:14px}
+  footer.site a{color:#eef5f2;text-decoration:none}
+  footer.site .cols{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:32px}
+  footer.site h4{font-family:Georgia,serif;color:#fff;font-size:16px;margin:0 0 12px;font-weight:600}
+  footer.site p{margin:0 0 8px}
+  .legal{border-top:1px solid #22322e;margin-top:30px;padding-top:20px;font-size:12.5px;color:#8fa09b}
+  @media(max-width:880px){
+    .hero-grid,.visit-grid{grid-template-columns:1fr;gap:34px}
+    .grid3,.quotes{grid-template-columns:1fr}
+    .nav{display:none}
+    section{padding:54px 0}
+    footer.site .cols{grid-template-columns:1fr}
+    .wa-float{right:14px;bottom:14px}
+  }
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="wrap">
+    <div class="brand"><span class="dot">D</span> Diamond Dental Care</div>
+    <nav class="nav">
+      <a href="#clinic">The clinic</a>
+      <a href="#care">Dental care</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#visit">Visit</a>
+    </nav>
+    <a class="btn btn-primary" href="tel:+919623631772">Call +91 96236 31772</a>
+  </div>
+</div>
+
+<header class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <span class="eyebrow">Undri, Pune · Dental clinic</span>
+      <h1>A dentist in Undri who explains first, then treats.</h1>
+      <p class="lead">Diamond Dental Care is a neighbourhood clinic at Dynamic Grandeur in Undri. Patients most often mention a doctor who takes time to explain the diagnosis, a clinic that runs on time, and hygiene that is looked after properly.</p>
+      <div class="rating"><span class="stars">★★★★★</span> 5.0 on Google · 29 reviews</div>
+      <div class="cta-row">
+        <a class="btn btn-primary" href="tel:+919623631772">Call the clinic</a>
+        <a class="btn btn-ghost" href="https://wa.me/919623631772?text=Hi%20Diamond%20Dental%20Care%2C%20I%20would%20like%20to%20book%20an%20appointment.">WhatsApp us</a>
+      </div>
+    </div>
+    <aside class="card-visit">
+      <h3>Visit the clinic</h3>
+      <div class="kv"><span>Address</span><span>Office No 201, Dynamic Grandeur, Shree Siddhivinayak Meera, Undri, Pune 411060</span></div>
+      <div class="kv"><span>Phone</span><span><a href="tel:+919623631772">+91 96236 31772</a></span></div>
+      <div class="kv"><span>Mon–Sat</span><span>10:30 AM–1:30 PM · 5:30–8:30 PM</span></div>
+      <div class="kv"><span>Sunday</span><span>Closed</span></div>
+      <a class="btn btn-primary" style="width:100%;justify-content:center;margin-top:18px" href="#visit">Request an appointment</a>
+    </aside>
+  </div>
+</header>
+
+<section id="clinic">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="kicker">The clinic</span>
+      <h2>Small clinic, unhurried appointments</h2>
+      <p>A single-clinic practice in Undri, run by Dr. Saba Khan. Reviews repeat the same few things: the doctor listens, the diagnosis is explained in plain words, and treatment is not pushed beyond what is needed.</p>
+    </div>
+    <div class="grid3">
+      <div class="tile"><span class="num">01</span><h3>Two sessions a day</h3><p>Morning and evening batches, Monday to Saturday, so appointments fit around work and school.</p></div>
+      <div class="tile"><span class="num">02</span><h3>Explained before treated</h3><p>Patients mention being walked through the diagnosis and the options in easy language.</p></div>
+      <div class="tile"><span class="num">03</span><h3>Hygiene, kept up</h3><p>The clinic is consistently described as well maintained with proper sterilisation.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="care" class="alt">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="kicker">Dental care</span>
+      <h2>What patients come in for</h2>
+      <p>The usual range of a neighbourhood dental clinic. Call the clinic to confirm what your case needs and what it will cost.</p>
+    </div>
+    <div class="grid3">
+      <div class="tile"><h3>Check-up &amp; consultation</h3><p>An examination first, with a clear explanation of what needs treatment and what can wait.</p></div>
+      <div class="tile"><h3>Cleaning &amp; scaling</h3><p>Routine cleaning for plaque and tartar, plus advice on keeping it from coming back.</p></div>
+      <div class="tile"><h3>Fillings &amp; restorations</h3><p>Repair of decayed or chipped teeth.</p></div>
+      <div class="tile"><h3>Root canal treatment</h3><p>For teeth where the nerve is affected. Reviews regularly mention treatment done without pain.</p></div>
+      <div class="tile"><h3>Extractions</h3><p>Removal of teeth that cannot be saved, with aftercare instructions.</p></div>
+      <div class="tile"><h3>Family &amp; elder care</h3><p>Patients often bring a parent along, and mention how gently older patients are handled.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="reviews">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="kicker">Reviews</span>
+      <h2>5.0 from 29 Google reviews</h2>
+      <p>Real reviews from the clinic's public Google listing.</p>
+    </div>
+    <div class="quotes">
+      <div class="quote">
+        <span class="stars">★★★★★</span>
+        <p>"Dr Saba Khan is a very good dentist with exceptional experience and great ways to treat your dental issues with proper explanation and medical treatment. She is not all about money."</p>
+        <footer>sherry green · Google review</footer>
+      </div>
+      <div class="quote">
+        <span class="stars">★★★★★</span>
+        <p>"Dr. Saba is a specialist and a perfectionist in her field and puts her entire heart and energy in getting things right and explaining patients of even the tiniest details in the easiest words possible."</p>
+        <footer>Vikrant Chhaya · Google review</footer>
+      </div>
+      <div class="quote">
+        <span class="stars">★★★★★</span>
+        <p>"Have been to many dentists, but this has been the best experience ever. The clinic is very well maintained with proper hygiene. The doctor is very patient in addressing your queries."</p>
+        <footer>Huzefa Vapra · Google review</footer>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="visit" class="alt">
+  <div class="wrap visit-grid">
+    <div>
+      <div class="sec-head" style="margin-bottom:26px">
+        <span class="kicker">Visit</span>
+        <h2>Undri, Pune 411060</h2>
+        <p>Office No 201, Dynamic Grandeur, Shree Siddhivinayak Meera, Undri. Call ahead to confirm a slot.</p>
+      </div>
+      <ul class="hours">
+        <li><b>Monday</b><span>10:30 AM–1:30 PM · 5:30–8:30 PM</span></li>
+        <li><b>Tuesday</b><span>10:30 AM–1:30 PM · 5:30–8:30 PM</span></li>
+        <li><b>Wednesday</b><span>10:30 AM–1:30 PM · 5:30–8:30 PM</span></li>
+        <li><b>Thursday</b><span>10:30 AM–1:30 PM · 5:30–8:30 PM</span></li>
+        <li><b>Friday</b><span>10:30 AM–1:30 PM · 5:30–8:30 PM</span></li>
+        <li><b>Saturday</b><span>10:30 AM–1:30 PM · 5:30–8:30 PM</span></li>
+        <li><b>Sunday</b><span>Closed</span></li>
+      </ul>
+      <div class="cta-row">
+        <a class="btn btn-primary" href="tel:+919623631772">Call +91 96236 31772</a>
+        <a class="btn btn-wa" href="https://wa.me/919623631772?text=Hi%20Diamond%20Dental%20Care%2C%20I%20would%20like%20to%20book%20an%20appointment.">WhatsApp</a>
+      </div>
+    </div>
+    <form onsubmit="event.preventDefault();this.querySelector('.note').textContent='Thanks. Please send this request on WhatsApp so the clinic can confirm your slot.';">
+      <h3 style="font-size:19px;margin-bottom:16px">Request an appointment</h3>
+      <label for="n">Name</label><input id="n" required placeholder="Your name" />
+      <label for="p">Phone</label><input id="p" required type="tel" placeholder="10-digit mobile number" />
+      <label for="s">What is it for?</label>
+      <select id="s">
+        <option>Check-up / consultation</option>
+        <option>Cleaning / scaling</option>
+        <option>Tooth pain</option>
+        <option>Root canal</option>
+        <option>Filling</option>
+        <option>Something else</option>
+      </select>
+      <label for="w">Preferred time</label>
+      <select id="w"><option>Morning (10:30 AM–1:30 PM)</option><option>Evening (5:30–8:30 PM)</option></select>
+      <label for="m">Anything the clinic should know</label><textarea id="m" placeholder="Optional"></textarea>
+      <button type="submit">Send request</button>
+      <p class="note">Form demo: on the live site this opens WhatsApp with your details, or emails the clinic.</p>
+    </form>
+  </div>
+</section>
+
+<div class="booking-strip">
+  <div class="wrap">
+    <div>
+      <h2>Tooth pain on a weekday evening?</h2>
+      <p>Evening sessions run 5:30–8:30 PM, Monday to Saturday. Sunday is closed.</p>
+    </div>
+    <a class="btn btn-ghost" href="tel:+919623631772">Call the clinic</a>
+  </div>
+</div>
+
+<a class="wa-float" href="https://wa.me/919623631772?text=Hi%20Diamond%20Dental%20Care%2C%20I%20would%20like%20to%20book%20an%20appointment.">WhatsApp</a>
+
+<footer class="site">
+  <div class="wrap">
+    <div class="cols">
+      <div>
+        <h4>Diamond Dental Care</h4>
+        <p>Office No 201, Dynamic Grandeur,</p>
+        <p>Shree Siddhivinayak Meera, Undri,</p>
+        <p>Pune, Maharashtra 411060</p>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <p><a href="tel:+919623631772">+91 96236 31772</a></p>
+        <p><a href="https://wa.me/919623631772">WhatsApp the clinic</a></p>
+      </div>
+      <div>
+        <h4>Hours</h4>
+        <p>Mon–Sat · 10:30 AM–1:30 PM</p>
+        <p>Mon–Sat · 5:30–8:30 PM</p>
+        <p>Sunday · Closed</p>
+      </div>
+    </div>
+    <p class="legal">Demo preview prepared by SiteSeller Agent using the clinic's publicly listed details (Google Business listing). Services, photos and pricing to be confirmed and customised with the clinic before going live.</p>
+  </div>
+</footer>
+</body>
+</html>
