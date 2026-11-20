@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Cafe Bengaluru — NIBM Road, Pune | Ghee Podi Dosa &amp; Filter Coffee</title>
+<meta name="description" content="The Cafe Bengaluru, Manish Plaza, NIBM Road, Kondhwa Khurd, Pune. A 4.4-rated South Indian cafe with 225 Google reviews, known for ghee podi dosa, thatte idli and filter coffee. Open from 7:30 AM daily.">
+<style>
+:root{--bg:#faf8f2;--surface:#ffffff;--ink:#1e2318;--muted:#6c7264;--accent:#3f5d2c;--accent2:#6b8a45;--soft:#eef2e6;--line:#e2e6d8;--r:12px}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;background:var(--bg);color:var(--ink);line-height:1.68;-webkit-font-smoothing:antialiased}
+.wrap{max-width:1040px;margin:0 auto;padding:0 24px}
+header.hero{padding:92px 0 70px;text-align:center;border-bottom:1px solid var(--line);background:linear-gradient(180deg,#fdfcf7,#eef2e6)}
+.badge{display:inline-block;font-size:.66rem;letter-spacing:.2em;text-transform:uppercase;color:var(--accent);border:1px solid var(--line);background:var(--surface);padding:8px 16px;border-radius:100px}
+header.hero h1{font-size:clamp(2.1rem,6vw,3.4rem);font-weight:400;letter-spacing:-.015em;margin:22px 0 10px;line-height:1.15}
+header.hero .sub{font-size:1.06rem;color:var(--muted);max-width:650px;margin:0 auto}
+.rating{margin-top:20px;font-size:.9rem;color:var(--muted);letter-spacing:.03em}
+.stars{color:var(--accent2)}
+.cta-row{margin-top:30px;display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+.btn{display:inline-block;padding:14px 26px;border-radius:var(--r);font-size:.74rem;letter-spacing:.11em;text-transform:uppercase;text-decoration:none;transition:.2s}
+.btn-primary{background:var(--accent);color:#fff}
+.btn-primary:hover{background:var(--accent2)}
+.btn-ghost{border:1px solid var(--ink);color:var(--ink)}
+.btn-ghost:hover{background:var(--ink);color:#fff}
+.btn-wa{background:#25D366;color:#08340f}
+section{padding:64px 0}
+.kicker{font-size:.66rem;letter-spacing:.19em;text-transform:uppercase;color:var(--accent2);margin-bottom:10px}
+h2{font-weight:400;font-size:clamp(1.55rem,3.5vw,2.05rem);margin-bottom:10px;letter-spacing:-.01em}
+.lead{color:var(--muted);max-width:670px;margin-bottom:34px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(238px,1fr));gap:18px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:24px}
+.card h3{font-weight:400;font-size:1.04rem;margin-bottom:6px}
+.card p{color:var(--muted);font-size:.93rem}
+.alt{background:var(--surface);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.two-col{display:grid;grid-template-columns:1fr 1fr;gap:44px;align-items:start}
+@media(max-width:780px){.two-col{grid-template-columns:1fr;gap:28px}}
+.quotes{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:18px}
+.quote{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:24px}
+.quote p{font-size:.95rem;color:#2b3324;font-style:italic}
+.quote .who{margin-top:14px;font-size:.63rem;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);font-style:normal}
+.gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px}
+.tile{aspect-ratio:4/3;border-radius:var(--r);display:flex;align-items:flex-end;padding:14px;color:#fff;font-size:.64rem;letter-spacing:.13em;text-transform:uppercase}
+.t1{background:linear-gradient(150deg,#3f5d2c,#6b8a45)}.t2{background:linear-gradient(150deg,#4a6633,#7d9a55)}.t3{background:linear-gradient(150deg,#365024,#5f7d3d)}.t4{background:linear-gradient(150deg,#516d38,#87a35c)}.t5{background:linear-gradient(150deg,#2e4a1e,#5a7538)}.t6{background:linear-gradient(150deg,#456031,#729049)}
+table.hours{width:100%;border-collapse:collapse;font-size:.94rem}
+table.hours td{padding:11px 0;border-bottom:1px solid var(--line);color:var(--muted)}
+table.hours td:last-child{text-align:right;color:var(--ink)}
+form{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:26px;display:grid;gap:14px}
+label{font-size:.7rem;letter-spacing:.11em;text-transform:uppercase;color:var(--muted);display:block;margin-bottom:6px}
+input,select,textarea{width:100%;padding:12px 14px;border:1px solid var(--line);border-radius:8px;font-family:inherit;font-size:.95rem;background:var(--bg);color:var(--ink)}
+input:focus,select:focus,textarea:focus{outline:none;border-color:var(--accent2)}
+button{background:var(--accent);color:#fff;border:none;padding:14px;border-radius:8px;font-size:.74rem;letter-spacing:.11em;text-transform:uppercase;cursor:pointer;font-family:inherit}
+button:hover{background:var(--accent2)}
+.info dt{font-size:.66rem;letter-spacing:.13em;text-transform:uppercase;color:var(--accent2);margin-top:18px}
+.info dd{color:var(--muted);font-size:.96rem}
+footer{padding:48px 0 60px;border-top:1px solid var(--line);font-size:.84rem;color:var(--muted);text-align:center}
+.demo-note{max-width:660px;margin:18px auto 0;font-size:.78rem;color:#8d9684;line-height:1.6}
+a{color:var(--accent)}
+.wa-float{position:fixed;right:18px;bottom:18px;background:#25D366;color:#08340f;text-decoration:none;padding:14px 20px;border-radius:100px;font-size:.72rem;letter-spacing:.09em;text-transform:uppercase;box-shadow:0 6px 20px rgba(0,0,0,.18);z-index:99}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <span class="badge">NIBM Road, Pune</span>
+    <h1>The Cafe Bengaluru</h1>
+    <p class="sub">A South Indian breakfast and coffee cafe on NIBM Road in Kondhwa Khurd. The kitchen opens at 7:30 in the morning, and the ghee podi dosa is what most guests come for.</p>
+    <p class="rating"><span class="stars">★★★★☆</span> &nbsp;4.4 on Google &middot; 225 reviews</p>
+    <div class="cta-row">
+      <a class="btn btn-primary" href="tel:+919665205449">Call the cafe</a>
+      <a class="btn btn-wa" href="https://wa.me/919665205449?text=Hi%20The%20Cafe%20Bengaluru%2C%20I%20found%20your%20page%20and%20would%20like%20to%20reserve%20a%20table.">WhatsApp</a>
+      <a class="btn btn-ghost" href="#book">Reserve a table</a>
+    </div>
+  </div>
+</header>
+
+<section>
+  <div class="wrap">
+    <p class="kicker">Breakfast from 7:30 AM</p>
+    <h2>A Bengaluru breakfast, on NIBM Road</h2>
+    <p class="lead">The Cafe Bengaluru sits on the ground floor of Manish Plaza on NIBM Road. It opens at 7:30 AM on weekdays and stays open until 10 PM on weekends, which makes it one of the few places around Kondhwa Khurd where you can get a proper South Indian breakfast early and a filter coffee late.</p>
+    <div class="grid">
+      <div class="card"><h3>Ghee podi dosa</h3><p>The dish guests mention more than any other, named in 16 reviews, with the masala version close behind.</p></div>
+      <div class="card"><h3>Filter coffee</h3><p>Brewed the traditional way, and popular enough that the cafe also serves it as a softy and an ice cream.</p></div>
+      <div class="card"><h3>Early opening</h3><p>Doors open at 7:30 AM, so breakfast is possible before most of the city starts moving.</p></div>
+      <div class="card"><h3>Value for money</h3><p>Guests consistently describe the pricing as low for the portion size and quality on offer.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="alt">
+  <div class="wrap">
+    <p class="kicker">On the menu</p>
+    <h2>What guests order</h2>
+    <p class="lead">These are the dishes and drinks named most often in the cafe's Google reviews. The kitchen is vegetarian-friendly and the listing is tagged vegan, so ask the staff about specific dishes.</p>
+    <div class="grid">
+      <div class="card"><h3>Ghee podi dosa</h3><p>Mentioned in 16 reviews. The masala version appears in 10 more, usually described as the reason for the visit.</p></div>
+      <div class="card"><h3>Thatte idli</h3><p>The thick, plate-sized Karnataka-style idli, named by guests alongside the dosas.</p></div>
+      <div class="card"><h3>Ghee podi idli</h3><p>A smaller-format version of the same podi treatment, called out in six reviews.</p></div>
+      <div class="card"><h3>Breakfast thali</h3><p>Guests describe ordering the thali with a plain dosa and a filter coffee as a full morning meal.</p></div>
+      <div class="card"><h3>Idli vada</h3><p>A standard order alongside the dosas, mentioned in reviews of the breakfast menu.</p></div>
+      <div class="card"><h3>Filter coffee softy</h3><p>An unusual one that guests keep writing about, along with the filter coffee ice cream.</p></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <p class="kicker">Inside the cafe</p>
+    <h2>A look around</h2>
+    <p class="lead">A bright, simple dining room with indoor seating and a small outdoor section used for takeaway pickups.</p>
+    <div class="gallery">
+      <div class="tile t1">Dosa counter</div>
+      <div class="tile t2">Filter coffee station</div>
+      <div class="tile t3">Indoor seating</div>
+      <div class="tile t4">Breakfast thali</div>
+      <div class="tile t5">Outdoor section</div>
+      <div class="tile t6">NIBM Road frontage</div>
+    </div>
+    <p class="demo-note">Photo panels are placeholders. Real cafe photographs can be added before this page goes live.</p>
+  </div>
+</section>
+
+<section class="alt">
+  <div class="wrap">
+    <p class="kicker">Reviews</p>
+    <h2>What guests wrote</h2>
+    <p class="lead">Excerpts from the cafe's Google reviews, quoted as written.</p>
+    <div class="quotes">
+      <div class="quote"><p>&ldquo;Great food, low price, good quality, ambience and staff are also very good.&rdquo;</p><div class="who">Google review summary</div></div>
+      <div class="quote"><p>&ldquo;Amazing coffee, friendly service, and a great selection of treats.&rdquo;</p><div class="who">Google review summary</div></div>
+      <div class="quote"><p>&ldquo;We ordered a breakfast Thali and a plain dosa along with a filter coffee.&rdquo;</p><div class="who">Google review summary</div></div>
+      <div class="quote"><p>&ldquo;The Thali was nice and they even provided extra sambar without any additional charges.&rdquo;</p><div class="who">Google review summary</div></div>
+    </div>
+    <p class="demo-note">A fuller set of named reviews can be pulled from the Google listing once the page is claimed.</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap two-col">
+    <div>
+      <p class="kicker">Visit</p>
+      <h2>Timings &amp; location</h2>
+      <table class="hours">
+        <tr><td>Monday</td><td>7:30 AM &ndash; 9 PM</td></tr>
+        <tr><td>Tuesday</td><td>7:30 AM &ndash; 9 PM</td></tr>
+        <tr><td>Wednesday</td><td>7:30 AM &ndash; 9 PM</td></tr>
+        <tr><td>Thursday</td><td>7:30 AM &ndash; 9 PM</td></tr>
+        <tr><td>Friday</td><td>7:30 AM &ndash; 9 PM</td></tr>
+        <tr><td>Saturday</td><td>7:30 AM &ndash; 10 PM</td></tr>
+        <tr><td>Sunday</td><td>7:30 AM &ndash; 10 PM</td></tr>
+      </table>
+      <dl class="info">
+        <dt>Address</dt>
+        <dd>Ground Floor, Manish Plaza, NIBM Road, Kondhwa Khurd, Shop No 8 and 9, Pune 411048</dd>
+        <dt>Phone</dt>
+        <dd><a href="tel:+919665205449">+91 96652 05449</a></dd>
+        <dt>Google rating</dt>
+        <dd>4.4 from 225 reviews</dd>
+      </dl>
+      <p class="demo-note">Hours shown are as currently listed on Google. Please call to confirm before travelling.</p>
+    </div>
+    <form id="book" onsubmit="event.preventDefault(); alert('Demo form. Connect this to email, WhatsApp or Google Calendar before publishing.');">
+      <div>
+        <label for="name">Your name</label>
+        <input id="name" placeholder="Full name" required>
+      </div>
+      <div>
+        <label for="phone">Phone</label>
+        <input id="phone" placeholder="+91" required>
+      </div>
+      <div>
+        <label for="guests">How many guests?</label>
+        <select id="guests">
+          <option>1</option>
+          <option>2</option>
+          <option>3 &ndash; 4</option>
+          <option>5 &ndash; 6</option>
+          <option>7 or more</option>
+        </select>
+      </div>
+      <div>
+        <label for="msg">Preferred day or time</label>
+        <textarea id="msg" rows="3" placeholder="Sunday breakfast around 8:30 AM"></textarea>
+      </div>
+      <button type="submit">Request a table</button>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <p>The Cafe Bengaluru &middot; Ground Floor, Manish Plaza, NIBM Road, Kondhwa Khurd, Pune 411048</p>
+    <p class="demo-note">This is a free preview page created for The Cafe Bengaluru from publicly listed information. Nothing here is live or affiliated until the cafe chooses to claim it.</p>
+  </div>
+</footer>
+
+<a class="wa-float" href="https://wa.me/919665205449?text=Hi%20The%20Cafe%20Bengaluru%2C%20I%20would%20like%20to%20reserve%20a%20table.">WhatsApp us</a>
+
+</body>
+</html>
