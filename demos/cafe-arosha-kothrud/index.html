@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cafe Arosha — Kothrud, Pune | Burgers, Pizza &amp; Cold Coffee</title>
+<meta name="description" content="Cafe Arosha, near Karve Putala, Kothrud, Pune. A 4.3-rated cafe with 1,845 Google reviews. Burgers, pizzas, sandwiches and cold coffee at pocket-friendly prices, 9:30 AM to 11 PM daily.">
+<style>
+:root{--bg:#faf8f4;--surface:#ffffff;--ink:#1f2419;--muted:#6d7364;--accent:#2f5d3a;--accent2:#5c8a5f;--soft:#eaf1e6;--line:#e3e6dc;--r:12px}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;background:var(--bg);color:var(--ink);line-height:1.68;-webkit-font-smoothing:antialiased}
+.wrap{max-width:1040px;margin:0 auto;padding:0 24px}
+header.hero{padding:92px 0 70px;text-align:center;border-bottom:1px solid var(--line);background:linear-gradient(180deg,#fdfcf9,#eef3ea)}
+.badge{display:inline-block;font-size:.66rem;letter-spacing:.2em;text-transform:uppercase;color:var(--accent);border:1px solid var(--line);background:var(--surface);padding:8px 16px;border-radius:100px}
+header.hero h1{font-size:clamp(2.1rem,6vw,3.3rem);font-weight:400;letter-spacing:-.015em;margin:22px 0 10px;line-height:1.15}
+header.hero .sub{font-size:1.06rem;color:var(--muted);max-width:620px;margin:0 auto}
+.rating{margin-top:20px;font-size:.9rem;color:var(--muted);letter-spacing:.03em}
+.stars{color:var(--accent2)}
+.cta-row{margin-top:30px;display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+.btn{display:inline-block;padding:14px 26px;border-radius:var(--r);font-size:.74rem;letter-spacing:.11em;text-transform:uppercase;text-decoration:none;transition:.2s}
+.btn-primary{background:var(--accent);color:#fff}
+.btn-primary:hover{background:var(--accent2)}
+.btn-ghost{border:1px solid var(--ink);color:var(--ink)}
+.btn-ghost:hover{background:var(--ink);color:#fff}
+.btn-wa{background:#25D366;color:#08340f}
+section{padding:64px 0}
+.kicker{font-size:.66rem;letter-spacing:.19em;text-transform:uppercase;color:var(--accent2);margin-bottom:10px}
+h2{font-weight:400;font-size:clamp(1.55rem,3.5vw,2.05rem);margin-bottom:10px;letter-spacing:-.01em}
+.lead{color:var(--muted);max-width:660px;margin-bottom:34px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(238px,1fr));gap:18px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:24px}
+.card h3{font-weight:400;font-size:1.04rem;margin-bottom:6px}
+.card p{color:var(--muted);font-size:.93rem}
+.alt{background:var(--surface);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.two-col{display:grid;grid-template-columns:1fr 1fr;gap:44px;align-items:start}
+@media(max-width:780px){.two-col{grid-template-columns:1fr;gap:28px}}
+.quotes{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:18px}
+.quote{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:24px}
+.quote p{font-size:.95rem;color:#2d3542;font-style:italic}
+.quote .who{margin-top:14px;font-size:.63rem;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);font-style:normal}
+.gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px}
+.tile{aspect-ratio:4/3;border-radius:var(--r);display:flex;align-items:flex-end;padding:14px;color:#fff;font-size:.64rem;letter-spacing:.13em;text-transform:uppercase}
+.t1{background:linear-gradient(150deg,#2f5d3a,#5c8a5f)}.t2{background:linear-gradient(150deg,#3a5f43,#7da07a)}.t3{background:linear-gradient(150deg,#284a30,#6b9370)}.t4{background:linear-gradient(150deg,#40664a,#8fae82)}.t5{background:linear-gradient(150deg,#33543b,#79a37a)}.t6{background:linear-gradient(150deg,#1f3f28,#5f8a63)}
+table.hours{width:100%;border-collapse:collapse;font-size:.94rem}
+table.hours td{padding:11px 0;border-bottom:1px solid var(--line);color:var(--muted)}
+table.hours td:last-child{text-align:right;color:var(--ink)}
+form{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:26px;display:grid;gap:14px}
+label{font-size:.7rem;letter-spacing:.11em;text-transform:uppercase;color:var(--muted);display:block;margin-bottom:6px}
+input,select,textarea{width:100%;padding:12px 14px;border:1px solid var(--line);border-radius:8px;font-family:inherit;font-size:.95rem;background:var(--bg);color:var(--ink)}
+input:focus,select:focus,textarea:focus{outline:none;border-color:var(--accent2)}
+button{background:var(--accent);color:#fff;border:none;padding:14px;border-radius:8px;font-size:.74rem;letter-spacing:.11em;text-transform:uppercase;cursor:pointer;font-family:inherit}
+button:hover{background:var(--accent2)}
+.info dt{font-size:.66rem;letter-spacing:.13em;text-transform:uppercase;color:var(--accent2);margin-top:18px}
+.info dd{color:var(--muted);font-size:.96rem}
+footer{padding:48px 0 60px;border-top:1px solid var(--line);font-size:.84rem;color:var(--muted);text-align:center}
+.demo-note{max-width:660px;margin:18px auto 0;font-size:.78rem;color:#8a9683;line-height:1.6}
+a{color:var(--accent)}
+.wa-float{position:fixed;right:18px;bottom:18px;background:#25D366;color:#08340f;text-decoration:none;padding:14px 20px;border-radius:100px;font-size:.72rem;letter-spacing:.09em;text-transform:uppercase;box-shadow:0 6px 20px rgba(0,0,0,.18);z-index:99}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <span class="badge">Kothrud, Pune</span>
+    <h1>Cafe Arosha</h1>
+    <p class="sub">A busy, pocket-friendly cafe near Karve Putala in Kothrud. Burgers are the headline, with 93 review mentions, backed by pizzas, grilled sandwiches, mojitos and cold coffee. Students and families both keep it full.</p>
+    <p class="rating"><span class="stars">★★★★★</span> &nbsp;4.3 on Google &middot; 1,845 reviews</p>
+    <div class="cta-row">
+      <a class="btn btn-primary" href="tel:+917875220055">Call the cafe</a>
+      <a class="btn btn-wa" href="https://wa.me/917875220055?text=Hi Cafe Arosha, I found your page and would like to reserve a table.">WhatsApp</a>
+      <a class="btn btn-ghost" href="#book">Reserve a table</a>
+    </div>
+  </div>
+</header>
+
+<section>
+  <div class="wrap">
+    <p class="kicker">Why the tables stay full</p>
+    <h2>Good food, small bill</h2>
+    <p class="lead">Cafe Arosha sits near Berry Bash and Sujata Mastani at Karve Putala. Reviews return again and again to two things: how affordable it is, and how consistent the food quality is. It is a neighbourhood cafe that has quietly built a large and loyal crowd.</p>
+    <div class="grid"><div class="card"><h3>Burgers are the draw</h3><p>93 mentions, with the veg cheese masala burger named as a favourite by more than one guest.</p></div><div class="card"><h3>Pocket-friendly pricing</h3><p>44 reviews use the phrase pocket-friendly or budget-friendly, and 24 call it affordable.</p></div><div class="card"><h3>Consistent food quality</h3><p>60 reviews specifically praise food quality, which is unusual for a cafe at this price point.</p></div><div class="card"><h3>Comfortable seating</h3><p>The seating area is described as well decorated, with a layout that works for groups as well as couples.</p></div></div>
+  </div>
+</section>
+
+<section class="alt">
+  <div class="wrap">
+    <p class="kicker">On the menu</p>
+    <h2>What guests order</h2>
+    <p class="lead">These are the items guests mention most often. The menu also runs seasonal specials, so ask at the counter.</p>
+    <div class="grid"><div class="card"><h3>Veg cheese masala burger</h3><p>The most ordered burger, described as cheesy and full of flavour.</p></div><div class="card"><h3>Tandoor paneer pizza</h3><p>A recurring favourite among the pizza range, with pizza mentioned 26 times overall.</p></div><div class="card"><h3>Grilled sandwiches</h3><p>The veg cheese grill sandwich is called out by name, and the combo plates are popular.</p></div><div class="card"><h3>Peri peri fries</h3><p>Mentioned 10 times and usually ordered alongside a burger.</p></div><div class="card"><h3>Cold coffee</h3><p>Described as creamy, frothy and refreshing, the drink most guests pair with their meal.</p></div><div class="card"><h3>Mojitos</h3><p>14 mentions, and the drink of choice for the evening crowd.</p></div></div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <p class="kicker">Inside Arosha</p>
+    <h2>A look around</h2>
+    <p class="lead">Bright seating, a busy counter and a steady stream of students, families and evening groups.</p>
+    <div class="gallery"><div class="tile t1">Burger counter</div><div class="tile t2">Pizza oven</div><div class="tile t3">Seating area</div><div class="tile t4">Cold coffee</div><div class="tile t5">Karve Putala</div><div class="tile t6">Evening crowd</div></div>
+    <p class="demo-note">Photo panels are placeholders. Real photographs can be added before this page goes live.</p>
+  </div>
+</section>
+
+<section class="alt">
+  <div class="wrap">
+    <p class="kicker">Reviews</p>
+    <h2>What guests wrote</h2>
+    <p class="lead">Real reviews from the business's Google profile, quoted as written.</p>
+    <div class="quotes"><div class="quote"><p>“Had a great experience at Cafe Arosha! We tried the Veg Cheese Masala Burger, Veg Cheese Grill Sandwich, and Cold Coffee, and everything was delicious. The burger was cheesy and flavourful, while the grilled sandwich was perfectly toasted with a tasty filling. The cold coffee was creamy, frothy, and refreshing.”</p><div class="who">Anshuman Bhavsar &middot; Google review</div></div><div class="quote"><p>“Very good quality of food and excellent staff service just love it please try.”</p><div class="who">Google review snippet</div></div><div class="quote"><p>“Burger and pizza is nice. Good ambience, seating place is well decorated.”</p><div class="who">Google review snippet</div></div><div class="quote"><p>“I had ordered combo of veg grilled sandwiches.”</p><div class="who">Google review snippet</div></div></div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap two-col">
+    <div>
+      <p class="kicker">Visit</p>
+      <h2>Timings &amp; location</h2>
+      <table class="hours"><tr><td>Monday</td><td>9:30 AM – 11 PM</td></tr><tr><td>Tuesday</td><td>9:30 AM – 11 PM</td></tr><tr><td>Wednesday</td><td>9:30 AM – 11 PM</td></tr><tr><td>Thursday</td><td>9:30 AM – 11 PM</td></tr><tr><td>Friday</td><td>9:30 AM – 11 PM</td></tr><tr><td>Saturday</td><td>9:30 AM – 11 PM</td></tr><tr><td>Sunday</td><td>9:30 AM – 11 PM</td></tr></table>
+      <dl class="info">
+        <dt>Address</dt>
+        <dd>Near Berry Bash &amp; Sujata Mastani, Karve Putala, Rahul Nagar, Kothrud, Pune 411038</dd>
+        <dt>Phone</dt>
+        <dd><a href="tel:+917875220055">+91 78752 20055</a></dd>
+        <dt>Google rating</dt>
+        <dd>4.3 on Google · 1,845 reviews</dd>
+      </dl>
+      <p class="demo-note">Hours shown are as currently listed on Google. Please call to confirm before travelling.</p>
+    </div>
+    <form id="book" onsubmit="event.preventDefault(); alert('Demo form. Connect this to email, WhatsApp or Google Calendar before publishing.');">
+      <div><label for="name">Your name</label><input id="name" placeholder="Full name" required></div><div><label for="phone">Phone</label><input id="phone" placeholder="+91" required></div><div><label for="guests">How many guests?</label><select id="guests"><option>2</option><option>3 – 4</option><option>5 – 6</option><option>7 or more</option><option>Just for coffee</option></select></div><div><label for="msg">Anything we should know?</label><textarea id="msg" rows="3" placeholder="Preferred day, time or occasion"></textarea></div>
+      <button type="submit">Request a table</button>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <p>Cafe Arosha &middot; Near Berry Bash &amp; Sujata Mastani, Karve Putala, Rahul Nagar, Kothrud, Pune 411038</p>
+    <p class="demo-note">This is a free preview page created for Cafe Arosha from publicly listed information. Nothing here is live or affiliated until the business chooses to claim it.</p>
+  </div>
+</footer>
+
+<a class="wa-float" href="https://wa.me/917875220055?text=Hi Cafe Arosha, I found your page and would like to reserve a table.">WhatsApp us</a>
+
+</body>
+</html>

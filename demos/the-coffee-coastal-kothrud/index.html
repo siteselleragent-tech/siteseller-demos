@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Coffee Coastal — Kothrud, Pune | Coffee, Pasta &amp; Pizza</title>
+<meta name="description" content="The Coffee Coastal, Karishma Society, Kothrud, Pune. A 4.7-rated cafe with 1,195 Google reviews. Homemade-sauce pasta, lasagna, cheese garlic bread and coffee, 12 PM to 12 AM daily.">
+<style>
+:root{--bg:#f7faf9;--surface:#ffffff;--ink:#1f2419;--muted:#6d7364;--accent:#1f5f66;--accent2:#3f8f96;--soft:#e4f0f0;--line:#e3e6dc;--r:12px}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;background:var(--bg);color:var(--ink);line-height:1.68;-webkit-font-smoothing:antialiased}
+.wrap{max-width:1040px;margin:0 auto;padding:0 24px}
+header.hero{padding:92px 0 70px;text-align:center;border-bottom:1px solid var(--line);background:linear-gradient(180deg,#fbfdfd,#e8f2f2)}
+.badge{display:inline-block;font-size:.66rem;letter-spacing:.2em;text-transform:uppercase;color:var(--accent);border:1px solid var(--line);background:var(--surface);padding:8px 16px;border-radius:100px}
+header.hero h1{font-size:clamp(2.1rem,6vw,3.3rem);font-weight:400;letter-spacing:-.015em;margin:22px 0 10px;line-height:1.15}
+header.hero .sub{font-size:1.06rem;color:var(--muted);max-width:620px;margin:0 auto}
+.rating{margin-top:20px;font-size:.9rem;color:var(--muted);letter-spacing:.03em}
+.stars{color:var(--accent2)}
+.cta-row{margin-top:30px;display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+.btn{display:inline-block;padding:14px 26px;border-radius:var(--r);font-size:.74rem;letter-spacing:.11em;text-transform:uppercase;text-decoration:none;transition:.2s}
+.btn-primary{background:var(--accent);color:#fff}
+.btn-primary:hover{background:var(--accent2)}
+.btn-ghost{border:1px solid var(--ink);color:var(--ink)}
+.btn-ghost:hover{background:var(--ink);color:#fff}
+.btn-wa{background:#25D366;color:#08340f}
+section{padding:64px 0}
+.kicker{font-size:.66rem;letter-spacing:.19em;text-transform:uppercase;color:var(--accent2);margin-bottom:10px}
+h2{font-weight:400;font-size:clamp(1.55rem,3.5vw,2.05rem);margin-bottom:10px;letter-spacing:-.01em}
+.lead{color:var(--muted);max-width:660px;margin-bottom:34px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(238px,1fr));gap:18px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:24px}
+.card h3{font-weight:400;font-size:1.04rem;margin-bottom:6px}
+.card p{color:var(--muted);font-size:.93rem}
+.alt{background:var(--surface);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.two-col{display:grid;grid-template-columns:1fr 1fr;gap:44px;align-items:start}
+@media(max-width:780px){.two-col{grid-template-columns:1fr;gap:28px}}
+.quotes{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:18px}
+.quote{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:24px}
+.quote p{font-size:.95rem;color:#2d3542;font-style:italic}
+.quote .who{margin-top:14px;font-size:.63rem;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);font-style:normal}
+.gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px}
+.tile{aspect-ratio:4/3;border-radius:var(--r);display:flex;align-items:flex-end;padding:14px;color:#fff;font-size:.64rem;letter-spacing:.13em;text-transform:uppercase}
+.t1{background:linear-gradient(150deg,#1f5f66,#3f8f96)}.t2{background:linear-gradient(150deg,#2a7079,#5aa5ac)}.t3{background:linear-gradient(150deg,#184c52,#337d85)}.t4{background:linear-gradient(150deg,#3a818a,#74b3b9)}.t5{background:linear-gradient(150deg,#22656d,#4a949b)}.t6{background:linear-gradient(150deg,#123c42,#2a6a72)}
+table.hours{width:100%;border-collapse:collapse;font-size:.94rem}
+table.hours td{padding:11px 0;border-bottom:1px solid var(--line);color:var(--muted)}
+table.hours td:last-child{text-align:right;color:var(--ink)}
+form{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:26px;display:grid;gap:14px}
+label{font-size:.7rem;letter-spacing:.11em;text-transform:uppercase;color:var(--muted);display:block;margin-bottom:6px}
+input,select,textarea{width:100%;padding:12px 14px;border:1px solid var(--line);border-radius:8px;font-family:inherit;font-size:.95rem;background:var(--bg);color:var(--ink)}
+input:focus,select:focus,textarea:focus{outline:none;border-color:var(--accent2)}
+button{background:var(--accent);color:#fff;border:none;padding:14px;border-radius:8px;font-size:.74rem;letter-spacing:.11em;text-transform:uppercase;cursor:pointer;font-family:inherit}
+button:hover{background:var(--accent2)}
+.info dt{font-size:.66rem;letter-spacing:.13em;text-transform:uppercase;color:var(--accent2);margin-top:18px}
+.info dd{color:var(--muted);font-size:.96rem}
+footer{padding:48px 0 60px;border-top:1px solid var(--line);font-size:.84rem;color:var(--muted);text-align:center}
+.demo-note{max-width:660px;margin:18px auto 0;font-size:.78rem;color:#8a9683;line-height:1.6}
+a{color:var(--accent)}
+.wa-float{position:fixed;right:18px;bottom:18px;background:#25D366;color:#08340f;text-decoration:none;padding:14px 20px;border-radius:100px;font-size:.72rem;letter-spacing:.09em;text-transform:uppercase;box-shadow:0 6px 20px rgba(0,0,0,.18);z-index:99}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <span class="badge">Kothrud, Pune</span>
+    <h1>The Coffee Coastal</h1>
+    <p class="sub">A 4.7-rated cafe in Karishma Society, Kothrud, with one of the strongest ratings in the area across 1,195 reviews. The kitchen makes its sauces in-house, and the pasta is what guests write about most: white sauce, baked peri peri, lasagna, and cheese garlic bread on the side.</p>
+    <p class="rating"><span class="stars">★★★★★</span> &nbsp;4.7 on Google &middot; 1,195 reviews</p>
+    <div class="cta-row">
+      <a class="btn btn-primary" href="tel:+919175003503">Call the cafe</a>
+      <a class="btn btn-wa" href="https://wa.me/919175003503?text=Hi The Coffee Coastal, I found your page and would like to reserve a table.">WhatsApp</a>
+      <a class="btn btn-ghost" href="#book">Reserve a table</a>
+    </div>
+  </div>
+</header>
+
+<section>
+  <div class="wrap">
+    <p class="kicker">Why the rating holds</p>
+    <h2>A neighbourhood cafe done properly</h2>
+    <p class="lead">The Coffee Coastal sits in Karishma Society in the Kothrud Industrial Area, close to Karve Road. It opens at noon and runs to midnight, which makes it a natural stop for an afternoon coffee or a late dinner. A 4.7 average across nearly twelve hundred reviews is unusual for a cafe of this size.</p>
+    <div class="grid"><div class="card"><h3>Homemade sauces</h3><p>Reviewers repeatedly credit the in-house sauces and premium cheese for the taste difference.</p></div><div class="card"><h3>Pasta-led menu</h3><p>White sauce, baked peri peri and lasagna are the three most ordered dishes on the menu.</p></div><div class="card"><h3>Jain-friendly options</h3><p>Guests note that Jain preparations are available, which is unusual for a continental cafe.</p></div><div class="card"><h3>Open until midnight</h3><p>Noon to midnight, seven days a week, with outdoor seating available.</p></div></div>
+  </div>
+</section>
+
+<section class="alt">
+  <div class="wrap">
+    <p class="kicker">On the menu</p>
+    <h2>What guests order</h2>
+    <p class="lead">A coffee-led menu with a full kitchen behind it. Ask at the counter for the day's bakes.</p>
+    <div class="grid"><div class="card"><h3>White sauce pasta</h3><p>The most mentioned dish, at 27 reviews, in both the cheesy and baked versions.</p></div><div class="card"><h3>Cheese garlic bread</h3><p>21 mentions and described by regulars as the reason to visit. Called the famous cheese garlic bread.</p></div><div class="card"><h3>Lasagna</h3><p>17 mentions, praised for the layers and the homemade sauces.</p></div><div class="card"><h3>Baked peri peri pasta</h3><p>16 mentions, with the red peri peri version specifically recommended by guests.</p></div><div class="card"><h3>Thai curry rice</h3><p>11 mentions, with one reviewer calling it the best they have had.</p></div><div class="card"><h3>Boba tea</h3><p>10 mentions. The cold coffee boba and blue mojito are the other drinks guests order most.</p></div></div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <p class="kicker">Inside the cafe</p>
+    <h2>A look around</h2>
+    <p class="lead">A compact room in Karishma Society with a coffee bar at its centre and seating that fills up through the afternoon.</p>
+    <div class="gallery"><div class="tile t1">Coffee bar</div><div class="tile t2">Seating area</div><div class="tile t3">Pasta plate</div><div class="tile t4">Pizza oven</div><div class="tile t5">Karishma Society</div><div class="tile t6">Evening service</div></div>
+    <p class="demo-note">Photo panels are placeholders. Real photographs can be added before this page goes live.</p>
+  </div>
+</section>
+
+<section class="alt">
+  <div class="wrap">
+    <p class="kicker">Reviews</p>
+    <h2>What guests wrote</h2>
+    <p class="lead">Real reviews from the business's Google profile, quoted as written.</p>
+    <div class="quotes"><div class="quote"><p>“Absolutely Fantastic Food and Wonderful Service! We had an amazing dining experience, and everything from the food to the service was absolutely spot-on. The Alfredo White Sauce Pasta and Baked Mac and Cheese were simply the best, incredibly creamy, comforting and perfectly cooked.”</p><div class="who">sudesh kulkarni &middot; Google review</div></div><div class="quote"><p>“The Cheesy White Sauce Pasta was creamy, cheesy and absolutely delicious. The Baked Peri Peri Pasta was baked perfectly and had just the right amount of peri-peri kick. What I really liked is their focus on homemade sauces and premium quality ingredients.”</p><div class="who">Mrunal Rajput &middot; Google review</div></div><div class="quote"><p>“The Coffee Coastal is one of the best continental cafés in Kothrud! The food quality is outstanding, and you can actually taste the difference because everything is made with fresh ingredients and homemade sauces.”</p><div class="who">Archana Sontakke &middot; Google review</div></div><div class="quote"><p>“Really good food! Amazing flavours and lovely service! Would personally recommend the Baked Creamy Peri Peri Pasta.”</p><div class="who">Siddhant Jain &middot; Google review</div></div></div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap two-col">
+    <div>
+      <p class="kicker">Visit</p>
+      <h2>Timings &amp; location</h2>
+      <table class="hours"><tr><td>Monday</td><td>12 PM – 12 AM</td></tr><tr><td>Tuesday</td><td>12 PM – 12 AM</td></tr><tr><td>Wednesday</td><td>12 PM – 12 AM</td></tr><tr><td>Thursday</td><td>12 PM – 12 AM</td></tr><tr><td>Friday</td><td>12 PM – 12 AM</td></tr><tr><td>Saturday</td><td>12 PM – 12 AM</td></tr><tr><td>Sunday</td><td>12 PM – 12 AM</td></tr></table>
+      <dl class="info">
+        <dt>Address</dt>
+        <dd>Shop No. 4, Karishma Society, Kothrud Industrial Area, Kothrud, Pune 411038</dd>
+        <dt>Phone</dt>
+        <dd><a href="tel:+919175003503">+91 91750 03503</a></dd>
+        <dt>Google rating</dt>
+        <dd>4.7 on Google · 1,195 reviews</dd>
+      </dl>
+      <p class="demo-note">Hours shown are as currently listed on Google. Please call to confirm before travelling.</p>
+    </div>
+    <form id="book" onsubmit="event.preventDefault(); alert('Demo form. Connect this to email, WhatsApp or Google Calendar before publishing.');">
+      <div><label for="name">Your name</label><input id="name" placeholder="Full name" required></div><div><label for="phone">Phone</label><input id="phone" placeholder="+91" required></div><div><label for="guests">How many guests?</label><select id="guests"><option>2</option><option>3 – 4</option><option>5 – 6</option><option>7 or more</option><option>Just for coffee</option></select></div><div><label for="msg">Anything we should know?</label><textarea id="msg" rows="3" placeholder="Preferred day, time or occasion"></textarea></div>
+      <button type="submit">Request a table</button>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <p>The Coffee Coastal &middot; Shop No. 4, Karishma Society, Kothrud Industrial Area, Kothrud, Pune 411038</p>
+    <p class="demo-note">This is a free preview page created for The Coffee Coastal from publicly listed information. Nothing here is live or affiliated until the business chooses to claim it.</p>
+  </div>
+</footer>
+
+<a class="wa-float" href="https://wa.me/919175003503?text=Hi The Coffee Coastal, I found your page and would like to reserve a table.">WhatsApp us</a>
+
+</body>
+</html>
