@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cahā Paani — Katraj, Pune | A container cafe on the old Satara road</title>
+<meta name="description" content="Cahā Paani, Sr no 62/3, Old Pune-Satara Road, Mangdewadi, Katraj, Pune. 4.0-rated cafe with 525 Google reviews. Open daily 7 AM to 11 PM.">
+<style>
+:root{--bg:#f7f4ee;--surface:#fff;--ink:#241f1a;--muted:#6d655c;--accent:#7a4a2b;--accent2:#a8703f;--line:#e7e0d5;--r:14px}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;background:var(--bg);color:var(--ink);line-height:1.68;-webkit-font-smoothing:antialiased}
+.wrap{max-width:1040px;margin:0 auto;padding:0 24px}
+header.hero{padding:96px 0 72px;text-align:center;border-bottom:1px solid var(--line);background:linear-gradient(180deg,#fdfaf4,#f0e6d6)}
+.badge{display:inline-block;font-size:.66rem;letter-spacing:.2em;text-transform:uppercase;color:var(--accent);border:1px solid var(--line);background:#fff;padding:8px 16px;border-radius:100px}
+header.hero h1{font-size:clamp(2.2rem,6.5vw,3.6rem);font-weight:400;letter-spacing:-.015em;margin:22px 0 10px;line-height:1.1}
+header.hero .sub{font-size:1.06rem;color:var(--muted);max-width:620px;margin:0 auto}
+.rating{margin-top:20px;font-size:.9rem;color:var(--muted);letter-spacing:.03em}
+.stars{color:var(--accent2);letter-spacing:.12em}
+.cta-row{margin-top:30px;display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+.btn{display:inline-block;padding:14px 26px;border-radius:var(--r);font-size:.74rem;letter-spacing:.11em;text-transform:uppercase;text-decoration:none;transition:.2s}
+.btn-primary{background:var(--accent);color:#fff}
+.btn-primary:hover{background:var(--accent2)}
+.btn-ghost{border:1px solid var(--ink);color:var(--ink)}
+.btn-ghost:hover{background:var(--ink);color:#fff}
+.btn-wa{background:#25D366;color:#08340f}
+section{padding:64px 0}
+.kicker{font-size:.66rem;letter-spacing:.19em;text-transform:uppercase;color:var(--accent2);margin-bottom:10px}
+h2{font-weight:400;font-size:clamp(1.55rem,3.5vw,2.05rem);margin-bottom:10px;letter-spacing:-.01em}
+.lead{color:var(--muted);max-width:660px;margin-bottom:34px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(238px,1fr));gap:18px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:24px}
+.card h3{font-weight:400;font-size:1.04rem;margin-bottom:6px}
+.card p{color:var(--muted);font-size:.93rem}
+.alt{background:var(--surface);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.two-col{display:grid;grid-template-columns:1fr 1fr;gap:44px;align-items:start}
+@media(max-width:780px){.two-col{grid-template-columns:1fr;gap:28px}}
+.gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px}
+.tile{aspect-ratio:4/3;border-radius:var(--r);display:flex;align-items:flex-end;padding:14px;color:#fff;font-size:.64rem;letter-spacing:.13em;text-transform:uppercase}
+.t1{background:linear-gradient(150deg,#7a4a2b,#b8814f)}.t2{background:linear-gradient(150deg,#5d3a24,#a8703f)}.t3{background:linear-gradient(150deg,#8a5a33,#c99465)}.t4{background:linear-gradient(150deg,#6b4226,#9c6a3d)}.t5{background:linear-gradient(150deg,#4e3320,#8a5a33)}.t6{background:linear-gradient(150deg,#8f6136,#d0a06c)}
+table.hours{width:100%;border-collapse:collapse;font-size:.94rem}
+table.hours td{padding:11px 0;border-bottom:1px solid var(--line);color:var(--muted)}
+table.hours td:last-child{text-align:right;color:var(--ink)}
+dl.info{margin-top:26px}
+dl.info dt{font-size:.63rem;letter-spacing:.14em;text-transform:uppercase;color:var(--accent2);margin-top:18px}
+dl.info dd{color:var(--muted);font-size:.96rem}
+dl.info dd a{color:var(--ink);text-decoration:none;border-bottom:1px solid var(--line)}
+.demo-note{font-size:.78rem;color:#8a8a80;margin-top:18px;font-style:italic}
+form{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:26px}
+form label{display:block;font-size:.63rem;letter-spacing:.14em;text-transform:uppercase;color:var(--accent2);margin-bottom:6px}
+form input,form select,form textarea{width:100%;padding:11px 12px;border:1px solid var(--line);border-radius:8px;font-family:inherit;font-size:.94rem;margin-bottom:16px;background:#fdfcf9;color:var(--ink)}
+form button{width:100%;padding:14px;background:var(--accent);color:#fff;border:0;border-radius:8px;font-size:.74rem;letter-spacing:.12em;text-transform:uppercase;cursor:pointer}
+form button:hover{background:var(--accent2)}
+.rate-block{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:30px;display:flex;gap:28px;align-items:center;flex-wrap:wrap}
+.rate-num{font-size:3rem;line-height:1;font-weight:400}
+.rate-meta{font-size:.92rem;color:var(--muted)}
+footer{padding:44px 0;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);text-align:center}
+footer a{color:var(--ink);text-decoration:none;border-bottom:1px solid var(--line)}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <span class="badge">Katraj, Pune</span>
+    <h1>Cahā Paani</h1>
+    <p class="sub">A small cafe built out of a shipping container on the old Pune–Satara road in Mangdewadi, Katraj. Open from seven in the morning, so it catches the early crowd as well as the late one.</p>
+    <p class="rating"><span class="stars">★★★★☆</span> &nbsp;4.0 on Google &middot; 525 reviews</p>
+    <div class="cta-row">
+      <a class="btn btn-primary" href="tel:+917276995922">Call the cafe</a>
+      <a class="btn btn-wa" href="https://wa.me/917276995922?text=Hi%20Cah%C4%81%20Paani%2C%20I%20found%20your%20page%20and%20would%20like%20to%20ask%20about%20a%20table.">WhatsApp</a>
+      <a class="btn btn-ghost" href="#book">Ask about a table</a>
+    </div>
+  </div>
+</header>
+
+<section>
+  <div class="wrap">
+    <p class="kicker">Welcome</p>
+    <h2>Katraj's container cafe</h2>
+    <p class="lead">Cahā Paani sits at Sr no 62/3 on the old Pune–Satara highway at Mangdewadi, on the Katraj side of the city. It is one of the few cafes in this stretch open from 7 AM, which makes it a genuine morning stop and not just an evening one.</p>
+    <div class="grid">
+      <div class="card"><h3>Where it is</h3><p>Old Pune–Satara Road, Mangdewadi, Katraj, Pune 411046. Easy to pull over for if you are driving in or out of the city.</p></div>
+      <div class="card"><h3>Open early</h3><p>Doors open at 7 AM and close at 11 PM, every day. Coffee before work is possible here.</p></div>
+      <div class="card"><h3>Built from a container</h3><p>The cafe itself is a converted cargo container, which is why the space feels small, warm and a bit unlike the usual Katraj cafe.</p></div>
+      <div class="card"><h3>525 Google reviews</h3><p>One of the more reviewed cafes in Katraj, with a 4.0 average across 525 reviews.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="alt">
+  <div class="wrap">
+    <p class="kicker">The menu</p>
+    <h2>What's on the counter</h2>
+    <p class="lead">Cahā Paani's own social posts show coffee, cold brews and a short cafe menu. Use this section to put your actual bestsellers and prices in front of customers.</p>
+    <div class="grid">
+      <div class="card"><h3>Coffee</h3><p>Hot and iced coffee, the everyday order here. Add your house specials and price points.</p></div>
+      <div class="card"><h3>Chai</h3><p>The name of the place is the promise. List your chai variants and what they cost.</p></div>
+      <div class="card"><h3>Cold drinks</h3><p>Iced teas, mojitos and cold coffees for the Pune afternoon.</p></div>
+      <div class="card"><h3>Small plates</h3><p>Snacks to go with the coffee. Drop in your top five with photos.</p></div>
+    </div>
+    <p class="demo-note">Menu cards are placeholders. Send us your menu and we will fill this in with real dishes and prices.</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <p class="kicker">Inside</p>
+    <h2>A look around</h2>
+    <p class="lead">The container, the counter and the road outside.</p>
+    <div class="gallery">
+      <div class="tile t1">The container</div><div class="tile t2">Coffee bar</div><div class="tile t3">Corner seating</div><div class="tile t4">The chai counter</div><div class="tile t5">Old Satara road</div><div class="tile t6">Evening light</div>
+    </div>
+    <p class="demo-note">Photo panels are placeholders. Real photographs can be dropped in before this page goes live.</p>
+  </div>
+</section>
+
+<section class="alt">
+  <div class="wrap">
+    <p class="kicker">Reputation</p>
+    <h2>What Google says</h2>
+    <p class="lead">No invented testimonials here. This is the cafe's real Google standing, shown as it stands today.</p>
+    <div class="rate-block">
+      <div class="rate-num">4.0</div>
+      <div>
+        <div class="stars" style="font-size:1.1rem">★★★★☆</div>
+        <div class="rate-meta">525 Google reviews &middot; Katraj, Pune<br>Rated by locals across 525 reviews, with a 4.0 average.</div>
+      </div>
+    </div>
+    <p class="demo-note">Individual review quotes can be added straight from your Google profile once you approve them.</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap two-col">
+    <div>
+      <p class="kicker">Find us</p>
+      <h2>Timings &amp; location</h2>
+      <table class="hours">
+        <tr><td>Monday to Sunday</td><td>7:00 AM – 11:00 PM</td></tr>
+        <tr><td>Neighbourhood</td><td>Katraj, Pune</td></tr>
+        <tr><td>Walk-ins</td><td>Yes</td></tr>
+      </table>
+      <dl class="info">
+        <dt>Address</dt>
+        <dd>Sr no 62/3, Old Pune–Satara Road, Mangdewadi, Katraj, Pune, Maharashtra 411046</dd>
+        <dt>Phone</dt>
+        <dd><a href="tel:+917276995922">+91 72769 95922</a></dd>
+        <dt>Google rating</dt>
+        <dd>4.0 on Google &middot; 525 reviews</dd>
+        <dt>Instagram</dt>
+        <dd><a href="https://www.instagram.com/cahapaani/">@cahapaani</a></dd>
+      </dl>
+      <p class="demo-note">Hours and details are as currently listed publicly. Please call to confirm before travelling.</p>
+    </div>
+    <form id="book" onsubmit="event.preventDefault(); alert('Demo form. Connect this to email, WhatsApp or Google Calendar before publishing.');">
+      <div><label for="name">Your name</label><input id="name" placeholder="Full name" required></div>
+      <div><label for="phone">Phone</label><input id="phone" placeholder="+91" required></div>
+      <div><label for="guests">How many guests?</label><select id="guests"><option>2</option><option>3 – 4</option><option>5 – 6</option><option>7 or more</option><option>Just for coffee</option></select></div>
+      <div><label for="msg">Anything we should know?</label><textarea id="msg" rows="3" placeholder="Preferred day, time or occasion"></textarea></div>
+      <button type="submit">Ask about a table</button>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <p><strong>Cahā Paani</strong> &middot; Katraj, Pune &middot; <a href="tel:+917276995922">+91 72769 95922</a></p>
+    <p class="demo-note">Free demo website prepared for Cahā Paani. Built only from publicly listed details.</p>
+  </div>
+</footer>
+</body>
+</html>
