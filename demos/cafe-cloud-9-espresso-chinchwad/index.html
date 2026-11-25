@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cafe Cloud 9 Espresso — Subhendu Nagar, Chinchwad, Pune | Cafe one-pager</title>
+<meta name="description" content="Cafe Cloud 9 Espresso, 6/7. 4.8-rated cafe with 171 Google reviews.">
+<style>
+:root{--bg:#f5f6f1;--surface:#fff;--ink:#1f2620;--muted:#6d655c;--accent:#2f5d3a;--accent2:#5c8a4a;--line:#e0e4d8;--r:14px}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;background:var(--bg);color:var(--ink);line-height:1.68;-webkit-font-smoothing:antialiased}
+.wrap{max-width:1040px;margin:0 auto;padding:0 24px}
+header.hero{padding:92px 0 70px;text-align:center;border-bottom:1px solid var(--line);background:linear-gradient(180deg,#fbfcf6,#e8ecdd)}
+.badge{display:inline-block;font-size:.66rem;letter-spacing:.2em;text-transform:uppercase;color:var(--accent);border:1px solid var(--line);background:#fff;padding:8px 16px;border-radius:100px}
+header.hero h1{font-size:clamp(2.1rem,6.4vw,3.5rem);font-weight:400;letter-spacing:-.015em;margin:22px 0 10px;line-height:1.1}
+header.hero .sub{font-size:1.05rem;color:var(--muted);max-width:620px;margin:0 auto}
+.rating{margin-top:20px;font-size:.9rem;color:var(--muted);letter-spacing:.03em}
+.stars{color:var(--accent2);letter-spacing:.12em}
+.cta-row{margin-top:30px;display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+.btn{display:inline-block;padding:14px 26px;border-radius:var(--r);font-size:.74rem;letter-spacing:.11em;text-transform:uppercase;text-decoration:none;transition:.2s}
+.btn-primary{background:var(--accent);color:#fff}
+.btn-primary:hover{background:var(--accent2)}
+.btn-ghost{border:1px solid var(--ink);color:var(--ink)}
+.btn-ghost:hover{background:var(--ink);color:#fff}
+.btn-wa{background:#25D366;color:#08340f}
+section{padding:62px 0}
+.kicker{font-size:.66rem;letter-spacing:.19em;text-transform:uppercase;color:var(--accent2);margin-bottom:10px}
+h2{font-weight:400;font-size:clamp(1.55rem,3.5vw,2.05rem);margin-bottom:10px;letter-spacing:-.01em}
+.lead{color:var(--muted);max-width:660px;margin-bottom:34px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(238px,1fr));gap:18px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:24px}
+.card h3{font-weight:400;font-size:1.04rem;margin-bottom:6px}
+.card p{color:var(--muted);font-size:.93rem}
+.alt{background:var(--surface);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.two-col{display:grid;grid-template-columns:1fr 1fr;gap:44px;align-items:start}
+@media(max-width:780px){.two-col{grid-template-columns:1fr;gap:28px}}
+.gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px}
+.tile{aspect-ratio:4/3;border-radius:var(--r);display:flex;align-items:flex-end;padding:14px;color:#fff;font-size:.64rem;letter-spacing:.13em;text-transform:uppercase}
+.t1{background:linear-gradient(150deg,#2f5d3a,#6f9a5c)}.t2{background:linear-gradient(150deg,#1f4229,#8bb073)}
+.t3{background:linear-gradient(150deg,#6f9a5c,#1f4229)}.t4{background:linear-gradient(150deg,#8bb073,#2f5d3a)}
+.t5{background:linear-gradient(150deg,#2f5d3a,#8bb073)}.t6{background:linear-gradient(150deg,#1f4229,#6f9a5c)}
+.rate-block{display:flex;gap:26px;align-items:center;background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:26px}
+.rate-num{font-size:2.9rem;line-height:1;font-weight:300;color:var(--accent)}
+.rate-meta{color:var(--muted);font-size:.9rem;margin-top:6px}
+table.hours{width:100%;border-collapse:collapse;margin-bottom:26px}
+table.hours td{padding:10px 0;border-bottom:1px solid var(--line);font-size:.93rem}
+table.hours td:last-child{text-align:right;color:var(--muted)}
+dl.info{font-size:.93rem}
+dl.info dt{font-size:.64rem;letter-spacing:.15em;text-transform:uppercase;color:var(--accent2);margin-top:16px}
+dl.info dd{color:var(--ink)}
+dl.info a{color:var(--accent)}
+form{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:26px}
+form label{display:block;font-size:.64rem;letter-spacing:.14em;text-transform:uppercase;color:var(--accent2);margin-bottom:6px}
+form div{margin-bottom:16px}
+input,select,textarea{width:100%;padding:12px;border:1px solid var(--line);border-radius:9px;font-family:inherit;font-size:.92rem;background:var(--bg);color:var(--ink)}
+form button{width:100%;padding:14px;border:none;border-radius:9px;background:var(--accent);color:#fff;font-size:.74rem;letter-spacing:.11em;text-transform:uppercase;cursor:pointer;font-family:inherit}
+form button:hover{background:var(--accent2)}
+.demo-note{font-size:.78rem;color:var(--muted);margin-top:20px;padding-top:14px;border-top:1px dashed var(--line)}
+footer{padding:44px 0;border-top:1px solid var(--line);font-size:.86rem;color:var(--muted)}
+footer strong{color:var(--ink);font-weight:500}
+footer a{color:var(--accent)}
+.wa-float{position:fixed;right:18px;bottom:18px;background:#25D366;color:#08340f;text-decoration:none;padding:13px 18px;border-radius:100px;font-size:.8rem;font-weight:600;box-shadow:0 8px 22px rgba(0,0,0,.18);z-index:50}
+@media(max-width:520px){.wa-float{padding:12px 16px;font-size:.76rem}}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <span class="badge">Subhendu Nagar, Chinchwad · Pune</span>
+    <h1>Cafe Cloud 9 Espresso</h1>
+    <p class="sub">An espresso bar in Subhendu Nagar, Chinchwad, rated 4.8 across 171 Google reviews.</p>
+    <p class="rating"><span class="stars">★★★★★</span> &nbsp;4.8 on Google &middot; 171 reviews</p>
+    <div class="cta-row">
+      <a class="btn btn-primary" href="tel:+919356061402">Call the cafe</a>
+      <a class="btn btn-wa" href="https://wa.me/919356061402?text=Hi%20Cafe%20Cloud%209%20Espresso%2C%20I%20found%20your%20page%20and%20would%20like%20to%20ask%20about%20a%20table.">WhatsApp</a>
+      <a class="btn btn-ghost" href="#book">Ask about a table</a>
+    </div>
+  </div>
+</header>
+
+<section>
+  <div class="wrap">
+    <p class="kicker">Welcome</p>
+    <h2>An espresso-first coffee shop</h2>
+    <p class="lead">Cafe Cloud 9 Espresso is a coffee shop in Subhendu Nagar, Chinchwad, listed on Google as a cafe and coffee shop. It opens at 11 AM and holds a 4.8 average across 171 reviews, one of the higher ratings among Chinchwad cafes.</p>
+    <div class="grid">
+      <div class="card"><h3>Where it is</h3><p>6/7, Subhendu Nagar, Chinchwad, Pimpri-Chinchwad, Maharashtra 411033. Landmark details are as listed on Google.</p></div>
+      <div class="card"><h3>Opening hours</h3><p>Opens 11:00 AM daily. Please call for today's closing time.</p></div>
+      <div class="card"><h3>Google rating</h3><p>4.8 out of 5 across 171 Google reviews, from diners in Chinchwad.</p></div>
+      <div class="card"><h3>Walk in or message</h3><p>Tables are first come, first served. For a group or an occasion, message ahead on WhatsApp and the team can keep a table ready.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="alt">
+  <div class="wrap">
+    <p class="kicker">The menu</p>
+    <h2>What's on the counter</h2>
+    <p class="lead">A short, honest menu block. Drop in your real dishes, prices and bestsellers and this section goes live.</p>
+    <div class="grid">
+      <div class="card"><h3>Coffee</h3><p>Espresso, cappuccino, filter and iced coffee. Add your house blends and prices.</p></div>
+      <div class="card"><h3>Chai &amp; cold drinks</h3><p>Cutting chai, iced tea, mojitos and shakes. The Pune afternoon menu.</p></div>
+      <div class="card"><h3>Snacks &amp; small plates</h3><p>Sandwiches, fries, maggi and quick bites. List your top five with photos.</p></div>
+      <div class="card"><h3>Sweets</h3><p>Desserts, bakes and seasonal specials. Prices can be added in one line each.</p></div>
+    </div>
+    <p class="demo-note">Menu cards are placeholders. Send us your menu and we will fill this in with real dishes and prices.</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <p class="kicker">Inside</p>
+    <h2>A look around</h2>
+    <p class="lead">The espresso bar, the seating and Subhendu Nagar outside.</p>
+    <div class="gallery">
+      <div class="tile t1">The counter</div><div class="tile t2">Coffee bar</div><div class="tile t3">Seating</div>
+      <div class="tile t4">The window</div><div class="tile t5">Chinchwad street</div><div class="tile t6">Evening light</div>
+    </div>
+    <p class="demo-note">Photo panels are placeholders. Real photographs can be dropped in before this page goes live.</p>
+  </div>
+</section>
+
+<section class="alt">
+  <div class="wrap">
+    <p class="kicker">Reputation</p>
+    <h2>What Google says</h2>
+    <p class="lead">No invented testimonials here. This is the cafe's real Google standing, shown as it stands today.</p>
+    <div class="rate-block">
+      <div class="rate-num">4.8</div>
+      <div>
+        <div class="stars" style="font-size:1.1rem">★★★★★</div>
+        <div class="rate-meta">171 Google reviews &middot; Subhendu Nagar, Chinchwad, Pune<br>Rated by locals across 171 reviews, with a 4.8 average.</div>
+      </div>
+    </div>
+    <p class="demo-note">Individual review quotes can be added straight from your Google profile once you approve them.</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap two-col">
+    <div>
+      <p class="kicker">Find us</p>
+      <h2>Timings &amp; location</h2>
+      <table class="hours">
+        <tr><td>Monday to Sunday</td><td>From 11:00 AM</td></tr>
+        <tr><td>Neighbourhood</td><td>Subhendu Nagar, Chinchwad, Pune</td></tr>
+        <tr><td>Walk-ins</td><td>Yes</td></tr>
+      </table>
+      <dl class="info">
+        <dt>Address</dt>
+        <dd>6/7, Subhendu Nagar, Chinchwad, Pimpri-Chinchwad, Maharashtra 411033</dd>
+        <dt>Phone</dt>
+        <dd><a href="tel:+919356061402">+91 93560 61402</a></dd>
+        <dt>Google rating</dt>
+        <dd>4.8 on Google &middot; 171 reviews</dd>
+        
+      </dl>
+      <p class="demo-note">Hours and details are as currently listed publicly. Please call to confirm before travelling.</p>
+    </div>
+    <form id="book" onsubmit="event.preventDefault(); alert('Demo form. Connect this to email, WhatsApp or Google Calendar before publishing.');">
+      <div><label for="name">Your name</label><input id="name" placeholder="Full name" required></div>
+      <div><label for="phone">Phone</label><input id="phone" placeholder="+91" required></div>
+      <div><label for="guests">How many guests?</label><select id="guests"><option>2</option><option>3 – 4</option><option>5 – 6</option><option>7 or more</option><option>Just for coffee</option></select></div>
+      <div><label for="msg">Anything we should know?</label><textarea id="msg" rows="3" placeholder="Preferred day, time or occasion"></textarea></div>
+      <button type="submit">Ask about a table</button>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <p><strong>Cafe Cloud 9 Espresso</strong> &middot; Subhendu Nagar, Chinchwad, Pune &middot; <a href="tel:+919356061402">+91 93560 61402</a></p>
+    <p class="demo-note">Free demo website prepared for Cafe Cloud 9 Espresso. Built only from publicly listed details.</p>
+  </div>
+</footer>
+
+<a class="wa-float" href="https://wa.me/919356061402?text=Hi%20Cafe%20Cloud%209%20Espresso%2C%20I%20would%20like%20to%20ask%20about%20a%20table.">WhatsApp us</a>
+</body>
+</html>
