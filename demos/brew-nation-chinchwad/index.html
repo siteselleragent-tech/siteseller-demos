@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Brew Nation — Elpro City Square, Chinchwad, Pune | Cafe one-pager</title>
+<meta name="description" content="Brew Nation, Elpro City Square, Chinchwad. 4.4-rated cafe with 171 Google reviews. Coffee, smoothies and mocktails.">
+<style>
+:root{--bg:#f4f4f2;--surface:#fff;--ink:#1b1d22;--muted:#6d655c;--accent:#1f3a5f;--accent2:#4d7099;--line:#e0e1e0;--r:14px}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;background:var(--bg);color:var(--ink);line-height:1.68;-webkit-font-smoothing:antialiased}
+.wrap{max-width:1040px;margin:0 auto;padding:0 24px}
+header.hero{padding:92px 0 70px;text-align:center;border-bottom:1px solid var(--line);background:linear-gradient(180deg,#fafaf8,#e6e8e9)}
+.badge{display:inline-block;font-size:.66rem;letter-spacing:.2em;text-transform:uppercase;color:var(--accent);border:1px solid var(--line);background:#fff;padding:8px 16px;border-radius:100px}
+header.hero h1{font-size:clamp(2.1rem,6.4vw,3.5rem);font-weight:400;letter-spacing:-.015em;margin:22px 0 10px;line-height:1.1}
+header.hero .sub{font-size:1.05rem;color:var(--muted);max-width:620px;margin:0 auto}
+.rating{margin-top:20px;font-size:.9rem;color:var(--muted);letter-spacing:.03em}
+.stars{color:var(--accent2);letter-spacing:.12em}
+.cta-row{margin-top:30px;display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+.btn{display:inline-block;padding:14px 26px;border-radius:var(--r);font-size:.74rem;letter-spacing:.11em;text-transform:uppercase;text-decoration:none;transition:.2s}
+.btn-primary{background:var(--accent);color:#fff}
+.btn-primary:hover{background:var(--accent2)}
+.btn-ghost{border:1px solid var(--ink);color:var(--ink)}
+.btn-ghost:hover{background:var(--ink);color:#fff}
+.btn-wa{background:#25D366;color:#08340f}
+section{padding:62px 0}
+.kicker{font-size:.66rem;letter-spacing:.19em;text-transform:uppercase;color:var(--accent2);margin-bottom:10px}
+h2{font-weight:400;font-size:clamp(1.55rem,3.5vw,2.05rem);margin-bottom:10px;letter-spacing:-.01em}
+.lead{color:var(--muted);max-width:660px;margin-bottom:34px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(238px,1fr));gap:18px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:24px}
+.card h3{font-weight:400;font-size:1.04rem;margin-bottom:6px}
+.card p{color:var(--muted);font-size:.93rem}
+.alt{background:var(--surface);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.two-col{display:grid;grid-template-columns:1fr 1fr;gap:44px;align-items:start}
+@media(max-width:780px){.two-col{grid-template-columns:1fr;gap:28px}}
+.gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px}
+.tile{aspect-ratio:4/3;border-radius:var(--r);display:flex;align-items:flex-end;padding:14px;color:#fff;font-size:.64rem;letter-spacing:.13em;text-transform:uppercase}
+.t1{background:linear-gradient(150deg,#1f3a5f,#4d7099)}.t2{background:linear-gradient(150deg,#122740,#8fa9c4)}
+.t3{background:linear-gradient(150deg,#4d7099,#122740)}.t4{background:linear-gradient(150deg,#8fa9c4,#1f3a5f)}
+.t5{background:linear-gradient(150deg,#1f3a5f,#8fa9c4)}.t6{background:linear-gradient(150deg,#122740,#4d7099)}
+.rate-block{display:flex;gap:26px;align-items:center;background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:26px;flex-wrap:wrap}
+.rate-num{font-size:2.9rem;line-height:1;font-weight:300;color:var(--accent)}
+.rate-meta{color:var(--muted);font-size:.9rem;margin-top:6px}
+.quotes{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px;margin-top:22px}
+.quote{background:var(--surface);border:1px solid var(--line);border-left:3px solid var(--accent2);border-radius:var(--r);padding:22px}
+.quote p{font-size:.95rem;color:var(--ink)}
+.quote cite{display:block;margin-top:12px;font-size:.76rem;color:var(--muted);font-style:normal;letter-spacing:.04em}
+table.hours{width:100%;border-collapse:collapse;margin-bottom:26px}
+table.hours td{padding:10px 0;border-bottom:1px solid var(--line);font-size:.93rem}
+table.hours td:last-child{text-align:right;color:var(--muted)}
+dl.info{font-size:.93rem}
+dl.info dt{font-size:.64rem;letter-spacing:.15em;text-transform:uppercase;color:var(--accent2);margin-top:16px}
+dl.info dd{color:var(--ink)}
+dl.info a{color:var(--accent)}
+form{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:26px}
+form label{display:block;font-size:.64rem;letter-spacing:.14em;text-transform:uppercase;color:var(--accent2);margin-bottom:6px}
+form div{margin-bottom:16px}
+input,select,textarea{width:100%;padding:12px;border:1px solid var(--line);border-radius:9px;font-family:inherit;font-size:.92rem;background:var(--bg);color:var(--ink)}
+form button{width:100%;padding:14px;border:none;border-radius:9px;background:var(--accent);color:#fff;font-size:.74rem;letter-spacing:.11em;text-transform:uppercase;cursor:pointer;font-family:inherit}
+form button:hover{background:var(--accent2)}
+.demo-note{font-size:.78rem;color:var(--muted);margin-top:20px;padding-top:14px;border-top:1px dashed var(--line)}
+footer{padding:44px 0;border-top:1px solid var(--line);font-size:.86rem;color:var(--muted)}
+footer strong{color:var(--ink);font-weight:500}
+footer a{color:var(--accent)}
+.wa-float{position:fixed;right:18px;bottom:18px;background:#25D366;color:#08340f;text-decoration:none;padding:13px 18px;border-radius:100px;font-size:.8rem;font-weight:600;box-shadow:0 8px 22px rgba(0,0,0,.18);z-index:50}
+@media(max-width:520px){.wa-float{padding:12px 16px;font-size:.76rem}}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <span class="badge">Chinchwad &middot; Pune</span>
+    <h1>Brew Nation</h1>
+    <p class="sub">Coffee, smoothies and mocktails at Elpro City Square in Chinchwad, open eleven in the morning until eleven at night.</p>
+    <p class="rating"><span class="stars">★★★★☆</span> &nbsp;4.4 on Google &middot; 171 reviews</p>
+    <div class="cta-row">
+      <a class="btn btn-primary" href="tel:+917517257171">Call Brew Nation</a>
+      <a class="btn btn-wa" href="https://wa.me/917517257171?text=Hi%20Brew%20Nation%2C%20I%20found%20your%20page%20and%20would%20like%20to%20ask%20about%20a%20table.">WhatsApp</a>
+      <a class="btn btn-ghost" href="#book">Ask about a table</a>
+    </div>
+  </div>
+</header>
+
+<section>
+  <div class="wrap">
+    <p class="kicker">Welcome</p>
+    <h2>A coffee stop inside Elpro City Square</h2>
+    <p class="lead">Brew Nation sits in the Elpro City Square stretch of PCMC Link Road, the Chinchwad side of the city. It opens at eleven and runs until eleven at night, which makes it work for a late afternoon break as much as a post-dinner coffee. The listing carries 171 Google reviews at a 4.4 average.</p>
+    <div class="grid">
+      <div class="card"><h3>Where it is</h3><p>Elpro City Square, PCMC Link Road, opposite Elpro City Square, Tanaji Nagar, Chinchwad, Pune, Maharashtra 411033. Landmark details are as listed on Google.</p></div>
+      <div class="card"><h3>Opening hours</h3><p>Open daily, 11:00 AM to 11:00 PM, according to the current Google listing.</p></div>
+      <div class="card"><h3>Google rating</h3><p>4.4 out of 5 across 171 Google reviews from visitors in Chinchwad.</p></div>
+      <div class="card"><h3>Walk in or message</h3><p>Tables are first come, first served. For a group or an occasion, message ahead on WhatsApp and the team can keep a table ready.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="alt">
+  <div class="wrap">
+    <p class="kicker">The menu</p>
+    <h2>What's on the counter</h2>
+    <p class="lead">The page describes itself as coffee, smoothies and mocktails. A short, honest menu block follows.</p>
+    <div class="grid">
+      <div class="card"><h3>Coffee</h3><p>Espresso, cappuccino, lattes and cold coffee. Add your house blends and prices.</p></div>
+      <div class="card"><h3>Smoothies</h3><p>Fruit and thick shakes. List your bestsellers with photos.</p></div>
+      <div class="card"><h3>Mocktails</h3><p>The evening side of the menu. Add the full list and prices.</p></div>
+      <div class="card"><h3>Snacks</h3><p>Quick bites to go with the drinks. Drop in your top five.</p></div>
+    </div>
+    <p class="demo-note">Menu cards are placeholders. Send your menu and we will fill this in with real dishes and prices.</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <p class="kicker">Inside</p>
+    <h2>A look around</h2>
+    <p class="lead">The counter, the seating and the street outside.</p>
+    <div class="gallery">
+      <div class="tile t1">The counter</div><div class="tile t2">The menu board</div><div class="tile t3">Seating</div>
+      <div class="tile t4">The window</div><div class="tile t5">Chinchwad street</div><div class="tile t6">Evening light</div>
+    </div>
+    <p class="demo-note">Photo panels are placeholders. Real photographs can be dropped in before this page goes live.</p>
+  </div>
+</section>
+
+<section class="alt">
+  <div class="wrap">
+    <p class="kicker">Reputation</p>
+    <h2>What Google says</h2>
+    <p class="lead">No invented testimonials. These are real, publicly posted Google reviews.</p>
+    <div class="rate-block">
+      <div class="rate-num">4.4</div>
+      <div>
+        <div class="stars" style="font-size:1.1rem">★★★★☆</div>
+        <div class="rate-meta">171 Google reviews &middot; Chinchwad, Pune<br>Rated by locals, 4.4 average.</div>
+      </div>
+    </div>
+    <div class="quotes">
+      <div class="quote"><p>&ldquo;A decent place to grab a cold coffee or a quick drink. The taste is good, and the prices are reasonable.&rdquo;</p><cite>Google review · July 2026</cite></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap two-col">
+    <div>
+      <p class="kicker">Find us</p>
+      <h2>Timings &amp; location</h2>
+      <table class="hours">
+        <tr><td>Monday to Sunday</td><td>11:00 AM – 11:00 PM</td></tr>
+        <tr><td>Neighbourhood</td><td>Chinchwad, Pune</td></tr>
+        <tr><td>Walk-ins</td><td>Yes</td></tr>
+      </table>
+      <dl class="info">
+        <dt>Address</dt>
+        <dd>Elpro City Square, PCMC Link Road, opposite Elpro City Square, Tanaji Nagar, Chinchwad, Pune, Maharashtra 411033</dd>
+        <dt>Phone</dt>
+        <dd><a href="tel:+917517257171">+91 75172 57171</a></dd>
+        <dt>Google rating</dt>
+        <dd>4.4 on Google &middot; 171 reviews</dd>
+        <dt>Instagram</dt><dd><a href="https://www.instagram.com/brew_nation_pune/">@brew_nation_pune</a></dd>
+      </dl>
+      <p class="demo-note">Hours and details are as currently listed publicly. Please call to confirm before travelling.</p>
+    </div>
+    <form id="book" onsubmit="event.preventDefault(); alert('Demo form. Connect this to email, WhatsApp or Google Calendar before publishing.');">
+      <div><label for="name">Your name</label><input id="name" placeholder="Full name" required></div>
+      <div><label for="phone">Phone</label><input id="phone" placeholder="+91" required></div>
+      <div><label for="guests">How many guests?</label><select id="guests"><option>2</option><option>3 – 4</option><option>5 – 6</option><option>7 or more</option><option>Just for coffee</option></select></div>
+      <div><label for="msg">Anything we should know?</label><textarea id="msg" rows="3" placeholder="Preferred day, time or occasion"></textarea></div>
+      <button type="submit">Ask about a table</button>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <p><strong>Brew Nation</strong> &middot; Chinchwad, Pune &middot; <a href="tel:+917517257171">+91 75172 57171</a></p>
+    <p class="demo-note">Free demo website prepared for Brew Nation. Built only from publicly listed details.</p>
+  </div>
+</footer>
+
+<a class="wa-float" href="https://wa.me/917517257171?text=Hi%20Brew%20Nation%2C%20I%20would%20like%20to%20ask%20about%20a%20table.">WhatsApp us</a>
+</body>
+</html>
